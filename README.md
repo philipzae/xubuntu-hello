@@ -26,11 +26,12 @@ Finnaly, the second goal is to push it to replace the original project.
 
 Manjaro-hello is build with Python, Gtk3 and Glade.
 
-## Contribute
+## TODO
 
 For the moment, even if the soft works, it is not finished.
 - We have to test it and fix bugs.
 - Make translations to distribute it in all the world.
+- Improve way to render pages. (use a Markdown-like system ?)
 - Improve the look (manjaro-welcome is very great-looking).
 
 Let's make a wonderful software !
