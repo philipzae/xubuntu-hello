@@ -105,17 +105,17 @@ class ManjaroHello(Gtk.Window):
         dialog.run()
         dialog.hide()
 
-    def on_readme_clicked(self, btn):
-        self.builder.get_object("stack").set_visible_child(self.builder.get_object("documentation"))
-        self.builder.get_object("documentation").set_current_page(0)
-
-    def on_release_clicked(self, btn):
-        self.builder.get_object("stack").set_visible_child(self.builder.get_object("documentation"))
-        self.builder.get_object("documentation").set_current_page(1)
-
-    def on_involved_clicked(self, btn):
-        self.builder.get_object("stack").set_visible_child(self.builder.get_object("project"))
-        self.builder.get_object("project").set_current_page(0)
+    def on_welcome_btn_clicked(self, btn):
+        name = btn.get_name()
+        if name == "readmebtn":
+            self.builder.get_object("stack").set_visible_child(self.builder.get_object("documentation"))
+            self.builder.get_object("documentation").set_current_page(0)
+        elif name == "releasebtn":
+            self.builder.get_object("stack").set_visible_child(self.builder.get_object("documentation"))
+            self.builder.get_object("documentation").set_current_page(1)
+        elif name == "involvedbtn":
+            self.builder.get_object("stack").set_visible_child(self.builder.get_object("project"))
+            self.builder.get_object("project").set_current_page(0)
 
     def on_autostart_switched(self, switch, _):
         autostart = True if switch.get_active() else False
