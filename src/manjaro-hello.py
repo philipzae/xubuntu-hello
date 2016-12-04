@@ -23,7 +23,7 @@ class ManjaroHello(Gtk.Window):
 
         self.preferences = self.get_preferences()
         if not self.preferences:
-            self.preferences = {"autostart": os.path.exists(self.autostart_path)}
+            self.preferences = {"autostart": os.path.isfile(self.autostart_path)}
             self.save_preferences()
 
         self.infos = get_infos()
@@ -60,13 +60,13 @@ class ManjaroHello(Gtk.Window):
         self.window.show()
 
     def change_autostart(self, state):
-        if state and not os.path.exists(self.autostart_path):
+        if state and not os.path.isfile(self.autostart_path):
             try:
                 shutil.copyfile("manjaro-hello.desktop", self.autostart_path)
                 self.preferences["autostart"] = True
             except OSError as e:
                 print(e)
-        elif not state and os.path.exists(self.autostart_path):
+        elif not state and os.path.isfile(self.autostart_path):
             try:
                 os.remove(self.autostart_path)
                 self.preferences["autostart"] = False
@@ -90,7 +90,7 @@ class ManjaroHello(Gtk.Window):
 
     def read_data(self, name):
         filename = "data/{}/{}".format(self.language, name)
-        if not os.path.exists(filename):
+        if not os.path.isfile(filename):
             filename = "data/{}/{}".format(self.default_language, name)
 
         try:
@@ -131,7 +131,7 @@ def get_infos():
     infos["codename"] = lsb.get("CODENAME", 0)
     infos["release"] = lsb.get("RELEASE", 0)
     infos["arch"] = "64-bit" if os.uname()[4] else "32-bit"
-    infos["live"] = os.path.exists("/bootmnt/manjaro") or os.path.exists("/run/miso/bootmnt/manjaro")
+    infos["live"] = os.path.isfile("/bootmnt/manjaro") or os.path.isfile("/run/miso/bootmnt/manjaro")
 
     return infos
 
