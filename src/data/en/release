@@ -1,4 +1,4 @@
-Manjaro 16.10
+<big>Manjaro 16.10</big>
 
 We are happy to publish another stable release of Manjaro Linux, we call Fringilla.
 
@@ -8,7 +8,7 @@ Our KDE edition continues to deliver this powerful, mature and feature-rich desk
 
 Kernel 4.4 is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
 
-The Manjaro Settings Manager (MSM) now provides an easy-to-use graphical interface for installing and removing the many series of kernels we offer. Manjaro's selection of readily available kernels remains the most extensive of all Linux distribution we know of. At the time of this release, nine kernel-series are available directly from our binary repositories, ranging from the mature & rock-solid 3.10 series to the latest 4.9 release. Additionally we offer two realtime kernel series. Such a wide array of available kernel options results in extensive hardware support, getting the most out of your system for you, be it old or new. We also created a kcm module to integrate MSM seamlessly into System-Settings of Plasma 5. We have now several notifier for MSM to be installed optionally.
+The Manjaro Settings Manager (MSM) now provides an easy-to-use graphical interface for installing and removing the many series of kernels we offer. Manjaro's selection of readily available kernels remains the most extensive of all Linux distribution we know of. At the time of this release, nine kernel-series are available directly from our binary repositories, ranging from the mature &amp; rock-solid 3.10 series to the latest 4.9 release. Additionally we offer two realtime kernel series. Such a wide array of available kernel options results in extensive hardware support, getting the most out of your system for you, be it old or new. We also created a kcm module to integrate MSM seamlessly into System-Settings of Plasma 5. We have now several notifier for MSM to be installed optionally.
 
 With Pamac 4.1 we have switched to CSD design. Guillaume was working for some time on this new design for pamac. Followed features you can expect:
 

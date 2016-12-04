@@ -49,7 +49,7 @@ class ManjaroHello(Gtk.Window):
 
         # Initialize pages
         for page in ("readme", "release", "involved"):
-            self.builder.get_object(page + "text").set_text(self.read_data(page))
+            self.builder.get_object(page + "text").set_markup(self.read_data(page))
 
         # Set switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
