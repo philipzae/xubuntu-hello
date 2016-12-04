@@ -441,6 +441,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                       </object>
                     </child>
                   </object>
+                  <packing>
+                    <property name="tab_expand">True</property>
+                  </packing>
                 </child>
                 <child type="tab">
                   <object class="GtkLabel">
@@ -473,6 +476,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </object>
                   <packing>
                     <property name="position">1</property>
+                    <property name="tab_expand">True</property>
                   </packing>
                 </child>
                 <child type="tab">
@@ -526,6 +530,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                       </object>
                     </child>
                   </object>
+                  <packing>
+                    <property name="tab_expand">True</property>
+                  </packing>
                 </child>
                 <child type="tab">
                   <object class="GtkLabel">
