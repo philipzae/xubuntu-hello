@@ -105,6 +105,7 @@
                     <property name="label" translatable="yes">Welcome to Manjaro!</property>
                     <attributes>
                       <attribute name="weight" value="bold"/>
+                      <attribute name="scale" value="2"/>
                     </attributes>
                   </object>
                   <packing>
