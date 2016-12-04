@@ -58,26 +58,8 @@ class ManjaroHello(Gtk.Window):
 
         self.window.show()
 
-    def get_lsb_information(self):
-        lsb = {}
-        try:
-            with open("/etc/lsb-release") as lsb_file:
-                for line in lsb_file:
-                    if "=" in line:
-                        var, arg = line.rstrip().split("=")
-                        if var.startswith("DISTRIB_"):
-                            var = var[8:]
-                        if arg.startswith("\"") and arg.endswith("\""):
-                            arg = arg[1:-1]
-                        if arg:
-                            lsb[var] = arg
-        except (IOError, OSError) as msg:
-            print(msg)
-
-        return lsb
-
     def get_infos(self):
-        lsb = self.get_lsb_information()
+        lsb = get_lsb_information()
         infos = {}
         infos["codename"] = lsb.get("CODENAME", 0)
         infos["release"] = lsb.get("RELEASE", 0)
@@ -151,6 +133,24 @@ class ManjaroHello(Gtk.Window):
 
     def on_delete_window(self, *args):
         Gtk.main_quit(*args)
+
+def get_lsb_information():
+    lsb = {}
+    try:
+        with open("/etc/lsb-release") as lsb_file:
+            for line in lsb_file:
+                if "=" in line:
+                    var, arg = line.rstrip().split("=")
+                    if var.startswith("DISTRIB_"):
+                        var = var[8:]
+                    if arg.startswith("\"") and arg.endswith("\""):
+                        arg = arg[1:-1]
+                    if arg:
+                        lsb[var] = arg
+    except (IOError, OSError) as msg:
+        print(msg)
+
+    return lsb
 
 win = ManjaroHello()
 Gtk.main()
