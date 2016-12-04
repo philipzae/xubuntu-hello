@@ -431,6 +431,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                       <object class="GtkViewport">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="shadow_type">none</property>
                         <child>
                           <object class="GtkLabel" id="readmetext">
                             <property name="visible">True</property>
@@ -469,6 +470,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                       <object class="GtkViewport">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="shadow_type">none</property>
                         <child>
                           <object class="GtkLabel" id="releasetext">
                             <property name="visible">True</property>
@@ -530,6 +532,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                       <object class="GtkViewport">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="shadow_type">none</property>
                         <child>
                           <object class="GtkLabel" id="involvedtext">
                             <property name="visible">True</property>
