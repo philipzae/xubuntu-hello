@@ -6,7 +6,6 @@
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">About</property>
     <property name="modal">True</property>
-    <property name="window_position">center</property>
     <property name="icon">manjaro-hello.png</property>
     <property name="type_hint">dialog</property>
     <property name="program_name">Manjaro Hello</property>
