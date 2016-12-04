@@ -36,5 +36,6 @@ For the moment, even if the soft works, it is not finished.
 - Make translations to distribute it in all the world.
 - Improve way to render pages. (use a Markdown-like system ?)
 - Improve the look (manjaro-welcome is very great-looking).
+- Add "Installation" section instead of project in live sessions.
 
 Let's make a wonderful software !
