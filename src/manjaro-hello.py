@@ -63,13 +63,13 @@ class ManjaroHello(Gtk.Window):
             try:
                 shutil.copyfile("manjaro-hello.desktop", self.autostart_path)
                 self.preferences["autostart"] = True
-            except (IOError, OSError) as e:
+            except OSError as e:
                 print(e)
         elif not state and os.path.exists(self.autostart_path):
             try:
                 os.remove(self.autostart_path)
                 self.preferences["autostart"] = False
-            except (IOError, OSError) as e:
+            except OSError as e:
                 print(e)
         self.save_preferences()
 
@@ -77,14 +77,14 @@ class ManjaroHello(Gtk.Window):
         try:
             with open(self.preferences_path, "w") as f:
                 json.dump(self.preferences, f)
-        except (IOError, OSError) as e:
+        except OSError as e:
             print(e)
 
     def get_preferences(self):
         try:
             with open(self.preferences_path, "r") as f:
                 return json.load(f)
-        except (IOError, OSError) as e:
+        except OSError as e:
             return None
 
     def read_data(self, name):
@@ -95,7 +95,7 @@ class ManjaroHello(Gtk.Window):
         try:
             with open(filename, "r") as f:
                 return f.read()
-        except (IOError, OSError) as e:
+        except OSError as e:
             return None
 
     # Handlers
@@ -147,7 +147,7 @@ def get_lsb_information():
                         arg = arg[1:-1]
                     if arg:
                         lsb[var] = arg
-    except (IOError, OSError) as msg:
+    except OSError as msg:
         print(msg)
 
     return lsb
