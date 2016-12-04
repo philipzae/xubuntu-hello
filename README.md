@@ -7,10 +7,11 @@ New Manjaro Welcome Screen
 
 ## Why a new Manjaro Welcome Screen ?
 
-Manjaro-hello is widely inspired by [manjaro-welcome](https://github.com/manjaro/manjaro-welcome). I've started to work on a new welcome screen because I think that the current has several defects inherited from the technologies used.
+Manjaro-hello is widely inspired by [manjaro-welcome](https://github.com/manjaro/manjaro-welcome). I've started to work on a new welcome screen because I think that the current has several defects, some of which are inherited from the technologies used.
 - First, it is based on Gtk3 but because of the use of Webkit and its old Python binding, it is forced to use Gtk2.
 - All the app content is displayed by using HTML that is rendered by Webkit. This makes the evolution of the software very complicated. For example, it is very hard to make a translation system.
 - By using web technologies and Webkit, the renderer is a little bit slower than using native technologies.
+- Can't know if each link will be open in an external browser or in app.
 
 For all this reasons, I have choosen to build a new software from scratch  but keeping the original structure.
 
