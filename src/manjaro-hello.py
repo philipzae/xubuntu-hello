@@ -11,16 +11,19 @@ from gi.repository import Gtk
 
 class ManjaroHello(Gtk.Window):
     def __init__(self):
+        # Path vars
         config_path =  "{}/.config/".format(os.path.expanduser("~"))
         self.preferences_path = config_path + "manjaro-hello.json"
         self.autostart_path = config_path + "autostart/manjaro-hello.desktop"
         self.icon_path = "manjaro-hello.png"
 
+        # Languages vars
         self.language = locale.getlocale()[0][:2]
         self.default_language = "en"
         self.app = "manjaro-hello"
         self.locale_dir = "locale"
 
+        # Settings vars
         self.preferences = self.get_preferences()
         if not self.preferences:
             self.preferences = {"autostart": os.path.isfile(self.autostart_path)}
@@ -41,12 +44,14 @@ class ManjaroHello(Gtk.Window):
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
 
+        # Set window subtitle
         self.builder.get_object("headerbar").props.subtitle = self.infos["codename"] + " " + self.infos["release"] + " " + self.infos["arch"]
 
         # Initialize pages
         for page in ("readme", "release", "involved"):
             self.builder.get_object(page + "text").set_text(self.read_data(page))
 
+        # Set switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
 
         self.window.show()
