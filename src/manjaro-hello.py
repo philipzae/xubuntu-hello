@@ -11,8 +11,9 @@ from gi.repository import Gtk
 
 class ManjaroHello(Gtk.Window):
     def __init__(self):
-        self.preferences_path = "{}/.config/manjaro-hello.json".format(os.path.expanduser("~"))
-        self.autostart_path = os.path.expanduser("{}/.config/autostart/manjaro-hello.desktop".format(os.path.expanduser("~")))
+        config_path =  "{}/.config/".format(os.path.expanduser("~"))
+        self.preferences_path = config_path + "manjaro-hello.json"
+        self.autostart_path = config_path + "autostart/manjaro-hello.desktop"
         self.icon_path = "manjaro-hello.png"
 
         self.language = locale.getlocale()[0][:2]
@@ -147,8 +148,8 @@ def get_lsb_information():
                         arg = arg[1:-1]
                     if arg:
                         lsb[var] = arg
-    except OSError as msg:
-        print(msg)
+    except OSError as e:
+        print(e)
 
     return lsb
 
