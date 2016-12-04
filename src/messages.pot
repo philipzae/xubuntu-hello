@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-04 17:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: manjaro-hello.glade:7
+msgid "About"
+msgstr ""
+
+#: manjaro-hello.glade:14
+msgid "Welcome screen for Manjaro"
+msgstr ""
+
+#: manjaro-hello.glade:16
+msgid "Github"
+msgstr ""
+
+#: manjaro-hello.glade:105
+msgid "Welcome to Manjaro!"
+msgstr ""
+
+#: manjaro-hello.glade:121
+msgid ""
+"Thank you for joining our community!\n"
+"\n"
+"We, the Manjaro Developers, hope that you will enjoy using Manjaro as much "
+"as we enjoy building it. The links below will help you get started with your "
+"new operating system. So enjoy the experience, and don't hesitate to send us "
+"your feedback."
+msgstr ""
+
+#: manjaro-hello.glade:138 manjaro-hello.glade:496
+msgid "Documentation"
+msgstr ""
+
+#: manjaro-hello.glade:152
+msgid "Support"
+msgstr ""
+
+#: manjaro-hello.glade:166 manjaro-hello.glade:553
+msgid "Project"
+msgstr ""
+
+#: manjaro-hello.glade:180
+msgid "Social"
+msgstr ""
+
+#: manjaro-hello.glade:192 manjaro-hello.glade:447
+msgid "Read me"
+msgstr ""
+
+#: manjaro-hello.glade:205 manjaro-hello.glade:480
+msgid "Release info"
+msgstr ""
+
+#: manjaro-hello.glade:218
+msgid "Wiki"
+msgstr ""
+
+#: manjaro-hello.glade:232 manjaro-hello.glade:532
+msgid "Get involved"
+msgstr ""
+
+#: manjaro-hello.glade:245
+msgid "Forums"
+msgstr ""
+
+#: manjaro-hello.glade:259
+msgid "Chat room"
+msgstr ""
+
+#: manjaro-hello.glade:273
+msgid "Mailling lists"
+msgstr ""
+
+#: manjaro-hello.glade:287
+msgid "Build Manjaro"
+msgstr ""
+
+#: manjaro-hello.glade:301
+msgid "Donate"
+msgstr ""
+
+#: manjaro-hello.glade:315
+msgid "Google+"
+msgstr ""
+
+#: manjaro-hello.glade:329
+msgid "Facebook"
+msgstr ""
+
+#: manjaro-hello.glade:343
+msgid "Twitter"
+msgstr ""
+
+#: manjaro-hello.glade:357
+msgid "Reddit"
+msgstr ""
+
+#: manjaro-hello.glade:375
+msgid "Launch at start"
+msgstr ""
+
+#: manjaro-hello.glade:412
+msgid "Welcome"
+msgstr ""
