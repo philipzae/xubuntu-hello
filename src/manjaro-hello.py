@@ -25,7 +25,7 @@ class ManjaroHello(Gtk.Window):
             self.preferences = {"autostart": os.path.exists(self.autostart_path)}
             self.save_preferences()
 
-        self.infos = self.get_infos()
+        self.infos = get_infos()
 
         # Init language
         locale.setlocale(locale.LC_ALL, "")
@@ -57,16 +57,6 @@ class ManjaroHello(Gtk.Window):
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
 
         self.window.show()
-
-    def get_infos(self):
-        lsb = get_lsb_information()
-        infos = {}
-        infos["codename"] = lsb.get("CODENAME", 0)
-        infos["release"] = lsb.get("RELEASE", 0)
-        infos["arch"] = "64-bit" if os.uname()[4] else "32-bit"
-        infos["live"] = os.path.exists("/bootmnt/manjaro") or os.path.exists("/run/miso/bootmnt/manjaro")
-
-        return infos
 
     def change_autostart(self, state):
         if state and not os.path.exists(self.autostart_path):
@@ -133,6 +123,16 @@ class ManjaroHello(Gtk.Window):
 
     def on_delete_window(self, *args):
         Gtk.main_quit(*args)
+
+def get_infos():
+    lsb = get_lsb_information()
+    infos = {}
+    infos["codename"] = lsb.get("CODENAME", 0)
+    infos["release"] = lsb.get("RELEASE", 0)
+    infos["arch"] = "64-bit" if os.uname()[4] else "32-bit"
+    infos["live"] = os.path.exists("/bootmnt/manjaro") or os.path.exists("/run/miso/bootmnt/manjaro")
+
+    return infos
 
 def get_lsb_information():
     lsb = {}
