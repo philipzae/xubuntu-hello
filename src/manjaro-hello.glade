@@ -428,16 +428,20 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="can_focus">True</property>
                     <property name="shadow_type">in</property>
                     <child>
-                      <object class="GtkTextView" id="readmetext">
+                      <object class="GtkViewport">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="editable">False</property>
-                        <property name="wrap_mode">word</property>
-                        <property name="left_margin">10</property>
-                        <property name="right_margin">10</property>
-                        <property name="top_margin">10</property>
-                        <property name="bottom_margin">10</property>
-                        <property name="cursor_visible">False</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkLabel" id="readmetext">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="margin_left">10</property>
+                            <property name="margin_right">10</property>
+                            <property name="margin_top">10</property>
+                            <property name="margin_bottom">10</property>
+                            <property name="wrap">True</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
@@ -461,16 +465,20 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="can_focus">True</property>
                     <property name="shadow_type">in</property>
                     <child>
-                      <object class="GtkTextView" id="releasetext">
+                      <object class="GtkViewport">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="editable">False</property>
-                        <property name="wrap_mode">word</property>
-                        <property name="left_margin">10</property>
-                        <property name="right_margin">10</property>
-                        <property name="top_margin">10</property>
-                        <property name="bottom_margin">10</property>
-                        <property name="cursor_visible">False</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkLabel" id="releasetext">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="margin_left">10</property>
+                            <property name="margin_right">10</property>
+                            <property name="margin_top">10</property>
+                            <property name="margin_bottom">10</property>
+                            <property name="wrap">True</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
@@ -517,16 +525,20 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="can_focus">True</property>
                     <property name="shadow_type">in</property>
                     <child>
-                      <object class="GtkTextView" id="involvedtext">
+                      <object class="GtkViewport">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="editable">False</property>
-                        <property name="wrap_mode">word</property>
-                        <property name="left_margin">10</property>
-                        <property name="right_margin">10</property>
-                        <property name="top_margin">10</property>
-                        <property name="bottom_margin">10</property>
-                        <property name="cursor_visible">False</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                          <object class="GtkLabel" id="involvedtext">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="margin_left">10</property>
+                            <property name="margin_right">10</property>
+                            <property name="margin_top">10</property>
+                            <property name="margin_bottom">10</property>
+                            <property name="wrap">True</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>

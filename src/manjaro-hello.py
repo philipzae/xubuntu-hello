@@ -43,17 +43,9 @@ class ManjaroHello(Gtk.Window):
 
         self.builder.get_object("headerbar").props.subtitle = self.infos["codename"] + " " + self.infos["release"] + " " + self.infos["arch"]
 
-        text_buffer = Gtk.TextBuffer()
-        text_buffer.set_text(self.read_data("readme"), -1)
-        self.builder.get_object("readmetext").set_buffer(text_buffer)
-
-        text_buffer = Gtk.TextBuffer()
-        text_buffer.set_text(self.read_data("release"), -1)
-        self.builder.get_object("releasetext").set_buffer(text_buffer)
-
-        text_buffer = Gtk.TextBuffer()
-        text_buffer.set_text(self.read_data("involved"), -1)
-        self.builder.get_object("involvedtext").set_buffer(text_buffer)
+        self.builder.get_object("readmetext").set_text(self.read_data("readme"))
+        self.builder.get_object("releasetext").set_text(self.read_data("release"))
+        self.builder.get_object("involvedtext").set_text(self.read_data("involved"))
 
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
 
