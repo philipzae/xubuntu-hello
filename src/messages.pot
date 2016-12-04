@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-04 17:30+0100\n"
+"POT-Creation-Date: 2016-12-04 21:02+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Welcome to Manjaro!"
 msgstr ""
 
-#: manjaro-hello.glade:121
+#: manjaro-hello.glade:122
 msgid ""
 "Thank you for joining our community!\n"
 "\n"
@@ -43,78 +43,86 @@ msgid ""
 "your feedback."
 msgstr ""
 
-#: manjaro-hello.glade:138 manjaro-hello.glade:496
-msgid "Documentation"
+#: manjaro-hello.glade:139
+msgid "DOCUMENTATION"
 msgstr ""
 
-#: manjaro-hello.glade:152
-msgid "Support"
+#: manjaro-hello.glade:153
+msgid "SUPPORT"
 msgstr ""
 
-#: manjaro-hello.glade:166 manjaro-hello.glade:553
-msgid "Project"
+#: manjaro-hello.glade:167
+msgid "PROJECT"
 msgstr ""
 
-#: manjaro-hello.glade:180
-msgid "Social"
+#: manjaro-hello.glade:181
+msgid "SOCIAL"
 msgstr ""
 
-#: manjaro-hello.glade:192 manjaro-hello.glade:447
+#: manjaro-hello.glade:193 manjaro-hello.glade:450
 msgid "Read me"
 msgstr ""
 
-#: manjaro-hello.glade:205 manjaro-hello.glade:480
+#: manjaro-hello.glade:207 manjaro-hello.glade:483
 msgid "Release info"
 msgstr ""
 
-#: manjaro-hello.glade:218
+#: manjaro-hello.glade:221
 msgid "Wiki"
 msgstr ""
 
-#: manjaro-hello.glade:232 manjaro-hello.glade:532
+#: manjaro-hello.glade:235 manjaro-hello.glade:535
 msgid "Get involved"
 msgstr ""
 
-#: manjaro-hello.glade:245
+#: manjaro-hello.glade:249
 msgid "Forums"
 msgstr ""
 
-#: manjaro-hello.glade:259
+#: manjaro-hello.glade:263
 msgid "Chat room"
 msgstr ""
 
-#: manjaro-hello.glade:273
+#: manjaro-hello.glade:277
 msgid "Mailling lists"
 msgstr ""
 
-#: manjaro-hello.glade:287
+#: manjaro-hello.glade:291
 msgid "Build Manjaro"
 msgstr ""
 
-#: manjaro-hello.glade:301
+#: manjaro-hello.glade:305
 msgid "Donate"
 msgstr ""
 
-#: manjaro-hello.glade:315
+#: manjaro-hello.glade:319
 msgid "Google+"
 msgstr ""
 
-#: manjaro-hello.glade:329
+#: manjaro-hello.glade:333
 msgid "Facebook"
 msgstr ""
 
-#: manjaro-hello.glade:343
+#: manjaro-hello.glade:347
 msgid "Twitter"
 msgstr ""
 
-#: manjaro-hello.glade:357
+#: manjaro-hello.glade:361
 msgid "Reddit"
 msgstr ""
 
-#: manjaro-hello.glade:375
+#: manjaro-hello.glade:378
 msgid "Launch at start"
 msgstr ""
 
-#: manjaro-hello.glade:412
+#: manjaro-hello.glade:415
 msgid "Welcome"
+msgstr ""
+
+#: manjaro-hello.glade:499
+msgid "Documentation"
+msgstr ""
+
+#: manjaro-hello.glade:556
+msgid "Project"
 msgstr ""
