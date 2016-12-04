@@ -3,6 +3,8 @@ manjaro-hello
 
 New Manjaro Welcome Screen
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4c5342caee874c079638970437d49196)](https://www.codacy.com/app/hugo-posnic/manjaro-hello?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Huluti/manjaro-hello&amp;utm_campaign=Badge_Grade)
+
 ## Why a new Manjaro Welcome Screen ?
 
 Manjaro-hello is widely inspired by [manjaro-welcome](https://github.com/manjaro/manjaro-welcome). I've started to work on a new welcome screen because I think that the current has several defects inherited from the technologies used.
