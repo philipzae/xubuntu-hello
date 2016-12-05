@@ -9,7 +9,7 @@ import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 
-class ManjaroHello(Gtk.Window):
+class ManjaroHello():
     def __init__(self):
         # App vars
         self.app = "manjaro-hello"
@@ -66,7 +66,7 @@ class ManjaroHello(Gtk.Window):
         # Set autostart switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
 
-        self.window.show()
+        self.window.show_all()
 
     def change_autostart(self, state):
         if state and not os.path.isfile(self.autostart_path):
@@ -164,5 +164,6 @@ def get_lsb_information():
 
     return lsb
 
-win = ManjaroHello()
-Gtk.main()
+if __name__ == "__main__":
+    ManjaroHello()
+    Gtk.main()
