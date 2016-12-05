@@ -38,4 +38,8 @@ For the moment, even if the soft works, it is not finished.
 - Improve the look (manjaro-welcome is very great-looking).
 - Add "Installation" section instead of project in live sessions.
 
+## Manjaro forum discussion
+
+[Start work on a new welcome screen: manjaro-hello](https://forum.manjaro.org/t/start-work-on-a-new-welcome-screen-for-manjaro/13685/6)
+
 Let's make a wonderful software !
