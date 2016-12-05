@@ -4,8 +4,9 @@ import locale
 import gettext
 import os
 import json
-import gi
 import shutil
+import webbrowser
+import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 
@@ -30,6 +31,14 @@ class ManjaroHello(Gtk.Window):
             self.save_preferences()
 
         self.infos = get_infos()
+
+        # Social urls
+        self.social_urls = {
+            "google+": "https://plus.google.com/118244873957924966264",
+            "facebook": "https://www.facebook.com/ManjaroLinux",
+            "twitter": "https://twitter.com/ManjaroLinux",
+            "reddit": "https://www.reddit.com/r/ManjaroLinux"
+        }
 
         # Init language
         locale.setlocale(locale.LC_ALL, "")
@@ -114,6 +123,9 @@ class ManjaroHello(Gtk.Window):
         elif name == "involvedbtn":
             self.builder.get_object("stack").set_visible_child(self.builder.get_object("project"))
             self.builder.get_object("project").set_current_page(0)
+
+    def on_social_pressed(self, eventbox, _):
+        webbrowser.open_new_tab(self.social_urls[eventbox.get_name()])
 
     def on_autostart_switched(self, switch, _):
         autostart = True if switch.get_active() else False
