@@ -4,7 +4,6 @@ import locale
 import gettext
 import os
 import json
-import shutil
 import webbrowser
 import gi
 gi.require_version("Gtk", "3.0")
@@ -12,16 +11,20 @@ from gi.repository import Gtk
 
 class ManjaroHello(Gtk.Window):
     def __init__(self):
+        # App vars
+        self.app = "manjaro-hello"
         # Path vars
-        config_path =  "{}/.config/".format(os.path.expanduser("~"))
-        self.preferences_path = config_path + "manjaro-hello.json"
-        self.autostart_path = config_path + "autostart/manjaro-hello.desktop"
-        self.icon_path = "manjaro-hello.png"
+        config_path = os.path.expanduser("~") + "/.config/"
+        #share_path = "/usr/share/"
+
+        self.preferences_path = config_path + self.app +".json"
+        self.desktop_path = os.getcwd() + "/" + self.app + ".desktop" # later use share_path
+        self.autostart_path = config_path + "autostart/" + self.app + ".desktop"
+        self.icon_path = self.app + ".png"
 
         # Languages vars
         self.language = locale.getlocale()[0][:2]
         self.default_language = "en"
-        self.app = "manjaro-hello"
         self.locale_dir = "locale"
 
         # Settings vars
@@ -60,7 +63,7 @@ class ManjaroHello(Gtk.Window):
         for page in ("readme", "release", "involved"):
             self.builder.get_object(page + "text").set_markup(self.read_page(page))
 
-        # Set switcher state
+        # Set autostart switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
 
         self.window.show()
@@ -68,13 +71,13 @@ class ManjaroHello(Gtk.Window):
     def change_autostart(self, state):
         if state and not os.path.isfile(self.autostart_path):
             try:
-                shutil.copyfile("manjaro-hello.desktop", self.autostart_path)
+                os.symlink(self.desktop_path, self.autostart_path)
                 self.preferences["autostart"] = True
             except OSError as e:
                 print(e)
         elif not state and os.path.isfile(self.autostart_path):
             try:
-                os.remove(self.autostart_path)
+                os.unlink(self.autostart_path)
                 self.preferences["autostart"] = False
             except OSError as e:
                 print(e)
