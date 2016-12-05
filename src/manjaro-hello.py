@@ -72,15 +72,14 @@ class ManjaroHello(Gtk.Window):
         if state and not os.path.isfile(self.autostart_path):
             try:
                 os.symlink(self.desktop_path, self.autostart_path)
-                self.preferences["autostart"] = True
             except OSError as e:
                 print(e)
         elif not state and os.path.isfile(self.autostart_path):
             try:
                 os.unlink(self.autostart_path)
-                self.preferences["autostart"] = False
             except OSError as e:
                 print(e)
+        self.preferences["autostart"] = state
         self.save_preferences()
 
     def save_preferences(self):
