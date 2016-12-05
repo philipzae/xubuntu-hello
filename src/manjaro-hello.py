@@ -58,7 +58,7 @@ class ManjaroHello(Gtk.Window):
 
         # Initialize pages
         for page in ("readme", "release", "involved"):
-            self.builder.get_object(page + "text").set_markup(self.read_data(page))
+            self.builder.get_object(page + "text").set_markup(self.read_page(page))
 
         # Set switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
@@ -94,10 +94,10 @@ class ManjaroHello(Gtk.Window):
         except OSError as e:
             return None
 
-    def read_data(self, name):
-        filename = "data/{}/{}".format(self.language, name)
+    def read_page(self, name):
+        filename = "pages/{}/{}".format(self.language, name)
         if not os.path.isfile(filename):
-            filename = "data/{}/{}".format(self.default_language, name)
+            filename = "pages/{}/{}".format(self.default_language, name)
 
         try:
             with open(filename, "r") as f:
