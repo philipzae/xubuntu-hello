@@ -3,6 +3,7 @@
 import locale
 import gettext
 import os
+import sys
 import json
 import webbrowser
 import gi
@@ -13,6 +14,7 @@ class ManjaroHello():
     def __init__(self):
         # App vars
         self.app = "manjaro-hello"
+
         # Path vars
         config_path = os.path.expanduser("~") + "/.config/"
         #share_path = "/usr/share/"
@@ -57,7 +59,9 @@ class ManjaroHello():
         self.window = self.builder.get_object("window")
 
         # Set window subtitle
-        self.builder.get_object("headerbar").props.subtitle = self.infos["codename"] + " " + self.infos["release"] + " " + self.infos["arch"]
+        if self.infos["codename"] and self.infos["release"]:
+            self.builder.get_object("headerbar").props.subtitle = self.infos["codename"] + " " + self.infos["release"] + " "
+        self.builder.get_object("headerbar").props.subtitle += self.infos["arch"]
 
         # Initialize pages
         for page in ("readme", "release", "involved"):
@@ -139,9 +143,9 @@ class ManjaroHello():
 def get_infos():
     lsb = get_lsb_information()
     infos = {}
-    infos["codename"] = lsb.get("CODENAME", 0)
-    infos["release"] = lsb.get("RELEASE", 0)
-    infos["arch"] = "64-bit" if os.uname()[4] else "32-bit"
+    infos["codename"] = lsb.get("CODENAME", None)
+    infos["release"] = lsb.get("RELEASE", None)
+    infos["arch"] = "64-bits" if sys.maxsize > 2**32 else "32-bits"
     infos["live"] = os.path.isfile("/bootmnt/manjaro") or os.path.isfile("/run/miso/bootmnt/manjaro")
 
     return infos
