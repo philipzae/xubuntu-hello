@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
-import locale
 import gettext
-import os
-import sys
-import json
-import webbrowser
 import gi
-from subprocess import call
+import json
+import locale
+import os
+import subprocess
+import sys
+import webbrowser
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 
@@ -143,12 +143,12 @@ class ManjaroHello():
             self.builder.get_object("stack").set_visible_child(self.builder.get_object("project"))
             self.builder.get_object("project").set_current_page(0)
         elif name == "installgui":
-            call(["sudo", "-E", "calamares"])
+            subprocess.call(["sudo", "-E", "calamares"])
         elif name == "installcli":
-            call(["sudo cli-installer"])
+            subprocess.call(["sudo cli-installer"])
 
     def on_social_pressed(self, eventbox, _):
-        webbrowser.open_new_tab(self.social_urls[eventbox.get_name()])
+        open_new_tab(self.social_urls[eventbox.get_name()])
 
     def on_autostart_switched(self, switch, _):
         autostart = True if switch.get_active() else False
