@@ -20,7 +20,7 @@ class ManjaroHello():
         config_path = os.path.expanduser("~") + "/.config/"
         #share_path = "/usr/share/"
 
-        self.preferences_path = config_path + self.app +".json"
+        self.preferences_path = config_path + self.app + ".json"
         self.desktop_path = os.getcwd() + "/" + self.app + ".desktop" # later use share_path
         self.autostart_path = config_path + "autostart/" + self.app + ".desktop"
         self.icon_path = self.app + ".png" # later use share_path

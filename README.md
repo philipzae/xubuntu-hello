@@ -9,15 +9,15 @@ New Manjaro Welcome Screen
 
 Manjaro-hello is widely inspired by [manjaro-welcome](https://github.com/manjaro/manjaro-welcome). I've started to work on a new welcome screen because I think that the current has several defects, some of which are inherited from the technologies used.
 - First, it is based on Gtk3 but because of the use of Webkit and its old Python binding, it is forced to use Gtk2.
-- All the app content is displayed by using HTML that is rendered by Webkit. This makes the evolution of the software very complicated. For example, it is very hard to make a translation system.
+- All content of the app is displayed with HTML that is rendered by Webkit. This makes the evolution of the software very complicated. For example, it is very hard to make a translation system.
 - By using web technologies and Webkit, the renderer is a little bit slower than using native technologies.
 - Can't know if each link will be open in an external browser or in app.
 
-For all this reasons, I have choosen to build a new software from scratch  but keeping the original structure.
+For all this reasons, I have choosen to build a new software from scratch but keeping the original structure.
 
 Currently, manjaro-hello has all the major features of manjaro-welcome but have a translation system.
 - Interface is translated using gettext and po files. (src/locale)
-- Pages are translated using differents files. (src/data)
+- Pages are translated using differents files. (src/pages)
 
 ## What goals ?
 
@@ -34,9 +34,8 @@ Manjaro-hello is build with Python, Gtk3 and Glade.
 For the moment, even if the soft works, it is not finished.
 - We have to test it and fix bugs.
 - Make translations to distribute it in all the world.
-- Improve way to render pages. (use a Markdown-like system ?)
+- Improve the way to render pages (use a Markdown-like system ?).
 - Improve the look (manjaro-welcome is very great-looking).
-- Add "Installation" section instead of project in live sessions.
 
 ## Manjaro forum discussion
 
