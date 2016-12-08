@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-04 21:02+0100\n"
+"POT-Creation-Date: 2016-12-08 17:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,19 +21,19 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: manjaro-hello.glade:14
+#: manjaro-hello.glade:13
 msgid "Welcome screen for Manjaro"
 msgstr ""
 
-#: manjaro-hello.glade:16
+#: manjaro-hello.glade:15
 msgid "Github"
 msgstr ""
 
-#: manjaro-hello.glade:105
+#: manjaro-hello.glade:104
 msgid "Welcome to Manjaro!"
 msgstr ""
 
-#: manjaro-hello.glade:122
+#: manjaro-hello.glade:121
 msgid ""
 "Thank you for joining our community!\n"
 "\n"
@@ -43,86 +43,78 @@ msgid ""
 "your feedback."
 msgstr ""
 
-#: manjaro-hello.glade:139
+#: manjaro-hello.glade:138
 msgid "DOCUMENTATION"
 msgstr ""
 
-#: manjaro-hello.glade:153
+#: manjaro-hello.glade:152
 msgid "SUPPORT"
 msgstr ""
 
-#: manjaro-hello.glade:167
+#: manjaro-hello.glade:166
 msgid "PROJECT"
 msgstr ""
 
-#: manjaro-hello.glade:181
-msgid "SOCIAL"
-msgstr ""
-
-#: manjaro-hello.glade:193 manjaro-hello.glade:450
+#: manjaro-hello.glade:178 manjaro-hello.glade:542
 msgid "Read me"
 msgstr ""
 
-#: manjaro-hello.glade:207 manjaro-hello.glade:483
+#: manjaro-hello.glade:192 manjaro-hello.glade:582
 msgid "Release info"
 msgstr ""
 
-#: manjaro-hello.glade:221
+#: manjaro-hello.glade:206
 msgid "Wiki"
 msgstr ""
 
-#: manjaro-hello.glade:235 manjaro-hello.glade:535
+#: manjaro-hello.glade:220 manjaro-hello.glade:643
 msgid "Get involved"
 msgstr ""
 
-#: manjaro-hello.glade:249
+#: manjaro-hello.glade:234
 msgid "Forums"
 msgstr ""
 
-#: manjaro-hello.glade:263
+#: manjaro-hello.glade:248
 msgid "Chat room"
 msgstr ""
 
-#: manjaro-hello.glade:277
+#: manjaro-hello.glade:262
 msgid "Mailling lists"
 msgstr ""
 
-#: manjaro-hello.glade:291
+#: manjaro-hello.glade:276
 msgid "Build Manjaro"
 msgstr ""
 
-#: manjaro-hello.glade:305
+#: manjaro-hello.glade:290
 msgid "Donate"
 msgstr ""
 
-#: manjaro-hello.glade:319
-msgid "Google+"
-msgstr ""
-
-#: manjaro-hello.glade:333
-msgid "Facebook"
-msgstr ""
-
-#: manjaro-hello.glade:347
-msgid "Twitter"
-msgstr ""
-
-#: manjaro-hello.glade:361
-msgid "Reddit"
-msgstr ""
-
-#: manjaro-hello.glade:378
+#: manjaro-hello.glade:406
 msgid "Launch at start"
 msgstr ""
 
-#: manjaro-hello.glade:415
+#: manjaro-hello.glade:443
+msgid "Use Calamares (Graphic method)"
+msgstr ""
+
+#: manjaro-hello.glade:457
+msgid "Use CLI-Installer (Command line)"
+msgstr ""
+
+#: manjaro-hello.glade:479
+msgid "INSTALLATION"
+msgstr ""
+
+#: manjaro-hello.glade:498
 msgid "Welcome"
 msgstr ""
 
-#: manjaro-hello.glade:499
+#: manjaro-hello.glade:598
 msgid "Documentation"
 msgstr ""
 
-#: manjaro-hello.glade:556
+#: manjaro-hello.glade:664
 msgid "Project"
 msgstr ""

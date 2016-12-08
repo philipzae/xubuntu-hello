@@ -427,12 +427,64 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
+                    <property name="top_attach">9</property>
+                    <property name="width">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButtonBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="spacing">10</property>
+                    <property name="homogeneous">True</property>
+                    <property name="layout_style">center</property>
+                    <child>
+                      <object class="GtkButton" id="installgui">
+                        <property name="label" translatable="yes">Use Calamares (Graphic method)</property>
+                        <property name="name">installgui</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <signal name="clicked" handler="on_welcome_btn_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="installcli">
+                        <property name="label" translatable="yes">Use CLI-Installer (Command line)</property>
+                        <property name="name">installcli</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <signal name="clicked" handler="on_welcome_btn_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
                     <property name="top_attach">8</property>
                     <property name="width">3</property>
                   </packing>
                 </child>
                 <child>
-                  <placeholder/>
+                  <object class="GtkLabel" id="installlabel">
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">INSTALLATION</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">7</property>
+                  </packing>
                 </child>
                 <child>
                   <placeholder/>

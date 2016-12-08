@@ -7,6 +7,7 @@ import sys
 import json
 import webbrowser
 import gi
+from subprocess import call
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 
@@ -22,7 +23,7 @@ class ManjaroHello():
         self.preferences_path = config_path + self.app +".json"
         self.desktop_path = os.getcwd() + "/" + self.app + ".desktop" # later use share_path
         self.autostart_path = config_path + "autostart/" + self.app + ".desktop"
-        self.icon_path = self.app + ".png"
+        self.icon_path = self.app + ".png" # later use share_path
 
         # Languages vars
         self.language = locale.getlocale()[0][:2]
@@ -70,7 +71,19 @@ class ManjaroHello():
         # Set autostart switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
 
-        self.window.show_all()
+        # Live systems
+        if self.infos["live"]:
+            can_install = False
+            if os.path.isfile("/usr/bin/calamares"):
+                self.builder.get_object("installgui").set_visible(True)
+                can_install = True
+            if os.path.isfile("/usr/bin/cli-installer"):
+                self.builder.get_object("installcli").set_visible(True)
+                can_install = True
+            if can_install:
+                self.builder.get_object("installlabel").set_visible(True)
+
+        self.window.show();
 
     def change_autostart(self, state):
         if state and not os.path.isfile(self.autostart_path):
@@ -129,6 +142,10 @@ class ManjaroHello():
         elif name == "involvedbtn":
             self.builder.get_object("stack").set_visible_child(self.builder.get_object("project"))
             self.builder.get_object("project").set_current_page(0)
+        elif name == "installgui":
+            call(["sudo", "-E", "calamares"])
+        elif name == "installcli":
+            call(["sudo cli-installer"])
 
     def on_social_pressed(self, eventbox, _):
         webbrowser.open_new_tab(self.social_urls[eventbox.get_name()])
@@ -146,7 +163,7 @@ def get_infos():
     infos["codename"] = lsb.get("CODENAME", None)
     infos["release"] = lsb.get("RELEASE", None)
     infos["arch"] = "64-bits" if sys.maxsize > 2**32 else "32-bits"
-    infos["live"] = os.path.isfile("/bootmnt/manjaro") or os.path.isfile("/run/miso/bootmnt/manjaro")
+    infos["live"] = os.path.exists("/bootmnt/manjaro") or os.path.exists("/run/miso/bootmnt/manjaro")
 
     return infos
 
