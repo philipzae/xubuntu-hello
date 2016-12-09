@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import gettext
+from locale import gettext as _
 import gi
 import json
 import locale
@@ -16,7 +16,7 @@ class ManjaroHello():
         # App vars
         self.app = "manjaro-hello"
         self.default_locale = "en_US"
-        self.sys_locale = locale.getlocale()[0]
+        self.sys_locale = locale.getdefaultlocale()[0]
         self.social_urls = {
             "google+": "https://plus.google.com/118244873957924966264",
             "facebook": "https://www.facebook.com/ManjaroLinux",
@@ -30,8 +30,8 @@ class ManjaroHello():
         self.preferences_path = config_path + self.app + ".json"
         self.desktop_path = os.getcwd() + "/" + self.app + ".desktop" # later use share_path
         self.autostart_path = config_path + "autostart/" + self.app + ".desktop"
-        self.icon_path = "./" + self.app + ".png" # later use share_path
-        self.locale_path = "locale"
+        self.icon_path = self.app + ".png" # later use share_path
+        self.locale_path = "locale" # later use share_path
 
         # Load preferences
         self.preferences = self.get_preferences()
@@ -50,12 +50,9 @@ class ManjaroHello():
             else:
                 self.preferences["locale"] = self.default_locale
 
-        if self.preferences["locale"] != self.default_locale:
-            locale.bindtextdomain(self.app, self.locale_path)
-            gettext.bindtextdomain(self.app, self.locale_path)
-            gettext.textdomain(self.app)
-            lang = gettext.translation(self.app, localedir=self.locale_path, languages=[self.preferences["locale"]])
-            lang.install()
+        locale.setlocale(locale.LC_ALL, self.sys_locale + ".utf8")
+        locale.bindtextdomain(self.app, self.locale_path)
+        locale.textdomain(self.app)
 
         # Save new locale
         self.save_preferences()
