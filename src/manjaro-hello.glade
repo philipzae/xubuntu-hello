@@ -680,6 +680,19 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
         <property name="title">Manjaro Hello</property>
         <property name="show_close_button">True</property>
         <child>
+          <object class="GtkComboBoxText" id="languages">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <items>
+              <item id="en_US" translatable="yes">English (United States)</item>
+              <item id="fr_FR" translatable="yes">French (France)</item>
+            </items>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
           <object class="GtkButton">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
@@ -689,6 +702,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
           </object>
           <packing>
             <property name="pack_type">end</property>
+            <property name="position">1</property>
           </packing>
         </child>
       </object>

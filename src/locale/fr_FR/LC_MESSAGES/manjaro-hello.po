@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-08 17:07+0100\n"
-"PO-Revision-Date: 2016-12-08 17:09+0100\n"
+"POT-Creation-Date: 2016-12-09 17:26+0100\n"
+"PO-Revision-Date: 2016-12-09 17:26+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: fr\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -63,11 +63,11 @@ msgstr "SUPPORT"
 msgid "PROJECT"
 msgstr "PROJET"
 
-#: manjaro-hello.glade:178 manjaro-hello.glade:545
+#: manjaro-hello.glade:178 manjaro-hello.glade:542
 msgid "Read me"
 msgstr "Lisez moi"
 
-#: manjaro-hello.glade:192 manjaro-hello.glade:585
+#: manjaro-hello.glade:192 manjaro-hello.glade:582
 msgid "Release info"
 msgstr "Informations de version"
 
@@ -75,7 +75,7 @@ msgstr "Informations de version"
 msgid "Wiki"
 msgstr "Wiki"
 
-#: manjaro-hello.glade:220 manjaro-hello.glade:646
+#: manjaro-hello.glade:220 manjaro-hello.glade:643
 msgid "Get involved"
 msgstr "S'investir"
 
@@ -107,43 +107,30 @@ msgstr "Lancer au démarrage"
 msgid "Use Calamares (Graphic method)"
 msgstr "Utiliser Calamares (Méthode graphique)"
 
-#: manjaro-hello.glade:458
+#: manjaro-hello.glade:457
 msgid "Use CLI-Installer (Command line)"
 msgstr "Utiliser CLI-Installer (Ligne de commande)"
 
-#: manjaro-hello.glade:482
+#: manjaro-hello.glade:479
 msgid "INSTALLATION"
 msgstr "INSTALLATION"
 
-#: manjaro-hello.glade:501
+#: manjaro-hello.glade:498
 msgid "Welcome"
 msgstr "Bienvenue"
 
-#: manjaro-hello.glade:601
+#: manjaro-hello.glade:598
 msgid "Documentation"
 msgstr "Documentation"
 
-#: manjaro-hello.glade:667
+#: manjaro-hello.glade:664
 msgid "Project"
 msgstr "Projet"
 
-#~ msgid "SOCIAL"
-#~ msgstr "SOCIAL"
+#: manjaro-hello.glade:687
+msgid "English (United States)"
+msgstr "Anglais (États-Unis)"
 
-#~ msgid "Google+"
-#~ msgstr "Google+"
-
-#~ msgid "Facebook"
-#~ msgstr "Facebook"
-
-#~ msgid "Twitter"
-#~ msgstr "Twitter"
-
-#~ msgid "Reddit"
-#~ msgstr "Reddit"
-
-#~ msgid "Support"
-#~ msgstr "Support"
-
-#~ msgid "Social"
-#~ msgstr "Social"
+#: manjaro-hello.glade:688
+msgid "French (France)"
+msgstr "Français (France)"

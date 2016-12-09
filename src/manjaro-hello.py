@@ -15,30 +15,8 @@ class ManjaroHello():
     def __init__(self):
         # App vars
         self.app = "manjaro-hello"
-
-        # Path vars
-        config_path = os.path.expanduser("~") + "/.config/"
-        #share_path = "/usr/share/"
-
-        self.preferences_path = config_path + self.app + ".json"
-        self.desktop_path = os.getcwd() + "/" + self.app + ".desktop" # later use share_path
-        self.autostart_path = config_path + "autostart/" + self.app + ".desktop"
-        self.icon_path = self.app + ".png" # later use share_path
-
-        # Languages vars
-        self.language = locale.getlocale()[0][:2]
-        self.default_language = "en"
-        self.locale_dir = "locale"
-
-        # Settings vars
-        self.preferences = self.get_preferences()
-        if not self.preferences:
-            self.preferences = {"autostart": os.path.isfile(self.autostart_path)}
-            self.save_preferences()
-
-        self.infos = get_infos()
-
-        # Social urls
+        self.default_locale = "en_US"
+        self.sys_locale = locale.getlocale()[0]
         self.social_urls = {
             "google+": "https://plus.google.com/118244873957924966264",
             "facebook": "https://www.facebook.com/ManjaroLinux",
@@ -46,30 +24,67 @@ class ManjaroHello():
             "reddit": "https://www.reddit.com/r/ManjaroLinux"
         }
 
-        # Init language
-        locale.setlocale(locale.LC_ALL, "")
-        locale.bindtextdomain(self.app, self.locale_dir)
-        gettext.bindtextdomain(self.app, self.locale_dir)
-        gettext.textdomain(self.app)
+        # Path vars
+        config_path = os.path.expanduser("~") + "/.config/"
+        #share_path = "/usr/share/"
+        self.preferences_path = config_path + self.app + ".json"
+        self.desktop_path = os.getcwd() + "/" + self.app + ".desktop" # later use share_path
+        self.autostart_path = config_path + "autostart/" + self.app + ".desktop"
+        self.icon_path = "./" + self.app + ".png" # later use share_path
+        self.locale_path = "locale"
 
-        # Create window
+        # Load preferences
+        self.preferences = self.get_preferences()
+        if not self.preferences:
+            self.preferences = {
+                "autostart": os.path.isfile(self.autostart_path),
+                "locale": None
+            }
+
+        # Init translation
+        locales = os.listdir(self.locale_path)
+        locales.append(self.default_locale)
+        if self.preferences["locale"] not in locales:
+            if self.sys_locale in locales:
+                self.preferences["locale"] = self.sys_locale
+            else:
+                self.preferences["locale"] = self.default_locale
+
+        if self.preferences["locale"] != self.default_locale:
+            locale.bindtextdomain(self.app, self.locale_path)
+            gettext.bindtextdomain(self.app, self.locale_path)
+            gettext.textdomain(self.app)
+            lang = gettext.translation(self.app, localedir=self.locale_path, languages=[self.preferences["locale"]])
+            lang.install()
+
+        # Save new locale
+        self.save_preferences()
+
+        # Load system infos
+        self.infos = get_infos()
+
+        # Init window
         self.builder = Gtk.Builder()
         self.builder.set_translation_domain(self.app)
         self.builder.add_from_file("manjaro-hello.glade")
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
 
+        # Change selected language
+        self.builder.get_object("languages").set_active_id(self.preferences["locale"]);
+        self.builder.get_object("languages").connect("changed", self.on_languages_changed)
+
         # Set window subtitle
         if self.infos["codename"] and self.infos["release"]:
             self.builder.get_object("headerbar").props.subtitle = self.infos["codename"] + " " + self.infos["release"] + " "
         self.builder.get_object("headerbar").props.subtitle += self.infos["arch"]
 
-        # Initialize pages
-        for page in ("readme", "release", "involved"):
-            self.builder.get_object(page + "text").set_markup(self.read_page(page))
-
         # Set autostart switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
+
+        # Init pages
+        for page in ("readme", "release", "involved"):
+            self.builder.get_object(page + "text").set_markup(self.read_page(page))
 
         # Live systems
         if self.infos["live"]:
@@ -114,10 +129,9 @@ class ManjaroHello():
             return None
 
     def read_page(self, name):
-        filename = "pages/{}/{}".format(self.language, name)
+        filename = "pages/{}/{}".format(self.preferences["locale"], name)
         if not os.path.isfile(filename):
-            filename = "pages/{}/{}".format(self.default_language, name)
-
+            filename = "pages/{}/{}".format("en_US", name)
         try:
             with open(filename, "r") as f:
                 return f.read()
@@ -125,6 +139,11 @@ class ManjaroHello():
             return None
 
     # Handlers
+    def on_languages_changed(self, combobox):
+        self.preferences["locale"] = combobox.get_active_id()
+        self.save_preferences()
+        os.execv(sys.executable, ['python'] + sys.argv)
+
     def on_about_clicked(self, btn):
         dialog = self.builder.get_object("aboutdialog")
         dialog.set_transient_for(self.window)
