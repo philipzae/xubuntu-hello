@@ -167,7 +167,7 @@ class ManjaroHello():
             subprocess.call(["sudo cli-installer"])
 
     def on_social_pressed(self, eventbox, _):
-        open_new_tab(self.social_urls[eventbox.get_name()])
+        webbrowser.open_new_tab(self.social_urls[eventbox.get_name()])
 
     def on_autostart_switched(self, switch, _):
         autostart = True if switch.get_active() else False
