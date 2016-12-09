@@ -48,7 +48,6 @@
   </object>
   <object class="GtkWindow" id="window">
     <property name="width_request">800</property>
-    <property name="height_request">500</property>
     <property name="can_focus">False</property>
     <property name="window_position">center</property>
     <property name="icon">manjaro-hello.png</property>
