@@ -131,7 +131,7 @@ class ManjaroHello():
     def read_page(self, name):
         filename = "pages/{}/{}".format(self.preferences["locale"], name)
         if not os.path.isfile(filename):
-            filename = "pages/{}/{}".format("en_US", name)
+            filename = "pages/{}/{}".format(self.default_locale, name)
         try:
             with open(filename, "r") as f:
                 return f.read()
