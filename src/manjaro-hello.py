@@ -66,7 +66,7 @@ class ManjaroHello():
         locale.bindtextdomain(self.app, self.locale_path)
         locale.textdomain(self.app)
 
-        # Save new locale
+        # Save locale used in config file
         self.save_preferences()
 
         # Load system infos
@@ -79,7 +79,7 @@ class ManjaroHello():
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
 
-        # Change selected language
+        # Select current locale in languages menu
         self.builder.get_object("languages").set_active_id(self.preferences["locale"]);
         self.builder.get_object("languages").connect("changed", self.on_languages_changed)
 
@@ -201,7 +201,6 @@ def get_infos():
     infos["release"] = lsb.get("RELEASE", None)
     infos["arch"] = "64-bits" if sys.maxsize > 2**32 else "32-bits"
     infos["live"] = os.path.exists("/bootmnt/manjaro") or os.path.exists("/run/miso/bootmnt/manjaro")
-
     return infos
 
 def get_lsb_information():
@@ -219,7 +218,6 @@ def get_lsb_information():
                         lsb[var] = arg
     except OSError as e:
         print(e)
-
     return lsb
 
 if __name__ == "__main__":
