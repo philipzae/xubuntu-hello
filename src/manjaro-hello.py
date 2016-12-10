@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from locale import gettext as _
+import gettext
 import gi
 import json
 import locale
@@ -53,7 +53,17 @@ class ManjaroHello():
                 "locale": None
             }
 
+        # Load system infos
+        self.infos = get_infos()
+
+        # Init window
+        self.builder = Gtk.Builder()
+        self.builder.add_from_file("manjaro-hello.glade")
+        self.builder.connect_signals(self)
+        self.window = self.builder.get_object("window")
+
         # Init translation
+        self.default_texts = {}
         locales = os.listdir(self.locale_path)
         locales.append(self.default_locale)
         if self.preferences["locale"] not in locales:
@@ -62,26 +72,18 @@ class ManjaroHello():
             else:
                 self.preferences["locale"] = self.default_locale
 
-        locale.setlocale(locale.LC_ALL, self.preferences["locale"] + ".utf8")
-        locale.bindtextdomain(self.app, self.locale_path)
-        locale.textdomain(self.app)
+        # Select current locale in languages menu
+        self.builder.get_object("languages").set_active_id(self.preferences["locale"]);
+        self.builder.get_object("languages").connect("changed", self.on_languages_changed)
+
+        # Make translation
+        gettext.bindtextdomain(self.app, self.locale_path)
+        gettext.textdomain(self.app)
+        self.set_locale(self.preferences["locale"])
 
         # Save locale used in config file
         self.save_preferences()
 
-        # Load system infos
-        self.infos = get_infos()
-
-        # Init window
-        self.builder = Gtk.Builder()
-        self.builder.set_translation_domain(self.app)
-        self.builder.add_from_file("manjaro-hello.glade")
-        self.builder.connect_signals(self)
-        self.window = self.builder.get_object("window")
-
-        # Select current locale in languages menu
-        self.builder.get_object("languages").set_active_id(self.preferences["locale"]);
-        self.builder.get_object("languages").connect("changed", self.on_languages_changed)
 
         # Set window subtitle
         if self.infos["codename"] and self.infos["release"]:
@@ -114,6 +116,49 @@ class ManjaroHello():
                 self.builder.get_object("installlabel").set_visible(True)
 
         self.window.show();
+
+    def set_locale(self, locale_code):
+        if self.preferences["locale"] != self.default_locale:
+            locale = gettext.translation(self.app, self.locale_path, [locale_code])
+            locale.install()
+        else:
+            gettext.install(self.app)
+
+        # Dirty code to fix an issue with gettext that can't translate text from glade interface
+        # TODO: Find a better solution
+        elts = {
+            "welcomelabel": "label",
+            "welcometext": "label",
+            "documentationtitle": "label",
+            "readmelabel": "label",
+            "releaselabel": "label",
+            "involvedlabel": "label",
+            "supporttitle": "label",
+            "projecttitle": "label",
+            "readmebtn": "label",
+            "releasebtn": "label",
+            "wikibtn": "label",
+            "involvedbtn": "label",
+            "forumsbtn": "label",
+            "chatbtn": "label",
+            "maillingbtn": "label",
+            "buildbtn": "label",
+            "donatebtn": "label",
+            "installlabel": "label",
+            "installgui": "label",
+            "installcli": "label",
+            "autostartlabel": "label",
+            "aboutdialog": "comments"
+        }
+        for elt in elts:
+            if elt not in self.default_texts:
+                self.default_texts[elt] = getattr(self.builder.get_object(elt), "get_" + elts[elt])()
+            getattr(self.builder.get_object(elt), "set_" + elts[elt])(_(self.default_texts[elt]))
+
+        for stack in ("welcome", "documentation", "project"):
+            if stack not in self.default_texts:
+                self.default_texts[stack] = self.builder.get_object("stack").child_get_property(self.builder.get_object(stack), "title")
+            self.builder.get_object("stack").child_set_property(self.builder.get_object(stack), "title", _(self.default_texts[stack]))
 
     def change_autostart(self, state):
         if state and not os.path.isfile(self.autostart_path):
@@ -156,8 +201,8 @@ class ManjaroHello():
     # Handlers
     def on_languages_changed(self, combobox):
         self.preferences["locale"] = combobox.get_active_id()
+        self.set_locale(self.preferences["locale"])
         self.save_preferences()
-        os.execv(sys.executable, ['python'] + sys.argv)
 
     def on_about_clicked(self, btn):
         dialog = self.builder.get_object("aboutdialog")

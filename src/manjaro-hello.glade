@@ -75,7 +75,7 @@
             <property name="can_focus">False</property>
             <property name="transition_type">crossfade</property>
             <child>
-              <object class="GtkGrid">
+              <object class="GtkGrid" id="welcome">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">10</property>
@@ -97,7 +97,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel">
+                  <object class="GtkLabel" id="welcomelabel">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">Welcome to Manjaro!</property>
@@ -113,7 +113,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel">
+                  <object class="GtkLabel" id="welcometext">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="hexpand">True</property>
@@ -131,7 +131,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel">
+                  <object class="GtkLabel" id="documentationtitle">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">DOCUMENTATION</property>
@@ -145,7 +145,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel">
+                  <object class="GtkLabel" id="supporttitle">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">SUPPORT</property>
@@ -159,7 +159,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel">
+                  <object class="GtkLabel" id="projecttitle">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">PROJECT</property>
@@ -173,7 +173,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="readmebtn">
                     <property name="label" translatable="yes">Read me</property>
                     <property name="name">readmebtn</property>
                     <property name="visible">True</property>
@@ -187,7 +187,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="releasebtn">
                     <property name="label" translatable="yes">Release info</property>
                     <property name="name">releasebtn</property>
                     <property name="visible">True</property>
@@ -201,7 +201,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="wikibtn">
                     <property name="label" translatable="yes">Wiki</property>
                     <property name="name">wikibtn</property>
                     <property name="visible">True</property>
@@ -215,7 +215,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="involvedbtn">
                     <property name="label" translatable="yes">Get involved</property>
                     <property name="name">involvedbtn</property>
                     <property name="visible">True</property>
@@ -229,7 +229,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="forumsbtn">
                     <property name="label" translatable="yes">Forums</property>
                     <property name="name">forumsbtn</property>
                     <property name="visible">True</property>
@@ -243,7 +243,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="chatbtn">
                     <property name="label" translatable="yes">Chat room</property>
                     <property name="name">chatbtn</property>
                     <property name="visible">True</property>
@@ -257,7 +257,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="maillingbtn">
                     <property name="label" translatable="yes">Mailling lists</property>
                     <property name="name">maillingbtn</property>
                     <property name="visible">True</property>
@@ -271,7 +271,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="buildbtn">
                     <property name="label" translatable="yes">Build Manjaro</property>
                     <property name="name">buildbtn</property>
                     <property name="visible">True</property>
@@ -285,7 +285,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton">
+                  <object class="GtkButton" id="donatebtn">
                     <property name="label" translatable="yes">Donate</property>
                     <property name="name">donatebtn</property>
                     <property name="visible">True</property>
@@ -394,7 +394,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel">
+                      <object class="GtkLabel" id="autostartlabel">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">end</property>
@@ -531,7 +531,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child type="tab">
-                  <object class="GtkLabel">
+                  <object class="GtkLabel" id="readmelabel">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">Read me</property>
@@ -571,7 +571,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child type="tab">
-                  <object class="GtkLabel">
+                  <object class="GtkLabel" id="releaselabel">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">Release info</property>
@@ -632,7 +632,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child type="tab">
-                  <object class="GtkLabel">
+                  <object class="GtkLabel" id="involvedlabel">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">Get involved</property>
@@ -679,8 +679,8 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <items>
-              <item id="en_US" translatable="yes">English (United States)</item>
-              <item id="fr_FR" translatable="yes">French (France)</item>
+              <item id="en_US">English (United States)</item>
+              <item id="fr_FR">Français (France)</item>
             </items>
           </object>
           <packing>
