@@ -58,7 +58,7 @@ class ManjaroHello():
             else:
                 self.preferences["locale"] = self.default_locale
 
-        locale.setlocale(locale.LC_ALL, self.sys_locale + ".utf8")
+        locale.setlocale(locale.LC_ALL, self.preferences["locale"] + ".utf8")
         locale.bindtextdomain(self.app, self.locale_path)
         locale.textdomain(self.app)
 
