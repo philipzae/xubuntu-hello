@@ -105,10 +105,10 @@ class ManjaroHello():
 
         self.window.show();
 
-    def set_locale(self, locale_code):
+    def set_locale(self, locale):
         if self.preferences["locale"] != self.default_locale:
-            locale = gettext.translation(self.app, self.locale_path, [locale_code])
-            locale.install()
+            tr = gettext.translation(self.app, self.locale_path, [locale])
+            tr.install()
         else:
             gettext.install(self.app)
 
