@@ -707,9 +707,4 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
       </object>
     </child>
   </object>
-  <object class="GtkImage" id="inapp">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="icon_name">document-new</property>
-  </object>
 </interface>
