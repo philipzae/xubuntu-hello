@@ -317,10 +317,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                             <property name="can_focus">False</property>
                             <signal name="button-press-event" handler="on_social_pressed" swapped="no"/>
                             <child>
-                              <object class="GtkImage">
+                              <object class="GtkImage" id="google+">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="pixbuf">img/google+.png</property>
                               </object>
                             </child>
                           </object>
@@ -337,10 +336,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                             <property name="can_focus">False</property>
                             <signal name="button-press-event" handler="on_social_pressed" swapped="no"/>
                             <child>
-                              <object class="GtkImage">
+                              <object class="GtkImage" id="facebook">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="pixbuf">img/facebook.png</property>
                               </object>
                             </child>
                           </object>
@@ -357,10 +355,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                             <property name="can_focus">False</property>
                             <signal name="button-press-event" handler="on_social_pressed" swapped="no"/>
                             <child>
-                              <object class="GtkImage">
+                              <object class="GtkImage" id="twitter">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="pixbuf">img/twitter.png</property>
                               </object>
                             </child>
                           </object>
@@ -377,10 +374,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                             <property name="can_focus">False</property>
                             <signal name="button-press-event" handler="on_social_pressed" swapped="no"/>
                             <child>
-                              <object class="GtkImage">
+                              <object class="GtkImage" id="reddit">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="pixbuf">img/reddit.png</property>
                               </object>
                             </child>
                           </object>

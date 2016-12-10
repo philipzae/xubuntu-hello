@@ -33,13 +33,17 @@ class ManjaroHello():
         }
 
         # Path vars
-        config_path = os.path.expanduser("~") + "/.config/"
-        #share_path = "/usr/share/"
-        self.preferences_path = config_path + self.app + ".json"
-        self.desktop_path = os.getcwd() + "/" + self.app + ".desktop" # later use share_path
-        self.autostart_path = config_path + "autostart/" + self.app + ".desktop"
-        self.icon_path = self.app + ".png" # later use share_path
-        self.locale_path = "locale" # later use share_path
+        self.current_folder = os.getcwd() + "/"
+        if os.path.exists("/usr/share/" + self.app + "/data/"):
+            self.data_path = "/usr/share/" + self.app + "/data/"
+            self.locale_path = "/usr/share/locale/"
+        else:
+            self.data_path = self.current_folder + "data/"
+            self.locale_path = "locale/"
+        self.config_path = os.path.expanduser("~") + "/.config/"
+        self.preferences_path = self.config_path + self.app + ".json"
+        self.desktop_path = self.current_folder + self.app + ".desktop"
+        self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
 
         # Load preferences
         self.preferences = self.get_preferences()
@@ -83,6 +87,12 @@ class ManjaroHello():
         if self.infos["codename"] and self.infos["release"]:
             self.builder.get_object("headerbar").props.subtitle = self.infos["codename"] + " " + self.infos["release"] + " "
         self.builder.get_object("headerbar").props.subtitle += self.infos["arch"]
+
+        # Load images
+        self.builder.get_object("google+").set_from_file(self.data_path + "img/google+.png")
+        self.builder.get_object("facebook").set_from_file(self.data_path + "img/facebook.png")
+        self.builder.get_object("twitter").set_from_file(self.data_path + "img/twitter.png")
+        self.builder.get_object("reddit").set_from_file(self.data_path + "img/reddit.png")
 
         # Set autostart switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
@@ -134,9 +144,9 @@ class ManjaroHello():
             return None
 
     def read_page(self, name):
-        filename = "pages/{}/{}".format(self.preferences["locale"], name)
+        filename = self.data_path + "pages/{}/{}".format(self.preferences["locale"], name)
         if not os.path.isfile(filename):
-            filename = "pages/{}/{}".format(self.default_locale, name)
+            filename = self.data_path + "pages/{}/{}".format(self.default_locale, name)
         try:
             with open(filename, "r") as f:
                 return f.read()
