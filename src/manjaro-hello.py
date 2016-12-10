@@ -187,7 +187,7 @@ class ManjaroHello():
             with open(filename, "r") as f:
                 return f.read()
         except OSError as e:
-            return None
+            return "Can't load page."
 
     # Handlers
     def on_languages_changed(self, combobox):
