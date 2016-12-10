@@ -17,6 +17,14 @@ class ManjaroHello():
         self.app = "manjaro-hello"
         self.default_locale = "en_US"
         self.sys_locale = locale.getdefaultlocale()[0]
+        self.welcome_urls = {
+            "wiki": "https://wiki.manjaro.org",
+            "forums": "https://forum.manjaro.org",
+            "chat": "https://kiwiirc.com/client/irc.freenode.net/?nick=manjaro-web|?#manjaro",
+            "mailling": "https://lists.manjaro.org/cgi-bin/mailman/listinfo",
+            "build": "https://github.com/manjaro",
+            "donate": "https://manjaro.org/donate"
+        }
         self.social_urls = {
             "google+": "https://plus.google.com/118244873957924966264",
             "facebook": "https://www.facebook.com/ManjaroLinux",
@@ -147,7 +155,7 @@ class ManjaroHello():
         dialog.run()
         dialog.hide()
 
-    def on_welcome_btn_clicked(self, btn):
+    def on_action_btn_clicked(self, btn):
         name = btn.get_name()
         if name == "readmebtn":
             self.builder.get_object("stack").set_visible_child(self.builder.get_object("documentation"))
@@ -162,6 +170,9 @@ class ManjaroHello():
             subprocess.call(["sudo", "-E", "calamares"])
         elif name == "installcli":
             subprocess.call(["sudo cli-installer"])
+
+    def on_link_btn_clicked(self, btn):
+        webbrowser.open_new_tab(self.welcome_urls[btn.get_name()[:-3]])
 
     def on_social_pressed(self, eventbox, _):
         webbrowser.open_new_tab(self.social_urls[eventbox.get_name()])

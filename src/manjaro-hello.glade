@@ -179,7 +179,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_welcome_btn_clicked" swapped="no"/>
+                    <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -193,7 +193,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_welcome_btn_clicked" swapped="no"/>
+                    <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -201,13 +201,13 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLinkButton">
+                  <object class="GtkButton">
                     <property name="label" translatable="yes">Wiki</property>
+                    <property name="name">wikibtn</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="relief">none</property>
-                    <property name="uri">https://wiki.manjaro.org</property>
+                    <property name="receives_default">False</property>
+                    <signal name="clicked" handler="on_link_btn_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -221,7 +221,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_welcome_btn_clicked" swapped="no"/>
+                    <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">2</property>
@@ -229,13 +229,13 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLinkButton">
+                  <object class="GtkButton">
                     <property name="label" translatable="yes">Forums</property>
+                    <property name="name">forumsbtn</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="relief">none</property>
-                    <property name="uri">https://forum.manjaro.org</property>
+                    <signal name="clicked" handler="on_link_btn_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -243,13 +243,13 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLinkButton">
+                  <object class="GtkButton">
                     <property name="label" translatable="yes">Chat room</property>
+                    <property name="name">chatbtn</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="relief">none</property>
-                    <property name="uri">https://kiwiirc.com/client/irc.freenode.net/?nick=manjaro-web|?#manjaro</property>
+                    <signal name="clicked" handler="on_link_btn_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -257,13 +257,13 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLinkButton">
+                  <object class="GtkButton">
                     <property name="label" translatable="yes">Mailling lists</property>
+                    <property name="name">maillingbtn</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="relief">none</property>
-                    <property name="uri">https://lists.manjaro.org/cgi-bin/mailman/listinfo</property>
+                    <signal name="clicked" handler="on_link_btn_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -271,13 +271,13 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLinkButton">
+                  <object class="GtkButton">
                     <property name="label" translatable="yes">Build Manjaro</property>
+                    <property name="name">buildbtn</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="relief">none</property>
-                    <property name="uri">https://github.com/manjaro</property>
+                    <signal name="clicked" handler="on_link_btn_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">2</property>
@@ -285,13 +285,13 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLinkButton">
+                  <object class="GtkButton">
                     <property name="label" translatable="yes">Donate</property>
+                    <property name="name">donatebtn</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="relief">none</property>
-                    <property name="uri">https://manjaro.org/donate</property>
+                    <signal name="clicked" handler="on_link_btn_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">2</property>
@@ -443,7 +443,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                         <property name="name">installgui</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
-                        <signal name="clicked" handler="on_welcome_btn_clicked" swapped="no"/>
+                        <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">True</property>
@@ -457,7 +457,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                         <property name="name">installcli</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
-                        <signal name="clicked" handler="on_welcome_btn_clicked" swapped="no"/>
+                        <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">True</property>
@@ -706,5 +706,10 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
         </child>
       </object>
     </child>
+  </object>
+  <object class="GtkImage" id="inapp">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">document-new</property>
   </object>
 </interface>
