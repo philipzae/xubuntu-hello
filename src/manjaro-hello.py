@@ -79,17 +79,14 @@ class ManjaroHello():
         # Save locale used in config file
         self.save_preferences()
 
-
         # Set window subtitle
         if self.infos["codename"] and self.infos["release"]:
             self.builder.get_object("headerbar").props.subtitle = self.infos["codename"] + " " + self.infos["release"] + " "
         self.builder.get_object("headerbar").props.subtitle += self.infos["arch"]
 
         # Load images
-        self.builder.get_object("google+").set_from_file(self.data_path + "img/google+.png")
-        self.builder.get_object("facebook").set_from_file(self.data_path + "img/facebook.png")
-        self.builder.get_object("twitter").set_from_file(self.data_path + "img/twitter.png")
-        self.builder.get_object("reddit").set_from_file(self.data_path + "img/reddit.png")
+        for img in ("google+", "facebook", "twitter", "reddit"):
+            self.builder.get_object(img).set_from_file(self.data_path + "img/" + img + ".png")
 
         # Set autostart switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
