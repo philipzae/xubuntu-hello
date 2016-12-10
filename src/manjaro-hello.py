@@ -34,7 +34,7 @@ class ManjaroHello():
 
         # Path vars
         self.current_folder = os.getcwd() + "/"
-        if os.path.exists("/usr/share/" + self.app + "/data/"):
+        if os.path.exists("/usr/share/" + self.app):
             self.data_path = "/usr/share/" + self.app + "/data/"
             self.locale_path = "/usr/share/locale/"
         else:
