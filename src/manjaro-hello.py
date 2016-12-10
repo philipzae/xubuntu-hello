@@ -88,24 +88,20 @@ class ManjaroHello():
         for img in ("google+", "facebook", "twitter", "reddit"):
             self.builder.get_object(img).set_from_file(self.data_path + "img/" + img + ".png")
 
-        # Set autostart switcher state
-        self.builder.get_object("autostart").set_active(self.preferences["autostart"])
-
-        # Init pages
+        # Load pages
         for page in ("readme", "release", "involved"):
             self.builder.get_object(page + "text").set_markup(self.read_page(page))
 
+        # Set autostart switcher state
+        self.builder.get_object("autostart").set_active(self.preferences["autostart"])
+
         # Live systems
         if self.infos["live"]:
-            can_install = False
+            self.builder.get_object("installlabel").set_visible(True)
             if os.path.isfile("/usr/bin/calamares"):
                 self.builder.get_object("installgui").set_visible(True)
-                can_install = True
             if os.path.isfile("/usr/bin/cli-installer"):
                 self.builder.get_object("installcli").set_visible(True)
-                can_install = True
-            if can_install:
-                self.builder.get_object("installlabel").set_visible(True)
 
         self.window.show();
 
