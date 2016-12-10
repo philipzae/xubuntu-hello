@@ -47,11 +47,6 @@ class ManjaroHello():
 
         # Load preferences
         self.preferences = self.get_preferences()
-        if not self.preferences:
-            self.preferences = {
-                "autostart": os.path.isfile(self.autostart_path),
-                "locale": None
-            }
 
         # Load system infos
         self.infos = get_infos()
@@ -186,7 +181,10 @@ class ManjaroHello():
             with open(self.preferences_path, "r") as f:
                 return json.load(f)
         except OSError as e:
-            return None
+            return {
+                "autostart": os.path.isfile(self.autostart_path),
+                "locale": None
+            }
 
     def read_page(self, name):
         filename = self.data_path + "pages/{}/{}".format(self.preferences["locale"], name)
