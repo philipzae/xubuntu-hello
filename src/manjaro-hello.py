@@ -17,15 +17,13 @@ class ManjaroHello():
         self.app = "manjaro-hello"
         self.default_locale = "en_US"
         self.sys_locale = locale.getdefaultlocale()[0]
-        self.welcome_urls = {
+        self.urls = {
             "wiki": "https://wiki.manjaro.org",
             "forums": "https://forum.manjaro.org",
             "chat": "https://kiwiirc.com/client/irc.freenode.net/?nick=manjaro-web|?#manjaro",
             "mailling": "https://lists.manjaro.org/cgi-bin/mailman/listinfo",
             "build": "https://github.com/manjaro",
-            "donate": "https://manjaro.org/donate"
-        }
-        self.social_urls = {
+            "donate": "https://manjaro.org/donate",
             "google+": "https://plus.google.com/118244873957924966264",
             "facebook": "https://www.facebook.com/ManjaroLinux",
             "twitter": "https://twitter.com/ManjaroLinux",
@@ -115,23 +113,23 @@ class ManjaroHello():
         # Dirty code to fix an issue with gettext that can't translate text from glade interface
         # TODO: Find a better solution
         elts = {
+            "welcometitle": "label",
             "welcomelabel": "label",
-            "welcometext": "label",
-            "documentationtitle": "label",
             "readmelabel": "label",
             "releaselabel": "label",
             "involvedlabel": "label",
-            "supporttitle": "label",
-            "projecttitle": "label",
-            "readmebtn": "label",
-            "releasebtn": "label",
-            "wikibtn": "label",
-            "involvedbtn": "label",
-            "forumsbtn": "label",
-            "chatbtn": "label",
-            "maillingbtn": "label",
-            "buildbtn": "label",
-            "donatebtn": "label",
+            "firstcategory": "label",
+            "secondcategory": "label",
+            "thirdcategory": "label",
+            "readme": "label",
+            "release": "label",
+            "wiki": "label",
+            "involved": "label",
+            "forums": "label",
+            "chat": "label",
+            "mailling": "label",
+            "build": "label",
+            "donate": "label",
             "installlabel": "label",
             "installgui": "label",
             "installcli": "label",
@@ -203,13 +201,13 @@ class ManjaroHello():
 
     def on_action_btn_clicked(self, btn):
         name = btn.get_name()
-        if name == "readmebtn":
+        if name == "readme":
             self.builder.get_object("stack").set_visible_child(self.builder.get_object("documentation"))
             self.builder.get_object("documentation").set_current_page(0)
-        elif name == "releasebtn":
+        elif name == "release":
             self.builder.get_object("stack").set_visible_child(self.builder.get_object("documentation"))
             self.builder.get_object("documentation").set_current_page(1)
-        elif name == "involvedbtn":
+        elif name == "involved":
             self.builder.get_object("stack").set_visible_child(self.builder.get_object("project"))
             self.builder.get_object("project").set_current_page(0)
         elif name == "installgui":
@@ -217,11 +215,8 @@ class ManjaroHello():
         elif name == "installcli":
             subprocess.call(["sudo cli-installer"])
 
-    def on_link_btn_clicked(self, btn):
-        webbrowser.open_new_tab(self.welcome_urls[btn.get_name()[:-3]])
-
-    def on_social_pressed(self, eventbox, _):
-        webbrowser.open_new_tab(self.social_urls[eventbox.get_name()])
+    def on_link_clicked(self, link, _=None):
+        webbrowser.open_new_tab(self.urls[link.get_name()])
 
     def on_autostart_switched(self, switch, _):
         autostart = True if switch.get_active() else False
