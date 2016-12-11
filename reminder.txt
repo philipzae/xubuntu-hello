@@ -1,2 +1,0 @@
-Generate main translation file:
-    xgettext -k_ -kN_ -L Glade -o manjaro-hello.pot *.glade

@@ -9,7 +9,7 @@ import subprocess
 import sys
 import webbrowser
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk
+from gi.repository import Gtk, GdkPixbuf
 
 class ManjaroHello():
     def __init__(self):
@@ -35,13 +35,18 @@ class ManjaroHello():
         if self.current_folder == "/usr/bin/":
             self.data_path = "/usr/share/" + self.app + "/data/"
             self.locale_path = "/usr/share/locale/"
+            self.ui_path = "/usr/share/" + self.app + "/ui/"
+            self.desktop_path = "/usr/share/applications/" + self.app + ".desktop"
         else:
-            self.data_path = self.current_folder + "data/"
+            self.data_path = "../data/"
             self.locale_path = "locale/"
+            self.ui_path = "../ui/"
+            self.desktop_path = self.current_folder[:-4] + self.app + ".desktop"
+
         self.config_path = os.path.expanduser("~") + "/.config/"
         self.preferences_path = self.config_path + self.app + ".json"
-        self.desktop_path = self.current_folder + self.app + ".desktop"
         self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
+        self.logo_path = self.data_path + "img/manjaro-hello.png"
 
         # Load preferences
         self.preferences = self.get_preferences()
@@ -51,9 +56,14 @@ class ManjaroHello():
 
         # Init window
         self.builder = Gtk.Builder()
-        self.builder.add_from_file("manjaro-hello.glade")
+        self.builder.add_from_file(self.ui_path + "manjaro-hello.glade")
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
+
+        # Load logos
+        self.window.set_icon_from_file(self.logo_path)
+        self.builder.get_object("manjaroicon").set_from_file(self.logo_path)
+        self.builder.get_object("aboutdialog").set_logo(GdkPixbuf.Pixbuf.new_from_file(self.logo_path))
 
         # Init translation
         self.default_locale = "en_US"

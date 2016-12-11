@@ -6,7 +6,6 @@
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">About</property>
     <property name="modal">True</property>
-    <property name="icon">manjaro-hello.png</property>
     <property name="type_hint">dialog</property>
     <property name="program_name">Manjaro Hello</property>
     <property name="version">git</property>
@@ -14,7 +13,7 @@
     <property name="website">https://github.com/Huluti/manjaro-hello</property>
     <property name="website_label" translatable="yes">Github</property>
     <property name="authors">Hugo Posnic</property>
-    <property name="logo">manjaro-hello.png</property>
+    <property name="logo_icon_name"/>
     <property name="license_type">gpl-3-0</property>
     <child internal-child="vbox">
       <object class="GtkBox">
@@ -55,7 +54,6 @@
     <property name="width_request">800</property>
     <property name="can_focus">False</property>
     <property name="window_position">center</property>
-    <property name="icon">manjaro-hello.png</property>
     <property name="has_resize_grip">True</property>
     <signal name="delete-event" handler="on_delete_window" swapped="no"/>
     <child>
@@ -89,10 +87,9 @@
                 <property name="row_spacing">20</property>
                 <property name="column_spacing">10</property>
                 <child>
-                  <object class="GtkImage">
+                  <object class="GtkImage" id="manjaroicon">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="pixbuf">manjaro-hello.png</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
