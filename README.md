@@ -17,7 +17,7 @@ For all this reasons, I have choosen to build a new software from scratch but ke
 
 Currently, manjaro-hello has all the major features of manjaro-welcome but have a translation system.
 - Interface is translated using gettext and po files. (src/locale)
-- Pages are translated using differents files. (src/pages)
+- Pages are translated using differents files. (data/pages)
 
 ## What goals ?
 
@@ -34,8 +34,6 @@ Manjaro-hello is build with Python, Gtk3 and Glade.
 For the moment, even if the soft works, it is not finished.
 - We have to test it and fix bugs.
 - Make translations to distribute it in all the world.
-- Improve the way to render pages (use a Markdown-like system ?).
-- Improve the look (manjaro-welcome is very great-looking).
 
 ## Manjaro forum discussion
 
