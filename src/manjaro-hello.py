@@ -15,8 +15,6 @@ class ManjaroHello():
     def __init__(self):
         # App vars
         self.app = "manjaro-hello"
-        self.default_locale = "en_US"
-        self.sys_locale = locale.getdefaultlocale()[0]
         self.urls = {
             "wiki": "https://wiki.manjaro.org",
             "forums": "https://forum.manjaro.org",
@@ -56,6 +54,8 @@ class ManjaroHello():
         self.window = self.builder.get_object("window")
 
         # Init translation
+        self.default_locale = "en_US"
+        self.sys_locale = locale.getdefaultlocale()[0]
         self.default_texts = {}
         locales = os.listdir(self.locale_path)
         locales.append(self.default_locale)
