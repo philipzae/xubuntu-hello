@@ -14,6 +14,8 @@ from gi.repository import Gtk
 class ManjaroHello():
     def __init__(self):
         # App vars
+        args = str(sys.argv)
+        self.menu = True if "--menu" in args else False
         self.app = "manjaro-hello"
         self.urls = {
             "wiki": "https://wiki.manjaro.org",
@@ -76,6 +78,11 @@ class ManjaroHello():
 
         # Save locale used in config file
         self.save_preferences()
+
+        # Set menu
+        if self.menu:
+            self.builder.get_object("sidebar").set_visible(True)
+            self.builder.get_object("home").set_visible(False)
 
         # Set window subtitle
         if self.infos["codename"] and self.infos["release"]:
@@ -201,7 +208,9 @@ class ManjaroHello():
 
     def on_action_btn_clicked(self, btn):
         name = btn.get_name()
-        if name == "readme":
+        if name == "home":
+            self.builder.get_object("stack").set_visible_child(self.builder.get_object("welcome"))
+        elif name == "readme":
             self.builder.get_object("stack").set_visible_child(self.builder.get_object("documentation"))
             self.builder.get_object("documentation").set_current_page(0)
         elif name == "release":

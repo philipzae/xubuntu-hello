@@ -41,6 +41,11 @@
       <placeholder/>
     </child>
   </object>
+  <object class="GtkImage" id="homeicon">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">go-home</property>
+  </object>
   <object class="GtkImage" id="iconabout">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
@@ -59,7 +64,6 @@
         <property name="can_focus">False</property>
         <child>
           <object class="GtkStackSidebar" id="sidebar">
-            <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="vexpand">True</property>
             <property name="stack">stack</property>
@@ -675,6 +679,16 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
         <property name="title">Manjaro Hello</property>
         <property name="show_close_button">True</property>
         <child>
+          <object class="GtkButton" id="home">
+            <property name="name">home</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">homeicon</property>
+            <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
+          </object>
+        </child>
+        <child>
           <object class="GtkComboBoxText" id="languages">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
@@ -684,7 +698,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </items>
           </object>
           <packing>
-            <property name="position">1</property>
+            <property name="position">2</property>
           </packing>
         </child>
         <child>
