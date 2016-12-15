@@ -5,5 +5,5 @@ Categories=GNOME;GTK;System;
 StartupNotify=false
 Name=Manjaro Hello
 Exec=/usr/bin/manjaro-hello.py
-Icon=/usr/share/manjaro-hello/data/img/manjaro-hello.png
+Icon=/usr/share/icons/manjaro.png
 Comment=The Manjaro Hello utility.

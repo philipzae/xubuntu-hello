@@ -46,7 +46,7 @@ class ManjaroHello():
         self.config_path = os.path.expanduser("~") + "/.config/"
         self.preferences_path = self.config_path + self.app + ".json"
         self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
-        self.logo_path = self.data_path + "img/manjaro-hello.png"
+        self.logo_path = "/usr/share/icons/manjaro.png"
 
         # Load preferences
         self.preferences = self.get_preferences()
@@ -61,9 +61,10 @@ class ManjaroHello():
         self.window = self.builder.get_object("window")
 
         # Load logos
+        logo = GdkPixbuf.Pixbuf.new_from_file_at_scale(self.logo_path, 75, 75, False)
         self.window.set_icon_from_file(self.logo_path)
-        self.builder.get_object("manjaroicon").set_from_file(self.logo_path)
-        self.builder.get_object("aboutdialog").set_logo(GdkPixbuf.Pixbuf.new_from_file(self.logo_path))
+        self.builder.get_object("manjaroicon").set_from_pixbuf(logo)
+        self.builder.get_object("aboutdialog").set_logo(logo)
 
         # Init translation
         self.default_locale = "en_US"
