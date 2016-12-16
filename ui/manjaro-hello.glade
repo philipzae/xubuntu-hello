@@ -434,8 +434,8 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                         <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
                       </object>
                       <packing>
-                        <property name="expand">True</property>
-                        <property name="fill">True</property>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -448,8 +448,8 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                         <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
                       </object>
                       <packing>
-                        <property name="expand">True</property>
-                        <property name="fill">True</property>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
