@@ -15,7 +15,7 @@ Manjaro-hello is widely inspired by [manjaro-welcome](https://github.com/manjaro
 
 For all this reasons, I have choosen to build a new software from scratch but keeping the original structure.
 
-Currently, manjaro-hello has all the major features of manjaro-welcome but have a translation system.
+Currently, manjaro-hello has all the major features of manjaro-welcome plus a translation system.
 - Interface is translated using gettext and po files. (src/locale)
 - Pages are translated using differents files. (data/pages)
 
@@ -37,6 +37,6 @@ For the moment, even if the soft works, it is not finished.
 
 ## Manjaro forum discussion
 
-[Start work on a new welcome screen: manjaro-hello](https://forum.manjaro.org/t/start-work-on-a-new-welcome-screen-for-manjaro/13685/6)
+[Start work on a new welcome screen: manjaro-hello](https://forum.manjaro.org/t/start-work-on-a-new-welcome-screen-for-manjaro/13685)
 
 Let's make a wonderful software !
