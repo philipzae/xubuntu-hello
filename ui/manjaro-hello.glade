@@ -572,8 +572,8 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
         <property name="title">Manjaro Hello</property>
         <property name="show_close_button">True</property>
         <child>
-          <object class="GtkButton" id="home">
-            <property name="name">home</property>
+          <object class="GtkButton" id="welcome">
+            <property name="name">welcome</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>

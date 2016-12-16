@@ -203,14 +203,8 @@ class ManjaroHello():
 
     def on_action_btn_clicked(self, btn):
         name = btn.get_name()
-        if name == "home":
-            self.builder.get_object("stack").set_visible_child(self.builder.get_object("welcomepage"))
-        elif name == "readme":
-            self.builder.get_object("stack").set_visible_child(self.builder.get_object("readmepage"))
-        elif name == "release":
-            self.builder.get_object("stack").set_visible_child(self.builder.get_object("releasepage"))
-        elif name == "involved":
-            self.builder.get_object("stack").set_visible_child(self.builder.get_object("involvedpage"))
+        if name in ("welcome", "readme", "release", "involved"):
+            self.builder.get_object("stack").set_visible_child(self.builder.get_object(name + "page"))
         elif name == "installgui":
             subprocess.call(["sudo", "-E", "calamares"])
         elif name == "installcli":
