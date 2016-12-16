@@ -99,7 +99,7 @@ class ManjaroHello():
 
         # Load pages
         for page in ("readme", "release", "involved"):
-            self.builder.get_object(page + "text").set_markup(self.read_page(page))
+            self.builder.get_object(page + "label").set_markup(self.read_page(page))
 
         # Set autostart switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
@@ -125,10 +125,6 @@ class ManjaroHello():
         # TODO: Find a better solution
         elts = {
             "welcometitle": "label",
-            "welcomelabel": "label",
-            "readmelabel": "label",
-            "releaselabel": "label",
-            "involvedlabel": "label",
             "firstcategory": "label",
             "secondcategory": "label",
             "thirdcategory": "label",
@@ -151,11 +147,6 @@ class ManjaroHello():
             if elt not in self.default_texts:
                 self.default_texts[elt] = getattr(self.builder.get_object(elt), "get_" + elts[elt])()
             getattr(self.builder.get_object(elt), "set_" + elts[elt])(_(self.default_texts[elt]))
-
-        for stack in ("welcome", "documentation", "project"):
-            if stack not in self.default_texts:
-                self.default_texts[stack] = self.builder.get_object("stack").child_get_property(self.builder.get_object(stack), "title")
-            self.builder.get_object("stack").child_set_property(self.builder.get_object(stack), "title", _(self.default_texts[stack]))
 
     def change_autostart(self, state):
         if state and not os.path.isfile(self.autostart_path):
@@ -213,16 +204,13 @@ class ManjaroHello():
     def on_action_btn_clicked(self, btn):
         name = btn.get_name()
         if name == "home":
-            self.builder.get_object("stack").set_visible_child(self.builder.get_object("welcome"))
+            self.builder.get_object("stack").set_visible_child(self.builder.get_object("welcomepage"))
         elif name == "readme":
-            self.builder.get_object("stack").set_visible_child(self.builder.get_object("documentation"))
-            self.builder.get_object("documentation").set_current_page(0)
+            self.builder.get_object("stack").set_visible_child(self.builder.get_object("readmepage"))
         elif name == "release":
-            self.builder.get_object("stack").set_visible_child(self.builder.get_object("documentation"))
-            self.builder.get_object("documentation").set_current_page(1)
+            self.builder.get_object("stack").set_visible_child(self.builder.get_object("releasepage"))
         elif name == "involved":
-            self.builder.get_object("stack").set_visible_child(self.builder.get_object("project"))
-            self.builder.get_object("project").set_current_page(0)
+            self.builder.get_object("stack").set_visible_child(self.builder.get_object("involvedpage"))
         elif name == "installgui":
             subprocess.call(["sudo", "-E", "calamares"])
         elif name == "installcli":
