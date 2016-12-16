@@ -14,8 +14,6 @@ from gi.repository import Gtk, GdkPixbuf
 class ManjaroHello():
     def __init__(self):
         # App vars
-        args = str(sys.argv)
-        self.menu = True if "--menu" in args else False
         self.app = "manjaro-hello"
         self.urls = {
             "wiki": "https://wiki.manjaro.org",
@@ -89,11 +87,6 @@ class ManjaroHello():
 
         # Save locale used in config file
         self.save_preferences()
-
-        # Set menu
-        if self.menu:
-            self.builder.get_object("sidebar").set_visible(True)
-            self.builder.get_object("home").set_visible(False)
 
         # Set window subtitle
         if self.infos["codename"] and self.infos["release"]:
