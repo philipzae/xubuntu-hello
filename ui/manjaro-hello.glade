@@ -76,6 +76,7 @@
                 <property name="margin_bottom">10</property>
                 <property name="row_spacing">20</property>
                 <property name="column_spacing">10</property>
+                <property name="column_homogeneous">True</property>
                 <child>
                   <object class="GtkImage" id="manjaroicon">
                     <property name="visible">True</property>
