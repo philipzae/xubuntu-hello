@@ -97,10 +97,6 @@ class ManjaroHello():
         for img in ("google+", "facebook", "twitter", "reddit"):
             self.builder.get_object(img).set_from_file(self.data_path + "img/" + img + ".png")
 
-        # Load pages
-        for page in ("readme", "release", "involved"):
-            self.builder.get_object(page + "label").set_markup(self.read_page(page))
-
         # Set autostart switcher state
         self.builder.get_object("autostart").set_active(self.preferences["autostart"])
 
@@ -147,6 +143,10 @@ class ManjaroHello():
             if elt not in self.default_texts:
                 self.default_texts[elt] = getattr(self.builder.get_object(elt), "get_" + elts[elt])()
             getattr(self.builder.get_object(elt), "set_" + elts[elt])(_(self.default_texts[elt]))
+
+        # Load pages
+        for page in ("readme", "release", "involved"):
+            self.builder.get_object(page + "label").set_markup(self.read_page(page))
 
     def change_autostart(self, state):
         if state and not os.path.isfile(self.autostart_path):
