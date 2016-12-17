@@ -70,6 +70,7 @@ class ManjaroHello():
         self.default_texts = {}
         locales = os.listdir(self.locale_path)
         locales.append(self.default_locale)
+        # Choose best locale for user
         if self.preferences["locale"] not in locales:
             if self.sys_locale in locales:
                 self.preferences["locale"] = self.sys_locale
@@ -88,7 +89,7 @@ class ManjaroHello():
         gettext.textdomain(self.app)
         self.set_locale(self.preferences["locale"])
 
-        # Save locale used in config file
+        # Save used locale in config file
         self.save_preferences()
 
         # Set window subtitle
@@ -114,13 +115,15 @@ class ManjaroHello():
         self.window.show();
 
     def set_locale(self, locale):
+        """Set locale of ui and pages."""
         if self.preferences["locale"] != self.default_locale:
             tr = gettext.translation(self.app, self.locale_path, [locale])
             tr.install()
         else:
             gettext.install(self.app)
 
-        # Dirty code to fix an issue with gettext that can't translate text from glade interface
+        # Dirty code to fix an issue with gettext that can't translate strings from glade files
+        # Redfining all translatables strings
         # TODO: Find a better solution
         elts = {
             "welcometitle": "label",
@@ -153,6 +156,7 @@ class ManjaroHello():
             self.builder.get_object(page + "label").set_markup(self.read_page(page))
 
     def change_autostart(self, autostart):
+        """Set state of autostart."""
         try:
             if autostart and not os.path.isfile(self.autostart_path):
                 os.symlink(self.desktop_path, self.autostart_path)
@@ -164,6 +168,7 @@ class ManjaroHello():
         self.save_preferences()
 
     def save_preferences(self):
+        """Save preferences in config file."""
         try:
             with open(self.preferences_path, "w") as f:
                 json.dump(self.preferences, f)
@@ -171,6 +176,7 @@ class ManjaroHello():
             print(e)
 
     def get_preferences(self):
+        """Read preferences from config file."""
         try:
             with open(self.preferences_path, "r") as f:
                 return json.load(f)
@@ -181,6 +187,7 @@ class ManjaroHello():
             }
 
     def read_page(self, name):
+        """Read page according to language."""
         filename = self.data_path + "pages/{}/{}".format(self.preferences["locale"], name)
         if not os.path.isfile(filename):
             filename = self.data_path + "pages/{}/{}".format(self.default_locale, name)
@@ -192,11 +199,13 @@ class ManjaroHello():
 
     # Handlers
     def on_languages_changed(self, combobox):
+        """Event for selected language."""
         self.preferences["locale"] = combobox.get_active_id()
         self.set_locale(self.preferences["locale"])
         self.save_preferences()
 
     def on_action_clicked(self, action, _=None):
+        """Event for differents actions."""
         name = action.get_name()
         if name in ("welcome", "readme", "release", "involved"):
             self.builder.get_object("stack").set_visible_child(self.builder.get_object(name + "page"))
@@ -214,12 +223,15 @@ class ManjaroHello():
             dialog.hide()
 
     def on_link_clicked(self, link, _=None):
+        """Event for clicked link."""
         webbrowser.open_new_tab(self.urls[link.get_name()])
 
     def on_delete_window(self, *args):
+        """Event to quit app."""
         Gtk.main_quit(*args)
 
 def get_infos():
+    """Get informations on user's system."""
     lsb = get_lsb_infos()
     infos = {}
     infos["codename"] = lsb.get("CODENAME", None)
@@ -229,6 +241,7 @@ def get_infos():
     return infos
 
 def get_lsb_infos():
+    """Read informations from the lsb-release file."""
     lsb = {}
     try:
         with open("/etc/lsb-release") as lsb_file:
