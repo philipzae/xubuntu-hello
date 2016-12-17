@@ -529,7 +529,6 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               </object>
               <packing>
                 <property name="name">page2</property>
-                <property name="title" translatable="yes">page2</property>
                 <property name="position">2</property>
               </packing>
             </child>
@@ -553,7 +552,6 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               </object>
               <packing>
                 <property name="name">page3</property>
-                <property name="title" translatable="yes">page3</property>
                 <property name="position">3</property>
               </packing>
             </child>
