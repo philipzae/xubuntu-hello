@@ -218,7 +218,7 @@ class ManjaroHello():
         Gtk.main_quit(*args)
 
 def get_infos():
-    lsb = get_lsb_information()
+    lsb = get_lsb_infos()
     infos = {}
     infos["codename"] = lsb.get("CODENAME", None)
     infos["release"] = lsb.get("RELEASE", None)
@@ -226,7 +226,7 @@ def get_infos():
     infos["live"] = os.path.exists("/bootmnt/manjaro") or os.path.exists("/run/miso/bootmnt/manjaro")
     return infos
 
-def get_lsb_information():
+def get_lsb_infos():
     lsb = {}
     try:
         with open("/etc/lsb-release") as lsb_file:
