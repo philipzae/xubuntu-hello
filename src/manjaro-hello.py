@@ -218,9 +218,7 @@ class ManjaroHello():
     def on_action_clicked(self, action, _=None):
         """Event for differents actions."""
         name = action.get_name()
-        if name in ("welcome", "readme", "release", "involved"):
-            self.builder.get_object("stack").set_visible_child(self.builder.get_object(name + "page"))
-        elif name == "installgui":
+        if name == "installgui":
             subprocess.call(["sudo", "-E", "calamares"])
         elif name == "installcli":
             subprocess.call(["sudo cli-installer"])
@@ -232,6 +230,10 @@ class ManjaroHello():
             dialog.set_transient_for(self.window)
             dialog.run()
             dialog.hide()
+
+    def on_btn_clicked(self, btn):
+        """Event for clicked button."""
+        self.builder.get_object("stack").set_visible_child(self.builder.get_object(btn.get_name() + "page"))
 
     def on_link_clicked(self, link, _=None):
         """Event for clicked link."""
