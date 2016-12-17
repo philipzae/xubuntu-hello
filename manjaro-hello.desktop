@@ -6,4 +6,4 @@ StartupNotify=false
 Name=Manjaro Hello
 Exec=/usr/bin/manjaro-hello.py
 Icon=/usr/share/icons/manjaro.png
-Comment=The Manjaro Hello utility.
+Comment=Manjaro Hello is a tool that helps the new user of Manjaro in the discovery of the system.

@@ -31,9 +31,9 @@ class ManjaroHello():
         # Path vars
         self.current_folder = os.getcwd() + "/"
         if self.current_folder == "/usr/bin/":
-            self.data_path = "/usr/share/" + self.app + "/data/"
+            self.data_path = "/usr/share/" + self.app + "/"
             self.locale_path = "/usr/share/locale/"
-            self.ui_path = "/usr/share/" + self.app + "/ui/"
+            self.ui_path = "/usr/share/" + self.app + "/"
             self.desktop_path = "/usr/share/applications/" + self.app + ".desktop"
         else:
             self.data_path = "../data/"

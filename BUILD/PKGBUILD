@@ -1,0 +1,30 @@
+pkgname=manjaro-hello
+pkgver=1.0
+pkgrel=1
+pkgdesc="Manjaro Hello is a tool that helps the new user of Manjaro in the discovery of the system."
+url="https://github.com/Huluti/$_pkgname"
+arch=('any')
+license=('GPL')
+depends=('gtk3' 'python3')
+makedepends=('git')
+source=("$_pkgname::git+https://github.com/Huluti/$_pkgname")
+md5sums=('SKIP')
+
+package() {
+    cd "$srcdir/$_pkgname"
+    mkdir -p "${pkgdir}/usr/share/${_pkgname}"
+    cp -a data/* "${pkgdir}/usr/share/${_pkgname}"
+    cp -a ui/* "${pkgdir}/usr/share/${_pkgname}"
+    install -D -m644 ${_pkgname}.desktop ${pkgdir}/etc/skel/.config/autostart/${_pkgname}.desktop
+    install -D -m644 ${_pkgname}.desktop ${pkgdir}/usr/share/applications/${_pkgname}.desktop
+    install -D -m755 "src/${_pkgname}.py" "${pkgdir}/usr/bin/${_pkgname}.py"
+    cd "po"
+    for lang in $(ls -1 | sed -e 's/\..*$//')
+    do
+        if [ $lang != "manjaro-hello" ]
+        then
+            mkdir -p $pkgdir/usr/share/locale/$lang/LC_MESSAGES
+            msgfmt -c -o "$pkgdir/usr/share/locale/$lg/LC_MESSAGES/$pkgname.mo" $lang.po
+        fi
+    done
+}
