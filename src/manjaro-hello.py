@@ -192,12 +192,6 @@ class ManjaroHello():
         self.set_locale(self.preferences["locale"])
         self.save_preferences()
 
-    def on_about_clicked(self, btn):
-        dialog = self.builder.get_object("aboutdialog")
-        dialog.set_transient_for(self.window)
-        dialog.run()
-        dialog.hide()
-
     def on_action_btn_clicked(self, btn):
         name = btn.get_name()
         if name in ("welcome", "readme", "release", "involved"):
@@ -206,6 +200,11 @@ class ManjaroHello():
             subprocess.call(["sudo", "-E", "calamares"])
         elif name == "installcli":
             subprocess.call(["sudo cli-installer"])
+        elif name == "about":
+            dialog = self.builder.get_object("aboutdialog")
+            dialog.set_transient_for(self.window)
+            dialog.run()
+            dialog.hide()
 
     def on_link_clicked(self, link, _=None):
         webbrowser.open_new_tab(self.urls[link.get_name()])
