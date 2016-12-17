@@ -115,7 +115,10 @@ class ManjaroHello():
         self.window.show();
 
     def set_locale(self, locale):
-        """Set locale of ui and pages."""
+        """Set locale of ui and pages.
+        :param locale: locale to use
+        :type locale: str
+        """
         if self.preferences["locale"] != self.default_locale:
             tr = gettext.translation(self.app, self.locale_path, [locale])
             tr.install()
@@ -156,7 +159,10 @@ class ManjaroHello():
             self.builder.get_object(page + "label").set_markup(self.read_page(page))
 
     def change_autostart(self, autostart):
-        """Set state of autostart."""
+        """Set state of autostart.
+        :param autostart: wanted autostart state
+        :type autostart: bool
+        """
         try:
             if autostart and not os.path.isfile(self.autostart_path):
                 os.symlink(self.desktop_path, self.autostart_path)
@@ -187,7 +193,12 @@ class ManjaroHello():
             }
 
     def read_page(self, name):
-        """Read page according to language."""
+        """Read page according to language.
+        :param name: name of page (filename)
+        :type name: str
+        :return: text to load
+        :rtype: str
+        """
         filename = self.data_path + "pages/{}/{}".format(self.preferences["locale"], name)
         if not os.path.isfile(filename):
             filename = self.data_path + "pages/{}/{}".format(self.default_locale, name)
@@ -231,7 +242,10 @@ class ManjaroHello():
         Gtk.main_quit(*args)
 
 def get_infos():
-    """Get informations on user's system."""
+    """Get informations about user's system.
+    :return: informations about user's system
+    :rtype: dict
+    """
     lsb = get_lsb_infos()
     infos = {}
     infos["codename"] = lsb.get("CODENAME", None)
@@ -241,7 +255,10 @@ def get_infos():
     return infos
 
 def get_lsb_infos():
-    """Read informations from the lsb-release file."""
+    """Read informations from the lsb-release file.
+    :return: args from lsb-release file
+    :rtype: dict
+    """
     lsb = {}
     try:
         with open("/etc/lsb-release") as lsb_file:
