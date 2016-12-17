@@ -148,18 +148,15 @@ class ManjaroHello():
         for page in ("readme", "release", "involved"):
             self.builder.get_object(page + "label").set_markup(self.read_page(page))
 
-    def change_autostart(self, state):
-        if state and not os.path.isfile(self.autostart_path):
-            try:
+    def change_autostart(self, autostart):
+        try:
+            if autostart and not os.path.isfile(self.autostart_path):
                 os.symlink(self.desktop_path, self.autostart_path)
-            except OSError as e:
-                print(e)
-        elif not state and os.path.isfile(self.autostart_path):
-            try:
+            elif not autostart and os.path.isfile(self.autostart_path):
                 os.unlink(self.autostart_path)
-            except OSError as e:
-                print(e)
-        self.preferences["autostart"] = state
+        except OSError as e:
+            print(e)
+        self.preferences["autostart"] = autostart
         self.save_preferences()
 
     def save_preferences(self):
