@@ -585,8 +585,8 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <items>
-              <item id="en_US">English (United States)</item>
-              <item id="fr_FR">Français (France)</item>
+              <item id="en">English (United States)</item>
+              <item id="fr">Français (France)</item>
             </items>
           </object>
           <packing>
