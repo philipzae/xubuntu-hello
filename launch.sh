@@ -11,5 +11,5 @@ for lang in $(ls -1 | sed -e 's/\..*$//'); do
         msgfmt -c -o ../locale/$lang/LC_MESSAGES/manjaro-hello.mo $lang.po
     fi
 done
-cd ../src
-python manjaro-hello.py
+cd ..
+python src/manjaro-hello.py
