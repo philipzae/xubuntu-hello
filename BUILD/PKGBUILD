@@ -17,7 +17,7 @@ package() {
     cp -a ui/* "${pkgdir}/usr/share/${_pkgname}"
     install -D -m644 ${_pkgname}.desktop ${pkgdir}/etc/skel/.config/autostart/${_pkgname}.desktop
     install -D -m644 ${_pkgname}.desktop ${pkgdir}/usr/share/applications/${_pkgname}.desktop
-    install -D -m755 "src/${_pkgname}.py" "${pkgdir}/usr/bin/${_pkgname}.py"
+    install -D -m755 "src/manjaro_hello.py" "${pkgdir}/usr/bin/manjaro_hello.py"
     cd "po"
     for lang in $(ls -1 | sed -e 's/\..*$//'); do
         if [ $lang != "manjaro-hello" ]

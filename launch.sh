@@ -12,4 +12,4 @@ for lang in $(ls -1 | sed -e 's/\..*$//'); do
     fi
 done
 cd ..
-python src/manjaro-hello.py
+python src/manjaro_hello.py
