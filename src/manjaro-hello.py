@@ -121,6 +121,7 @@ class ManjaroHello():
         # TODO: Find a better solution
         elts = {
             "welcometitle": "label",
+            "welcomelabel": "label",
             "firstcategory": "label",
             "secondcategory": "label",
             "thirdcategory": "label",
