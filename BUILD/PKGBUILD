@@ -19,8 +19,7 @@ package() {
     install -D -m644 ${_pkgname}.desktop ${pkgdir}/usr/share/applications/${_pkgname}.desktop
     install -D -m755 "src/${_pkgname}.py" "${pkgdir}/usr/bin/${_pkgname}.py"
     cd "po"
-    for lang in $(ls -1 | sed -e 's/\..*$//')
-    do
+    for lang in $(ls -1 | sed -e 's/\..*$//'); do
         if [ $lang != "manjaro-hello" ]
         then
             mkdir -p $pkgdir/usr/share/locale/$lang/LC_MESSAGES
