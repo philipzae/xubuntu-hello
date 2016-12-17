@@ -171,7 +171,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
+                    <signal name="clicked" handler="on_action_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -185,7 +185,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
+                    <signal name="clicked" handler="on_action_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -213,7 +213,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
+                    <signal name="clicked" handler="on_action_clicked" swapped="no"/>
                   </object>
                   <packing>
                     <property name="left_attach">2</property>
@@ -400,10 +400,11 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     </child>
                     <child>
                       <object class="GtkSwitch" id="autostart">
+                        <property name="name">autostart</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="halign">end</property>
-                        <signal name="notify::active" handler="on_autostart_switched" swapped="no"/>
+                        <signal name="notify::active" handler="on_action_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -431,7 +432,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                         <property name="name">installgui</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
-                        <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
+                        <signal name="clicked" handler="on_action_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -445,7 +446,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                         <property name="name">installcli</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
-                        <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
+                        <signal name="clicked" handler="on_action_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -576,7 +577,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
             <property name="image">homeicon</property>
-            <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
+            <signal name="clicked" handler="on_action_clicked" swapped="no"/>
           </object>
         </child>
         <child>
@@ -599,7 +600,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
             <property name="image">iconabout</property>
-            <signal name="clicked" handler="on_action_btn_clicked" swapped="no"/>
+            <signal name="clicked" handler="on_action_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="pack_type">end</property>

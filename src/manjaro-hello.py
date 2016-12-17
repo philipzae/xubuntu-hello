@@ -192,14 +192,17 @@ class ManjaroHello():
         self.set_locale(self.preferences["locale"])
         self.save_preferences()
 
-    def on_action_btn_clicked(self, btn):
-        name = btn.get_name()
+    def on_action_clicked(self, action, _=None):
+        name = action.get_name()
         if name in ("welcome", "readme", "release", "involved"):
             self.builder.get_object("stack").set_visible_child(self.builder.get_object(name + "page"))
         elif name == "installgui":
             subprocess.call(["sudo", "-E", "calamares"])
         elif name == "installcli":
             subprocess.call(["sudo cli-installer"])
+        elif name == "autostart":
+            autostart = True if action.get_active() else False
+            self.change_autostart(autostart)
         elif name == "about":
             dialog = self.builder.get_object("aboutdialog")
             dialog.set_transient_for(self.window)
@@ -208,10 +211,6 @@ class ManjaroHello():
 
     def on_link_clicked(self, link, _=None):
         webbrowser.open_new_tab(self.urls[link.get_name()])
-
-    def on_autostart_switched(self, switch, _):
-        autostart = True if switch.get_active() else False
-        self.change_autostart(autostart)
 
     def on_delete_window(self, *args):
         Gtk.main_quit(*args)
