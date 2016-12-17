@@ -15,18 +15,6 @@ class ManjaroHello():
     def __init__(self):
         # App vars
         self.app = "manjaro-hello"
-        self.urls = {
-            "wiki": "https://wiki.manjaro.org",
-            "forums": "https://forum.manjaro.org",
-            "chat": "https://kiwiirc.com/client/irc.freenode.net/?nick=manjaro-web|?#manjaro",
-            "mailling": "https://lists.manjaro.org/cgi-bin/mailman/listinfo",
-            "build": "https://github.com/manjaro",
-            "donate": "https://manjaro.org/donate",
-            "google+": "https://plus.google.com/118244873957924966264",
-            "facebook": "https://www.facebook.com/ManjaroLinux",
-            "twitter": "https://twitter.com/ManjaroLinux",
-            "reddit": "https://www.reddit.com/r/ManjaroLinux"
-        }
 
         # Path vars
         self.current_folder = os.getcwd() + "/"
@@ -43,6 +31,7 @@ class ManjaroHello():
 
         self.config_path = os.path.expanduser("~") + "/.config/"
         self.preferences_path = self.config_path + self.app + ".json"
+        self.urls_path = self.data_path + "urls.json"
         self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
         self.logo_path = "/usr/share/icons/manjaro.png"
 
@@ -51,6 +40,9 @@ class ManjaroHello():
 
         # Load system infos
         self.infos = get_infos()
+
+        # Load data files
+        self.urls = read_json(self.urls_path)
 
         # Init window
         self.builder = Gtk.Builder()
@@ -183,14 +175,13 @@ class ManjaroHello():
 
     def get_preferences(self):
         """Read preferences from config file."""
-        try:
-            with open(self.preferences_path, "r") as f:
-                return json.load(f)
-        except OSError as e:
-            return {
+        preferences = read_json(self.preferences_path)
+        if not preferences:
+            preferences = {
                 "autostart": os.path.isfile(self.autostart_path),
                 "locale": None
             }
+        return preferences
 
     def read_page(self, name):
         """Read page according to language.
@@ -276,6 +267,13 @@ def get_lsb_infos():
     except OSError as e:
         print(e)
     return lsb
+
+def read_json(path):
+    try:
+        with open(path, "r") as f:
+            return json.load(f)
+    except OSError as e:
+        return None
 
 if __name__ == "__main__":
     ManjaroHello()
