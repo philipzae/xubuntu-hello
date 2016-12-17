@@ -37,7 +37,7 @@ class ManjaroHello():
             self.desktop_path = "/usr/share/applications/" + self.app + ".desktop"
         else:
             self.data_path = "../data/"
-            self.locale_path = "locale/"
+            self.locale_path = "../locale/"
             self.ui_path = "../ui/"
             self.desktop_path = self.current_folder[:-4] + self.app + ".desktop"
 
