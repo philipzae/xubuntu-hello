@@ -74,7 +74,10 @@ class ManjaroHello():
             if self.sys_locale in locales:
                 self.preferences["locale"] = self.sys_locale
             else:
-                self.preferences["locale"] = self.default_locale
+                if self.sys_locale[:2] in locales:
+                    self.preferences["locale"] = self.sys_locale[:2]
+                else:
+                    self.preferences["locale"] = self.default_locale
 
         # Select current locale in languages menu
         self.builder.get_object("languages").set_active_id(self.preferences["locale"]);
