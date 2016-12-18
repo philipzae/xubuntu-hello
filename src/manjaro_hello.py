@@ -84,9 +84,11 @@ class ManjaroHello():
         self.save_preferences()
 
         # Set window subtitle
+        subtitle = ""
         if self.infos["codename"] and self.infos["release"]:
-            self.builder.get_object("headerbar").props.subtitle = self.infos["codename"] + " " + self.infos["release"] + " "
-        self.builder.get_object("headerbar").props.subtitle += self.infos["arch"]
+            subtitle += self.infos["codename"] + " " + self.infos["release"] + " "
+        subtitle += self.infos["arch"]
+        self.builder.get_object("headerbar").props.subtitle = subtitle
 
         # Load images
         for img in ("google+", "facebook", "twitter", "reddit"):
