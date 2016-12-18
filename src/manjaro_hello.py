@@ -219,7 +219,8 @@ class ManjaroHello():
 
     def on_btn_clicked(self, btn):
         """Event for clicked button."""
-        self.builder.get_object("stack").set_visible_child(self.builder.get_object(btn.get_name() + "page"))
+        name = btn.get_name() + "page"
+        self.builder.get_object("stack").set_visible_child(self.builder.get_object(name))
 
     def on_link_clicked(self, link, _=None):
         """Event for clicked link."""
