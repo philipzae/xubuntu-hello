@@ -1,9 +1,0 @@
-dist: trusty
-sudo: required
-language: python
-python:
-  - "3.5"
-before_install:
-  - sudo apt-get install -qq -y python3-gi gir1.2-gtk-3.0
-# command to run tests
-script: python -m unittest
