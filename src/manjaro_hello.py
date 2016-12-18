@@ -21,18 +21,19 @@ class ManjaroHello():
             self.data_path = "/usr/share/" + self.app + "/data/"
             self.locale_path = "/usr/share/locale/"
             self.ui_path = "/usr/share/" + self.app + "/ui/"
+            self.logo_path = "/usr/share/" + self.app + "/data/img/manjaro.png"
             self.desktop_path = "/usr/share/applications/" + self.app + ".desktop"
         else:
             self.data_path = "data/"
             self.locale_path = "locale/"
             self.ui_path = "ui/"
             self.desktop_path = os.getcwd() + "/" + self.app + ".desktop"
+            self.logo_path = "data/img/manjaro.png"
 
         self.config_path = os.path.expanduser("~") + "/.config/"
         self.preferences_path = self.config_path + self.app + ".json"
         self.urls_path = self.data_path + "urls.json"
         self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
-        self.logo_path = "/usr/share/icons/manjaro.png"
 
         # Load preferences
         self.preferences = self.get_preferences()
