@@ -1,6 +1,6 @@
 #!/bin/sh
-# Script to generate mo files in a locale folder
-# Use it just only for testing purpose
+# Script to generate mo files in a temp locale folder
+# Use it only for testing purpose
 rm -rf locale
 mkdir locale
 cd po
