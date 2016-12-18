@@ -4,12 +4,9 @@
 rm -rf locale
 mkdir locale
 cd po
-for lang in $(ls -1 | sed -e 's/\..*$//'); do
-    if [ $lang != "manjaro-hello" ]
-    then
-        mkdir -p ../locale/$lang/LC_MESSAGES
-        msgfmt -c -o ../locale/$lang/LC_MESSAGES/manjaro-hello.mo $lang.po
-    fi
+for lang in $(ls *.po); do
+    mkdir -p ../locale/${lang::-3}/LC_MESSAGES
+    msgfmt -c -o ../locale/${lang::-3}/LC_MESSAGES/manjaro-hello.mo $lang
 done
 cd ..
 python src/manjaro_hello.py
