@@ -93,7 +93,8 @@ class ManjaroHello():
             self.builder.get_object(img).set_from_file(self.data_path + "img/" + img + ".png")
 
         # Set autostart switcher state
-        self.builder.get_object("autostart").set_active(self.preferences["autostart"])
+        self.autostart = os.path.isfile(self.autostart_path)
+        self.builder.get_object("autostart").set_active(self.autostart)
 
         # Live systems
         if self.infos["live"]:
@@ -161,8 +162,7 @@ class ManjaroHello():
                 os.unlink(self.autostart_path)
         except OSError as e:
             print(e)
-        self.preferences["autostart"] = autostart
-        self.save_preferences()
+        self.autostart = autostart
 
     def save_preferences(self):
         """Save preferences in config file."""
@@ -176,10 +176,7 @@ class ManjaroHello():
         """Read preferences from config file."""
         preferences = read_json(self.preferences_path)
         if not preferences:
-            preferences = {
-                "autostart": os.path.isfile(self.autostart_path),
-                "locale": None
-            }
+            preferences = {"locale": None}
         return preferences
 
     def read_page(self, name):
