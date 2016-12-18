@@ -23,11 +23,10 @@ class ManjaroHello():
             self.ui_path = "/usr/share/" + self.app + "/ui/"
             self.desktop_path = "/usr/share/applications/" + self.app + ".desktop"
         else:
-            self.current_folder = os.getcwd() + "/"
             self.data_path = "data/"
             self.locale_path = "locale/"
             self.ui_path = "ui/"
-            self.desktop_path = self.current_folder[:-4] + self.app + ".desktop"
+            self.desktop_path = os.getcwd() + "/" + self.app + ".desktop"
 
         self.config_path = os.path.expanduser("~") + "/.config/"
         self.preferences_path = self.config_path + self.app + ".json"
