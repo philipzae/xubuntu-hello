@@ -113,11 +113,8 @@ class ManjaroHello():
         :param locale: locale to use
         :type locale: str
         """
-        if self.preferences["locale"] != self.default_locale:
-            tr = gettext.translation(self.app, self.locale_path, [locale])
-            tr.install()
-        else:
-            gettext.install(self.app)
+        tr = gettext.translation(self.app, self.locale_path, [locale])
+        tr.install()
 
         # Dirty code to fix an issue with gettext that can't translate strings from glade files
         # Redfining all translatables strings
