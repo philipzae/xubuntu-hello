@@ -63,12 +63,15 @@ class ManjaroHello():
         self.default_texts = {}
         # Choose best locale for user
         if self.preferences["locale"] not in self.locales:
+            # If user's locale is supported
             if self.sys_locale in self.locales:
                 self.preferences["locale"] = self.sys_locale
             else:
+                # If two first letters of user's locale is supported (ex: en_US -> en)
                 if self.sys_locale[:2] in self.locales:
                     self.preferences["locale"] = self.sys_locale[:2]
                 else:
+                    # Else use default locale
                     self.preferences["locale"] = self.default_locale
 
         # Select current locale in languages menu
