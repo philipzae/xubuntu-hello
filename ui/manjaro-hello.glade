@@ -13,6 +13,7 @@
     <property name="website">https://github.com/Huluti/manjaro-hello</property>
     <property name="website_label" translatable="yes">Github</property>
     <property name="authors">Hugo Posnic</property>
+    <property name="translator_credits" translatable="yes">Daniel Napora [pl]</property>
     <property name="logo_icon_name"/>
     <property name="license_type">gpl-3-0</property>
     <child internal-child="vbox">
