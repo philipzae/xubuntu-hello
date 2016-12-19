@@ -63,7 +63,7 @@ class ManjaroHello():
         self.default_texts = {}
         # Choose best locale for user
         if self.preferences["locale"] not in self.locales:
-            if self.sys_locale in locales:
+            if self.sys_locale in self.locales:
                 self.preferences["locale"] = self.sys_locale
             else:
                 if self.sys_locale[:2] in self.locales:
