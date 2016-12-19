@@ -80,9 +80,6 @@ class ManjaroHello():
         gettext.textdomain(self.app)
         self.set_locale(self.preferences["locale"])
 
-        # Save used locale in config file
-        self.save_preferences()
-
         # Set window subtitle
         subtitle = ""
         if self.infos["codename"] and self.infos["release"]:
@@ -199,7 +196,6 @@ class ManjaroHello():
         """Event for selected language."""
         self.preferences["locale"] = combobox.get_active_id()
         self.set_locale(self.preferences["locale"])
-        self.save_preferences()
 
     def on_action_clicked(self, action, _=None):
         """Event for differents actions."""
@@ -228,6 +224,7 @@ class ManjaroHello():
 
     def on_delete_window(self, *args):
         """Event to quit app."""
+        self.save_preferences()
         Gtk.main_quit(*args)
 
 def get_infos():
