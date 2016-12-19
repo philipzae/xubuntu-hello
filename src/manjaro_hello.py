@@ -61,18 +61,7 @@ class ManjaroHello():
         self.default_locale = "en"
         self.sys_locale = locale.getdefaultlocale()[0]
         self.default_texts = {}
-        # Choose best locale for user
-        if self.preferences["locale"] not in self.locales:
-            # If user's locale is supported
-            if self.sys_locale in self.locales:
-                self.preferences["locale"] = self.sys_locale
-            else:
-                # If two first letters of user's locale is supported (ex: en_US -> en)
-                if self.sys_locale[:2] in self.locales:
-                    self.preferences["locale"] = self.sys_locale[:2]
-                else:
-                    # Else use default locale
-                    self.preferences["locale"] = self.default_locale
+        self.preferences["locale"] = self.get_best_locale()
 
         # Select current locale in languages menu
         self.builder.get_object("languages").set_active_id(self.preferences["locale"]);
@@ -107,6 +96,19 @@ class ManjaroHello():
                 self.builder.get_object("installcli").set_visible(True)
 
         self.window.show();
+
+    def get_best_locale(self):
+        if self.preferences["locale"] in self.locales:
+            return self.preferences["locale"]
+        else:
+            # If user's locale is supported
+            if self.sys_locale in self.locales:
+                return  self.sys_locale
+            # If two first letters of user's locale is supported (ex: en_US -> en)
+            elif self.sys_locale[:2] in self.locales:
+                return self.sys_locale[:2]
+            else:
+                return self.default_locale
 
     def set_locale(self, locale):
         """Set locale of ui and pages.
