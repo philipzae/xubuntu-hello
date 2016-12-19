@@ -98,6 +98,10 @@ class ManjaroHello():
         self.window.show();
 
     def get_best_locale(self):
+        """Choose best locale, based on user's preferences.
+        :return: locale to use
+        :rtype: str
+        """
         if self.preferences["locale"] in self.locales:
             return self.preferences["locale"]
         else:
