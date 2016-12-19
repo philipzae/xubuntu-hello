@@ -57,17 +57,16 @@ class ManjaroHello():
         self.builder.get_object("aboutdialog").set_logo(logo)
 
         # Init translation
+        self.locales = ("en", "fr") # supported locales
         self.default_locale = "en"
         self.sys_locale = locale.getdefaultlocale()[0]
         self.default_texts = {}
-        locales = os.listdir(self.locale_path)
-        locales.append(self.default_locale)
         # Choose best locale for user
-        if self.preferences["locale"] not in locales:
+        if self.preferences["locale"] not in self.locales:
             if self.sys_locale in locales:
                 self.preferences["locale"] = self.sys_locale
             else:
-                if self.sys_locale[:2] in locales:
+                if self.sys_locale[:2] in self.locales:
                     self.preferences["locale"] = self.sys_locale[:2]
                 else:
                     self.preferences["locale"] = self.default_locale
