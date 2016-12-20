@@ -57,7 +57,7 @@ class ManjaroHello():
         self.builder.get_object("aboutdialog").set_logo(logo)
 
         # Init translation
-        self.locales = ("en", "fr", "pl") # supported locales
+        self.locales = ("de", "en", "fr", "pl") # supported locales
         self.default_locale = "en"
         self.sys_locale = locale.getdefaultlocale()[0]
         self.default_texts = {}
