@@ -116,7 +116,7 @@ class ManjaroHello():
         :type locale: str
         """
         try:
-            tr = gettext.translation(self.app, self.locale_path, [locale])
+            tr = gettext.translation(self.app, self.locale_path, [locale], fallback=True)
             tr.install()
         except OSError:
             print("WARNING: No translation file for  '{}' locale".format(locale))
