@@ -201,7 +201,7 @@ class ManjaroHello():
         try:
             with open(filename, "r") as f:
                 return f.read()
-        except OSError as e:
+        except OSError:
             return _("Can't load page.")
 
     # Handlers
@@ -281,7 +281,7 @@ def read_json(path):
     try:
         with open(path, "r") as f:
             return json.load(f)
-    except OSError as e:
+    except OSError:
         return None
 
 
