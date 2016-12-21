@@ -592,6 +592,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="fr">Français (France)</item>
               <item id="pl">Polski (Polska)</item>
             </items>
+            <signal name="changed" handler="on_languages_changed" swapped="no"/>
           </object>
           <packing>
             <property name="position">2</property>

@@ -64,14 +64,10 @@ class ManjaroHello():
         self.default_texts = {}
         self.preferences["locale"] = self.get_best_locale()
 
-        # Select current locale in languages menu
-        self.builder.get_object("languages").set_active_id(self.preferences["locale"])
-        self.builder.get_object("languages").connect("changed", self.on_languages_changed)
-
         # Make translation
         gettext.bindtextdomain(self.app, self.locale_path)
         gettext.textdomain(self.app)
-        self.set_locale(self.preferences["locale"])
+        self.builder.get_object("languages").set_active_id(self.preferences["locale"])
 
         # Set window subtitle
         subtitle = ""
