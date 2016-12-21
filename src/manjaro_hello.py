@@ -125,6 +125,7 @@ class ManjaroHello():
             tr.install()
         except OSError:
             print("WARNING: No translation file for  '{}' locale".format(locale))
+            return
 
         # Dirty code to fix an issue with gettext that can't translate strings from glade files
         # Redfining all translatables strings
