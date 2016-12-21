@@ -35,8 +35,9 @@ For the moment, even if the soft works, it is not finished.
 - We have to test it and fix bugs.
 - Make translations to distribute it in all the world.
 
-## Manjaro forum discussion
+## Links
 
-[Start work on a new welcome screen: manjaro-hello](https://forum.manjaro.org/t/start-work-on-a-new-welcome-screen-for-manjaro/13685)
+- [AUR repo](https://aur.archlinux.org/packages/manjaro-hello-git)
+- [Discussion from Manjaro's forum](https://forum.manjaro.org/t/start-work-on-a-new-welcome-screen-for-manjaro/13685)
 
 Let's make a wonderful software !
