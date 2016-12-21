@@ -2,13 +2,14 @@ import unittest
 
 from src import manjaro_hello
 
+
 class ManjaroHello(unittest.TestCase):
     def setUp(self):
         self.path = "test/"
 
     def test_read_json(self):
         json = manjaro_hello.read_json(self.path + "test.json")
-        self.assertEqual(json, {"test":"json"})
+        self.assertEqual(json, {"test": "json"})
         json = manjaro_hello.read_json(self.path + "test")
         self.assertEqual(json, None)
 

@@ -11,6 +11,7 @@ import webbrowser
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf
 
+
 class ManjaroHello():
     def __init__(self):
         # App vars
@@ -57,14 +58,14 @@ class ManjaroHello():
         self.builder.get_object("aboutdialog").set_logo(logo)
 
         # Init translation
-        self.locales = ("de", "en", "fr", "pl") # supported locales
+        self.locales = ("de", "en", "fr", "pl")  # supported locales
         self.default_locale = "en"
         self.sys_locale = locale.getdefaultlocale()[0]
         self.default_texts = {}
         self.preferences["locale"] = self.get_best_locale()
 
         # Select current locale in languages menu
-        self.builder.get_object("languages").set_active_id(self.preferences["locale"]);
+        self.builder.get_object("languages").set_active_id(self.preferences["locale"])
         self.builder.get_object("languages").connect("changed", self.on_languages_changed)
 
         # Make translation
@@ -95,7 +96,7 @@ class ManjaroHello():
             if os.path.isfile("/usr/bin/cli-installer"):
                 self.builder.get_object("installcli").set_visible(True)
 
-        self.window.show();
+        self.window.show()
 
     def get_best_locale(self):
         """Choose best locale, based on user's preferences.
@@ -107,7 +108,7 @@ class ManjaroHello():
         else:
             # If user's locale is supported
             if self.sys_locale in self.locales:
-                return  self.sys_locale
+                return self.sys_locale
             # If two first letters of user's locale is supported (ex: en_US -> en)
             elif self.sys_locale[:2] in self.locales:
                 return self.sys_locale[:2]
@@ -236,6 +237,7 @@ class ManjaroHello():
         self.save_preferences()
         Gtk.main_quit(*args)
 
+
 def get_infos():
     """Get informations about user's system.
     :return: informations about user's system
@@ -248,6 +250,7 @@ def get_infos():
     infos["arch"] = "64-bits" if sys.maxsize > 2**32 else "32-bits"
     infos["live"] = os.path.exists("/bootmnt/manjaro") or os.path.exists("/run/miso/bootmnt/manjaro")
     return infos
+
 
 def get_lsb_infos():
     """Read informations from the lsb-release file.
@@ -270,12 +273,14 @@ def get_lsb_infos():
         print(e)
     return lsb
 
+
 def read_json(path):
     try:
         with open(path, "r") as f:
             return json.load(f)
     except OSError as e:
         return None
+
 
 if __name__ == "__main__":
     ManjaroHello()
