@@ -7,3 +7,4 @@ Name=Manjaro Hello
 Exec=/usr/bin/manjaro-hello
 Icon=/usr/share/manjaro-hello/data/img/manjaro.png
 Comment=A tool providing access to documentation and support for new Manjaro users.
+Comment[fr]=Outil d'accès à la documentation et support aux nouveaux utilisateurs de Manjaro.
