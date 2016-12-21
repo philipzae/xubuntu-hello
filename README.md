@@ -1,7 +1,7 @@
 manjaro-hello
 =============
 
-New Manjaro Welcome Screen
+A tool providing access to documentation and support for new Manjaro users.
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4c5342caee874c079638970437d49196)](https://www.codacy.com/app/hugo-posnic/manjaro-hello?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Huluti/manjaro-hello&amp;utm_campaign=Badge_Grade)
 

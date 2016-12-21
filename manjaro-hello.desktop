@@ -6,4 +6,4 @@ StartupNotify=false
 Name=Manjaro Hello
 Exec=/usr/bin/manjaro-hello
 Icon=/usr/share/manjaro-hello/data/img/manjaro.png
-Comment=A tool that helps the new user of Manjaro in the discovery of the system.
+Comment=A tool providing access to documentation and support for new Manjaro users.
