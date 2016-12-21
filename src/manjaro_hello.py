@@ -70,10 +70,9 @@ class ManjaroHello():
         self.builder.get_object("languages").set_active_id(self.preferences["locale"])
 
         # Set window subtitle
-        subtitle = ""
+        subtitle = self.infos["arch"]
         if self.infos["codename"] and self.infos["release"]:
-            subtitle += self.infos["codename"] + " " + self.infos["release"] + " "
-        subtitle += self.infos["arch"]
+            subtitle = self.infos["codename"] + " " + self.infos["release"] + " " + subtitle
         self.builder.get_object("headerbar").props.subtitle = subtitle
 
         # Load images
