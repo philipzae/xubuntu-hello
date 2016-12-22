@@ -45,7 +45,7 @@ Daniel Napora [pl]</property>
   <object class="GtkImage" id="homeicon">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="icon_name">go-home</property>
+    <property name="icon_name">go-home-symbolic</property>
   </object>
   <object class="GtkImage" id="iconabout">
     <property name="visible">True</property>
