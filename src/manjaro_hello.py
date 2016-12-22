@@ -85,11 +85,9 @@ class ManjaroHello():
 
         # Live systems
         if self.infos["live"]:
-            self.builder.get_object("installlabel").set_visible(True)
             if os.path.isfile("/usr/bin/calamares"):
+                self.builder.get_object("installlabel").set_visible(True)
                 self.builder.get_object("installgui").set_visible(True)
-            if os.path.isfile("/usr/bin/cli-installer"):
-                self.builder.get_object("installcli").set_visible(True)
 
         self.window.show()
 
@@ -142,7 +140,6 @@ class ManjaroHello():
             "donate": "label",
             "installlabel": "label",
             "installgui": "label",
-            "installcli": "label",
             "autostartlabel": "label",
             "aboutdialog": "comments"
         }
@@ -211,8 +208,6 @@ class ManjaroHello():
         name = action.get_name()
         if name == "installgui":
             subprocess.call(["sudo", "-E", "calamares"])
-        elif name == "installcli":
-            subprocess.call(["sudo cli-installer"])
         elif name == "autostart":
             autostart = True if action.get_active() else False
             self.change_autostart(autostart)
