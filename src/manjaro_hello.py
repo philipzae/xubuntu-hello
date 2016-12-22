@@ -91,10 +91,9 @@ class ManjaroHello():
         self.builder.get_object("autostart").set_active(self.autostart)
 
         # Live systems
-        if self.infos["live"]:
-            if os.path.isfile("/usr/bin/calamares"):
-                self.builder.get_object("installlabel").set_visible(True)
-                self.builder.get_object("installgui").set_visible(True)
+        if self.infos["live"] and os.path.isfile("/usr/bin/calamares"):
+            self.builder.get_object("installlabel").set_visible(True)
+            self.builder.get_object("installgui").set_visible(True)
 
         self.window.show()
 
