@@ -19,7 +19,8 @@ Daniel Napora [pl]</property>
     <property name="license_type">gpl-3-0</property>
     <child internal-child="vbox">
       <object class="GtkBox">
-        <property name="can_focus">False</property>
+        <property name="can_focus">True</property>
+        <property name="has_focus">True</property>
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
@@ -93,7 +94,8 @@ Daniel Napora [pl]</property>
                 <child>
                   <object class="GtkLabel" id="welcometitle">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can_focus">True</property>
+                    <property name="has_focus">True</property>
                     <property name="label" translatable="yes">Welcome to Manjaro!</property>
                     <attributes>
                       <attribute name="weight" value="bold"/>
@@ -200,7 +202,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="name">wiki</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
+                    <property name="receives_default">True</property>
                     <signal name="clicked" handler="on_link_clicked" swapped="no"/>
                   </object>
                   <packing>
