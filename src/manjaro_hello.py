@@ -22,8 +22,11 @@ class ManjaroHello():
             self.data_path = "/usr/share/" + self.app + "/data/"
             self.locale_path = "/usr/share/locale/"
             self.ui_path = "/usr/share/" + self.app + "/ui/"
-            self.logo_path = "/usr/share/" + self.app + "/data/img/manjaro.png"
             self.desktop_path = "/usr/share/applications/" + self.app + ".desktop"
+            if os.path.isfile("/usr/share/icons/manjaro/green/64x64.png"):
+                self.logo_path = "/usr/share/icons/manjaro/green/64x64.png"
+            else:
+                self.logo_path = "/usr/share/" + self.app + "/data/img/manjaro.png"
         else:
             self.data_path = "data/"
             self.locale_path = "locale/"
