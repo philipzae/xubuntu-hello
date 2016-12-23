@@ -86,6 +86,7 @@ class ManjaroHello():
             img = Gtk.Image.new_from_file(self.data_path + "img/external-link.png")
             img.set_margin_left(2)
             self.builder.get_object(btn).set_image_position(Gtk.PositionType.RIGHT)
+            self.builder.get_object(btn).set_always_show_image(True)
             self.builder.get_object(btn).set_image(img)
 
         # Set autostart switcher state
