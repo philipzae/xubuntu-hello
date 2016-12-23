@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.3.1] - 2016-12-23
+### Fixed
+- Buttons' icons not always showing.
+
 ## [0.3] - 2016-12-23
 ### Added
 - Icons for links buttons.
