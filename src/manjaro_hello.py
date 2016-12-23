@@ -52,7 +52,7 @@ class ManjaroHello():
         self.window = self.builder.get_object("window")
 
         # Load logos
-        logo = GdkPixbuf.Pixbuf.new_from_file_at_scale(self.logo_path, 75, 75, False)
+        logo = GdkPixbuf.Pixbuf.new_from_file_at_scale(self.logo_path, 64, 64, False)
         self.window.set_icon_from_file(self.logo_path)
         self.builder.get_object("manjaroicon").set_from_pixbuf(logo)
         self.builder.get_object("aboutdialog").set_logo(logo)
