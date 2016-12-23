@@ -79,9 +79,8 @@ class ManjaroHello():
         for img in ("google+", "facebook", "twitter", "reddit"):
             self.builder.get_object(img).set_from_file(self.data_path + "img/" + img + ".png")
 
-        pixbuf = GdkPixbuf.Pixbuf.new_from_file(self.data_path + "img/external-link.png")
         for btn in ("wiki", "forums", "chat", "mailling", "build", "donate"):
-            img = Gtk.Image.new_from_pixbuf(pixbuf)
+            img = Gtk.Image.new_from_file(self.data_path + "img/external-link.png")
             img.set_margin_left(2)
             self.builder.get_object(btn).set_image_position(Gtk.PositionType.RIGHT)
             self.builder.get_object(btn).set_image(img)
