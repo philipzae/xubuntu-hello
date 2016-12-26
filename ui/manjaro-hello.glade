@@ -464,7 +464,6 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               </object>
               <packing>
                 <property name="name">welcomepage</property>
-                <property name="title" translatable="yes">Welcome</property>
               </packing>
             </child>
           </object>
