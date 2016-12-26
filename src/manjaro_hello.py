@@ -78,7 +78,7 @@ class ManjaroHello():
             self.builder.get_object("stack").add_named(scrolled_window, page + "page")
 
         # Init translation
-        self.locales = ("de", "en", "fr", "pl")  # supported locales
+        self.locales = ("de", "en", "fr", "pl", "ru")  # supported locales
         self.default_locale = "en"
         self.sys_locale = locale.getdefaultlocale()[0]
         self.default_texts = {}
@@ -172,7 +172,6 @@ class ManjaroHello():
             }
         }
         for method in elts:
-            print(elts[method])
             for elt in elts[method]:
                 if elt not in self.default_texts:
                     self.default_texts[elt] = getattr(self.builder.get_object(elt), "get_" + method)()
