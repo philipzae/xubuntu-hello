@@ -49,7 +49,7 @@ class ManjaroHello():
 
         # Init window
         self.builder = Gtk.Builder()
-        self.builder.add_from_file(self.ui_path + "manjaro-hello.glade")
+        self.builder.add_from_file(self.ui_path + self.app + ".glade")
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
         subtitle = self.infos["arch"]
@@ -184,7 +184,7 @@ class ManjaroHello():
             # Specific to i3
             i3_config = os.path.expanduser("~") + "/.i3/config"
             if os.path.isfile(i3_config):
-                i3_autostart = "exec --no-startup-id manjaro-hello"
+                i3_autostart = "exec --no-startup-id " + self.app
                 with open(i3_config, "r+") as f:
                     content = f.read()
                     f.seek(0)
