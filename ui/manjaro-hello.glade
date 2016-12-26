@@ -485,6 +485,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
           <object class="GtkButton" id="welcome">
             <property name="name">welcome</property>
             <property name="visible">True</property>
+            <property name="sensitive">False</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
             <property name="image">homeicon</property>
