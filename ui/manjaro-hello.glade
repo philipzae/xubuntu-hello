@@ -60,7 +60,7 @@ Daniel Napora [pl]</property>
     <property name="has_resize_grip">True</property>
     <signal name="delete-event" handler="on_delete_window" swapped="no"/>
     <child>
-      <object class="GtkGrid" id="grid">
+      <object class="GtkGrid">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <child>
