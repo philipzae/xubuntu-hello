@@ -27,14 +27,14 @@ class ManjaroHello():
             self.locale_path = "/usr/share/locale/"
             self.ui_path = "/usr/share/" + self.app + "/ui/"
             self.desktop_path = "/usr/share/applications/" + self.app + ".desktop"
-            if not hasattr(self, 'logo_path'):
+            if not hasattr(self, "logo_path"):
                 self.logo_path = "/usr/share/" + self.app + "/data/img/manjaro.png"
         else:
             self.data_path = "data/"
             self.locale_path = "locale/"
             self.ui_path = "ui/"
             self.desktop_path = os.getcwd() + "/" + self.app + ".desktop"
-            if not hasattr(self, 'logo_path'):
+            if not hasattr(self, "logo_path"):
                 self.logo_path = "data/img/manjaro.png"
         self.config_path = self.home_path + "/.config/"
         self.preferences_path = self.config_path + self.app + ".json"
