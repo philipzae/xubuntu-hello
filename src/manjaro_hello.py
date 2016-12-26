@@ -144,6 +144,8 @@ class ManjaroHello():
         # Redfining all translatables strings
         # TODO: Find a better solution
         elts = {
+            "about": "tooltip_text",
+            "welcome": "tooltip_text",
             "welcometitle": "label",
             "welcomelabel": "label",
             "firstcategory": "label",
