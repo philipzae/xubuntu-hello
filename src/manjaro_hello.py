@@ -53,6 +53,10 @@ class ManjaroHello():
         self.builder.add_from_file(self.ui_path + "manjaro-hello.glade")
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
+        subtitle = self.infos["arch"]
+        if self.infos["codename"] and self.infos["release"]:
+            subtitle = self.infos["codename"] + " " + self.infos["release"] + " " + subtitle
+        self.builder.get_object("headerbar").props.subtitle = subtitle
 
         # Load logos
         logo = GdkPixbuf.Pixbuf.new_from_file_at_scale(self.logo_path, 64, 64, False)
@@ -71,12 +75,6 @@ class ManjaroHello():
         gettext.bindtextdomain(self.app, self.locale_path)
         gettext.textdomain(self.app)
         self.builder.get_object("languages").set_active_id(self.preferences["locale"])
-
-        # Set window subtitle
-        subtitle = self.infos["arch"]
-        if self.infos["codename"] and self.infos["release"]:
-            subtitle = self.infos["codename"] + " " + self.infos["release"] + " " + subtitle
-        self.builder.get_object("headerbar").props.subtitle = subtitle
 
         # Load images
         for img in ("google+", "facebook", "twitter", "reddit"):
