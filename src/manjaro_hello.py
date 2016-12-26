@@ -33,7 +33,6 @@ class ManjaroHello():
             self.ui_path = "ui/"
             self.desktop_path = os.getcwd() + "/" + self.app + ".desktop"
             self.logo_path = "data/img/manjaro.png"
-
         self.config_path = os.path.expanduser("~") + "/.config/"
         self.preferences_path = self.config_path + self.app + ".json"
         self.urls_path = self.data_path + "urls.json"
@@ -63,6 +62,16 @@ class ManjaroHello():
         self.window.set_icon_from_file(self.logo_path)
         self.builder.get_object("manjaroicon").set_from_pixbuf(logo)
         self.builder.get_object("aboutdialog").set_logo(logo)
+
+        # Create pages
+        self.pages = ("readme", "release", "involved")
+        for page in self.pages:
+            scrolled_window = Gtk.ScrolledWindow()
+            viewport = Gtk.Viewport()
+            label = Gtk.Label(wrap=True)
+            viewport.add(label)
+            scrolled_window.add(viewport)
+            self.builder.get_object("stack").add_named(scrolled_window, page + "page")
 
         # Init translation
         self.locales = ("de", "en", "fr", "pl")  # supported locales
@@ -96,7 +105,7 @@ class ManjaroHello():
             self.builder.get_object("installlabel").set_visible(True)
             self.builder.get_object("install").set_visible(True)
 
-        self.window.show()
+        self.window.show_all()
 
     def get_best_locale(self):
         """Choose best locale, based on user's preferences.
@@ -155,9 +164,11 @@ class ManjaroHello():
                 self.default_texts[elt] = getattr(self.builder.get_object(elt), "get_" + elts[elt])()
             getattr(self.builder.get_object(elt), "set_" + elts[elt])(_(self.default_texts[elt]))
 
-        # Load pages
-        for page in ("readme", "release", "involved"):
-            self.builder.get_object(page + "label").set_markup(self.get_page(page))
+        # Change content of pages
+        for page in self.pages:
+            child = self.builder.get_object("stack").get_child_by_name(page + "page")
+            label = child.get_children()[0].get_children()[0]
+            label.set_markup(self.get_page(page))
 
     def set_autostart(self, autostart):
         """Set state of autostart.
@@ -238,8 +249,7 @@ class ManjaroHello():
 
     def on_btn_clicked(self, btn):
         """Event for clicked button."""
-        name = btn.get_name() + "page"
-        self.builder.get_object("stack").set_visible_child(self.builder.get_object(name))
+        self.builder.get_object("stack").set_visible_child_name(btn.get_name() + "page")
 
     def on_link_clicked(self, link, _=None):
         """Event for clicked link."""
