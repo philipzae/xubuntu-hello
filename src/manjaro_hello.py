@@ -161,7 +161,7 @@ class ManjaroHello():
         for page in ("readme", "release", "involved"):
             self.builder.get_object(page + "label").set_markup(self.read_page(page))
 
-    def change_autostart(self, autostart):
+    def set_autostart(self, autostart):
         """Set state of autostart.
         :param autostart: wanted autostart state
         :type autostart: bool
@@ -171,6 +171,18 @@ class ManjaroHello():
                 os.symlink(self.desktop_path, self.autostart_path)
             elif not autostart and os.path.isfile(self.autostart_path):
                 os.unlink(self.autostart_path)
+            # Specific to i3
+            i3_config = os.path.expanduser("~") + "/.i3/config"
+            if os.path.isfile(i3_config):
+                i3_autostart = "exec --no-startup-id manjaro-hello"
+                with open(i3_config, "r+") as f:
+                    content = f.read()
+                    f.seek(0)
+                    if autostart:
+                        f.write(content.replace("#" + i3_autostart, i3_autostart))
+                    else:
+                        f.write(content.replace(i3_autostart, "#" + i3_autostart))
+                    f.truncate()
         except OSError as e:
             print(e)
         self.autostart = autostart
@@ -219,7 +231,7 @@ class ManjaroHello():
             subprocess.call(["sudo", "-E", "calamares"])
         elif name == "autostart":
             autostart = True if action.get_active() else False
-            self.change_autostart(autostart)
+            self.set_autostart(autostart)
         elif name == "about":
             dialog = self.builder.get_object("aboutdialog")
             dialog.set_transient_for(self.window)
@@ -262,8 +274,8 @@ def get_lsb_infos():
     """
     lsb = {}
     try:
-        with open("/etc/lsb-release") as lsb_file:
-            for line in lsb_file:
+        with open("/etc/lsb-release") as f:
+            for line in f:
                 if "=" in line:
                     var, arg = line.rstrip().split("=")
                     if var.startswith("DISTRIB_"):
