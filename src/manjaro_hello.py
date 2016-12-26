@@ -18,22 +18,25 @@ class ManjaroHello():
         self.app = "manjaro-hello"
 
         # Path vars
+        self.home_path = os.path.expanduser("~")
+        manjaro_logo = "/usr/share/icons/manjaro/green/64x64.png"
+        if os.path.isfile(manjaro_logo):
+            self.logo_path = manjaro_logo
         if os.path.basename(sys.argv[0]) == self.app:
             self.data_path = "/usr/share/" + self.app + "/data/"
             self.locale_path = "/usr/share/locale/"
             self.ui_path = "/usr/share/" + self.app + "/ui/"
             self.desktop_path = "/usr/share/applications/" + self.app + ".desktop"
-            if os.path.isfile("/usr/share/icons/manjaro/green/64x64.png"):
-                self.logo_path = "/usr/share/icons/manjaro/green/64x64.png"
-            else:
+            if not hasattr(self, 'logo_path'):
                 self.logo_path = "/usr/share/" + self.app + "/data/img/manjaro.png"
         else:
             self.data_path = "data/"
             self.locale_path = "locale/"
             self.ui_path = "ui/"
             self.desktop_path = os.getcwd() + "/" + self.app + ".desktop"
-            self.logo_path = "data/img/manjaro.png"
-        self.config_path = os.path.expanduser("~") + "/.config/"
+            if not hasattr(self, 'logo_path'):
+                self.logo_path = "data/img/manjaro.png"
+        self.config_path = self.home_path + "/.config/"
         self.preferences_path = self.config_path + self.app + ".json"
         self.urls_path = self.data_path + "urls.json"
         self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
@@ -182,7 +185,7 @@ class ManjaroHello():
             elif not autostart and os.path.isfile(self.autostart_path):
                 os.unlink(self.autostart_path)
             # Specific to i3
-            i3_config = os.path.expanduser("~") + "/.i3/config"
+            i3_config = self.home_path + "/.i3/config"
             if os.path.isfile(i3_config):
                 i3_autostart = "exec --no-startup-id " + self.app
                 with open(i3_config, "r+") as f:
