@@ -145,7 +145,7 @@ class ManjaroHello():
         # TODO: Find a better solution
         elts = {
             "about": "tooltip_text",
-            "welcome": "tooltip_text",
+            "home": "tooltip_text",
             "welcometitle": "label",
             "welcomelabel": "label",
             "firstcategory": "label",
@@ -256,10 +256,10 @@ class ManjaroHello():
     def on_btn_clicked(self, btn):
         """Event for clicked button."""
         name = btn.get_name()
-        if name == "welcome":
-            self.builder.get_object("welcome").set_sensitive(False)
+        if name == "home":
+            self.builder.get_object("home").set_sensitive(False)
         else:
-            self.builder.get_object("welcome").set_sensitive(True)
+            self.builder.get_object("home").set_sensitive(True)
         self.builder.get_object("stack").set_visible_child_name(name + "page")
 
     def on_link_clicked(self, link, _=None):
