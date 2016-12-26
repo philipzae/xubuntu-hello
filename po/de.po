@@ -114,12 +114,3 @@ msgstr "Calamares (grafischer Installer) benutzen"
 #: src/manjaro_hello.py:229
 msgid "Can't load page."
 msgstr "Seite kann nicht geladen werden."
-
-#~ msgid "Welcome"
-#~ msgstr "Willkommen"
-
-#~ msgid "Documentation"
-#~ msgstr "Dokumentation"
-
-#~ msgid "Use CLI-Installer (Command line)"
-#~ msgstr "CLI-Installer (Kommandozeile) benutzen"

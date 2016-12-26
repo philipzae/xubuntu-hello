@@ -118,21 +118,3 @@ msgstr "Accueil"
 #: ../src/manjaro_hello.py:232
 msgid "Can't load page."
 msgstr "Impossible de charger la page."
-
-#~ msgid "Welcome"
-#~ msgstr "Bienvenue"
-
-#~ msgid "Documentation"
-#~ msgstr "Documentation"
-
-#~ msgid "Use CLI-Installer (Command line)"
-#~ msgstr "Utiliser CLI-Installer (Ligne de commande)"
-
-#~ msgid "Project"
-#~ msgstr "Projet"
-
-#~ msgid "English (United States)"
-#~ msgstr "Anglais (États-Unis)"
-
-#~ msgid "French (France)"
-#~ msgstr "Français (France)"
