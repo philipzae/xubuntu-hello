@@ -256,10 +256,7 @@ class ManjaroHello():
     def on_btn_clicked(self, btn):
         """Event for clicked button."""
         name = btn.get_name()
-        if name == "home":
-            self.builder.get_object("home").set_sensitive(False)
-        else:
-            self.builder.get_object("home").set_sensitive(True)
+        self.builder.get_object("home").set_sensitive(not name == "home")
         self.builder.get_object("stack").set_visible_child_name(name + "page")
 
     def on_link_clicked(self, link, _=None):
