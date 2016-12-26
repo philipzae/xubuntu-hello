@@ -316,6 +316,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                               <object class="GtkImage" id="google+">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
+                                <property name="tooltip_text">Google+</property>
                               </object>
                             </child>
                           </object>
@@ -335,6 +336,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                               <object class="GtkImage" id="facebook">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
+                                <property name="tooltip_text">Facebook</property>
                               </object>
                             </child>
                           </object>
@@ -354,6 +356,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                               <object class="GtkImage" id="twitter">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
+                                <property name="tooltip_text">Twitter</property>
                               </object>
                             </child>
                           </object>
@@ -373,6 +376,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                               <object class="GtkImage" id="reddit">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
+                                <property name="tooltip_text">Reddit</property>
                               </object>
                             </child>
                           </object>
@@ -487,6 +491,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="sensitive">False</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">Home</property>
             <property name="image">homeicon</property>
             <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
           </object>
@@ -513,6 +518,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <property name="tooltip_text" translatable="yes">About</property>
             <property name="image">iconabout</property>
             <signal name="clicked" handler="on_action_clicked" swapped="no"/>
           </object>
