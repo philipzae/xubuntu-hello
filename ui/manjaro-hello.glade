@@ -437,9 +437,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="installgui">
+                  <object class="GtkButton" id="install">
                     <property name="label" translatable="yes">Use Calamares (Graphic method)</property>
-                    <property name="name">installgui</property>
+                    <property name="name">install</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <signal name="clicked" handler="on_action_clicked" swapped="no"/>

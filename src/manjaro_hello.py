@@ -96,7 +96,7 @@ class ManjaroHello():
         # Live systems
         if self.infos["live"] and os.path.isfile("/usr/bin/calamares"):
             self.builder.get_object("installlabel").set_visible(True)
-            self.builder.get_object("installgui").set_visible(True)
+            self.builder.get_object("install").set_visible(True)
 
         self.window.show()
 
@@ -148,7 +148,7 @@ class ManjaroHello():
             "build": "label",
             "donate": "label",
             "installlabel": "label",
-            "installgui": "label",
+            "install": "label",
             "autostartlabel": "label",
             "aboutdialog": "comments"
         }
@@ -227,7 +227,7 @@ class ManjaroHello():
     def on_action_clicked(self, action, _=None):
         """Event for differents actions."""
         name = action.get_name()
-        if name == "installgui":
+        if name == "install":
             subprocess.call(["sudo", "-E", "calamares"])
         elif name == "autostart":
             autostart = True if action.get_active() else False
