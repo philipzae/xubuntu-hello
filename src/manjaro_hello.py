@@ -159,7 +159,7 @@ class ManjaroHello():
 
         # Load pages
         for page in ("readme", "release", "involved"):
-            self.builder.get_object(page + "label").set_markup(self.read_page(page))
+            self.builder.get_object(page + "label").set_markup(self.get_page(page))
 
     def set_autostart(self, autostart):
         """Set state of autostart.
@@ -202,7 +202,7 @@ class ManjaroHello():
             preferences = {"locale": None}
         return preferences
 
-    def read_page(self, name):
+    def get_page(self, name):
         """Read page according to language.
         :param name: name of page (filename)
         :type name: str
