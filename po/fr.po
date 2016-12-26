@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-22 20:56+0100\n"
-"PO-Revision-Date: 2016-12-22 20:56+0100\n"
+"POT-Creation-Date: 2016-12-26 20:15+0100\n"
+"PO-Revision-Date: 2016-12-26 20:15+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -30,11 +30,11 @@ msgstr "Écran de bienvenue pour Manjaro"
 msgid "Github"
 msgstr "Github"
 
-#: ui/manjaro-hello.glade:97
+#: ui/manjaro-hello.glade:99
 msgid "Welcome to Manjaro!"
 msgstr "Bienvenue sur Manjaro !"
 
-#: ui/manjaro-hello.glade:114
+#: ui/manjaro-hello.glade:116
 msgid ""
 "Thank you for joining our community!\n"
 "\n"
@@ -51,77 +51,75 @@ msgstr ""
 "Alors profitez de l'expérience, et n'hésitez pas à nous faire part de vos "
 "commentaires."
 
-#: ui/manjaro-hello.glade:131
+#: ui/manjaro-hello.glade:133
 msgid "DOCUMENTATION"
 msgstr "DOCUMENTATION"
 
-#: ui/manjaro-hello.glade:145
+#: ui/manjaro-hello.glade:147
 msgid "SUPPORT"
 msgstr "SUPPORT"
 
-#: ui/manjaro-hello.glade:159
+#: ui/manjaro-hello.glade:161
 msgid "PROJECT"
 msgstr "PROJET"
 
-#: ui/manjaro-hello.glade:171
+#: ui/manjaro-hello.glade:173
 msgid "Read me"
 msgstr "Lisez moi"
 
-#: ui/manjaro-hello.glade:185
+#: ui/manjaro-hello.glade:187
 msgid "Release info"
 msgstr "Informations de version"
 
-#: ui/manjaro-hello.glade:199
+#: ui/manjaro-hello.glade:201
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ui/manjaro-hello.glade:213
+#: ui/manjaro-hello.glade:215
 msgid "Get involved"
 msgstr "S'investir"
 
-#: ui/manjaro-hello.glade:227
+#: ui/manjaro-hello.glade:229
 msgid "Forums"
 msgstr "Forums"
 
-#: ui/manjaro-hello.glade:241
+#: ui/manjaro-hello.glade:243
 msgid "Chat room"
 msgstr "Salon de chat"
 
-#: ui/manjaro-hello.glade:255
+#: ui/manjaro-hello.glade:257
 msgid "Mailling lists"
 msgstr "Listes de diffusion"
 
-#: ui/manjaro-hello.glade:269
+#: ui/manjaro-hello.glade:271
 msgid "Build Manjaro"
 msgstr "Construire Manjaro"
 
-#: ui/manjaro-hello.glade:283
+#: ui/manjaro-hello.glade:285
 msgid "Donate"
 msgstr "Faire un don"
 
-#: ui/manjaro-hello.glade:395
+#: ui/manjaro-hello.glade:397
 msgid "Launch at start"
 msgstr "Lancer au démarrage"
 
-#: ui/manjaro-hello.glade:427
+#: ui/manjaro-hello.glade:429
 msgid "INSTALLATION"
 msgstr "INSTALLATION"
 
-#: ui/manjaro-hello.glade:439
+#: ui/manjaro-hello.glade:441
 msgid "Use Calamares (Graphic method)"
 msgstr "Utiliser Calamares (Méthode graphique)"
 
-#: ui/manjaro-hello.glade:465
-msgid "Welcome"
-msgstr "Bienvenue"
-
-#: ui/manjaro-hello.glade:488
-msgid "Documentation"
-msgstr "Documentation"
-
-#: src/manjaro_hello.py:204
+#: src/manjaro_hello.py:229
 msgid "Can't load page."
 msgstr "Impossible de charger la page."
+
+#~ msgid "Welcome"
+#~ msgstr "Bienvenue"
+
+#~ msgid "Documentation"
+#~ msgstr "Documentation"
 
 #~ msgid "Use CLI-Installer (Command line)"
 #~ msgstr "Utiliser CLI-Installer (Ligne de commande)"
