@@ -71,6 +71,7 @@ class ManjaroHello():
             label = Gtk.Label(wrap=True)
             viewport.add(label)
             scrolled_window.add(viewport)
+            scrolled_window.show_all()
             self.builder.get_object("stack").add_named(scrolled_window, page + "page")
 
         # Init translation
@@ -105,7 +106,7 @@ class ManjaroHello():
             self.builder.get_object("installlabel").set_visible(True)
             self.builder.get_object("install").set_visible(True)
 
-        self.window.show_all()
+        self.window.show()
 
     def get_best_locale(self):
         """Choose best locale, based on user's preferences.
