@@ -144,31 +144,39 @@ class ManjaroHello():
         # Redfining all translatables strings
         # TODO: Find a better solution
         elts = {
-            "about": "tooltip_text",
-            "home": "tooltip_text",
-            "welcometitle": "label",
-            "welcomelabel": "label",
-            "firstcategory": "label",
-            "secondcategory": "label",
-            "thirdcategory": "label",
-            "readme": "label",
-            "release": "label",
-            "wiki": "label",
-            "involved": "label",
-            "forums": "label",
-            "chat": "label",
-            "mailling": "label",
-            "build": "label",
-            "donate": "label",
-            "installlabel": "label",
-            "install": "label",
-            "autostartlabel": "label",
-            "aboutdialog": "comments"
+            "comments": {
+                "aboutdialog"
+            },
+            "label": {
+                "autostartlabel",
+                "build",
+                "chat",
+                "donate",
+                "firstcategory",
+                "forums",
+                "install",
+                "installlabel",
+                "involved",
+                "mailling",
+                "readme",
+                "release",
+                "secondcategory",
+                "thirdcategory",
+                "welcomelabel",
+                "welcometitle",
+                "wiki"
+            },
+            "tooltip_text": {
+                "about",
+                "home"
+            }
         }
-        for elt in elts:
-            if elt not in self.default_texts:
-                self.default_texts[elt] = getattr(self.builder.get_object(elt), "get_" + elts[elt])()
-            getattr(self.builder.get_object(elt), "set_" + elts[elt])(_(self.default_texts[elt]))
+        for method in elts:
+            print(elts[method])
+            for elt in elts[method]:
+                if elt not in self.default_texts:
+                    self.default_texts[elt] = getattr(self.builder.get_object(elt), "get_" + method)()
+                getattr(self.builder.get_object(elt), "set_" + method)(_(self.default_texts[elt]))
 
         # Change content of pages
         for page in self.pages:
