@@ -250,7 +250,7 @@ class ManjaroHello():
         """Event for differents actions."""
         name = action.get_name()
         if name == "install":
-            subprocess.call(["sudo", "-E", "calamares"])
+            subprocess.Popen(["sudo", "-E", "calamares"])
         elif name == "autostart":
             autostart = True if action.get_active() else False
             self.set_autostart(autostart)
