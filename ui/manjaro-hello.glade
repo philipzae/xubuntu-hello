@@ -443,7 +443,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 </child>
                 <child>
                   <object class="GtkButton" id="install">
-                    <property name="label" translatable="yes">Use Calamares (Graphic method)</property>
+                    <property name="label" translatable="yes">Launch installer</property>
                     <property name="name">install</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
