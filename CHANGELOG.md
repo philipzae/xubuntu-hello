@@ -12,7 +12,7 @@ All notable changes to this project will be documented in this file.
 - Remove focus on header buttons.
 
 ### Fixed
-- Alignement of welcome label.
+- Alignment of welcome label.
 
 ## [0.4.1] - 2016-12-27
 ### Added
