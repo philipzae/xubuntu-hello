@@ -1,30 +1,29 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# DeMus, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-27 10:10+0100\n"
-"PO-Revision-Date: 2016-12-27 10:10+0100\n"
-"Last-Translator: Daniel Napora <napcok@gmail.com>\n"
+"POT-Creation-Date: 2016-12-27 10:09+0100\n"
+"PO-Revision-Date: 2016-12-27 19:36+0100\n"
+"Last-Translator: DeMus\n"
 "Language-Team: \n"
-"Language: pl\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../ui/manjaro-hello.glade:7 ../ui/manjaro-hello.glade:523
 msgid "About"
-msgstr "O programie"
+msgstr "Over"
 
 #: ../ui/manjaro-hello.glade:12
 msgid "Welcome screen for Manjaro"
-msgstr "Ekran powitalny Manjaro"
+msgstr "Welkomstscherm voor Manjaro"
 
 #: ../ui/manjaro-hello.glade:14
 msgid "Github"
@@ -32,7 +31,7 @@ msgstr "Github"
 
 #: ../ui/manjaro-hello.glade:100
 msgid "Welcome to Manjaro!"
-msgstr "Witaj w Manjaro!"
+msgstr "Welkom bij Manjaro!"
 
 #: ../ui/manjaro-hello.glade:117
 msgid ""
@@ -42,33 +41,31 @@ msgid ""
 "as we enjoy building it. The links below will help you get started with your "
 "new operating system. So enjoy the experience, and don't hesitate to send us "
 "your feedback."
-msgstr ""
-"Dziękujemy za dołączenie do naszej społeczności!\n"
+msgstr "Welkom bij onze community!\n"
 "\n"
-"My, deweloperzy Manjaro, mamy nadzieję, że używanie Manjaro przyniesie Ci "
-"tyle radości ile nam jego tworzenie. Poniższe linki pomogą Ci w rozpoczęciu "
-"używania nowego systemu operacyjnego. Życzymy miłych wrażeń, nie wahaj się "
-"podzielić się z nami Twoją opinią."
-
+"Wij, de Manjaro ontwikkelaars, hopen dat je Manjaro met net zoveel plezier "
+"gaat gebruiken als wij hebben bij het ontwikkelen ervan. De links hieronder "
+"helpen je bij de eerste start van het besturingssysteem. Zo, veel plezier "
+"en vergeet ons niet je terugkoppeling te sturen."
 #: ../ui/manjaro-hello.glade:134
 msgid "DOCUMENTATION"
-msgstr "DOKUMENTACJA"
+msgstr "DOCUMENTATIE"
 
 #: ../ui/manjaro-hello.glade:148
 msgid "SUPPORT"
-msgstr "WSPARCIE"
+msgstr "SUPPORT"
 
 #: ../ui/manjaro-hello.glade:162
 msgid "PROJECT"
-msgstr "PROJEKT"
+msgstr "PROJECT"
 
 #: ../ui/manjaro-hello.glade:174
 msgid "Read me"
-msgstr "Czytaj to"
+msgstr "Lees mij"
 
 #: ../ui/manjaro-hello.glade:188
 msgid "Release info"
-msgstr "Informacje o wydaniu"
+msgstr "Release info"
 
 #: ../ui/manjaro-hello.glade:202
 msgid "Wiki"
@@ -76,47 +73,44 @@ msgstr "Wiki"
 
 #: ../ui/manjaro-hello.glade:216
 msgid "Get involved"
-msgstr "Zaangażuj się"
+msgstr "Help mee"
 
 #: ../ui/manjaro-hello.glade:230
 msgid "Forums"
-msgstr "Forum"
+msgstr "Fora"
 
 #: ../ui/manjaro-hello.glade:244
 msgid "Chat room"
-msgstr "IRC"
+msgstr "Chatruimte"
 
 #: ../ui/manjaro-hello.glade:258
 msgid "Mailling lists"
-msgstr "Listy mailingowe"
+msgstr "Email lijsten"
 
 #: ../ui/manjaro-hello.glade:272
 msgid "Build Manjaro"
-msgstr "Twórz Manjaro"
+msgstr "Maak Manjaro"
 
 #: ../ui/manjaro-hello.glade:286
 msgid "Donate"
-msgstr "Wesprzyj"
+msgstr "Doneer"
 
 #: ../ui/manjaro-hello.glade:402
 msgid "Launch at start"
-msgstr "Uruchamiaj przy starcie"
+msgstr "Autostart"
 
 #: ../ui/manjaro-hello.glade:434
 msgid "INSTALLATION"
-msgstr "INSTALACJA"
+msgstr "INSTALLATIE"
 
 #: ../ui/manjaro-hello.glade:446
 msgid "Launch installer"
-msgstr ""
+msgstr "Start de installatie"
 
 #: ../ui/manjaro-hello.glade:495
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #: ../src/manjaro_hello.py:241
 msgid "Can't load page."
-msgstr "Nie można załadować strony."
-
-#~ msgid "Use Calamares (Graphic method)"
-#~ msgstr "Użyj Calamares (metoda graficzna)"
+msgstr "Kan pagina niet laden"
