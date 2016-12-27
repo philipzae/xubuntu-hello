@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-27 10:10+0100\n"
-"PO-Revision-Date: 2016-12-27 10:10+0100\n"
+"PO-Revision-Date: 2016-12-27 20:51+0100\n"
 "Last-Translator: Daniel Napora <napcok@gmail.com>\n"
 "Language-Team: \n"
 "Language: pl\n"
@@ -16,7 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 
 #: ../ui/manjaro-hello.glade:7 ../ui/manjaro-hello.glade:523
 msgid "About"
@@ -108,11 +109,11 @@ msgstr "INSTALACJA"
 
 #: ../ui/manjaro-hello.glade:446
 msgid "Launch installer"
-msgstr ""
+msgstr "Uruchom instalator"
 
 #: ../ui/manjaro-hello.glade:495
 msgid "Home"
-msgstr ""
+msgstr "Start"
 
 #: ../src/manjaro_hello.py:241
 msgid "Can't load page."
