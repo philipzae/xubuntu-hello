@@ -128,7 +128,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="label" translatable="yes">Read me</property>
                 <property name="name">readme</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
               </object>
@@ -142,7 +142,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="label" translatable="yes">Release info</property>
                 <property name="name">release</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
               </object>
@@ -156,7 +156,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="label" translatable="yes">Wiki</property>
                 <property name="name">wiki</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
               </object>
@@ -170,7 +170,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="label" translatable="yes">Get involved</property>
                 <property name="name">involved</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
               </object>
@@ -184,7 +184,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="label" translatable="yes">Forums</property>
                 <property name="name">forums</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
               </object>
@@ -198,7 +198,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="label" translatable="yes">Chat room</property>
                 <property name="name">chat</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
               </object>
@@ -212,7 +212,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="label" translatable="yes">Mailling lists</property>
                 <property name="name">mailling</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
               </object>
@@ -226,7 +226,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="label" translatable="yes">Build Manjaro</property>
                 <property name="name">build</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
               </object>
@@ -240,7 +240,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="label" translatable="yes">Donate</property>
                 <property name="name">donate</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
               </object>
@@ -398,7 +398,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <object class="GtkButton" id="install">
                 <property name="label" translatable="yes">Launch installer</property>
                 <property name="name">install</property>
-                <property name="can_focus">True</property>
+                <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
                 <signal name="clicked" handler="on_action_clicked" swapped="no"/>
               </object>
