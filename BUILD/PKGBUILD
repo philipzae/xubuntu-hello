@@ -3,7 +3,7 @@ pkgname=${_pkgname}-git
 pkgver=0.4.2
 pkgrel=1
 pkgdesc="A tool providing access to documentation and support for new Manjaro users."
-url="https://github.com/Huluti/${_pkgname}"
+url="https://github.com/manjaro/${_pkgname}"
 arch=('any')
 license=('GPL')
 depends=('gtk3' 'python3')
@@ -12,7 +12,7 @@ makedepends=('git')
 replaces=('manjaro-hello')
 provides=('manjaro-hello')
 conflicts=('manjaro-hello')
-source=("${_pkgname}::git+https://github.com/Huluti/${_pkgname}")
+source=("${_pkgname}::git+https://github.com/manjaro/${_pkgname}")
 md5sums=('SKIP')
 
 pkgver() {
