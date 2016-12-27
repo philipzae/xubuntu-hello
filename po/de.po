@@ -32,7 +32,7 @@ msgstr "Github"
 
 #: ../ui/manjaro-hello.glade:100
 msgid "Welcome to Manjaro!"
-msgstr "Willkommen  bei Manjaro!"
+msgstr "Willkommen bei Manjaro!"
 
 #: ../ui/manjaro-hello.glade:117
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 "werden Manjaro zu benutzen, wie wir es genießen, es zu entwickeln. Die Links "
 "unten werden Ihnen helfen sich in Ihrem neuen Betriebssystem "
 "zurechtzufinden. Genießen Sie also das Benutzererlebnis und zögern Sie nicht "
-"ihr Feedback an uns zu senden."
+"Ihr Feedback an uns zu senden."
 
 #: ../ui/manjaro-hello.glade:134
 msgid "DOCUMENTATION"
@@ -109,11 +109,11 @@ msgstr "INSTALLATION"
 
 #: ../ui/manjaro-hello.glade:446
 msgid "Launch installer"
-msgstr ""
+msgstr "Installer starten"
 
 #: ../ui/manjaro-hello.glade:495
 msgid "Home"
-msgstr ""
+msgstr "Hauptseite"
 
 #: ../src/manjaro_hello.py:241
 msgid "Can't load page."
