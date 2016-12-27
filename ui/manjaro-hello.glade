@@ -366,7 +366,6 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="name">autostart</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="halign">end</property>
                     <signal name="notify::active" handler="on_action_clicked" swapped="no"/>
                   </object>
                   <packing>
