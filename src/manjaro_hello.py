@@ -256,7 +256,6 @@ class ManjaroHello():
             self.set_autostart(autostart)
         elif name == "about":
             dialog = self.builder.get_object("aboutdialog")
-            dialog.set_transient_for(self.window)
             dialog.run()
             dialog.hide()
 
