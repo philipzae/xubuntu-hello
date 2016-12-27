@@ -1,6 +1,28 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.1] - 2016-12-27
+### Added
+- Spanish translation.
+
+### Changed
+- Russian translation.
+
+## [0.4] - 2016-12-27
+### Added
+- Support of autostart in i3.
+- Disable home button on welcome page.
+- Tooltips on social and header buttons.
+- Russian translation.
+
+### Changed
+- Make creating new pages easier.
+- Label of install button.
+- German translation.
+
+### Fixed
+- Window blocking during call of installer.
+
 ## [0.3.1] - 2016-12-23
 ### Fixed
 - Button icons are not always displayed.
@@ -8,7 +30,9 @@ All notable changes to this project will be documented in this file.
 ## [0.3] - 2016-12-23
 ### Added
 - Icons for links buttons.
-- German launcher's description from @Photon89.
+- German launcher's description.
+
+### Changed
 - Use logo from manjaro-icons if available.
 
 ### Fixed
@@ -27,8 +51,8 @@ All notable changes to this project will be documented in this file.
 ## [0.2] - 2016-12-21
 First stable version.
 ### Added
-- Polish translation from @napcok.
-- German translation from @Photon89.
+- Polish translation.
+- German translation.
 
 ### Fixed
 - Locale detection.

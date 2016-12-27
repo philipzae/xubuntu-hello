@@ -78,7 +78,7 @@ class ManjaroHello():
             self.builder.get_object("stack").add_named(scrolled_window, page + "page")
 
         # Init translation
-        self.locales = ("de", "en", "fr", "pl", "ru")  # supported locales
+        self.locales = ("de", "en", "es", "fr", "pl", "ru")  # supported locales
         self.default_locale = "en"
         self.sys_locale = locale.getdefaultlocale()[0]
         self.default_texts = {}
@@ -256,7 +256,6 @@ class ManjaroHello():
             self.set_autostart(autostart)
         elif name == "about":
             dialog = self.builder.get_object("aboutdialog")
-            dialog.set_transient_for(self.window)
             dialog.run()
             dialog.hide()
 
