@@ -456,6 +456,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="nl">Nederlands (Nederland)</item>
               <item id="pl">Polski (Polska)</item>
               <item id="ru">Pусский (Россия)</item>
+              <item id="it">Italiano (Italia)</item>
             </items>
             <signal name="changed" handler="on_languages_changed" swapped="no"/>
           </object>
