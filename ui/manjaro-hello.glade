@@ -437,7 +437,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="name">home</property>
             <property name="visible">True</property>
             <property name="sensitive">False</property>
-            <property name="can_focus">True</property>
+            <property name="can_focus">False</property>
             <property name="receives_default">True</property>
             <property name="tooltip_text" translatable="yes">Home</property>
             <property name="image">homeicon</property>
@@ -467,7 +467,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
           <object class="GtkButton" id="about">
             <property name="name">about</property>
             <property name="visible">True</property>
-            <property name="can_focus">True</property>
+            <property name="can_focus">False</property>
             <property name="receives_default">True</property>
             <property name="tooltip_text" translatable="yes">About</property>
             <property name="image">iconabout</property>
