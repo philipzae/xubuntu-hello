@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Support of autostart in i3.
 - Disable home button on welcome page.
-- Add tooltips on social and header buttons.
+- Tooltips on social and header buttons.
 - Russian translation from @jacobtey.
 
 ### Changed
