@@ -1,6 +1,19 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.2] - 2016-12-27
+### Added
+- Dutch translation.
+- Plural forms for all languages.
+- Polish launcher's description.
+
+### Changed
+- Polish translation.
+- Remove focus on header buttons.
+
+### Fixed
+- Alignement of welcome label.
+
 ## [0.4.1] - 2016-12-27
 ### Added
 - Spanish translation.
