@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Chazy Chaz <how2hack@hotmail.es>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-27 10:10+0100\n"
+"PO-Revision-Date: 2016-12-27 10:10+0100\n"
+"Last-Translator: Chazy Chaz <how2hack@hotmail.es>\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../ui/manjaro-hello.glade:7 ../ui/manjaro-hello.glade:523
+msgid "About"
+msgstr "Acerca de"
+
+#: ../ui/manjaro-hello.glade:12
+msgid "Welcome screen for Manjaro"
+msgstr "Pantalla de bienvenida para Manjaro"
+
+#: ../ui/manjaro-hello.glade:14
+msgid "Github"
+msgstr "Github"
+
+#: ../ui/manjaro-hello.glade:100
+msgid "Welcome to Manjaro!"
+msgstr "Bienvenido a Manjaro"
+
+#: ../ui/manjaro-hello.glade:117
+msgid ""
+"Thank you for joining our community!\n"
+"\n"
+"We, the Manjaro Developers, hope that you will enjoy using Manjaro as much "
+"as we enjoy building it. The links below will help you get started with your "
+"new operating system. So enjoy the experience, and don't hesitate to send us "
+"your feedback."
+msgstr ""
+"¡Gracias por unirte a nuestra comunidad!\n"
+"\n"
+"Nosotros, los Desarrolladores de Manjaro, esperamos que disfrutes usando Manjaro "
+"tanto como nosotros disfrutamos construyendolo. Los links de abajo te ayudarán a "
+"empezar con tu nuevo sistema opeartivo. Disfruta de la experiencia, y no dudes en "
+"enviarnos tus comentarios."
+
+#: ../ui/manjaro-hello.glade:134
+msgid "DOCUMENTATION"
+msgstr "DOCUMENTACIÓN"
+
+#: ../ui/manjaro-hello.glade:148
+msgid "SUPPORT"
+msgstr "SOPORTE"
+
+#: ../ui/manjaro-hello.glade:162
+msgid "PROJECT"
+msgstr "PROYECTO"
+
+#: ../ui/manjaro-hello.glade:174
+msgid "Read me"
+msgstr "Leeme"
+
+#: ../ui/manjaro-hello.glade:188
+msgid "Release info"
+msgstr "Información"
+
+#: ../ui/manjaro-hello.glade:202
+msgid "Wiki"
+msgstr "Wiki"
+
+#: ../ui/manjaro-hello.glade:216
+msgid "Get involved"
+msgstr "Participa con nosotros"
+
+#: ../ui/manjaro-hello.glade:230
+msgid "Forums"
+msgstr "Foros"
+
+#: ../ui/manjaro-hello.glade:244
+msgid "Chat room"
+msgstr "Sala de chat"
+
+#: ../ui/manjaro-hello.glade:258
+msgid "Mailling lists"
+msgstr "Listas de correo"
+
+#: ../ui/manjaro-hello.glade:272
+msgid "Build Manjaro"
+msgstr "Construye Manjaro"
+
+#: ../ui/manjaro-hello.glade:286
+msgid "Donate"
+msgstr "Donar"
+
+#: ../ui/manjaro-hello.glade:402
+msgid "Launch at start"
+msgstr "Abrir al inicio"
+
+#: ../ui/manjaro-hello.glade:434
+msgid "INSTALLATION"
+msgstr "INSTALACIÓN"
+
+#: ../ui/manjaro-hello.glade:446
+msgid "Launch installer"
+msgstr "Abrir instalador"
+
+#: ../ui/manjaro-hello.glade:495
+msgid "Home"
+msgstr "Inicio"
+
+#: ../src/manjaro_hello.py:241
+msgid "Can't load page."
+msgstr "No se puede cargar la página"
