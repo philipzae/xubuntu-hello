@@ -19,331 +19,260 @@
     <property name="has_resize_grip">True</property>
     <signal name="delete-event" handler="on_delete_window" swapped="no"/>
     <child>
-      <object class="GtkGrid">
+      <object class="GtkStack" id="stack">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="margin_left">10</property>
+        <property name="margin_right">10</property>
+        <property name="margin_top">10</property>
+        <property name="margin_bottom">10</property>
+        <property name="hexpand">True</property>
+        <property name="transition_type">crossfade</property>
         <child>
-          <object class="GtkStack" id="stack">
+          <object class="GtkGrid">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="margin_left">10</property>
-            <property name="margin_right">10</property>
-            <property name="margin_top">10</property>
-            <property name="margin_bottom">10</property>
-            <property name="hexpand">True</property>
-            <property name="transition_type">crossfade</property>
+            <property name="row_spacing">20</property>
+            <property name="column_spacing">10</property>
+            <property name="column_homogeneous">True</property>
             <child>
-              <object class="GtkGrid">
+              <object class="GtkImage" id="manjaroicon">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="row_spacing">20</property>
-                <property name="column_spacing">10</property>
-                <property name="column_homogeneous">True</property>
-                <child>
-                  <object class="GtkImage" id="manjaroicon">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                    <property name="width">3</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="welcometitle">
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="has_focus">True</property>
-                    <property name="label" translatable="yes">Welcome to Manjaro!</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                      <attribute name="scale" value="2"/>
-                    </attributes>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">1</property>
-                    <property name="width">3</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="welcomelabel">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="hexpand">True</property>
-                    <property name="label" translatable="yes">Thank you for joining our community!
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+                <property name="width">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="welcometitle">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="has_focus">True</property>
+                <property name="label" translatable="yes">Welcome to Manjaro!</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                  <attribute name="scale" value="2"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">1</property>
+                <property name="width">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="welcomelabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="hexpand">True</property>
+                <property name="label" translatable="yes">Thank you for joining our community!
 
 We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback.</property>
-                    <property name="wrap">True</property>
-                    <property name="width_chars">1</property>
-                    <property name="max_width_chars">1</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">2</property>
-                    <property name="width">3</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="firstcategory">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">DOCUMENTATION</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">3</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="secondcategory">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">SUPPORT</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">3</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="thirdcategory">
-                    <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">PROJECT</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
-                  </object>
-                  <packing>
-                    <property name="left_attach">2</property>
-                    <property name="top_attach">3</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="readme">
-                    <property name="label" translatable="yes">Read me</property>
-                    <property name="name">readme</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="release">
-                    <property name="label" translatable="yes">Release info</property>
-                    <property name="name">release</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">5</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="wiki">
-                    <property name="label" translatable="yes">Wiki</property>
-                    <property name="name">wiki</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_link_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">6</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="involved">
-                    <property name="label" translatable="yes">Get involved</property>
-                    <property name="name">involved</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">2</property>
-                    <property name="top_attach">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="forums">
-                    <property name="label" translatable="yes">Forums</property>
-                    <property name="name">forums</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_link_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="chat">
-                    <property name="label" translatable="yes">Chat room</property>
-                    <property name="name">chat</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_link_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">5</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="mailling">
-                    <property name="label" translatable="yes">Mailling lists</property>
-                    <property name="name">mailling</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_link_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">6</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="build">
-                    <property name="label" translatable="yes">Build Manjaro</property>
-                    <property name="name">build</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_link_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">2</property>
-                    <property name="top_attach">5</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="donate">
-                    <property name="label" translatable="yes">Donate</property>
-                    <property name="name">donate</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_link_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left_attach">2</property>
-                    <property name="top_attach">6</property>
-                  </packing>
-                </child>
+                <property name="wrap">True</property>
+                <property name="width_chars">1</property>
+                <property name="max_width_chars">1</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">2</property>
+                <property name="width">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="firstcategory">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">DOCUMENTATION</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="secondcategory">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">SUPPORT</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="thirdcategory">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">PROJECT</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="readme">
+                <property name="label" translatable="yes">Read me</property>
+                <property name="name">readme</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="release">
+                <property name="label" translatable="yes">Release info</property>
+                <property name="name">release</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="wiki">
+                <property name="label" translatable="yes">Wiki</property>
+                <property name="name">wiki</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_link_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="involved">
+                <property name="label" translatable="yes">Get involved</property>
+                <property name="name">involved</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_btn_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="forums">
+                <property name="label" translatable="yes">Forums</property>
+                <property name="name">forums</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_link_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="chat">
+                <property name="label" translatable="yes">Chat room</property>
+                <property name="name">chat</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_link_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="mailling">
+                <property name="label" translatable="yes">Mailling lists</property>
+                <property name="name">mailling</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_link_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="build">
+                <property name="label" translatable="yes">Build Manjaro</property>
+                <property name="name">build</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_link_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="donate">
+                <property name="label" translatable="yes">Donate</property>
+                <property name="name">donate</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_link_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="valign">end</property>
+                <property name="vexpand">True</property>
+                <property name="spacing">10</property>
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="valign">end</property>
-                    <property name="vexpand">True</property>
-                    <property name="spacing">10</property>
+                    <property name="spacing">5</property>
                     <child>
-                      <object class="GtkBox">
+                      <object class="GtkEventBox">
+                        <property name="name">google+</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="spacing">5</property>
+                        <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
                         <child>
-                          <object class="GtkEventBox">
-                            <property name="name">google+</property>
+                          <object class="GtkImage" id="google+">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
-                            <child>
-                              <object class="GtkImage" id="google+">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="tooltip_text">Google+</property>
-                              </object>
-                            </child>
+                            <property name="tooltip_text">Google+</property>
                           </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkEventBox">
-                            <property name="name">facebook</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
-                            <child>
-                              <object class="GtkImage" id="facebook">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="tooltip_text">Facebook</property>
-                              </object>
-                            </child>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkEventBox">
-                            <property name="name">twitter</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
-                            <child>
-                              <object class="GtkImage" id="twitter">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="tooltip_text">Twitter</property>
-                              </object>
-                            </child>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">2</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkEventBox">
-                            <property name="name">reddit</property>
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
-                            <child>
-                              <object class="GtkImage" id="reddit">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="tooltip_text">Reddit</property>
-                              </object>
-                            </child>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">True</property>
-                            <property name="position">3</property>
-                          </packing>
                         </child>
                       </object>
                       <packing>
@@ -353,25 +282,38 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="autostartlabel">
+                      <object class="GtkEventBox">
+                        <property name="name">facebook</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">end</property>
-                        <property name="label" translatable="yes">Launch at start</property>
+                        <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
+                        <child>
+                          <object class="GtkImage" id="facebook">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="tooltip_text">Facebook</property>
+                          </object>
+                        </child>
                       </object>
                       <packing>
-                        <property name="expand">True</property>
+                        <property name="expand">False</property>
                         <property name="fill">True</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkSwitch" id="autostart">
-                        <property name="name">autostart</property>
+                      <object class="GtkEventBox">
+                        <property name="name">twitter</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="halign">end</property>
-                        <signal name="notify::active" handler="on_action_clicked" swapped="no"/>
+                        <property name="can_focus">False</property>
+                        <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
+                        <child>
+                          <object class="GtkImage" id="twitter">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="tooltip_text">Twitter</property>
+                          </object>
+                        </child>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -379,60 +321,108 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                         <property name="position">2</property>
                       </packing>
                     </child>
+                    <child>
+                      <object class="GtkEventBox">
+                        <property name="name">reddit</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
+                        <child>
+                          <object class="GtkImage" id="reddit">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="tooltip_text">Reddit</property>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">3</property>
+                      </packing>
+                    </child>
                   </object>
                   <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">9</property>
-                    <property name="width">3</property>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="installlabel">
+                  <object class="GtkLabel" id="autostartlabel">
+                    <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="label" translatable="yes">INSTALLATION</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">Launch at start</property>
                   </object>
                   <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">7</property>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="install">
-                    <property name="label" translatable="yes">Launch installer</property>
-                    <property name="name">install</property>
+                  <object class="GtkSwitch" id="autostart">
+                    <property name="name">autostart</property>
+                    <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <signal name="clicked" handler="on_action_clicked" swapped="no"/>
+                    <property name="halign">end</property>
+                    <signal name="notify::active" handler="on_action_clicked" swapped="no"/>
                   </object>
                   <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">8</property>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
                   </packing>
-                </child>
-                <child>
-                  <placeholder/>
-                </child>
-                <child>
-                  <placeholder/>
-                </child>
-                <child>
-                  <placeholder/>
-                </child>
-                <child>
-                  <placeholder/>
                 </child>
               </object>
               <packing>
-                <property name="name">homepage</property>
+                <property name="left_attach">0</property>
+                <property name="top_attach">9</property>
+                <property name="width">3</property>
               </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="installlabel">
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">INSTALLATION</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="install">
+                <property name="label" translatable="yes">Launch installer</property>
+                <property name="name">install</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_action_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
             </child>
           </object>
           <packing>
-            <property name="left_attach">0</property>
-            <property name="top_attach">0</property>
+            <property name="name">homepage</property>
           </packing>
         </child>
       </object>
