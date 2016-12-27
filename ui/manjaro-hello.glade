@@ -13,6 +13,7 @@
     <property name="website_label" translatable="yes">Github</property>
     <property name="authors">Hugo Posnic</property>
     <property name="translator_credits">Michael Kogan [de]
+Bernhard Landauer [de]
 Daniel Napora [pl]
 Ilya Ostapenko [ru]</property>
     <property name="logo_icon_name"/>
