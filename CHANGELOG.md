@@ -1,6 +1,21 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4] - 2016-12-27
+### Added
+- Support of autostart in i3.
+- Disable home button on welcome page.
+- Add tooltips on social and header buttons.
+- Russian translation from @jacobtey.
+
+### Changed
+- Make creating new pages easier.
+- Label of install button.
+- Update german translation from @oberon2007.
+
+### Fixed
+- Window blocking during call of installer.
+
 ## [0.3.1] - 2016-12-23
 ### Fixed
 - Button icons are not always displayed.
