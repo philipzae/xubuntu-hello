@@ -79,7 +79,6 @@ class ManjaroHello():
 
         # Init translation
         self.default_locale = "en"
-        self.sys_locale = locale.getdefaultlocale()[0]
         self.default_texts = {}
 
         # Make translation
@@ -118,12 +117,13 @@ class ManjaroHello():
         if os.path.isfile(path.format(self.preferences["locale"])):
             return self.preferences["locale"]
         else:
+            sys_locale = locale.getdefaultlocale()[0]
             # If user's locale is supported
-            if os.path.isfile(path.format(self.sys_locale)):
-                return self.sys_locale
+            if os.path.isfile(path.format(sys_locale)):
+                return sys_locale
             # If two first letters of user's locale is supported (ex: en_US -> en)
-            elif os.path.isfile(path.format(self.sys_locale[:2])):
-                return self.sys_locale[:2]
+            elif os.path.isfile(path.format(sys_locale[:2])):
+                return sys_locale[:2]
             else:
                 return self.default_locale
 
