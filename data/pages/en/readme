@@ -1,10 +1,10 @@
 <big>Handling hardware</big>
 
-Manjaro not only supports the use of multiple kernels (selectable from the advanced options at the boot screen), but allows easy access to the very latest bleeding edge kernels as well. This is undertaken through use of the Kernel module in Manjaro's graphical Settings Manager, or via the command line with the MHWD-kernel (Manjaro Hardware Detection) command.
+Manjaro not only supports the use of multiple kernels (selectable from the advanced options at the boot screen), but also provides access to the very latest bleeding edge kernels as well. This can be done through the use of the Kernel module in Manjaro's graphical Settings Manager, or via the command line using the MHWD-kernel (Manjaro Hardware Detection) command.
 
-These Manjaro tools will automatically update a newly installed kernel including any modules currently in use with your existing kernel. For example, if you were to update from kernel 3.18 to 4.1, mhwd-kernel would automatically include the 4.1 builds of any and all modules presently used in 3.18. How about that!
+These Manjaro tools will automatically update a newly installed kernel along with any modules currently in use with your existing kernel. For example, if you were to update from kernel 3.18 to 4.1, mhwd-kernel would automatically include the kernel 4.1 builds and all modules used with kernel 3.18. How about that!
 
-You can configure your hardware through the Hardware Detection module in the Settings Manager or alternatively with the MHWD cli-application. With these tools you can install for example graphical drivers, free and propritary.
+You can configure your hardware through the Hardware Detection module in the Settings Manager or alternatively with the MHWD cli-application. With these tools you can install for example graphical drivers, free and proprietary.
 
 <big>Getting help</big>
 
@@ -28,7 +28,7 @@ Another option is to join us on IRC by joining our #manjaro channel on the chat.
 
 <b>Sign up to a mailing list</b>
 
-Another way to get help is to email questions to a Manjaro mailing list (you can also search the history for past discussions). Simply sign up to the list you prefer and follow the instructions. There is a list dedicated to several topics, just take a look!
+Another way to get help is to email questions to Manjaro mailing list (you can also search the history for past discussions). Simply sign up to the list you prefer and follow the instructions. There is a list dedicated to several topics, just take a look!
 
 <big>Other resources</big>
 
