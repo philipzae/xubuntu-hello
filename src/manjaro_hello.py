@@ -205,9 +205,9 @@ class ManjaroHello():
                     else:
                         f.write(content.replace(i3_autostart, "#" + i3_autostart))
                     f.truncate()
+            self.autostart = autostart
         except OSError as e:
             print(e)
-        self.autostart = autostart
 
     def save_preferences(self):
         """Save preferences in config file."""
