@@ -78,7 +78,6 @@ class ManjaroHello():
             self.builder.get_object("stack").add_named(scrolled_window, page + "page")
 
         # Init translation
-        self.locales = ("de", "en", "es", "fr", "it", "nl", "pl", "ru")  # supported locales
         self.default_locale = "en"
         self.sys_locale = locale.getdefaultlocale()[0]
         self.default_texts = {}
@@ -116,14 +115,15 @@ class ManjaroHello():
         :return: locale to use
         :rtype: str
         """
-        if self.preferences["locale"] in self.locales:
+        path = self.locale_path + "{}/LC_MESSAGES/" + self.app + ".mo"
+        if os.path.isfile(path.format(self.preferences["locale"])):
             return self.preferences["locale"]
         else:
             # If user's locale is supported
-            if self.sys_locale in self.locales:
+            if os.path.isfile(path.format(self.sys_locale)):
                 return self.sys_locale
             # If two first letters of user's locale is supported (ex: en_US -> en)
-            elif self.sys_locale[:2] in self.locales:
+            elif os.path.isfile(path.format(self.sys_locale[:2])):
                 return self.sys_locale[:2]
             else:
                 return self.default_locale
@@ -137,7 +137,6 @@ class ManjaroHello():
             tr = gettext.translation(self.app, self.locale_path, [locale], fallback=True)
             tr.install()
         except OSError:
-            print("WARNING: No translation file for  '{}' locale".format(locale))
             return
 
         # Dirty code to fix an issue with gettext that can't translate strings from glade files
