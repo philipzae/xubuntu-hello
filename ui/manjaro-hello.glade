@@ -456,6 +456,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="it">Italiano (Italia)</item>
               <item id="nl">Nederlands (Nederland)</item>
               <item id="pl">Polski (Polska)</item>
+              <item id="pt_BR">Português (Brasil)</item>
               <item id="ru">Pусский (Россия)</item>
             </items>
             <signal name="changed" handler="on_languages_changed" swapped="no"/>
@@ -500,6 +501,7 @@ Hugo Posnic [fr]
 Stefano Capitani [it]
 DeMus [nl]
 Daniel Napora [pl]
+Leandro Cunha [pt_BR]
 Ilya Ostapenko [ru]</property>
     <property name="logo_icon_name"/>
     <property name="license_type">gpl-3-0</property>
