@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.3] - 2016-12-28
+### Added
+- Italian translation.
+- Brazilian Portuguese translation.
+
+### Changed
+- Remove focus of all buttons.
+- Dutch launcher's description.
+
 ## [0.4.2] - 2016-12-27
 ### Added
 - Dutch translation.
