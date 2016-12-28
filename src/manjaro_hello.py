@@ -81,12 +81,11 @@ class ManjaroHello():
         self.default_locale = "en"
         self.sys_locale = locale.getdefaultlocale()[0]
         self.default_texts = {}
-        self.preferences["locale"] = self.get_best_locale()
 
         # Make translation
         gettext.bindtextdomain(self.app, self.locale_path)
         gettext.textdomain(self.app)
-        self.builder.get_object("languages").set_active_id(self.preferences["locale"])
+        self.builder.get_object("languages").set_active_id(self.get_best_locale())
 
         # Load images
         for img in ("google+", "facebook", "twitter", "reddit"):
@@ -182,6 +181,8 @@ class ManjaroHello():
             label = child.get_children()[0].get_children()[0]
             label.set_markup(self.get_page(page))
 
+        self.preferences["locale"] = locale
+
     def set_autostart(self, autostart):
         """Set state of autostart.
         :param autostart: wanted autostart state
@@ -242,8 +243,7 @@ class ManjaroHello():
     # Handlers
     def on_languages_changed(self, combobox):
         """Event for selected language."""
-        self.preferences["locale"] = combobox.get_active_id()
-        self.set_locale(self.preferences["locale"])
+        self.set_locale(combobox.get_active_id())
 
     def on_action_clicked(self, action, _=None):
         """Event for differents actions."""
