@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.4] - 2016-12-29
+### Changed
+- Use a smaller version of logo.
+- Simplifying English of readme page.
+- Russian translation.
+
 ## [0.4.3] - 2016-12-28
 ### Added
 - Italian translation.
