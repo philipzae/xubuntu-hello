@@ -108,7 +108,7 @@ msgstr "INSTALAÇÃO"
 
 #: ../ui/manjaro-hello.glade:446
 msgid "Launch installer"
-msgstr "Instalador do lançamento"
+msgstr "Iniciar instalação"
 
 #: ../ui/manjaro-hello.glade:495
 msgid "Home"
