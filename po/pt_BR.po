@@ -100,7 +100,7 @@ msgstr "Doação"
 
 #: ../ui/manjaro-hello.glade:402
 msgid "Launch at start"
-msgstr "Lançamento no início"
+msgstr "Mostrar esta caixa de diálogo na inicialização"
 
 #: ../ui/manjaro-hello.glade:434
 msgid "INSTALLATION"
