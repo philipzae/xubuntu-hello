@@ -37,7 +37,6 @@ For the moment, even if the soft works, it is not finished.
 
 ## Links
 
-- [AUR repo](https://aur.archlinux.org/packages/manjaro-hello-git)
 - [Discussion from Manjaro's forum](https://forum.manjaro.org/t/start-work-on-a-new-welcome-screen-for-manjaro/13685)
 
 Let's make a wonderful software !
