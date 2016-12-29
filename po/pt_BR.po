@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
-"Last-Translator: Leandro Cunha (leandrocunha526@gmail.com)"
+"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Language: pt_BR\n"
 
@@ -52,15 +52,15 @@ msgstr ""
 
 #: ../ui/manjaro-hello.glade:134
 msgid "DOCUMENTATION"
-msgstr "DOCUMENTAÇÃO "
+msgstr "Documentação "
 
 #: ../ui/manjaro-hello.glade:148
 msgid "SUPPORT"
-msgstr "SUPORTE"
+msgstr "Suporte"
 
 #: ../ui/manjaro-hello.glade:162
 msgid "PROJECT"
-msgstr "PROJETO"
+msgstr "Projeto"
 
 #: ../ui/manjaro-hello.glade:174
 msgid "Read me"
@@ -100,7 +100,7 @@ msgstr "Doação"
 
 #: ../ui/manjaro-hello.glade:402
 msgid "Launch at start"
-msgstr "Lançamento no início"
+msgstr "Mostrar esta caixa de diálogo na inicialização"
 
 #: ../ui/manjaro-hello.glade:434
 msgid "INSTALLATION"
@@ -108,7 +108,7 @@ msgstr "INSTALAÇÃO"
 
 #: ../ui/manjaro-hello.glade:446
 msgid "Launch installer"
-msgstr "Instalador do lançamento"
+msgstr "Iniciar instalação do sistema"
 
 #: ../ui/manjaro-hello.glade:495
 msgid "Home"
