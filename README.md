@@ -38,5 +38,6 @@ For the moment, even if the soft works, it is not finished.
 ## Links
 
 - [Discussion from Manjaro's forum](https://forum.manjaro.org/t/start-work-on-a-new-welcome-screen-for-manjaro/13685)
+- [Translation project for Manjaro-Hello](https://www.transifex.com/manjarolinux/manjaro-hello)
 
 Let's make a wonderful software !
