@@ -1,4 +1,4 @@
-# Translation of Pamac.
+# Translation of Manjaro-Hello.
 # Copyright (C) 2016-2017 Manjaro Developers <manjaro-dev@manjaro.org>
 # This file is distributed under the same license as the Manjaro-Hello package.
 # Hugo Posnic <huluti@manjaro.org>, 2016-2017.
