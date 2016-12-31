@@ -449,16 +449,16 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <items>
-              <item id="de">Deutsch (Deutschland)</item>
-              <item id="en">English (United States)</item>
-              <item id="es">Español (España)</item>
-              <item id="fr">Français (France)</item>
-              <item id="it">Italiano (Italia)</item>
-              <item id="nl">Nederlands (Nederland)</item>
-              <item id="pl">Polski (Polska)</item>
+              <item id="de">Deutsch</item>
+              <item id="en">English</item>
+              <item id="es">Español</item>
+              <item id="fr">Français</item>
+              <item id="it">Italiano</item>
+              <item id="nl">Nederlands</item>
+              <item id="pl">Polski</item>
               <item id="pt_BR">Português (Brasil)</item>
               <item id="pt_PT">Português (Portugal)</item>
-              <item id="ru">Pусский (Россия)</item>
+              <item id="ru">Pусский</item>
             </items>
             <signal name="changed" handler="on_languages_changed" swapped="no"/>
           </object>
