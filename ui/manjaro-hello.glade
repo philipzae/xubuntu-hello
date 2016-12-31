@@ -449,7 +449,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <items>
-              <item id="sr">Српски</item>
+              <item id="sr_SR">Српски</item>
               <item id="de">Deutsch</item>
               <item id="en">English</item>
               <item id="es">Español</item>
@@ -462,7 +462,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="pt_BR">Português (Brasil)</item>
               <item id="pt_PT">Português (Portugal)</item>
               <item id="ru">Pусский</item>
-              <item id="sr_SR">Srpski (Latinica)</item>
+              <item id="sr">Srpski (Latinica)</item>
               <item id="tr">Türkçe</item>
             </items>
             <signal name="changed" handler="on_languages_changed" swapped="no"/>
