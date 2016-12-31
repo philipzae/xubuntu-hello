@@ -449,18 +449,19 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <items>
+              <item id="sr">Српски</item>
               <item id="de">Deutsch</item>
               <item id="en">English</item>
               <item id="es">Español</item>
               <item id="fr">Français</item>
               <item id="it">Italiano</item>
               <item id="lt">Lietuvių</item>
+              <item id="hu">Magyar</item>
               <item id="nl">Nederlands</item>
               <item id="pl">Polski</item>
               <item id="pt_BR">Português (Brasil)</item>
               <item id="pt_PT">Português (Portugal)</item>
               <item id="ru">Pусский</item>
-              <item id="sr">Српски</item>
               <item id="sr_SR">Srpski (Latinica)</item>
               <item id="tr">Türkçe</item>
             </items>
@@ -503,6 +504,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
 Bernhard Landauer [de]
 Gabriel Blanca [es]
 Hugo Posnic [fr]
+László Szalai [hu]
 Stefano Capitani [it]
 Moo [lt]
 DeMus [nl]
