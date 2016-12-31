@@ -46,15 +46,15 @@ msgstr ""
 
 #: ../ui/manjaro-hello.glade:134
 msgid "DOCUMENTATION"
-msgstr "Documentação "
+msgstr "DOCUMENTAÇÃO"
 
 #: ../ui/manjaro-hello.glade:148
 msgid "SUPPORT"
-msgstr "Suporte"
+msgstr "SUPORTE"
 
 #: ../ui/manjaro-hello.glade:162
 msgid "PROJECT"
-msgstr "Projeto"
+msgstr "PROJETO"
 
 #: ../ui/manjaro-hello.glade:174
 msgid "Read me"
