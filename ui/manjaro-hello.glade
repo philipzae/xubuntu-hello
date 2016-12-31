@@ -460,6 +460,8 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="pt_BR">Português (Brasil)</item>
               <item id="pt_PT">Português (Portugal)</item>
               <item id="ru">Pусский</item>
+              <item id="sr">Српски</item>
+              <item id="sr_SR">Srpski (Latinica)</item>
               <item id="tr">Türkçe</item>
             </items>
             <signal name="changed" handler="on_languages_changed" swapped="no"/>
@@ -507,6 +509,7 @@ DeMus [nl]
 Daniel Napora [pl]
 Leandro Cunha [pt]
 Ilya Ostapenko [ru]
+Aleksandar Velimirović [sr]
 mgundogdu [tr]</property>
     <property name="logo_icon_name"/>
     <property name="license_type">gpl-3-0</property>
