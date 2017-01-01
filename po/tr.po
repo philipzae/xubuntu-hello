@@ -28,7 +28,7 @@ msgstr "Manjaro karşılama ekranı"
 
 #: ../ui/manjaro-hello.glade:14
 msgid "Github"
-msgstr ""
+msgstr "Github"
 
 #: ../ui/manjaro-hello.glade:100
 msgid "Welcome to Manjaro!"
@@ -40,7 +40,7 @@ msgid ""
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
-"Topluluğumuza katıldığın teşekkürler!\n"
+"Topluluğumuza katıldığın için teşekkürler!\n"
 "Biz, Manjaro Geliştiricileri, sizin Manjaro'yu kullanırken en az bizim onu geliştirirken eğlendiğimiz kadar eğleneceğinizi umuyoruz. Aşağıdaki link size yeni işletim sisteminizi kullanmaya başlamada yardımcı olacaktır. Deneyiminizin tadını çıkarın ve bize dönüt vermekten çekinmeyin."
 
 #: ../ui/manjaro-hello.glade:134
@@ -105,8 +105,8 @@ msgstr "Yükleyiciyi başlat"
 
 #: ../ui/manjaro-hello.glade:495
 msgid "Home"
-msgstr ""
+msgstr "Ev"
 
 #: ../src/manjaro_hello.py:241
 msgid "Can't load page."
-msgstr ""
+msgstr "Sayfa yüklenemedi."

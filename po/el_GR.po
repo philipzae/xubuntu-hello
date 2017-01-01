@@ -10,6 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-27 10:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Πέτρος Σαμαράς <psamaras1@gmail.com>, 2016\n"
 "Language-Team: Greek (Greece) (https://www.transifex.com/manjarolinux/teams/70274/el_GR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,19 +20,19 @@ msgstr ""
 
 #: ../ui/manjaro-hello.glade:7 ../ui/manjaro-hello.glade:523
 msgid "About"
-msgstr ""
+msgstr "Σχετικά με την εφαρμογή"
 
 #: ../ui/manjaro-hello.glade:12
 msgid "Welcome screen for Manjaro"
-msgstr ""
+msgstr "Οθόνη καλωσορίσματος για το Manjaro"
 
 #: ../ui/manjaro-hello.glade:14
 msgid "Github"
-msgstr ""
+msgstr "Github"
 
 #: ../ui/manjaro-hello.glade:100
 msgid "Welcome to Manjaro!"
-msgstr ""
+msgstr "Καλωσήρθατε στο Manjaro"
 
 #: ../ui/manjaro-hello.glade:117
 msgid ""
@@ -39,71 +40,74 @@ msgid ""
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
+"Σας ευχαριστούμε που μπήκατε στην κοινότητά μας!\n"
+"\n"
+"Όλοι μας στην Ομάδα Ανάπτυξης του Manjaro, ευχόμαστε να χαρείτε την χρήση του Manjaro, όσο χαιρόμαστε κι εμείς την ανάπτυξή του. Οι παρακάτω σύνδεσμοι θα σας βοηθήσουν να ξεκινήσετε με το νέο σας λειτουργικό σύστημα. Οπότε, ευχαριστηθείτε με την εμπειρία, και μη διστάσετε να μας στείλετε τις απόψεις σας. "
 
 #: ../ui/manjaro-hello.glade:134
 msgid "DOCUMENTATION"
-msgstr ""
+msgstr "ΤΕΚΜΗΡΙΩΣΗ"
 
 #: ../ui/manjaro-hello.glade:148
 msgid "SUPPORT"
-msgstr ""
+msgstr "ΥΠΟΣΤΗΡΙΞΗ"
 
 #: ../ui/manjaro-hello.glade:162
 msgid "PROJECT"
-msgstr ""
+msgstr "PROJECT"
 
 #: ../ui/manjaro-hello.glade:174
 msgid "Read me"
-msgstr ""
+msgstr "Αρχικές οδηγίες"
 
 #: ../ui/manjaro-hello.glade:188
 msgid "Release info"
-msgstr ""
+msgstr "Στοιχεία διανομής"
 
 #: ../ui/manjaro-hello.glade:202
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: ../ui/manjaro-hello.glade:216
 msgid "Get involved"
-msgstr ""
+msgstr "Συμμετοχή"
 
 #: ../ui/manjaro-hello.glade:230
 msgid "Forums"
-msgstr ""
+msgstr "Forums"
 
 #: ../ui/manjaro-hello.glade:244
 msgid "Chat room"
-msgstr ""
+msgstr "Δικτυακό δωμάτιο"
 
 #: ../ui/manjaro-hello.glade:258
 msgid "Mailling lists"
-msgstr ""
+msgstr "Λίστες αλληλογραφίας"
 
 #: ../ui/manjaro-hello.glade:272
 msgid "Build Manjaro"
-msgstr ""
+msgstr "Χτίστε ένα Manjaro"
 
 #: ../ui/manjaro-hello.glade:286
 msgid "Donate"
-msgstr ""
+msgstr "Δωρεά"
 
 #: ../ui/manjaro-hello.glade:402
 msgid "Launch at start"
-msgstr ""
+msgstr "Εκκίνηση με την είσοδο"
 
 #: ../ui/manjaro-hello.glade:434
 msgid "INSTALLATION"
-msgstr ""
+msgstr "ΕΓΚΑΤΑΣΤΑΣΗ"
 
 #: ../ui/manjaro-hello.glade:446
 msgid "Launch installer"
-msgstr ""
+msgstr "Έναρξη εγκατάστασης"
 
 #: ../ui/manjaro-hello.glade:495
 msgid "Home"
-msgstr ""
+msgstr "Αρχή"
 
 #: ../src/manjaro_hello.py:241
 msgid "Can't load page."
-msgstr ""
+msgstr "Η σελίδα δεν μπορεί να φορτωθεί"
