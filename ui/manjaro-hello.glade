@@ -449,19 +449,21 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <items>
-              <item id="sr_SR">Српски</item>
+              <item id="ar">اللغة العربية</item>
               <item id="de">Deutsch</item>
+              <item id="el_GR">Ελληνικά (Ελλάδα)</item>
               <item id="en">English</item>
               <item id="es">Español</item>
               <item id="fr">Français</item>
+              <item id="hu">Magyar</item>
               <item id="it">Italiano</item>
               <item id="lt">Lietuvių</item>
-              <item id="hu">Magyar</item>
               <item id="nl">Nederlands</item>
               <item id="pl">Polski</item>
               <item id="pt_BR">Português (Brasil)</item>
               <item id="pt_PT">Português (Portugal)</item>
               <item id="ru">Pусский</item>
+              <item id="sr_SR">Српски</item>
               <item id="sr">Srpski (Latinica)</item>
               <item id="tr">Türkçe</item>
             </items>
@@ -500,8 +502,10 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
     <property name="website">https://github.com/Huluti/manjaro-hello</property>
     <property name="website_label" translatable="yes">Github</property>
     <property name="authors">Hugo Posnic</property>
-    <property name="translator_credits">Michael Kogan [de]
+    <property name="translator_credits">abdelhak gasmi [ar]
+Michael Kogan [de]
 Bernhard Landauer [de]
+Πέτρος Σαμαράς [el_GR]
 Gabriel Blanca [es]
 Hugo Posnic [fr]
 László Szalai [hu]
