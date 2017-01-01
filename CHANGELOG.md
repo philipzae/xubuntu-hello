@@ -1,6 +1,23 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.5] - 2016-01-01
+### Added
+- Lithuanian translation.
+- Turkish translation.
+- Serbian translation.
+- Serbian (Serbia) translation.
+- Arabic translation.
+- Greek (Greece) translation.
+- Czech translation.
+
+### Changed
+- Portuguese (Brazil) translation.
+- Use icon only from manjaro-icons package.
+
+### Fixed
+- Languages names in the selector.
+
 ## [0.4.4] - 2016-12-29
 ### Changed
 - Use a smaller version of logo.
