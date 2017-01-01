@@ -95,7 +95,7 @@ msgstr "Támogatás"
 
 #: ../ui/manjaro-hello.glade:402
 msgid "Launch at start"
-msgstr "Mutatás indításkor"
+msgstr "Megjelenítés indításkor"
 
 #: ../ui/manjaro-hello.glade:434
 msgid "INSTALLATION"
