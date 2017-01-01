@@ -450,6 +450,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="can_focus">False</property>
             <items>
               <item id="ar">اللغة العربية</item>
+              <item id="cs">Český Jazyk</item>
               <item id="de">Deutsch</item>
               <item id="el_GR">Ελληνικά (Ελλάδα)</item>
               <item id="en">English</item>
@@ -503,6 +504,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
     <property name="website_label" translatable="yes">Github</property>
     <property name="authors">Hugo Posnic</property>
     <property name="translator_credits">abdelhak gasmi [ar]
+pavelrz [cs]
 Michael Kogan [de]
 Bernhard Landauer [de]
 Πέτρος Σαμαράς [el_GR]
