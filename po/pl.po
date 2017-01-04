@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-27 10:09+0100\n"
+"POT-Creation-Date: 2017-01-04 19:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: philm <philm@manjaro.org>, 2016\n"
 "Language-Team: Polish (https://www.transifex.com/manjarolinux/teams/70274/pl/)\n"
@@ -18,23 +18,11 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../ui/manjaro-hello.glade:7 ../ui/manjaro-hello.glade:523
-msgid "About"
-msgstr "O programie"
-
-#: ../ui/manjaro-hello.glade:12
-msgid "Welcome screen for Manjaro"
-msgstr "Ekran powitalny Manjaro"
-
-#: ../ui/manjaro-hello.glade:14
-msgid "Github"
-msgstr "Github"
-
-#: ../ui/manjaro-hello.glade:100
+#: ../ui/manjaro-hello.glade:54
 msgid "Welcome to Manjaro!"
 msgstr "Witaj w Manjaro!"
 
-#: ../ui/manjaro-hello.glade:117
+#: ../ui/manjaro-hello.glade:70
 msgid ""
 "Thank you for joining our community!\n"
 "\n"
@@ -44,70 +32,82 @@ msgstr ""
 "\n"
 "My, deweloperzy Manjaro, mamy nadzieję, że używanie Manjaro przyniesie Ci tyle radości ile nam jego tworzenie. Poniższe linki pomogą Ci w rozpoczęciu używania nowego systemu operacyjnego. Życzymy miłych wrażeń, nie wahaj się podzielić się z nami Twoją opinią."
 
-#: ../ui/manjaro-hello.glade:134
+#: ../ui/manjaro-hello.glade:88
 msgid "DOCUMENTATION"
 msgstr "DOKUMENTACJA"
 
-#: ../ui/manjaro-hello.glade:148
+#: ../ui/manjaro-hello.glade:102
 msgid "SUPPORT"
 msgstr "WSPARCIE"
 
-#: ../ui/manjaro-hello.glade:162
+#: ../ui/manjaro-hello.glade:116
 msgid "PROJECT"
 msgstr "PROJEKT"
 
-#: ../ui/manjaro-hello.glade:174
+#: ../ui/manjaro-hello.glade:128
 msgid "Read me"
 msgstr "Czytaj to"
 
-#: ../ui/manjaro-hello.glade:188
+#: ../ui/manjaro-hello.glade:142
 msgid "Release info"
 msgstr "Informacje o wydaniu"
 
-#: ../ui/manjaro-hello.glade:202
+#: ../ui/manjaro-hello.glade:156
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../ui/manjaro-hello.glade:216
+#: ../ui/manjaro-hello.glade:170
 msgid "Get involved"
 msgstr "Zaangażuj się"
 
-#: ../ui/manjaro-hello.glade:230
+#: ../ui/manjaro-hello.glade:184
 msgid "Forums"
 msgstr "Forum"
 
-#: ../ui/manjaro-hello.glade:244
+#: ../ui/manjaro-hello.glade:198
 msgid "Chat room"
 msgstr "IRC"
 
-#: ../ui/manjaro-hello.glade:258
+#: ../ui/manjaro-hello.glade:212
 msgid "Mailling lists"
 msgstr "Listy mailingowe"
 
-#: ../ui/manjaro-hello.glade:272
-msgid "Build Manjaro"
-msgstr "Twórz Manjaro"
+#: ../ui/manjaro-hello.glade:226
+msgid "Source code"
+msgstr ""
 
-#: ../ui/manjaro-hello.glade:286
+#: ../ui/manjaro-hello.glade:240
 msgid "Donate"
 msgstr "Wesprzyj"
 
-#: ../ui/manjaro-hello.glade:402
+#: ../ui/manjaro-hello.glade:356
 msgid "Launch at start"
 msgstr "Uruchamiaj przy starcie"
 
-#: ../ui/manjaro-hello.glade:434
+#: ../ui/manjaro-hello.glade:387
 msgid "INSTALLATION"
 msgstr "INSTALACJA"
 
-#: ../ui/manjaro-hello.glade:446
+#: ../ui/manjaro-hello.glade:399
 msgid "Launch installer"
 msgstr "Uruchom instalator"
 
-#: ../ui/manjaro-hello.glade:495
+#: ../ui/manjaro-hello.glade:442
 msgid "Home"
 msgstr "Start"
 
-#: ../src/manjaro_hello.py:241
+#: ../ui/manjaro-hello.glade:483 ../ui/manjaro-hello.glade:497
+msgid "About"
+msgstr "O programie"
+
+#: ../ui/manjaro-hello.glade:502
+msgid "Welcome screen for Manjaro"
+msgstr "Ekran powitalny Manjaro"
+
+#: ../ui/manjaro-hello.glade:504
+msgid "Github"
+msgstr "Github"
+
+#: ../src/manjaro_hello.py:235
 msgid "Can't load page."
 msgstr "Nie można załadować strony."

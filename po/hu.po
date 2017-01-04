@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-27 10:09+0100\n"
+"POT-Creation-Date: 2017-01-04 19:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: László Szalai <laszlo.szalai.90@gmail.com>, 2016\n"
 "Language-Team: Hungarian (https://www.transifex.com/manjarolinux/teams/70274/hu/)\n"
@@ -18,23 +18,11 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../ui/manjaro-hello.glade:7 ../ui/manjaro-hello.glade:523
-msgid "About"
-msgstr "Névjegy"
-
-#: ../ui/manjaro-hello.glade:12
-msgid "Welcome screen for Manjaro"
-msgstr "A Manjaro üdvözlőképernyője"
-
-#: ../ui/manjaro-hello.glade:14
-msgid "Github"
-msgstr "Github"
-
-#: ../ui/manjaro-hello.glade:100
+#: ../ui/manjaro-hello.glade:54
 msgid "Welcome to Manjaro!"
 msgstr "Üdvözöl a Manjaro közösség!"
 
-#: ../ui/manjaro-hello.glade:117
+#: ../ui/manjaro-hello.glade:70
 msgid ""
 "Thank you for joining our community!\n"
 "\n"
@@ -45,70 +33,82 @@ msgstr ""
 " első lépésekben az új operációs rendszereddel kapcsolatban. Örömteli "
 "élményeket kívánunk és bátran küld el észrevételeidet."
 
-#: ../ui/manjaro-hello.glade:134
+#: ../ui/manjaro-hello.glade:88
 msgid "DOCUMENTATION"
 msgstr "DOKUMENTÁCIÓ"
 
-#: ../ui/manjaro-hello.glade:148
+#: ../ui/manjaro-hello.glade:102
 msgid "SUPPORT"
 msgstr "SEGÍTSÉG"
 
-#: ../ui/manjaro-hello.glade:162
+#: ../ui/manjaro-hello.glade:116
 msgid "PROJECT"
 msgstr "PROJEKT"
 
-#: ../ui/manjaro-hello.glade:174
+#: ../ui/manjaro-hello.glade:128
 msgid "Read me"
 msgstr "Olvass el"
 
-#: ../ui/manjaro-hello.glade:188
+#: ../ui/manjaro-hello.glade:142
 msgid "Release info"
 msgstr "Kiadási információ"
 
-#: ../ui/manjaro-hello.glade:202
+#: ../ui/manjaro-hello.glade:156
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../ui/manjaro-hello.glade:216
+#: ../ui/manjaro-hello.glade:170
 msgid "Get involved"
 msgstr "Kapcsolódj be!"
 
-#: ../ui/manjaro-hello.glade:230
+#: ../ui/manjaro-hello.glade:184
 msgid "Forums"
 msgstr "Fórum"
 
-#: ../ui/manjaro-hello.glade:244
+#: ../ui/manjaro-hello.glade:198
 msgid "Chat room"
 msgstr "Chat"
 
-#: ../ui/manjaro-hello.glade:258
+#: ../ui/manjaro-hello.glade:212
 msgid "Mailling lists"
 msgstr "Levelezőlisták"
 
-#: ../ui/manjaro-hello.glade:272
-msgid "Build Manjaro"
-msgstr "Manjaro a Githubon"
+#: ../ui/manjaro-hello.glade:226
+msgid "Source code"
+msgstr ""
 
-#: ../ui/manjaro-hello.glade:286
+#: ../ui/manjaro-hello.glade:240
 msgid "Donate"
 msgstr "Támogatás"
 
-#: ../ui/manjaro-hello.glade:402
+#: ../ui/manjaro-hello.glade:356
 msgid "Launch at start"
 msgstr "Megjelenítés indításkor"
 
-#: ../ui/manjaro-hello.glade:434
+#: ../ui/manjaro-hello.glade:387
 msgid "INSTALLATION"
 msgstr "TELEPÍTÉS"
 
-#: ../ui/manjaro-hello.glade:446
+#: ../ui/manjaro-hello.glade:399
 msgid "Launch installer"
 msgstr "A telepítő indítása"
 
-#: ../ui/manjaro-hello.glade:495
+#: ../ui/manjaro-hello.glade:442
 msgid "Home"
 msgstr "Kezdőlap"
 
-#: ../src/manjaro_hello.py:241
+#: ../ui/manjaro-hello.glade:483 ../ui/manjaro-hello.glade:497
+msgid "About"
+msgstr "Névjegy"
+
+#: ../ui/manjaro-hello.glade:502
+msgid "Welcome screen for Manjaro"
+msgstr "A Manjaro üdvözlőképernyője"
+
+#: ../ui/manjaro-hello.glade:504
+msgid "Github"
+msgstr "Github"
+
+#: ../src/manjaro_hello.py:235
 msgid "Can't load page."
 msgstr "Az oldal betöltése sikertelen."

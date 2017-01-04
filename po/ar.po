@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-27 10:09+0100\n"
+"POT-Creation-Date: 2017-01-04 19:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: abdelhak gasmi <abdelhakg@gmail.com>, 2017\n"
+"Last-Translator: Midir Hakou <ledjdel88@gmail.com>, 2017\n"
 "Language-Team: Arabic (https://www.transifex.com/manjarolinux/teams/70274/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,95 +18,95 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: ../ui/manjaro-hello.glade:7 ../ui/manjaro-hello.glade:523
-msgid "About"
-msgstr "حول"
-
-#: ../ui/manjaro-hello.glade:12
-msgid "Welcome screen for Manjaro"
-msgstr "شاشة الترحيب لمنجارو"
-
-#: ../ui/manjaro-hello.glade:14
-msgid "Github"
-msgstr "Github"
-
-#: ../ui/manjaro-hello.glade:100
+#: ../ui/manjaro-hello.glade:54
 msgid "Welcome to Manjaro!"
 msgstr "مرحبا بك في منجارو"
 
-#: ../ui/manjaro-hello.glade:117
+#: ../ui/manjaro-hello.glade:70
 msgid ""
 "Thank you for joining our community!\n"
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
 "شكرا لانضمامك لمجتمعنا\n"
-"نأمل نحن ـ مطوروا مانجارو ـ أن تسعد باستعماله بالقدر الذي سعدنا نحن بتصميمه، ستساعدك الروابط أدناه على البدء مع نظام التشغيل الجديد خاصتك. إذًا تمتع بالتجربة، ولا تتردد في تزودنا بملاحظاتك."
+"نأمل نحن ـ مطوروا منجارو ـ أن تسعد باستعمال منجارو بالقدر الذي سعدنا نحن بتصميمه، ستساعدك الروابط أدناه على البدء مع نظام التشغيل الجديد الخاص بك. إذًا تمتع بالتجربة، ولا تتردد في أن إخبارنا بملاحظاتك."
 
-#: ../ui/manjaro-hello.glade:134
+#: ../ui/manjaro-hello.glade:88
 msgid "DOCUMENTATION"
 msgstr "التوثيق"
 
-#: ../ui/manjaro-hello.glade:148
+#: ../ui/manjaro-hello.glade:102
 msgid "SUPPORT"
 msgstr "المساعدة"
 
-#: ../ui/manjaro-hello.glade:162
+#: ../ui/manjaro-hello.glade:116
 msgid "PROJECT"
 msgstr "المشروع"
 
-#: ../ui/manjaro-hello.glade:174
+#: ../ui/manjaro-hello.glade:128
 msgid "Read me"
 msgstr "اقرأني"
 
-#: ../ui/manjaro-hello.glade:188
+#: ../ui/manjaro-hello.glade:142
 msgid "Release info"
 msgstr "معلومات الإصدار"
 
-#: ../ui/manjaro-hello.glade:202
+#: ../ui/manjaro-hello.glade:156
 msgid "Wiki"
 msgstr "ويكي"
 
-#: ../ui/manjaro-hello.glade:216
+#: ../ui/manjaro-hello.glade:170
 msgid "Get involved"
 msgstr "شاركنا"
 
-#: ../ui/manjaro-hello.glade:230
+#: ../ui/manjaro-hello.glade:184
 msgid "Forums"
-msgstr "منتديات"
+msgstr "المنتديات"
 
-#: ../ui/manjaro-hello.glade:244
+#: ../ui/manjaro-hello.glade:198
 msgid "Chat room"
-msgstr "غرفة التشات"
+msgstr "غرفة الشات"
 
-#: ../ui/manjaro-hello.glade:258
+#: ../ui/manjaro-hello.glade:212
 msgid "Mailling lists"
 msgstr "القوائم البريدية"
 
-#: ../ui/manjaro-hello.glade:272
-msgid "Build Manjaro"
-msgstr "تصميم مانجارو"
+#: ../ui/manjaro-hello.glade:226
+msgid "Source code"
+msgstr ""
 
-#: ../ui/manjaro-hello.glade:286
+#: ../ui/manjaro-hello.glade:240
 msgid "Donate"
-msgstr "تبرع"
+msgstr "تبرّع"
 
-#: ../ui/manjaro-hello.glade:402
+#: ../ui/manjaro-hello.glade:356
 msgid "Launch at start"
-msgstr "أظهر هذه النافذة عند التشغيل"
+msgstr "أظهر مجدّدا عند بدأ النظام"
 
-#: ../ui/manjaro-hello.glade:434
+#: ../ui/manjaro-hello.glade:387
 msgid "INSTALLATION"
 msgstr "تثبيت"
 
-#: ../ui/manjaro-hello.glade:446
+#: ../ui/manjaro-hello.glade:399
 msgid "Launch installer"
-msgstr "إطلاق المثبت"
+msgstr "إفتح المثبِِّت"
 
-#: ../ui/manjaro-hello.glade:495
+#: ../ui/manjaro-hello.glade:442
 msgid "Home"
 msgstr "الصفحة الرئيسية"
 
-#: ../src/manjaro_hello.py:241
+#: ../ui/manjaro-hello.glade:483 ../ui/manjaro-hello.glade:497
+msgid "About"
+msgstr "حول"
+
+#: ../ui/manjaro-hello.glade:502
+msgid "Welcome screen for Manjaro"
+msgstr "شاشة الترحيب لمنجارو"
+
+#: ../ui/manjaro-hello.glade:504
+msgid "Github"
+msgstr "Github"
+
+#: ../src/manjaro_hello.py:235
 msgid "Can't load page."
 msgstr "لا يمكن تحميل الصفحة."
