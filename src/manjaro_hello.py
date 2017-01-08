@@ -141,7 +141,7 @@ class ManjaroHello():
             },
             "label": {
                 "autostartlabel",
-                "source",
+                "development",
                 "chat",
                 "donate",
                 "firstcategory",
