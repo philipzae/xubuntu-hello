@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Manjaro-Hello package.
 # Hugo Posnic <huluti@manjaro.org>, 2016-2017.
 # 
-#, fuzzy
+# Translators:
+# Πέτρος Σαμαράς <psamaras1@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-08 21:04+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2016-12-04 17:30+0100\n"
+"PO-Revision-Date: 2017-01-08 21:04+0100\n"
 "Last-Translator: Πέτρος Σαμαράς <psamaras1@gmail.com>, 2016\n"
 "Language-Team: Greek (Greece) (https://www.transifex.com/manjarolinux/teams/70274/el_GR/)\n"
 "MIME-Version: 1.0\n"
