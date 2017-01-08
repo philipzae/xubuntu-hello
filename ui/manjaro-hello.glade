@@ -507,23 +507,45 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
     <property name="comments" translatable="yes">Welcome screen for Manjaro</property>
     <property name="website">https://github.com/Huluti/manjaro-hello</property>
     <property name="website_label" translatable="yes">Github</property>
-    <property name="authors">Hugo Posnic</property>
+    <property name="authors">Hugo Posnic
+Johnathan Jenkins</property>
     <property name="translator_credits">abdelhak gasmi [ar]
+Midir Hakou [ar]
 pavelrz [cs]
-Michael Kogan [de]
 Bernhard Landauer [de]
+Ersi Ni [de]
+Michael Kogan [de]
+kouros kouros [el_GR]
 Πέτρος Σαμαράς [el_GR]
 Gabriel Blanca [es]
 Hugo Posnic [fr]
+kouros kouros [fr]
+Stéphane [fr]
+Lajos Pasztor [hu]
 László Szalai [hu]
+Lovro Kudelić [hr]
+Fabio Forni [it]
 Stefano Capitani [it]
 Moo [lt]
 DeMus [nl]
 Daniel Napora [pl]
-Leandro Cunha [pt]
+Leandro Cunha [pt_BR]
+Hugo Carvalho [pt_PT]
+Leandro Cunha [pt_PT]
+Alex Beliy [ru]
 Ilya Ostapenko [ru]
+Андрей Раугас [ru]
+Al Manja [sl_SI]
+Al Manja [sl]
+Aleksandar Velimirović [sr_RS]
 Aleksandar Velimirović [sr]
-mgundogdu [tr]</property>
+mgundogdu [tr_TR]
+Makaveli B [tr]
+mgundogdu [tr]
+secgin [tr]
+Ersi Ni [zh_CN]
+cges30901[zh_TW]
+Jeff Huang[zh_TW]</property>
     <property name="logo_icon_name"/>
     <property name="license_type">gpl-3-0</property>
     <child internal-child="vbox">
