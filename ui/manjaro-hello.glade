@@ -222,9 +222,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="source">
-                <property name="label" translatable="yes">Source code</property>
-                <property name="name">source</property>
+              <object class="GtkButton" id="development">
+                <property name="label" translatable="yes">Development</property>
+                <property name="name">development</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
