@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-04 19:57+0100\n"
+"POT-Creation-Date: 2017-01-08 21:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Πέτρος Σαμαράς <psamaras1@gmail.com>, 2016\n"
 "Language-Team: Greek (Greece) (https://www.transifex.com/manjarolinux/teams/70274/el_GR/)\n"
@@ -73,7 +73,7 @@ msgid "Mailling lists"
 msgstr "Λίστες αλληλογραφίας"
 
 #: ../ui/manjaro-hello.glade:226
-msgid "Source code"
+msgid "Development"
 msgstr ""
 
 #: ../ui/manjaro-hello.glade:240
@@ -96,15 +96,15 @@ msgstr "Έναρξη εγκατάστασης"
 msgid "Home"
 msgstr "Αρχή"
 
-#: ../ui/manjaro-hello.glade:483 ../ui/manjaro-hello.glade:497
+#: ../ui/manjaro-hello.glade:487 ../ui/manjaro-hello.glade:501
 msgid "About"
 msgstr "Σχετικά με την εφαρμογή"
 
-#: ../ui/manjaro-hello.glade:502
+#: ../ui/manjaro-hello.glade:506
 msgid "Welcome screen for Manjaro"
 msgstr "Οθόνη καλωσορίσματος για το Manjaro"
 
-#: ../ui/manjaro-hello.glade:504
+#: ../ui/manjaro-hello.glade:508
 msgid "Github"
 msgstr "Github"
 
