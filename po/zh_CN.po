@@ -75,7 +75,7 @@ msgstr "邮件列表"
 
 #: ../ui/manjaro-hello.glade:226
 msgid "Development"
-msgstr ""
+msgstr "开发"
 
 #: ../ui/manjaro-hello.glade:240
 msgid "Donate"

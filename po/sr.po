@@ -75,7 +75,7 @@ msgstr "Листа за дописивање"
 
 #: ../ui/manjaro-hello.glade:226
 msgid "Development"
-msgstr ""
+msgstr "Развој"
 
 #: ../ui/manjaro-hello.glade:240
 msgid "Donate"
