@@ -74,7 +74,7 @@ msgstr "Posta listeleri"
 
 #: ../ui/manjaro-hello.glade:226
 msgid "Development"
-msgstr ""
+msgstr "Geliştirme"
 
 #: ../ui/manjaro-hello.glade:240
 msgid "Donate"

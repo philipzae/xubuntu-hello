@@ -76,7 +76,7 @@ msgstr "Levelezőlisták"
 
 #: ../ui/manjaro-hello.glade:226
 msgid "Development"
-msgstr ""
+msgstr "Fejlesztés"
 
 #: ../ui/manjaro-hello.glade:240
 msgid "Donate"

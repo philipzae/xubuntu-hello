@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Hugo Posnic <huluti@manjaro.org>, 2016
+# Stefano <capitani74@gmail.com>, 2016
 # Fabio Forni <fabio94xx@gmail.com>, 2016
 msgid ""
 msgstr ""
@@ -64,7 +65,7 @@ msgstr "Partecipa"
 
 #: ../ui/manjaro-hello.glade:184
 msgid "Forums"
-msgstr "Forum"
+msgstr "Forums"
 
 #: ../ui/manjaro-hello.glade:198
 msgid "Chat room"
@@ -72,11 +73,11 @@ msgstr "Canale IRC"
 
 #: ../ui/manjaro-hello.glade:212
 msgid "Mailling lists"
-msgstr "Mailing List"
+msgstr "Mailing lists"
 
 #: ../ui/manjaro-hello.glade:226
 msgid "Development"
-msgstr ""
+msgstr "Sviluppo"
 
 #: ../ui/manjaro-hello.glade:240
 msgid "Donate"
