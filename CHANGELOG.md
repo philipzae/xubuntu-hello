@@ -15,8 +15,8 @@ All notable changes to this project will be documented in this file.
 - Arabic translation.
 - Italian translation.
 - Russian translation.
-- Serbian (Serbia) translation
-- Serbian translation
+- Serbian (Serbia) translation.
+- Serbian translation.
 
 ### Fixed
 - Warnings at launch.
