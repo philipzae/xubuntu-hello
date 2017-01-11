@@ -1,6 +1,26 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.6] - 2016-11-01
+### Added
+- Chinese (China) translation.
+- Chinese (Taiwan) translation.
+- Slovenian (Slovenia) translation.
+- Slovenian translation.
+- Portuguese (Portugal) launcher's description.
+
+### Changed
+- Language labels in English
+- 'Build Manjaro' label to 'Development'
+- Arabic translation.
+- Italian translation.
+- Russian translation.
+- Serbian (Serbia) translation
+- Serbian translation
+
+### Fixed
+- Warnings at launch.
+
 ## [0.4.5] - 2016-01-01
 ### Added
 - Lithuanian translation.
