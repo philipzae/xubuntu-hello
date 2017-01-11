@@ -29,9 +29,9 @@ msgid ""
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
-"Хвала вам што сте се придружили нашој заједници!\n"
+"Хвала Вам што сте се придружили нашој заједници!\n"
 "\n"
-"Ми, који радимо на Manjaro-у се надамо да ће те уживати користећи га барем онолико, колико смо ми уживали правећи га. Линкови испод ће вам помоћи око упознавања вашег новог оперативног система. Зато уживајте у коришћењу и не оклевајте да нам пошаљете ваша искуства о раду са њим."
+"Ми, који радимо на Manjaro-у се надамо да ћете уживати користећи га барем онолико, колико смо ми уживали правећи га. Линкови испод ће Вам помоћи око упознавања Вашег новог оперативног система. Зато уживајте у коришћењу и не оклевајте да нам пошаљете Ваша искуства о раду са њим."
 
 #: ../ui/manjaro-hello.glade:88
 msgid "DOCUMENTATION"
