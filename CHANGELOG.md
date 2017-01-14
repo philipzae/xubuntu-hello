@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [0.4.7] - 2017-14-01
+## [0.4.7] - 2017-01-14
 ### Added
 - Locales: ca.
 
@@ -11,7 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - Fix a bug which prevents certain languages from being loaded.
 
-## [0.4.6] - 2017-11-01
+## [0.4.6] - 2017-01-11
 ### Added
 - Locales: sl, sl_SI, zh_CN, zh_TW.
 - Launcher's description for pt_PT.
