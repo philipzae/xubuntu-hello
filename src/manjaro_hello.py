@@ -126,6 +126,8 @@ class ManjaroHello():
         :param locale: locale to use
         :type locale: str
         """
+        if "_" in locale:
+            locale = locale.replace("_", "-")
         try:
             tr = gettext.translation(self.app, self.locale_path, [locale], fallback=True)
             tr.install()
