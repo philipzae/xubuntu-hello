@@ -1,39 +1,26 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [0.4.6] - 2016-11-01
+## [0.4.6] - 2017-11-01
 ### Added
-- Chinese (China) translation.
-- Chinese (Taiwan) translation.
-- Slovenian (Slovenia) translation.
-- Slovenian translation.
-- Portuguese (Portugal) launcher's description.
+- Locales: sl, sl_SI, zh_CN, zh_TW.
+- Launcher's description for pt_PT.
 
 ### Changed
-- Language labels in English
-- 'Build Manjaro' label to 'Development'
-- Arabic translation.
-- Italian translation.
-- Russian translation.
-- Serbian (Serbia) translation.
-- Serbian translation.
+- Language labels in English.
+- 'Build Manjaro' label to 'Development'.
+- Update translations.
 
 ### Fixed
 - Warnings at launch.
 
-## [0.4.5] - 2016-01-01
+## [0.4.5] - 2017-01-01
 ### Added
-- Lithuanian translation.
-- Turkish translation.
-- Serbian translation.
-- Serbian (Serbia) translation.
-- Arabic translation.
-- Greek (Greece) translation.
-- Czech translation.
+- Locales: ar, cs, el_GR, lt, tr, sr_RS, sr.
 
 ### Changed
-- Portuguese (Brazil) translation.
 - Use icon only from manjaro-icons package.
+- Update translations.
 
 ### Fixed
 - Languages names in the selector.
@@ -42,48 +29,47 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Use a smaller version of logo.
 - Simplifying English of readme page.
-- Russian translation.
+- Update translations.
 
 ## [0.4.3] - 2016-12-28
 ### Added
-- Italian translation.
-- Brazilian Portuguese translation.
+- Locales: it, pt_BR.
 
 ### Changed
 - Remove focus of all buttons.
-- Dutch launcher's description.
+- Launcher's description for nl.
 
 ## [0.4.2] - 2016-12-27
 ### Added
-- Dutch translation.
+- Locales: nl.
 - Plural forms for all languages.
-- Polish launcher's description.
+- Launcher's description for pl.
 
 ### Changed
-- Polish translation.
 - Remove focus on header buttons.
+- Update translations.
 
 ### Fixed
 - Alignment of welcome label.
 
 ## [0.4.1] - 2016-12-27
 ### Added
-- Spanish translation.
+- Locales: es.
 
 ### Changed
-- Russian translation.
+- Update translations.
 
 ## [0.4] - 2016-12-27
 ### Added
 - Support of autostart in i3.
 - Disable home button on welcome page.
 - Tooltips on social and header buttons.
-- Russian translation.
+- Locales: ru.
 
 ### Changed
 - Make creating new pages easier.
 - Label of install button.
-- German translation.
+- Update translations.
 
 ### Fixed
 - Window blocking during call of installer.
@@ -95,7 +81,7 @@ All notable changes to this project will be documented in this file.
 ## [0.3] - 2016-12-23
 ### Added
 - Icons for links buttons.
-- German launcher's description.
+- Launcher's description for de.
 
 ### Changed
 - Use logo from manjaro-icons if available.
@@ -116,8 +102,7 @@ All notable changes to this project will be documented in this file.
 ## [0.2] - 2016-12-21
 First stable version.
 ### Added
-- Polish translation.
-- German translation.
+- Locales: de, pl.
 
 ### Fixed
 - Locale detection.
@@ -128,5 +113,4 @@ First tag, not stable. Do not use it. Please wait 0.2.
 ### Added
 - All features of manjaro-welcome.
 - Translation system.
-- English translation
-- French translation
+- Locales: en, fr.
