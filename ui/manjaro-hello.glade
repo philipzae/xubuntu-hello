@@ -450,6 +450,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="can_focus">False</property>
             <items>
               <item id="ar">Arabic</item>
+              <item id="ca">Catalan</item>
               <item id="zh_CN">Chinese (China)</item>
               <item id="zh_TW">Chinese (Taiwan)</item>
               <item id="cs">Czech</item>
@@ -511,6 +512,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
 Johnathan Jenkins</property>
     <property name="translator_credits">abdelhak gasmi [ar]
 Midir Hakou [ar]
+Albert Cutrona [ca]
 pavelrz [cs]
 Bernhard Landauer [de]
 Ersi Ni [de]
