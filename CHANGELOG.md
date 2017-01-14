@@ -1,6 +1,16 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.7] - 2017-14-01
+### Added
+- Locales: ca.
+
+### Changed
+- Update translations.
+
+### Fixed
+- Fix a bug which prevents certain languages from being loaded.
+
 ## [0.4.6] - 2017-11-01
 ### Added
 - Locales: sl, sl_SI, zh_CN, zh_TW.
