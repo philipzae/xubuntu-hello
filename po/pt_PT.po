@@ -76,7 +76,7 @@ msgstr "Listas de discussão"
 
 #: ../ui/manjaro-hello.glade:226
 msgid "Development"
-msgstr "desenvolvimento"
+msgstr "Desenvolvimento"
 
 #: ../ui/manjaro-hello.glade:240
 msgid "Donate"
