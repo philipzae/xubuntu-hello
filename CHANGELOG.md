@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.8] - 2017-01-29
+### Changed
+- Use same logo as launcher.
+- Update translations.
+
+### Fixed
+- Start calamares using pkexec. [0db569c](https://github.com/manjaro/manjaro-hello/commit/0db569cd79dbeae127e94f0385f0909ee6c0c694)
+
 ## [0.4.7] - 2017-01-14
 ### Added
 - Locales: ca.
