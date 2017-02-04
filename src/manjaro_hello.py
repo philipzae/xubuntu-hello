@@ -13,6 +13,8 @@ from gi.repository import Gtk, GdkPixbuf
 
 
 class ManjaroHello():
+    """Manjaro-Hello"""
+
     def __init__(self):
         # App vars
         self.app = "manjaro-hello"
@@ -202,16 +204,16 @@ class ManjaroHello():
                         f.write(content.replace(i3_autostart, "#" + i3_autostart))
                     f.truncate()
             self.autostart = autostart
-        except OSError as e:
-            print(e)
+        except OSError as error:
+            print(error)
 
     def save_preferences(self):
         """Save preferences in config file."""
         try:
             with open(self.preferences_path, "w") as f:
                 json.dump(self.preferences, f)
-        except OSError as e:
-            print(e)
+        except OSError as error:
+            print(error)
 
     def get_preferences(self):
         """Read preferences from config file."""
@@ -300,12 +302,16 @@ def get_lsb_infos():
                         arg = arg[1:-1]
                     if arg:
                         lsb[var] = arg
-    except OSError as e:
-        print(e)
+    except OSError as error:
+        print(error)
     return lsb
 
 
 def read_json(path):
+    """Read content of a json file.
+    :return: json content
+    :rtype: str
+    """
     try:
         with open(path, "r") as f:
             return json.load(f)
