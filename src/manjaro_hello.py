@@ -47,8 +47,7 @@ class ManjaroHello():
         self.urls = read_json(self.urls_path)
 
         # Init window
-        self.builder = Gtk.Builder()
-        self.builder.add_from_file(self.ui_path + self.app + ".glade")
+        self.builder = Gtk.Builder.new_from_file(self.ui_path + self.app + ".glade")
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
         subtitle = self.infos["arch"]
@@ -56,9 +55,9 @@ class ManjaroHello():
             subtitle = self.infos["codename"] + " " + self.infos["release"] + " " + subtitle
         self.builder.get_object("headerbar").props.subtitle = subtitle
 
-        # Load logos
+        # Load logo
         logo = GdkPixbuf.Pixbuf.new_from_file(self.logo_path)
-        self.window.set_icon_from_file(self.logo_path)
+        self.window.set_icon(logo)
         self.builder.get_object("manjaroicon").set_from_pixbuf(logo)
         self.builder.get_object("aboutdialog").set_logo(logo)
 
@@ -66,8 +65,7 @@ class ManjaroHello():
         self.pages = ("readme", "release", "involved")
         for page in self.pages:
             scrolled_window = Gtk.ScrolledWindow()
-            viewport = Gtk.Viewport()
-            viewport.set_border_width(10)
+            viewport = Gtk.Viewport(border_width=10)
             label = Gtk.Label(wrap=True)
             viewport.add(label)
             scrolled_window.add(viewport)
@@ -90,8 +88,6 @@ class ManjaroHello():
         for btn in ("wiki", "forums", "chat", "mailling", "development", "donate"):
             img = Gtk.Image.new_from_file(self.data_path + "img/external-link.png")
             img.set_margin_left(2)
-            self.builder.get_object(btn).set_image_position(Gtk.PositionType.RIGHT)
-            self.builder.get_object(btn).set_always_show_image(True)
             self.builder.get_object(btn).set_image(img)
 
         # Set autostart switcher state
