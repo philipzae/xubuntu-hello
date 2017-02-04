@@ -67,6 +67,7 @@ class ManjaroHello():
         for page in self.pages:
             scrolled_window = Gtk.ScrolledWindow()
             viewport = Gtk.Viewport()
+            viewport.set_border_width(10)
             label = Gtk.Label(wrap=True)
             viewport.add(label)
             scrolled_window.add(viewport)
