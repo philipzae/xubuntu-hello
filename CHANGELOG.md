@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.9] - 2017-02-04
+### Changed
+- Update translations.
+
+### Fixed
+- Fix position of scrollbars.
+
 ## [0.4.8] - 2017-01-29
 ### Changed
 - Use same logo as launcher.
