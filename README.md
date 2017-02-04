@@ -7,13 +7,13 @@ A tool providing access to documentation and support for new Manjaro users.
 
 ## Why a new Manjaro Welcome Screen ?
 
-Manjaro-hello is widely inspired by [manjaro-welcome](https://github.com/manjaro/manjaro-welcome). I've started to work on a new welcome screen because I think that the current has several defects, some of which are inherited from the technologies used.
-- First, it is based on Gtk3 but because of the use of Webkit and its old Python binding, it is forced to use Gtk2.
-- All content of the app is displayed with HTML that is rendered by Webkit. This makes the evolution of the software very complicated. For example, it is very hard to make a translation system.
-- By using web technologies and Webkit, the renderer is a little bit slower than using native technologies.
+Manjaro-hello is widely inspired by [manjaro-welcome](https://github.com/manjaro/manjaro-welcome). Manjaro-welcome has several defects, some of which are inherited from the technologies used:
+- It is based on Gtk3 but because of the use of the old Python binding of Webkit, it is blocked on gtk2.
+- The old old Python binding of Webkit has many serious security holes.
+- Content of the app is displayed with web technologies. This makes the soft slower and complicates its evolution.
 - Can't know if each link will be open in an external browser or in app.
 
-For all this reasons, I have chosen to build a new software from scratch but keeping the original structure.
+For all this reasons, we have chosen to build a new software from scratch but keeping the original structure.
 
 Currently, manjaro-hello has all the major features of manjaro-welcome plus a translation system.
 - Interface is translated using gettext and po files. (po/)
@@ -21,9 +21,7 @@ Currently, manjaro-hello has all the major features of manjaro-welcome plus a tr
 
 ## What goals ?
 
-The first goal of the project is to build a powerful welcome screen who welcome the new user and help him to discover our favorite distribution :).
-
-Finnaly, the second goal is to push it to replace the original project.
+The goal of the project is to build a powerful welcome screen who welcome the new user and help him to discover our favorite distribution :).
 
 ## Technologies
 
@@ -31,9 +29,7 @@ Manjaro-hello is build with Python, Gtk3 and Glade.
 
 ## TODO
 
-For the moment, even if the soft works, it is not finished.
-- We have to test it and fix bugs.
-- Make translations to distribute it in all the world.
+- Make more translations to distribute it in all the world.
 
 ## Links
 
