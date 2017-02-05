@@ -465,27 +465,27 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <items>
               <item id="ar">Arabic</item>
               <item id="ca">Catalan</item>
-              <item id="zh_CN">Chinese (China)</item>
-              <item id="zh_TW">Chinese (Taiwan)</item>
+              <item id="zh-CN">Chinese (China)</item>
+              <item id="zh-TW">Chinese (Taiwan)</item>
               <item id="cs">Czech</item>
               <item id="nl">Dutch</item>
               <item id="en">English</item>
               <item id="fr">French</item>
               <item id="de">German</item>
-              <item id="el_GR">Greek (Greece)</item>
+              <item id="el-GR">Greek (Greece)</item>
               <item id="hu">Hungarian</item>
               <item id="it">Italian</item>
               <item id="lt">Lithuanian</item>
               <item id="pl">Polish</item>
-              <item id="pt_BR">Portuguese (Brazil)</item>
-              <item id="pt_PT">Portuguese (Portugal)</item>
+              <item id="pt-BR">Portuguese (Brazil)</item>
+              <item id="pt-PT">Portuguese (Portugal)</item>
               <item id="ru">Russian</item>
-              <item id="sl_SI">Slovenian (Slovenia)</item>
+              <item id="sl-SI">Slovenian (Slovenia)</item>
               <item id="sl">Slovenian</item>
               <item id="es">Spanish</item>
-              <item id="sr_RS">Serbian (Serbia)</item>
+              <item id="sr-RS">Serbian (Serbia)</item>
               <item id="sr">Serbian</item>
-              <item id="tr_TR">Turkish (Turkey)</item>
+              <item id="tr-TR">Turkish (Turkey)</item>
               <item id="tr">Turkish</item>
             </items>
             <signal name="changed" handler="on_languages_changed" swapped="no"/>

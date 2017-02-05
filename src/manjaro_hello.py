@@ -113,7 +113,10 @@ class ManjaroHello():
             sys_locale = locale.getdefaultlocale()[0]
             # If user's locale is supported
             if os.path.isfile(path.format(sys_locale)):
-                return sys_locale
+                if "_" in sys_locale:
+                    return sys_locale.replace("_", "-")
+                else:
+                    return sys_locale
             # If two first letters of user's locale is supported (ex: en_US -> en)
             elif os.path.isfile(path.format(sys_locale[:2])):
                 return sys_locale[:2]
@@ -125,8 +128,6 @@ class ManjaroHello():
         :param locale: locale to use
         :type locale: str
         """
-        if "_" in locale:
-            locale = locale.replace("_", "-")
         try:
             tr = gettext.translation(self.app, self.locale_path, [locale], fallback=True)
             tr.install()
