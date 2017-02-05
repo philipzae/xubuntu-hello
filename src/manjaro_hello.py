@@ -107,7 +107,9 @@ class ManjaroHello():
         :rtype: str
         """
         path = self.locale_path + "{}/LC_MESSAGES/" + self.app + ".mo"
-        if os.path.isfile(path.format(self.preferences["locale"])):
+        if self.preferences["locale"] == self.default_locale:
+            return self.default_locale
+        elif os.path.isfile(path.format(self.preferences["locale"])):
             return self.preferences["locale"]
         else:
             sys_locale = locale.getdefaultlocale()[0]
