@@ -21,7 +21,7 @@ class ManjaroHello():
 
         # Path vars
         self.home_path = os.path.expanduser("~")
-        self.logo_path = "/usr/share/icons/manjaro/maia/64x64.png"
+        self.logo_path = "/usr/share/icons/hicolor/64x64/apps/manjaro.png"
         if os.path.basename(sys.argv[0]) == self.app:
             self.data_path = "/usr/share/" + self.app + "/data/"
             self.locale_path = "/usr/share/locale/"
