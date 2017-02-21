@@ -468,6 +468,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="zh-CN">Chinese (China)</item>
               <item id="zh-TW">Chinese (Taiwan)</item>
               <item id="cs">Czech</item>
+              <item id="da-DK">Danish (Denmark)</item>
               <item id="nl">Dutch</item>
               <item id="en">English</item>
               <item id="fr">French</item>
@@ -476,6 +477,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="hu">Hungarian</item>
               <item id="it">Italian</item>
               <item id="lt">Lithuanian</item>
+              <item id="nb">Norwegian Bokmål</item>
               <item id="pl">Polish</item>
               <item id="pt-BR">Portuguese (Brazil)</item>
               <item id="pt-PT">Portuguese (Portugal)</item>
