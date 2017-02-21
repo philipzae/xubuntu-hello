@@ -4,7 +4,7 @@
 # Hugo Posnic <huluti@manjaro.org>, 2016-2017.
 # 
 # Translators:
-# cges30901 <cges30901@gmail.com>, 2017
+# Hsiu-Ming Chang <cges30901@gmail.com>, 2017
 # Jeff Huang <s8321414@gmail.com>, 2017
 msgid ""
 msgstr ""

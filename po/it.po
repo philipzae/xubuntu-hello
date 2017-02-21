@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Hugo Posnic <huluti@manjaro.org>, 2016
-# Stefano <capitani74@gmail.com>, 2016
+# Stefano Capitani <capitani74@gmail.com>, 2016
 # Fabio Forni <fabio94xx@gmail.com>, 2016
 msgid ""
 msgstr ""
