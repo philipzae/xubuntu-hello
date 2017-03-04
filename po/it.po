@@ -4,14 +4,14 @@
 # Hugo Posnic <huluti@manjaro.org>, 2016-2017.
 # 
 # Translators:
-# Hugo Posnic <huluti@manjaro.org>, 2016
 # Stefano Capitani <capitani74@gmail.com>, 2016
+# Hugo Posnic <huluti@manjaro.org>, 2016
 # Fabio Forni <fabio94xx@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-04 17:30+0100\n"
+"POT-Creation-Date: 2017-03-04 10:28+0100\n"
 "PO-Revision-Date: 2017-01-08 21:04+0100\n"
 "Last-Translator: Fabio Forni <fabio94xx@gmail.com>, 2016\n"
 "Language-Team: Italian (https://www.transifex.com/manjarolinux/teams/70274/it/)\n"
@@ -55,62 +55,58 @@ msgstr "Leggimi"
 msgid "Release info"
 msgstr "Informazioni di versione"
 
-#: ../ui/manjaro-hello.glade:156
+#: ../ui/manjaro-hello.glade:158
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../ui/manjaro-hello.glade:170
+#: ../ui/manjaro-hello.glade:174
 msgid "Get involved"
 msgstr "Partecipa"
 
-#: ../ui/manjaro-hello.glade:184
+#: ../ui/manjaro-hello.glade:188
 msgid "Forums"
 msgstr "Forums"
 
-#: ../ui/manjaro-hello.glade:198
+#: ../ui/manjaro-hello.glade:204
 msgid "Chat room"
 msgstr "Canale IRC"
 
-#: ../ui/manjaro-hello.glade:212
+#: ../ui/manjaro-hello.glade:220
 msgid "Mailling lists"
 msgstr "Mailing lists"
 
-#: ../ui/manjaro-hello.glade:226
+#: ../ui/manjaro-hello.glade:236
 msgid "Development"
 msgstr "Sviluppo"
 
-#: ../ui/manjaro-hello.glade:240
+#: ../ui/manjaro-hello.glade:252
 msgid "Donate"
 msgstr "Dona"
 
-#: ../ui/manjaro-hello.glade:356
+#: ../ui/manjaro-hello.glade:370
 msgid "Launch at start"
 msgstr "Esegui all'avvio"
 
-#: ../ui/manjaro-hello.glade:387
+#: ../ui/manjaro-hello.glade:401
 msgid "INSTALLATION"
 msgstr "INSTALLAZIONE"
 
-#: ../ui/manjaro-hello.glade:399
+#: ../ui/manjaro-hello.glade:413
 msgid "Launch installer"
 msgstr "Avvia installazione"
 
-#: ../ui/manjaro-hello.glade:442
+#: ../ui/manjaro-hello.glade:456
 msgid "Home"
 msgstr "Home"
 
-#: ../ui/manjaro-hello.glade:487 ../ui/manjaro-hello.glade:501
+#: ../ui/manjaro-hello.glade:505 ../ui/manjaro-hello.glade:519
 msgid "About"
 msgstr "About"
 
-#: ../ui/manjaro-hello.glade:506
+#: ../ui/manjaro-hello.glade:524
 msgid "Welcome screen for Manjaro"
 msgstr "Schermata di benvenuto per Manjaro"
 
-#: ../ui/manjaro-hello.glade:508
-msgid "Github"
-msgstr "Github"
-
-#: ../src/manjaro_hello.py:235
+#: ../src/manjaro_hello.py:239
 msgid "Can't load page."
 msgstr "Impossibile caricare la pagina."

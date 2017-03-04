@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-04 17:30+0100\n"
+"POT-Creation-Date: 2017-03-04 10:28+0100\n"
 "PO-Revision-Date: 2017-01-08 21:04+0100\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>, 2017\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/manjarolinux/teams/70274/zh_TW/)\n"
@@ -54,62 +54,58 @@ msgstr "讀我"
 msgid "Release info"
 msgstr "版本資訊"
 
-#: ../ui/manjaro-hello.glade:156
+#: ../ui/manjaro-hello.glade:158
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../ui/manjaro-hello.glade:170
+#: ../ui/manjaro-hello.glade:174
 msgid "Get involved"
 msgstr "參與"
 
-#: ../ui/manjaro-hello.glade:184
+#: ../ui/manjaro-hello.glade:188
 msgid "Forums"
 msgstr "論壇"
 
-#: ../ui/manjaro-hello.glade:198
+#: ../ui/manjaro-hello.glade:204
 msgid "Chat room"
 msgstr "聊天室"
 
-#: ../ui/manjaro-hello.glade:212
+#: ../ui/manjaro-hello.glade:220
 msgid "Mailling lists"
 msgstr "郵件清單"
 
-#: ../ui/manjaro-hello.glade:226
+#: ../ui/manjaro-hello.glade:236
 msgid "Development"
 msgstr "開發"
 
-#: ../ui/manjaro-hello.glade:240
+#: ../ui/manjaro-hello.glade:252
 msgid "Donate"
 msgstr "捐款"
 
-#: ../ui/manjaro-hello.glade:356
+#: ../ui/manjaro-hello.glade:370
 msgid "Launch at start"
 msgstr "開機時啟動"
 
-#: ../ui/manjaro-hello.glade:387
+#: ../ui/manjaro-hello.glade:401
 msgid "INSTALLATION"
 msgstr "安裝"
 
-#: ../ui/manjaro-hello.glade:399
+#: ../ui/manjaro-hello.glade:413
 msgid "Launch installer"
 msgstr "啟動安裝程式"
 
-#: ../ui/manjaro-hello.glade:442
+#: ../ui/manjaro-hello.glade:456
 msgid "Home"
 msgstr "首頁"
 
-#: ../ui/manjaro-hello.glade:487 ../ui/manjaro-hello.glade:501
+#: ../ui/manjaro-hello.glade:505 ../ui/manjaro-hello.glade:519
 msgid "About"
 msgstr "關於"
 
-#: ../ui/manjaro-hello.glade:506
+#: ../ui/manjaro-hello.glade:524
 msgid "Welcome screen for Manjaro"
 msgstr "Manjaro 的歡迎畫面"
 
-#: ../ui/manjaro-hello.glade:508
-msgid "Github"
-msgstr "Github"
-
-#: ../src/manjaro_hello.py:235
+#: ../src/manjaro_hello.py:239
 msgid "Can't load page."
 msgstr "無法載入頁面。"
