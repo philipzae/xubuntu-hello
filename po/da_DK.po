@@ -5,13 +5,14 @@
 # 
 # Translators:
 # Martin Elvar <m@martinelvar.dk>, 2017
+# scootergrisen <scootergrisen@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-04 17:30+0100\n"
 "PO-Revision-Date: 2017-01-08 21:04+0100\n"
-"Last-Translator: Martin Elvar <m@martinelvar.dk>, 2017\n"
+"Last-Translator: scootergrisen <scootergrisen@gmail.com>, 2017\n"
 "Language-Team: Danish (Denmark) (https://www.transifex.com/manjarolinux/teams/70274/da_DK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,9 +30,9 @@ msgid ""
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
-"Tak for din deltagelse i vores fællesskabet\n"
+"Tak for din deltagelse i vores fællesskabet!\n"
 "\n"
-" Vi, Manjaro udviklererne, håber at du vil nyde at bruge Manjaro ligeså meget som vi nyder at bygge det. Linkene nedenfor vil hjælpe dig igang med dit nye operativ system. Nyd oplevelsen, og tøv ikke med at sende os din feedback."
+"Vi, Manjaro-udviklerne, håber at du vil nyde at bruge Manjaro ligeså meget som vi nød at bygge det. Linkene nedenfor vil hjælpe dig i gang med dit nye operativsystem. Så nyd oplevelsen, og tøv ikke med at sende os din feedback."
 
 #: ../ui/manjaro-hello.glade:88
 msgid "DOCUMENTATION"
@@ -51,7 +52,7 @@ msgstr "Læs mig"
 
 #: ../ui/manjaro-hello.glade:142
 msgid "Release info"
-msgstr "Udgivelses info"
+msgstr "Udgivelsesinfo"
 
 #: ../ui/manjaro-hello.glade:156
 msgid "Wiki"
@@ -59,19 +60,19 @@ msgstr "Wiki"
 
 #: ../ui/manjaro-hello.glade:170
 msgid "Get involved"
-msgstr "Bliv involveret"
+msgstr "Vær med"
 
 #: ../ui/manjaro-hello.glade:184
 msgid "Forums"
-msgstr "Forums"
+msgstr "Fora"
 
 #: ../ui/manjaro-hello.glade:198
 msgid "Chat room"
-msgstr "Chat rum"
+msgstr "Chatrum"
 
 #: ../ui/manjaro-hello.glade:212
 msgid "Mailling lists"
-msgstr "Mailing lister"
+msgstr "Mailinglister"
 
 #: ../ui/manjaro-hello.glade:226
 msgid "Development"
@@ -79,7 +80,7 @@ msgstr "Udvikling"
 
 #: ../ui/manjaro-hello.glade:240
 msgid "Donate"
-msgstr "Doner"
+msgstr "Donér"
 
 #: ../ui/manjaro-hello.glade:356
 msgid "Launch at start"
@@ -103,12 +104,12 @@ msgstr "Om"
 
 #: ../ui/manjaro-hello.glade:506
 msgid "Welcome screen for Manjaro"
-msgstr "Velkommen skærm for Manjaro"
+msgstr "Velkomstskærm for Manjaro"
 
 #: ../ui/manjaro-hello.glade:508
 msgid "Github"
-msgstr "Github"
+msgstr "GitHub"
 
 #: ../src/manjaro_hello.py:235
 msgid "Can't load page."
-msgstr "Kunne ikke hente siden"
+msgstr "Kan ikke indlæse siden."
