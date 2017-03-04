@@ -523,7 +523,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
     <property name="version">0.4.10</property>
     <property name="comments" translatable="yes">Welcome screen for Manjaro</property>
     <property name="website">https://github.com/Huluti/manjaro-hello</property>
-    <property name="website_label" translatable="yes">Github</property>
+    <property name="website_label">GitHub</property>
     <property name="authors">Hugo Posnic
 Johnathan Jenkins</property>
     <property name="translator_credits">abdelhak gasmi [ar]
