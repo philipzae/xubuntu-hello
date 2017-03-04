@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.11] - 2017-03-04
+### Changed
+- Update translations.
+- Update release notes for Manjaro 17.
+
+### Fixed
+- GitHub label.
+
 ## [0.4.10] - 2017-02-05
 ### Fixed
 - Locale detection.
