@@ -20,4 +20,14 @@ With Pamac 4.3 we fixed known issues and added new functions. Followed features 
     - added files db support
     - updated translations and fixed other small issues
 
+With Manjaro Settings Manager we fixed known issues and added new functions. Followed features you can expect:
+
+    - fixed a crash when using automatic installation
+    - fixed a segfault when opening hardware detection
+    - fixed a crash in kcm module, keyboard preview refresh fixes
+    - correction of search function in keyboardmodel
+    - use KAuth for KernelPage, MhwdPage, 
+    - no need to run the application as super user anymore
+    - updated translations
+
 We hope you enjoy this release and let us know what you think of Gellivara.
