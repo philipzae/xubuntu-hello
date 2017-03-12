@@ -1,7 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [0.4.11] - 2017-03-04
+## [0.4.11] - 2017-03-12
+### Added
+- Locales: da-DK, nb.
+
 ### Changed
 - Update translations.
 - Update release notes for Manjaro 17.
