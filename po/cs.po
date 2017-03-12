@@ -75,7 +75,7 @@ msgstr "Emailové konference a noviny"
 
 #: ../ui/manjaro-hello.glade:236
 msgid "Development"
-msgstr ""
+msgstr "Vývoj"
 
 #: ../ui/manjaro-hello.glade:252
 msgid "Donate"
