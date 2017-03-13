@@ -1,9 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.12] - 2017-03-13
+### Added
+- Locales: da_DK, is, sq.
+
 ## [0.4.11] - 2017-03-12
 ### Added
-- Locales: da-DK, nb.
+- Locales: da_DK, nb.
 
 ### Changed
 - Update translations.
