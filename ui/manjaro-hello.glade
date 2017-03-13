@@ -463,6 +463,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <items>
+              <item id="sq">Albanian</item>
               <item id="ar">Arabic</item>
               <item id="ca">Catalan</item>
               <item id="zh-CN">Chinese (China)</item>
