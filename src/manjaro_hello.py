@@ -136,6 +136,8 @@ class ManjaroHello():
         except OSError:
             return
 
+        self.preferences["locale"] = locale
+
         # Dirty code to fix an issue with gettext that can't translate strings from glade files
         # Redfining all translatables strings
         # TODO: Find a better solution
@@ -179,7 +181,6 @@ class ManjaroHello():
             label = child.get_children()[0].get_children()[0]
             label.set_markup(self.get_page(page))
 
-        self.preferences["locale"] = locale
 
     def set_autostart(self, autostart):
         """Set state of autostart.
