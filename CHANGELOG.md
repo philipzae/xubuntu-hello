@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.x] - 2017-03-21
+- Page translations for da
+
 ## [0.4.12] - 2017-03-13
 ### Added
 - Locales: da_DK, is, sq.
