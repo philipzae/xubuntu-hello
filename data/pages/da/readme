@@ -1,18 +1,12 @@
 <big>Hardware håndtering</big>
 
-Manjaro not only supports the use of multiple kernels (selectable from the advanced options at the boot screen), but also provides access to the very latest bleeding edge kernels as well. This can be done through the use of the Kernel module in Manjaro's graphical Settings Manager, or via the command line using the MHWD-kernel (Manjaro Hardware Detection) command.
-
 Ikke alene støtter Manjaro muligheden for flere samtidige kerner (den ønskede kerne vælges ved opstart via de udvidede funktiioner under opstart), men Manjaro giver også mulighed for det nyeste nye når det kommer til kernen. Ved hjælp af Manjaros MHWD (Manjaro Hardware Detection) kan du enten via et GUI (grafisk brugerflade) eller via CLI (terminal program) installere mange forskellige kerner.
 
 Manjaros værktøjer vil automatisk updatere en ny installeret kerne sammen med den software der er i brug med den eksisterende kerne. Et eksempel, hvid du vil updatere fra 4.4 til 4.9, mhwd-kernel vil inkludere de nødvendige pakker der skal bruges med begge kerner. Er det ikke smart?
 
-You can configure your hardware through the Hardware Detection module in the Settings Manager or alternatively with the MHWD cli-application. With these tools you can install for example graphical drivers, free and proprietary.
-
 Du kan indstille din hardware gennem dette Hardware Detektions modul, enten med Indstillinger eller med MHWD som terminal app. Med disse værktøjer kan du installere de relevante styreprogrammer til dit grafik-kort enten det er open-source eller producentens originale.
 
 <big>Få hjælp</big>
-
-Although Manjaro is designed to work as much "out of the box" as possible, we don't claim it's perfect. There can be times when things go wrong, you might have questions and a desire to learn more or just want to personalise it to suit your tastes. This page provides details of some available resources to help you!
 
 Selvom Manjaro er oprettet på en måde så du får så meget "ud af kassen" funktionalitet som muligt, kan vi ikke påstå at Manjaro er perfekt. Der kan være tidspunkter hvor noget går galt, du har måske spørgsmål og et ønske om at lære mere eller du vil tilpasse noget til din personlige smag. Denne side giver dig et overblik over nogle af de muligheder du kan trække på.
 
@@ -24,18 +18,17 @@ Da Manjaro er baseret på Arch Linux, vil vejledninger og tips rettet mod Arch L
 
 <b>Søg i forum</b>
 
-Manjaro specifik hjælp kan du få et et dedikeret online forum, hvor du kan søge i emner, eller du kan oprette et selv. Manjaro Forum er nok godt sted for samarbejde, diskussion og hjælp. Spørg efter hjælp, giv udtryk for dine meninger, eller beskriv nogle forslag. Vær ikke genert - vi er helt almindelige mennesker i en venlig og omgængelig atmosfære.
+Manjaro specifik hjælp har vi et dedikeret online forum, hvor du kan søge i emnerne, eller du kan oprette et selv. Manjaro Forum er også et godt sted for samarbejde, diskussion og hjælp. Spørg efter hjælp, giv udtryk for dine meninger, eller beskriv nogle forslag. Vær ikke genert - vi er helt almindelige mennesker i en venlig og omgængelig atmosfære.
 
-Manjaro forum er opdelt i under-fora under forskellige emner og miljøer, vær venlig at oprette dit spørgsmål det mest relevante sted.
+Manjaro forum er opdelt i under-fora under forskellige emner og miljøer, så prøv at oprette dit spørgsmål det mest relevante sted.
 
 <b>Vær med på IRC (Internet Relay Chat)</b>
 
-Another option is to join us on IRC by joining our #manjaro channel on the chat.freenode.net servers.
 En anden mulighed er IRC chat på #manjaro kanalen. Den findes på chat.freenode.net
 
 <b>Skriv dig på mail listen</b>
 
-En anden måde at få hjælp på er ved at sende email en Manjaro mail liste (der er også mulighed for historiske søgninger). Det er enkelt at skrive sig på den liste man foretrækker og derefter følge vejledningen. Der er dedikerede lister for forskellige emner, men kig selv.
+En tredje måde at få hjælp på er ved at sende mail til en Manjaro mail liste (der er også mulighed for historiske søgninger). Det er enkelt at skrive sig på den liste man foretrækker og derefter følge vejledningen. Der er dedikerede lister for forskellige emner, men kig selv.
 
 <big>Andre muligheder</big>
 
@@ -46,8 +39,6 @@ En anden måde at få hjælp på er ved at sende email en Manjaro mail liste (de
     - <a href="http://manjaro.org/irc-channel">IRC Chat</a> - Online snak og hjælp fra andre brugere.
 
 <big>Forslag</big>
-
-Got a suggestion on how we can make Manjaro better? Found something you want included, or want to help out? Please let us know, by posting your suggestion on the forum or drop by on IRC.
 
 Har du et forslag til hvordan vi gør Manjaro bedre? Fundet noget du vil have med, eller har brug for hjælp til? Lad os høre om det ved at du opretter en besked i vores forum eller kommer for IRC chatten.
 
