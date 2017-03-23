@@ -1,8 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [0.4.x] - 2017-03-21
-- Page translations for da
+## [0.4.13] - 2017-03-23
+### Added
+- Locales: RU translation.
+### Fixed
+- Locale loading
 
 ## [0.4.12] - 2017-03-13
 ### Added
