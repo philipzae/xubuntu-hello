@@ -465,6 +465,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <items>
               <item id="sq">Albanian</item>
               <item id="ar">Arabic</item>
+              <item id="bg">Bulgarian</item>
               <item id="ca">Catalan</item>
               <item id="zh-CN">Chinese (China)</item>
               <item id="zh-TW">Chinese (Taiwan)</item>
@@ -485,6 +486,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="pt-BR">Portuguese (Brazil)</item>
               <item id="pt-PT">Portuguese (Portugal)</item>
               <item id="ru">Russian</item>
+              <item id="sk">Slovak</item>
               <item id="sl-SI">Slovenian (Slovenia)</item>
               <item id="sl">Slovenian</item>
               <item id="es">Spanish</item>
