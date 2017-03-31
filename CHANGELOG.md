@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.15] - 2017-03-31
+### Added
+- Locales: da.
+
 ## [0.4.14] - 2017-03-26
 ### Added
 - Pages: da.
