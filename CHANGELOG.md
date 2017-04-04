@@ -3,11 +3,11 @@ All notable changes to this project will be documented in this file.
 
 ## [0.4.17] - 2017-04-04
 ### Fixed
-- Page: loading of "release" page in pt_BR.
+- Pages: loading of "release" page in pt_BR.
 
 ## [0.4.16] - 2017-04-03
 ### Added
-- Page: pt_BR.
+- Pages: pt_BR.
 
 ## [0.4.15] - 2017-03-31
 ### Added
