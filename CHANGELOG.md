@@ -1,6 +1,19 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.18] - 2017-04-16
+### Added
+- Locales: hi_IN.
+
+### Fixed
+- Pages: Corrections for pt_BR.
+
+### Changed
+- Update translations.
+
+### Removed
+- Locales: da_DK.
+
 ## [0.4.17] - 2017-04-04
 ### Fixed
 - Pages: loading of "release" page in pt_BR.
