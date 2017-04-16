@@ -8,11 +8,11 @@ Nossa edição do KDE continua a oferecer este ambiente de desktop poderoso, mad
 
 O Kernel 4.9 é usado para esta versão, como os drivers mais recentes disponíveis até o momento. Em relação à última versão da mídia de instalação, nossas ferramentas foram aprimoradas e polidas.
 
-O Manjaro Settings Manager (MSM) agora oferece uma interface gráfica fácil de usar para instalar e remover as muitas séries de kernels que oferecemos. A seleção de manjares de kernels prontamente disponíveis continua sendo a mais extensa de todas as distribuições Linux que conhecemos. No momento desta versão, nove kernel-série estão disponíveis diretamente de nossos repositórios binários, que vão desde o maduro &amp; Rock-solid 3.10 série para a última versão 4.10. Além disso, oferecemos duas séries de kernel em tempo real. Essa ampla variedade de opções de kernel disponíveis resulta em um extenso suporte de hardware, tirando o máximo proveito do seu sistema para você, seja ele antigo ou novo.
+O Manjaro Settings Manager (MSM) agora oferece uma interface gráfica fácil de usar para instalar e remover as muitas séries de kernels que oferecemos. A seleção de Manjaro's de kernels prontamente disponíveis continua sendo a mais extensa de todas as distribuições Linux que conhecemos. No momento desta versão, nove kernel-séries estão disponíveis diretamente de nossos repositórios binários, que vão desde o maduro e sólido 3.10 série para a última versão 4.10. Além disso, oferecemos duas séries de kernel em tempo real. Essa ampla variedade de opções de kernel disponíveis resulta em um extenso suporte de hardware, tirando o máximo proveito do seu sistema para você, seja ele antigo ou novo.
 
 Com Pamac 4.3 corrigimos problemas conhecidos e adicionamos novas funções. Recursos seguidos que você pode esperar:
 
-    - implementou funções internas para a construção de pacotes de AUR com resolução deps.
+    - implementou funções internas para a construção de pacotes do AUR com deps resolução.
     - o correio do packager agora é clicável
     - otimizar a função de download
     - Atalhos do Gnome ativados
