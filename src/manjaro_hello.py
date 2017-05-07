@@ -19,31 +19,31 @@ class ManjaroHello():
         # App vars
         self.app = "manjaro-hello"
 
-        # Path vars
+        # Paths
         self.home_path = os.path.expanduser("~")
-        self.logo_path = "/usr/share/icons/hicolor/64x64/apps/manjaro.png"
-        if os.path.basename(sys.argv[0]) == self.app:
-            self.data_path = "/usr/share/" + self.app + "/data/"
-            self.locale_path = "/usr/share/locale/"
-            self.ui_path = "/usr/share/" + self.app + "/ui/"
-            self.desktop_path = "/usr/share/applications/" + self.app + ".desktop"
-        else:
-            self.data_path = "data/"
-            self.locale_path = "locale/"
-            self.ui_path = "ui/"
-            self.desktop_path = os.getcwd() + "/" + self.app + ".desktop"
         self.config_path = self.home_path + "/.config/"
+        share_path = "/usr/share/"
+        self.data_path = "data/"
+        self.locale_path = "locale/"
+        self.ui_path = "ui/"
+        self.desktop_path = self.app + ".desktop"
+
+        if os.path.basename(sys.argv[0]) == self.app:
+            self.data_path = share_path + self.app + self.data_path
+            self.locale_path = share_path + self.locale_path
+            self.ui_path = share_path + self.app + "/" + self.ui_path
+            self.desktop_path = share_path + "applications/" + self.desktop_path
+        else:
+            self.desktop_path = os.getcwd() + "/" + self.desktop_path
+
+        self.logo_path = share_path + "icons/hicolor/64x64/apps/manjaro.png"
         self.preferences_path = self.config_path + self.app + ".json"
         self.urls_path = self.data_path + "urls.json"
         self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
 
-        # Load preferences
+        # Load important vars
         self.preferences = self.get_preferences()
-
-        # Load system infos
         self.infos = get_infos()
-
-        # Load data files
         self.urls = read_json(self.urls_path)
 
         # Init window
