@@ -1,6 +1,19 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.19] - 2017-05-07
+### Added
+- Locales: th, uk.
+
+### Fixed
+- Pages: Corrections for ru.
+
+### Changed
+- Update translations.
+
+### Removed
+- Support of manjaro-tools 0.13.
+
 ## [0.4.18] - 2017-04-16
 ### Added
 - Locales: hi_IN.
