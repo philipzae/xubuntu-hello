@@ -40,10 +40,11 @@ class ManjaroHello():
         self.preferences_path = self.config_path + self.app + ".json"
         self.urls_path = self.data_path + "urls.json"
         self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
+        self.live_path = "/run/miso/bootmnt/manjaro"
 
         # Load important vars
         self.preferences = self.get_preferences()
-        self.infos = get_infos()
+        self.infos = self.get_infos()
         self.urls = read_json(self.urls_path)
 
         # Init window
@@ -267,24 +268,23 @@ class ManjaroHello():
         """Event for clicked link."""
         webbrowser.open_new_tab(self.urls[link.get_name()])
 
+    def get_infos(self):
+        """Get informations about user's system.
+        :return: informations about user's system
+        :rtype: dict
+        """
+        lsb = get_lsb_infos()
+        infos = {}
+        infos["codename"] = lsb.get("CODENAME", None)
+        infos["release"] = lsb.get("RELEASE", None)
+        infos["arch"] = "64-bits" if sys.maxsize > 2**32 else "32-bits"
+        infos["live"] = os.path.exists(self.live_path)
+        return infos
+
     def on_delete_window(self, *args):
         """Event to quit app."""
         self.save_preferences()
         Gtk.main_quit(*args)
-
-
-def get_infos():
-    """Get informations about user's system.
-    :return: informations about user's system
-    :rtype: dict
-    """
-    lsb = get_lsb_infos()
-    infos = {}
-    infos["codename"] = lsb.get("CODENAME", None)
-    infos["release"] = lsb.get("RELEASE", None)
-    infos["arch"] = "64-bits" if sys.maxsize > 2**32 else "32-bits"
-    infos["live"] = os.path.exists("/run/miso/bootmnt/manjaro")
-    return infos
 
 
 def get_lsb_infos():
