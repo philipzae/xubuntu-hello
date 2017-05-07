@@ -283,7 +283,7 @@ def get_infos():
     infos["codename"] = lsb.get("CODENAME", None)
     infos["release"] = lsb.get("RELEASE", None)
     infos["arch"] = "64-bits" if sys.maxsize > 2**32 else "32-bits"
-    infos["live"] = os.path.exists("/bootmnt/manjaro") or os.path.exists("/run/miso/bootmnt/manjaro")
+    infos["live"] = os.path.exists("/run/miso/bootmnt/manjaro")
     return infos
 
 
