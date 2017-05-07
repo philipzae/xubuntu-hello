@@ -13,7 +13,7 @@ from gi.repository import Gtk, GdkPixbuf
 
 
 class ManjaroHello():
-    """Manjaro-Hello"""
+    """Manjaro Hello"""
 
     def __init__(self):
         # App vars
