@@ -496,6 +496,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="th">Thai</item>
               <item id="tr-TR">Turkish (Turkey)</item>
               <item id="tr">Turkish</item>
+              <item id="uk">Ukrainian</item>
             </items>
             <signal name="changed" handler="on_languages_changed" swapped="no"/>
           </object>
