@@ -36,7 +36,7 @@
             <property name="column_spacing">10</property>
             <property name="column_homogeneous">True</property>
             <child>
-              <object class="GtkImage" id="manjaroicon">
+              <object class="GtkImage" id="distriblogo">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
               </object>
