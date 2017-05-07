@@ -56,10 +56,11 @@ class ManjaroHello():
         self.builder.get_object("headerbar").props.subtitle = subtitle
 
         # Load logo
-        logo = GdkPixbuf.Pixbuf.new_from_file(self.logo_path)
-        self.window.set_icon(logo)
-        self.builder.get_object("manjaroicon").set_from_pixbuf(logo)
-        self.builder.get_object("aboutdialog").set_logo(logo)
+        if os.path.isfile(self.logo_path):
+            logo = GdkPixbuf.Pixbuf.new_from_file(self.logo_path)
+            self.window.set_icon(logo)
+            self.builder.get_object("manjaroicon").set_from_pixbuf(logo)
+            self.builder.get_object("aboutdialog").set_logo(logo)
 
         # Create pages
         self.pages = ("readme", "release", "involved")
