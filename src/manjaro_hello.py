@@ -29,7 +29,7 @@ class ManjaroHello():
         self.desktop_path = self.app + ".desktop"
 
         if os.path.basename(sys.argv[0]) == self.app:
-            self.data_path = share_path + self.app + self.data_path
+            self.data_path = share_path + self.app + "/" + self.data_path
             self.locale_path = share_path + self.locale_path
             self.ui_path = share_path + self.app + "/" + self.ui_path
             self.desktop_path = share_path + "applications/" + self.desktop_path
