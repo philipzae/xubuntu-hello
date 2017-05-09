@@ -38,24 +38,29 @@ class ManjaroHello():
             ui_path = "ui/"
             self.desktop_path = os.getcwd() + "/" + self.app + ".desktop"
 
+        live_path = "/run/miso/bootmnt/manjaro"
         logo_path = "/usr/share/icons/hicolor/64x64/apps/manjaro.png"
         urls_path = self.data_path + "urls.json"
         self.preferences_path = self.config_path + self.app + ".json"
         self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
-        self.live_path = "/run/miso/bootmnt/manjaro"
 
         # Load important vars
         self.preferences = self.get_preferences()
-        self.infos = self.get_infos()
         self.urls = read_json(urls_path)
 
         # Init window
         self.builder = Gtk.Builder.new_from_file(ui_path + self.app + ".glade")
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
-        subtitle = self.infos["arch"]
-        if self.infos["codename"] and self.infos["release"]:
-            subtitle = self.infos["codename"] + " " + self.infos["release"] + " " + subtitle
+
+        # Subtitle of headerbar
+        codename = subprocess.Popen("lsb_release -c", stdout=subprocess.PIPE, shell=True).communicate()
+        codename = codename[0].decode("utf-8").split(":")[1].strip().capitalize()
+        release = subprocess.Popen("lsb_release -r", stdout=subprocess.PIPE, shell=True).communicate()
+        release = release[0].decode("utf-8").split(":")[1].strip()
+        if codename and release:
+            arch = "64-bits" if sys.maxsize > 2**32 else "32-bits"
+            subtitle = codename + " " + release + " " + arch
         self.builder.get_object("headerbar").props.subtitle = subtitle
 
         # Load logo
@@ -99,7 +104,7 @@ class ManjaroHello():
         self.builder.get_object("autostart").set_active(self.autostart)
 
         # Live systems
-        if self.infos["live"] and os.path.isfile("/usr/bin/calamares"):
+        if os.path.exists(live_path) and os.path.isfile("/usr/bin/calamares"):
             self.builder.get_object("installlabel").set_visible(True)
             self.builder.get_object("install").set_visible(True)
 
@@ -270,45 +275,10 @@ class ManjaroHello():
         """Event for clicked link."""
         webbrowser.open_new_tab(self.urls[link.get_name()])
 
-    def get_infos(self):
-        """Get informations about user's system.
-        :return: informations about user's system
-        :rtype: dict
-        """
-        lsb = get_lsb_infos()
-        infos = {}
-        infos["codename"] = lsb.get("CODENAME", None)
-        infos["release"] = lsb.get("RELEASE", None)
-        infos["arch"] = "64-bits" if sys.maxsize > 2**32 else "32-bits"
-        infos["live"] = os.path.exists(self.live_path)
-        return infos
-
     def on_delete_window(self, *args):
         """Event to quit app."""
         self.save_preferences()
         Gtk.main_quit(*args)
-
-
-def get_lsb_infos():
-    """Read informations from the lsb-release file.
-    :return: args from lsb-release file
-    :rtype: dict
-    """
-    lsb = {}
-    try:
-        with open("/etc/lsb-release") as f:
-            for line in f:
-                if "=" in line:
-                    var, arg = line.rstrip().split("=")
-                    if var.startswith("DISTRIB_"):
-                        var = var[8:]
-                    if arg.startswith("\"") and arg.endswith("\""):
-                        arg = arg[1:-1]
-                    if arg:
-                        lsb[var] = arg
-    except OSError as error:
-        print(error)
-    return lsb
 
 
 def read_json(path):
