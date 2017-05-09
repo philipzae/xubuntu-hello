@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.20] - 2017-05-09
+### Fixed
+- Fix loading of files from data folder.
+
 ## [0.4.19] - 2017-05-07
 ### Added
 - Locales: th, uk.
