@@ -25,30 +25,30 @@ class ManjaroHello():
         share_path = "/usr/share/"
         self.data_path = "data/"
         self.locale_path = "locale/"
-        self.ui_path = "ui/"
+        ui_path = "ui/"
         self.desktop_path = self.app + ".desktop"
 
         if os.path.basename(sys.argv[0]) == self.app:
             self.data_path = share_path + self.app + "/" + self.data_path
             self.locale_path = share_path + self.locale_path
-            self.ui_path = share_path + self.app + "/" + self.ui_path
+            ui_path = share_path + self.app + "/" + ui_path
             self.desktop_path = share_path + "applications/" + self.desktop_path
         else:
             self.desktop_path = os.getcwd() + "/" + self.desktop_path
 
-        self.logo_path = share_path + "icons/hicolor/64x64/apps/manjaro.png"
+        logo_path = share_path + "icons/hicolor/64x64/apps/manjaro.png"
         self.preferences_path = self.config_path + self.app + ".json"
-        self.urls_path = self.data_path + "urls.json"
+        urls_path = self.data_path + "urls.json"
         self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
         self.live_path = "/run/miso/bootmnt/manjaro"
 
         # Load important vars
         self.preferences = self.get_preferences()
         self.infos = self.get_infos()
-        self.urls = read_json(self.urls_path)
+        self.urls = read_json(urls_path)
 
         # Init window
-        self.builder = Gtk.Builder.new_from_file(self.ui_path + self.app + ".glade")
+        self.builder = Gtk.Builder.new_from_file(ui_path + self.app + ".glade")
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
         subtitle = self.infos["arch"]
@@ -57,8 +57,8 @@ class ManjaroHello():
         self.builder.get_object("headerbar").props.subtitle = subtitle
 
         # Load logo
-        if os.path.isfile(self.logo_path):
-            logo = GdkPixbuf.Pixbuf.new_from_file(self.logo_path)
+        if os.path.isfile(logo_path):
+            logo = GdkPixbuf.Pixbuf.new_from_file(logo_path)
             self.window.set_icon(logo)
             self.builder.get_object("distriblogo").set_from_pixbuf(logo)
             self.builder.get_object("aboutdialog").set_logo(logo)
