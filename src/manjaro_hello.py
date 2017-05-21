@@ -5,7 +5,6 @@ import gi
 import json
 import locale
 import os
-import subprocess
 import sys
 import webbrowser
 gi.require_version("Gtk", "3.0")
@@ -18,6 +17,8 @@ class ManjaroHello():
     def __init__(self):
         # App vars
         self.app = "manjaro-hello"
+        system = "Manjaro Gellivara"
+
         dev = False
         for arg in sys.argv:
             if arg == "--dev":
@@ -54,19 +55,7 @@ class ManjaroHello():
         self.window = self.builder.get_object("window")
 
         # Subtitle of headerbar
-        try:
-            codename = subprocess.Popen("lsb_release -c", stdout=subprocess.PIPE, shell=True).communicate()
-            codename = codename[0].decode("utf-8")
-            release = subprocess.Popen("lsb_release -r", stdout=subprocess.PIPE, shell=True).communicate()
-            release = release[0].decode("utf-8")
-            if ":" in codename and ":" in release:
-                codename = codename.split(":")[1].strip().capitalize()
-                release = release.split(":")[1].strip()
-                arch = "64-bits" if sys.maxsize > 2**32 else "32-bits"
-                subtitle = codename + " " + release + " " + arch
-                self.builder.get_object("headerbar").props.subtitle = subtitle
-        except subprocess.CalledProcessError as e:
-            pass
+        self.builder.get_object("headerbar").props.subtitle = system
 
         # Load logo
         if os.path.isfile(logo_path):
