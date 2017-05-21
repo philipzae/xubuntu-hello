@@ -211,11 +211,7 @@ class ManjaroHello():
 
     def save_preferences(self):
         """Save preferences in config file."""
-        try:
-            with open(self.preferences_path, "w") as f:
-                json.dump(self.preferences, f)
-        except OSError as error:
-            print(error)
+        write_json(self.preferences_path, self.preferences)
 
     def get_preferences(self):
         """Read preferences from config file."""
@@ -275,6 +271,8 @@ class ManjaroHello():
 
 def read_json(path):
     """Read content of a json file.
+    :param path: path of file to read
+    :type path: str
     :return: json content
     :rtype: str
     """
@@ -284,6 +282,18 @@ def read_json(path):
     except OSError:
         return None
 
+def write_json(path, content):
+    """Write content in a json file.
+    :param path: path of file to write
+    :type path: str
+    :param content: content to write
+    :type path: str
+    """
+    try:
+        with open(path, "w") as f:
+            json.dump(content, f)
+    except OSError as error:
+        print(error)
 
 if __name__ == "__main__":
     ManjaroHello()
