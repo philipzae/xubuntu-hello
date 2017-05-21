@@ -18,16 +18,16 @@ class ManjaroHello():
     def __init__(self):
         # App vars
         self.app = "manjaro-hello"
-        self.dev = False
+        dev = False
         for arg in sys.argv:
             if arg == "--dev":
-                self.dev = True
+                dev = True
 
         # Paths
         self.home_path = os.path.expanduser("~")
         self.config_path = self.home_path + "/.config/"
 
-        if not self.dev:
+        if not dev:
             self.data_path = "/usr/share/" + self.app + "/data/"
             self.locale_path = "/usr/share/locale/"
             ui_path = "/usr/share/" + self.app + "/ui/"
