@@ -15,16 +15,19 @@ class ManjaroHello():
     """Manjaro Hello"""
 
     def __init__(self):
-        # App vars
+        # Options
         self.app = "manjaro-hello"
         system = "Manjaro Gellivara"
+        live_path = "/run/miso/bootmnt/manjaro"
+        logo_path = "/usr/share/icons/hicolor/64x64/apps/manjaro.png"
+        self.default_locale = "en"
 
+        # App vars
         dev = False
         for arg in sys.argv:
             if arg == "--dev":
                 dev = True
 
-        # Paths
         self.home_path = os.path.expanduser("~")
         self.config_path = self.home_path + "/.config/"
 
@@ -39,8 +42,6 @@ class ManjaroHello():
             ui_path = "ui/"
             self.desktop_path = os.getcwd() + "/" + self.app + ".desktop"
 
-        live_path = "/run/miso/bootmnt/manjaro"
-        logo_path = "/usr/share/icons/hicolor/64x64/apps/manjaro.png"
         urls_path = self.data_path + "urls.json"
         self.preferences_path = self.config_path + self.app + ".json"
         self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
@@ -76,10 +77,7 @@ class ManjaroHello():
             self.builder.get_object("stack").add_named(scrolled_window, page + "page")
 
         # Init translation
-        self.default_locale = "en"
         self.default_texts = {}
-
-        # Make translation
         gettext.bindtextdomain(self.app, self.locale_path)
         gettext.textdomain(self.app)
         self.builder.get_object("languages").set_active_id(self.get_best_locale())
