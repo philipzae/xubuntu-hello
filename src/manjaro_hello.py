@@ -24,11 +24,7 @@ class ManjaroHello():
         self.default_locale = "en"
 
         # App vars
-        dev = False
-        for arg in sys.argv:
-            if arg == "--dev":
-                dev = True
-
+        dev = "--dev" in sys.argv
         self.home_path = os.path.expanduser("~")
         self.config_path = self.home_path + "/.config/"
 
