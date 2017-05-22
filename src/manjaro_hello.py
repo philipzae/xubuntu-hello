@@ -18,6 +18,7 @@ class ManjaroHello():
         # Options
         self.app = "manjaro-hello"
         system = "Manjaro Gellivara"
+        version = "17"
         live_path = "/run/miso/bootmnt/manjaro"
         logo_path = "/usr/share/icons/hicolor/64x64/apps/manjaro.png"
         self.default_locale = "en"
@@ -56,7 +57,7 @@ class ManjaroHello():
         self.window = self.builder.get_object("window")
 
         # Subtitle of headerbar
-        self.builder.get_object("headerbar").props.subtitle = system
+        self.builder.get_object("headerbar").props.subtitle = "{} {}".format(system, version)
 
         # Load logo
         if os.path.isfile(logo_path):
