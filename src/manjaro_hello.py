@@ -21,6 +21,7 @@ class ManjaroHello():
         version = "17"
         live_path = "/run/miso/bootmnt/manjaro"
         logo_path = "/usr/share/icons/hicolor/64x64/apps/manjaro.png"
+        installer_path = "/usr/bin/calamares"
         self.default_locale = "en"
 
         # App vars
@@ -93,7 +94,7 @@ class ManjaroHello():
         self.builder.get_object("autostart").set_active(self.autostart)
 
         # Live systems
-        if os.path.exists(live_path) and os.path.isfile("/usr/bin/calamares"):
+        if os.path.exists(live_path) and os.path.isfile(installer_path):
             self.builder.get_object("installlabel").set_visible(True)
             self.builder.get_object("install").set_visible(True)
 
