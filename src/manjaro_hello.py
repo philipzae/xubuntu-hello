@@ -41,12 +41,22 @@ class Hello():
         # Subtitle of headerbar
         self.builder.get_object("headerbar").props.subtitle = self.preferences["system"]
 
-        # Load logo
+        # Load images
         if os.path.isfile(self.preferences["logo_path"]):
             logo = GdkPixbuf.Pixbuf.new_from_file(self.preferences["logo_path"])
             self.window.set_icon(logo)
             self.builder.get_object("distriblogo").set_from_pixbuf(logo)
             self.builder.get_object("aboutdialog").set_logo(logo)
+
+        for btn in self.builder.get_object("social").get_children():
+            icon_path = self.preferences["data_path"] + "img/" + btn.get_name() + ".png"
+            self.builder.get_object(btn.get_name()).set_from_file(icon_path)
+
+        for widget in self.builder.get_object("homepage").get_children():
+            if isinstance(widget, Gtk.Button) and widget.get_image_position() is Gtk.PositionType.RIGHT:
+                img = Gtk.Image.new_from_file(self.preferences["data_path"] + "img/external-link.png")
+                img.set_margin_left(2)
+                widget.set_image(img)
 
         # Create pages
         self.pages = os.listdir("{}/pages/{}".format(self.preferences["data_path"],
@@ -65,16 +75,6 @@ class Hello():
         gettext.bindtextdomain(self.app, self.preferences["locale_path"])
         gettext.textdomain(self.app)
         self.builder.get_object("languages").set_active_id(self.get_best_locale())
-
-        # Load images
-        for btn in self.builder.get_object("social").get_children():
-            icon_path = self.preferences["data_path"] + "img/" + btn.get_name() + ".png"
-            self.builder.get_object(btn.get_name()).set_from_file(icon_path)
-
-        for btn in ("wiki", "forum", "chat", "mailling", "development", "donate"):
-            img = Gtk.Image.new_from_file(self.preferences["data_path"] + "img/external-link.png")
-            img.set_margin_left(2)
-            self.builder.get_object(btn).set_image(img)
 
         # Set autostart switcher state
         self.autostart = os.path.isfile(self.preferences["autostart_path"])
