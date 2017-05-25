@@ -95,10 +95,10 @@ class Hello():
         :rtype: str
         """
         path = self.preferences["locale_path"] + "{}/LC_MESSAGES/" + self.app + ".mo"
-        if self.save["locale"] == self.preferences["default_locale"]:
-            return self.preferences["default_locale"]
-        elif os.path.isfile(path.format(self.save["locale"])):
+        if os.path.isfile(path.format(self.save["locale"])):
             return self.save["locale"]
+        elif self.save["locale"] == self.preferences["default_locale"]:
+            return self.preferences["default_locale"]
         else:
             sys_locale = locale.getdefaultlocale()[0]
             # If user's locale is supported
