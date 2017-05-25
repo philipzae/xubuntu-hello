@@ -249,6 +249,12 @@ class Hello():
 
 
 def fix_path(path):
+    """Make good paths.
+    :param path: path to fix
+    :type path: str
+    :return: fixed path
+    :rtype: str
+    """
     if "~" in path:
         path = path.replace("~", os.path.expanduser("~"))
     return path
@@ -256,7 +262,7 @@ def fix_path(path):
 
 def read_json(path):
     """Read content of a json file.
-    :param path: path of file to read
+    :param path: path to read
     :type path: str
     :return: json content
     :rtype: str
@@ -271,7 +277,7 @@ def read_json(path):
 
 def write_json(path, content):
     """Write content in a json file.
-    :param path: path of file to write
+    :param path: path to write
     :type path: str
     :param content: content to write
     :type path: str
