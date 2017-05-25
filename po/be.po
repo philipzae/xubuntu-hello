@@ -1,0 +1,110 @@
+# Translation of Manjaro-Hello.
+# Copyright (C) 2016-2017 Manjaro Developers <manjaro-dev@manjaro.org>
+# This file is distributed under the same license as the Manjaro-Hello package.
+# Hugo Posnic <huluti@manjaro.org>, 2016-2017.
+# 
+# Translators:
+# zmicer turok <zmicerturok@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Manjaro-Hello\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-04 10:28+0100\n"
+"PO-Revision-Date: 2017-01-08 21:04+0100\n"
+"Last-Translator: zmicer turok <zmicerturok@gmail.com>, 2017\n"
+"Language-Team: Belarusian (https://www.transifex.com/manjarolinux/teams/70274/be/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: be\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../ui/manjaro-hello.glade:54
+msgid "Welcome to Manjaro!"
+msgstr "Сардэчна запрашаем у Manjaro!"
+
+#: ../ui/manjaro-hello.glade:70
+msgid ""
+"Thank you for joining our community!\n"
+"\n"
+"We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
+msgstr ""
+"Дзякуем за ўдзел у нашай суполцы!\n"
+"\n"
+"Мы ,распрацоўшчыкі Manjaro, спадзяёмся, што вы будзеце атрымліваць такую ж асалоду ад выкарыстання Manjaro , якую атрымліваем мы ад распрацоўкі. Прыведзеныя ніжэй спасылкі дапамогуць вам пачаць працу з новай аперацыйнай сістэмай.Не саромейцеся, дасылайце нам свае водгукі."
+
+#: ../ui/manjaro-hello.glade:88
+msgid "DOCUMENTATION"
+msgstr "ДАКУМЕНТАЦЫЯ"
+
+#: ../ui/manjaro-hello.glade:102
+msgid "SUPPORT"
+msgstr "ПАДТРЫМКА"
+
+#: ../ui/manjaro-hello.glade:116
+msgid "PROJECT"
+msgstr "ПРАЭКТ"
+
+#: ../ui/manjaro-hello.glade:128
+msgid "Read me"
+msgstr "Чытаць"
+
+#: ../ui/manjaro-hello.glade:142
+msgid "Release info"
+msgstr "Інфармацыя пра выпуск"
+
+#: ../ui/manjaro-hello.glade:158
+msgid "Wiki"
+msgstr "Вікіпедыя"
+
+#: ../ui/manjaro-hello.glade:174
+msgid "Get involved"
+msgstr "Далучыцца"
+
+#: ../ui/manjaro-hello.glade:188
+msgid "Forums"
+msgstr "Форумы"
+
+#: ../ui/manjaro-hello.glade:204
+msgid "Chat room"
+msgstr "Чат"
+
+#: ../ui/manjaro-hello.glade:220
+msgid "Mailling lists"
+msgstr "Адрасы пошты"
+
+#: ../ui/manjaro-hello.glade:236
+msgid "Development"
+msgstr "Распрацоўка"
+
+#: ../ui/manjaro-hello.glade:252
+msgid "Donate"
+msgstr "Ахвяраваць"
+
+#: ../ui/manjaro-hello.glade:370
+msgid "Launch at start"
+msgstr "Запускаць падчас запуску сістэмы"
+
+#: ../ui/manjaro-hello.glade:401
+msgid "INSTALLATION"
+msgstr "УСТАЛЁЎКА"
+
+#: ../ui/manjaro-hello.glade:413
+msgid "Launch installer"
+msgstr "Пачаць усталёўку"
+
+#: ../ui/manjaro-hello.glade:456
+msgid "Home"
+msgstr "Хатні каталог"
+
+#: ../ui/manjaro-hello.glade:505 ../ui/manjaro-hello.glade:519
+msgid "About"
+msgstr "Пра праграму"
+
+#: ../ui/manjaro-hello.glade:524
+msgid "Welcome screen for Manjaro"
+msgstr "Экран вітання Manjaro"
+
+#: ../src/manjaro_hello.py:239
+msgid "Can't load page."
+msgstr "Немагчыма загрузіць старонку."
