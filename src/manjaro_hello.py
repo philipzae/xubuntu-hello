@@ -54,13 +54,14 @@ class Hello():
 
         for widget in self.builder.get_object("homepage").get_children():
             if isinstance(widget, Gtk.Button) and widget.get_image_position() is Gtk.PositionType.RIGHT:
-                img = Gtk.Image.new_from_file(self.preferences["data_path"] + "img/external-link.png")
+                img = Gtk.Image.new_from_file(
+                    self.preferences["data_path"] + "img/external-link.png")
                 img.set_margin_left(2)
                 widget.set_image(img)
 
         # Create pages
         self.pages = os.listdir("{}/pages/{}".format(self.preferences["data_path"],
-                                                        self.preferences["default_locale"]))
+                                                     self.preferences["default_locale"]))
         for page in self.pages:
             scrolled_window = Gtk.ScrolledWindow()
             viewport = Gtk.Viewport(border_width=10)
@@ -117,7 +118,8 @@ class Hello():
         :type locale: str
         """
         try:
-            tr = gettext.translation(self.app, self.preferences["locale_path"], [locale], fallback=True)
+            tr = gettext.translation(self.app, self.preferences[
+                                     "locale_path"], [locale], fallback=True)
             tr.install()
         except OSError:
             return
@@ -158,7 +160,8 @@ class Hello():
         for method in elts:
             for elt in elts[method]:
                 if elt not in self.default_texts:
-                    self.default_texts[elt] = getattr(self.builder.get_object(elt), "get_" + method)()
+                    self.default_texts[elt] = getattr(
+                        self.builder.get_object(elt), "get_" + method)()
                 getattr(self.builder.get_object(elt), "set_" + method)(_(self.default_texts[elt]))
 
         # Change content of pages
@@ -202,7 +205,8 @@ class Hello():
         """
         filename = self.preferences["data_path"] + "pages/{}/{}".format(self.save["locale"], name)
         if not os.path.isfile(filename):
-            filename = self.preferences["data_path"] + "pages/{}/{}".format(self.preferences["default_locale"], name)
+            filename = self.preferences["data_path"] + \
+                "pages/{}/{}".format(self.preferences["default_locale"], name)
         try:
             with open(filename, "r") as f:
                 return f.read()
