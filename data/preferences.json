@@ -1,7 +1,7 @@
 {
     "system": "Manjaro Gellivara 17",
     "default_locale": "en",
-    "autostart_path": "~/autostart/manjaro-hello.desktop",
+    "autostart_path": "~/.config/autostart/manjaro-hello.desktop",
     "data_path": "/usr/share/manjaro-hello/data/",
     "desktop_path": "/usr/share/applications/manjaro-hello.desktop",
     "installer_path": "/usr/bin/calamares",

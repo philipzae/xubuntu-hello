@@ -177,12 +177,13 @@ class Hello():
         :type autostart: bool
         """
         try:
-            if autostart and not os.path.isfile(self.preferences["autostart_path"]):
-                os.symlink(self.preferences["desktop_path"], self.preferences["autostart_path"])
-            elif not autostart and os.path.isfile(self.preferences["autostart_path"]):
-                os.unlink(self.preferences["autostart_path"])
+            if autostart and not os.path.isfile(fix_path(self.preferences["autostart_path"])):
+                os.symlink(self.preferences["desktop_path"],
+                           fix_path(self.preferences["autostart_path"]))
+            elif not autostart and os.path.isfile(fix_path(self.preferences["autostart_path"])):
+                os.unlink(fix_path(self.preferences["autostart_path"]))
             # Specific to i3
-            i3_config = self.home_path + "/.i3/config"
+            i3_config = fix_path("~/.i3/config")
             if os.path.isfile(i3_config):
                 i3_autostart = "exec --no-startup-id " + self.app
                 with open(i3_config, "r+") as f:
