@@ -5,6 +5,7 @@ import gi
 import json
 import locale
 import os
+import subprocess
 import sys
 import webbrowser
 gi.require_version("Gtk", "3.0")
