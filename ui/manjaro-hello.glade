@@ -271,7 +271,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="vexpand">True</property>
                 <property name="spacing">10</property>
                 <child>
-                  <object class="GtkBox">
+                  <object class="GtkBox" id="social">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="spacing">5</property>

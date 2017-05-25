@@ -66,8 +66,9 @@ class Hello():
         self.builder.get_object("languages").set_active_id(self.get_best_locale())
 
         # Load images
-        for img in ("google+", "facebook", "twitter", "reddit"):
-            self.builder.get_object(img).set_from_file(self.preferences["data_path"] + "img/" + img + ".png")
+        for btn in self.builder.get_object("social").get_children():
+            icon_path = self.preferences["data_path"] + "img/" + btn.get_name() + ".png"
+            self.builder.get_object(btn.get_name()).set_from_file(icon_path)
 
         for btn in ("wiki", "forum", "chat", "mailling", "development", "donate"):
             img = Gtk.Image.new_from_file(self.preferences["data_path"] + "img/external-link.png")
