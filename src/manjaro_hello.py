@@ -49,7 +49,8 @@ class Hello():
             self.builder.get_object("aboutdialog").set_logo(logo)
 
         # Create pages
-        self.pages = ("readme", "release", "involved")
+        self.pages = os.listdir("{}/pages/{}".format(self.preferences["data_path"],
+                                                        self.preferences["default_locale"]))
         for page in self.pages:
             scrolled_window = Gtk.ScrolledWindow()
             viewport = Gtk.Viewport(border_width=10)
