@@ -69,7 +69,7 @@ class Hello():
         for img in ("google+", "facebook", "twitter", "reddit"):
             self.builder.get_object(img).set_from_file(self.preferences["data_path"] + "img/" + img + ".png")
 
-        for btn in ("wiki", "forums", "chat", "mailling", "development", "donate"):
+        for btn in ("wiki", "forum", "chat", "mailling", "development", "donate"):
             img = Gtk.Image.new_from_file(self.preferences["data_path"] + "img/external-link.png")
             img.set_margin_left(2)
             self.builder.get_object(btn).set_image(img)
@@ -135,7 +135,7 @@ class Hello():
                 "chat",
                 "donate",
                 "firstcategory",
-                "forums",
+                "forum",
                 "install",
                 "installlabel",
                 "involved",
