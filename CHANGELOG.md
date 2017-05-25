@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5-dev]
+### Added
+- Locales: ast_ES, be, sv.
+
+### Changed
+- Simplify subtitle.
+- Simplify customization.
+- Better handling of dev version.
+
 ## [0.4.20] - 2017-05-09
 ### Fixed
 - Fix loading of files from data folder.

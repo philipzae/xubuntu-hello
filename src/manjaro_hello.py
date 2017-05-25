@@ -11,54 +11,39 @@ gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf
 
 
-class ManjaroHello():
-    """Manjaro Hello"""
+class Hello():
+    """Hello"""
 
     def __init__(self):
-        # Options
         self.app = "manjaro-hello"
-        system = "Manjaro Gellivara"
-        version = "17"
-        live_path = "/run/miso/bootmnt/manjaro"
-        logo_path = "/usr/share/icons/hicolor/64x64/apps/manjaro.png"
-        installer_path = "/usr/bin/calamares"
-        self.default_locale = "en"
+        self.dev = "--dev" in sys.argv
 
-        # App vars
-        dev = "--dev" in sys.argv
-        self.home_path = os.path.expanduser("~")
-        self.config_path = self.home_path + "/.config/"
-
-        if not dev:
-            self.data_path = "/usr/share/" + self.app + "/data/"
-            self.locale_path = "/usr/share/locale/"
-            ui_path = "/usr/share/" + self.app + "/ui/"
-            self.desktop_path = "/usr/share/applications/" + self.app + ".desktop"
+        # Load preferences
+        if self.dev:
+            self.preferences = read_json("data/preferences.json")
+            self.preferences["data_path"] = "data/"
+            self.preferences["desktop_path"] = os.getcwd() + "/{}.desktop".format(self.app)
+            self.preferences["locale_path"] = "locale/"
+            self.preferences["ui_path"] = "ui/{}.glade".format(self.app)
         else:
-            self.data_path = "data/"
-            self.locale_path = "locale/"
-            ui_path = "ui/"
-            self.desktop_path = os.getcwd() + "/" + self.app + ".desktop"
+            self.preferences = read_json("/usr/share/{}/data/preferences.json".format(self.app))
 
-        urls_path = self.data_path + "urls.json"
-        self.preferences_path = self.config_path + self.app + ".json"
-        self.autostart_path = self.config_path + "autostart/" + self.app + ".desktop"
-
-        # Load important vars
-        self.preferences = self.get_preferences()
-        self.urls = read_json(urls_path)
+        # Get saved infos
+        self.save = read_json(self.preferences["save_path"])
+        if not self.save:
+            self.save = {"locale": None}
 
         # Init window
-        self.builder = Gtk.Builder.new_from_file(ui_path + self.app + ".glade")
+        self.builder = Gtk.Builder.new_from_file(self.preferences["ui_path"])
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
 
         # Subtitle of headerbar
-        self.builder.get_object("headerbar").props.subtitle = "{} {}".format(system, version)
+        self.builder.get_object("headerbar").props.subtitle = self.preferences["system"]
 
         # Load logo
-        if os.path.isfile(logo_path):
-            logo = GdkPixbuf.Pixbuf.new_from_file(logo_path)
+        if os.path.isfile(self.preferences["logo_path"]):
+            logo = GdkPixbuf.Pixbuf.new_from_file(self.preferences["logo_path"])
             self.window.set_icon(logo)
             self.builder.get_object("distriblogo").set_from_pixbuf(logo)
             self.builder.get_object("aboutdialog").set_logo(logo)
@@ -76,25 +61,25 @@ class ManjaroHello():
 
         # Init translation
         self.default_texts = {}
-        gettext.bindtextdomain(self.app, self.locale_path)
+        gettext.bindtextdomain(self.app, self.preferences["locale_path"])
         gettext.textdomain(self.app)
         self.builder.get_object("languages").set_active_id(self.get_best_locale())
 
         # Load images
         for img in ("google+", "facebook", "twitter", "reddit"):
-            self.builder.get_object(img).set_from_file(self.data_path + "img/" + img + ".png")
+            self.builder.get_object(img).set_from_file(self.preferences["data_path"] + "img/" + img + ".png")
 
         for btn in ("wiki", "forums", "chat", "mailling", "development", "donate"):
-            img = Gtk.Image.new_from_file(self.data_path + "img/external-link.png")
+            img = Gtk.Image.new_from_file(self.preferences["data_path"] + "img/external-link.png")
             img.set_margin_left(2)
             self.builder.get_object(btn).set_image(img)
 
         # Set autostart switcher state
-        self.autostart = os.path.isfile(self.autostart_path)
+        self.autostart = os.path.isfile(self.preferences["autostart_path"])
         self.builder.get_object("autostart").set_active(self.autostart)
 
         # Live systems
-        if os.path.exists(live_path) and os.path.isfile(installer_path):
+        if os.path.exists(self.preferences["live_path"]) and os.path.isfile(self.preferences["installer_path"]):
             self.builder.get_object("installlabel").set_visible(True)
             self.builder.get_object("install").set_visible(True)
 
@@ -105,11 +90,11 @@ class ManjaroHello():
         :return: locale to use
         :rtype: str
         """
-        path = self.locale_path + "{}/LC_MESSAGES/" + self.app + ".mo"
-        if self.preferences["locale"] == self.default_locale:
-            return self.default_locale
-        elif os.path.isfile(path.format(self.preferences["locale"])):
-            return self.preferences["locale"]
+        path = self.preferences["locale_path"] + "{}/LC_MESSAGES/" + self.app + ".mo"
+        if self.save["locale"] == self.preferences["default_locale"]:
+            return self.preferences["default_locale"]
+        elif os.path.isfile(path.format(self.save["locale"])):
+            return self.save["locale"]
         else:
             sys_locale = locale.getdefaultlocale()[0]
             # If user's locale is supported
@@ -122,7 +107,7 @@ class ManjaroHello():
             elif os.path.isfile(path.format(sys_locale[:2])):
                 return sys_locale[:2]
             else:
-                return self.default_locale
+                return self.preferences["default_locale"]
 
     def set_locale(self, locale):
         """Set locale of ui and pages.
@@ -130,12 +115,12 @@ class ManjaroHello():
         :type locale: str
         """
         try:
-            tr = gettext.translation(self.app, self.locale_path, [locale], fallback=True)
+            tr = gettext.translation(self.app, self.preferences["locale_path"], [locale], fallback=True)
             tr.install()
         except OSError:
             return
 
-        self.preferences["locale"] = locale
+        self.save["locale"] = locale
 
         # Dirty code to fix an issue with gettext that can't translate strings from glade files
         # Redfining all translatables strings
@@ -180,17 +165,16 @@ class ManjaroHello():
             label = child.get_children()[0].get_children()[0]
             label.set_markup(self.get_page(page))
 
-
     def set_autostart(self, autostart):
         """Set state of autostart.
         :param autostart: wanted autostart state
         :type autostart: bool
         """
         try:
-            if autostart and not os.path.isfile(self.autostart_path):
-                os.symlink(self.desktop_path, self.autostart_path)
-            elif not autostart and os.path.isfile(self.autostart_path):
-                os.unlink(self.autostart_path)
+            if autostart and not os.path.isfile(self.preferences["autostart_path"]):
+                os.symlink(self.preferences["desktop_path"], self.preferences["autostart_path"])
+            elif not autostart and os.path.isfile(self.preferences["autostart_path"]):
+                os.unlink(self.preferences["autostart_path"])
             # Specific to i3
             i3_config = self.home_path + "/.i3/config"
             if os.path.isfile(i3_config):
@@ -207,17 +191,6 @@ class ManjaroHello():
         except OSError as error:
             print(error)
 
-    def save_preferences(self):
-        """Save preferences in config file."""
-        write_json(self.preferences_path, self.preferences)
-
-    def get_preferences(self):
-        """Read preferences from config file."""
-        preferences = read_json(self.preferences_path)
-        if not preferences:
-            preferences = {"locale": None}
-        return preferences
-
     def get_page(self, name):
         """Read page according to language.
         :param name: name of page (filename)
@@ -225,9 +198,9 @@ class ManjaroHello():
         :return: text to load
         :rtype: str
         """
-        filename = self.data_path + "pages/{}/{}".format(self.preferences["locale"], name)
+        filename = self.preferences["data_path"] + "pages/{}/{}".format(self.save["locale"], name)
         if not os.path.isfile(filename):
-            filename = self.data_path + "pages/{}/{}".format(self.default_locale, name)
+            filename = self.preferences["data_path"] + "pages/{}/{}".format(self.preferences["default_locale"], name)
         try:
             with open(filename, "r") as f:
                 return f.read()
@@ -263,8 +236,14 @@ class ManjaroHello():
 
     def on_delete_window(self, *args):
         """Event to quit app."""
-        self.save_preferences()
+        write_json(self.preferences["save_path"], self.save)
         Gtk.main_quit(*args)
+
+
+def fix_path(path):
+    if "~" in path:
+        path = path.replace("~", os.path.expanduser("~"))
+    return path
 
 
 def read_json(path):
@@ -274,11 +253,13 @@ def read_json(path):
     :return: json content
     :rtype: str
     """
+    path = fix_path(path)
     try:
         with open(path, "r") as f:
             return json.load(f)
     except OSError:
         return None
+
 
 def write_json(path, content):
     """Write content in a json file.
@@ -287,12 +268,14 @@ def write_json(path, content):
     :param content: content to write
     :type path: str
     """
+    path = fix_path(path)
     try:
         with open(path, "w") as f:
             json.dump(content, f)
     except OSError as error:
         print(error)
 
+
 if __name__ == "__main__":
-    ManjaroHello()
+    Hello()
     Gtk.main()
