@@ -233,7 +233,7 @@ class Hello():
 
     def on_link_clicked(self, link, _=None):
         """Event for clicked link."""
-        webbrowser.open_new_tab(self.urls[link.get_name()])
+        webbrowser.open_new_tab(self.preferences["urls"][link.get_name()])
 
     def on_delete_window(self, *args):
         """Event to quit app."""
