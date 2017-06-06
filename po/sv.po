@@ -71,7 +71,7 @@ msgstr "Chattrum"
 
 #: ../ui/manjaro-hello.glade:220
 msgid "Mailling lists"
-msgstr "Postlistor"
+msgstr "E-postlistor"
 
 #: ../ui/manjaro-hello.glade:236
 msgid "Development"
