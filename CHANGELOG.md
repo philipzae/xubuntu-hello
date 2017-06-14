@@ -3,15 +3,14 @@ All notable changes to this project will be documented in this file.
 
 ## [0.5-dev]
 ### Added
-- Locales: ast_ES, be, sv.
-- A preferences file.
+- Locales: ast_ES, be, fa_IR, sv.
+- A config file.
 
 ### Changed
 - Better handling of dev version.
 - Automating several tasks.
 - Simplify subtitle.
 - Simplify customization.
-- Change path of saving file from "~/.config/manjaro-hello.json" to "~/.config/manjaro/manjaro-hello.json".
 
 ## [0.4.20] - 2017-05-09
 ### Fixed

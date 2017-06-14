@@ -8,7 +8,7 @@
     "live_path": "/run/miso/bootmnt/manjaro",
     "locale_path": "/usr/share/locale/",
     "logo_path": "/usr/share/icons/hicolor/64x64/apps/manjaro.png",
-    "save_path": "~/.config/manjaro/manjaro-hello.json",
+    "save_path": "~/.config/manjaro-hello.json",
     "ui_path": "/usr/share/manjaro-hello/ui/manjaro-hello.glade",
     "urls": {
         "development": "https://github.com/manjaro",
