@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [0.5-dev]
+## [0.5]
 ### Added
 - Locales: ast_ES, be, fa_IR, sv.
 - A config file.
