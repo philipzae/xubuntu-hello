@@ -8,9 +8,8 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - Better handling of dev version.
-- Automating several tasks.
-- Simplify subtitle.
 - Simplify customization.
+- Simplify subtitle.
 
 ## [0.4.20] - 2017-05-09
 ### Fixed
