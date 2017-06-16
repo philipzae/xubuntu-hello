@@ -40,7 +40,7 @@ class Hello():
         self.window = self.builder.get_object("window")
 
         # Subtitle of headerbar
-        self.builder.get_object("headerbar").props.subtitle = self.preferences["system"]
+        self.builder.get_object("headerbar").props.subtitle = ' '.join(get_lsb_infos())
 
         # Load images
         if os.path.isfile(self.preferences["logo_path"]):
@@ -288,6 +288,26 @@ def write_json(path, content):
             json.dump(content, f)
     except OSError as error:
         print(error)
+
+def get_lsb_infos():
+    """Read informations from the lsb-release file.
+    :return: args from lsb-release file
+    :rtype: dict"""
+    lsb = {}
+    try:
+        with open("/etc/lsb-release") as f:
+            for line in f:
+                if "=" in line:
+                    var, arg = line.rstrip().split("=")
+                    if var.startswith("DISTRIB_"):
+                        var = var[8:]
+                    if arg.startswith("\"") and arg.endswith("\""):
+                        arg = arg[1:-1]
+                    if arg:
+                        lsb[var] = arg
+    except OSError as error:
+        print(error)
+    return lsb["CODENAME"], lsb["RELEASE"]
 
 
 if __name__ == "__main__":

@@ -1,5 +1,4 @@
 {
-    "system": "Manjaro Gellivara 17",
     "default_locale": "en",
     "autostart_path": "~/.config/autostart/manjaro-hello.desktop",
     "data_path": "/usr/share/manjaro-hello/data/",
