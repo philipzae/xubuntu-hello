@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.1] - 2017-06-17
+### Fixed
+- Fix opening of the "forums" link. 
+
 ## [0.5]
 ### Added
 - Locales: ast_ES, be, fa_IR, sv.
