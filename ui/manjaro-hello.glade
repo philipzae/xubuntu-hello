@@ -185,7 +185,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             <child>
               <object class="GtkButton" id="forum">
                 <property name="label" translatable="yes">Forums</property>
-                <property name="name">forums</property>
+                <property name="name">forum</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
