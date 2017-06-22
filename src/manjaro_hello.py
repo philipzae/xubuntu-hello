@@ -79,7 +79,7 @@ class Hello():
         self.builder.get_object("languages").set_active_id(self.get_best_locale())
 
         # Set autostart switcher state
-        self.autostart = os.path.isfile(fix_path(self.preferences["autostart_path"])
+        self.autostart = os.path.isfile(fix_path(self.preferences["autostart_path"]))
         self.builder.get_object("autostart").set_active(self.autostart)
 
         # Live systems
