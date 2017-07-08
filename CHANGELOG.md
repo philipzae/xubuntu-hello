@@ -1,13 +1,21 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.3] - 2017-07-08
+### Added
+- Pages: hu.
+- Locales: he, ja, vi_VN.
+
+### Changed
+- Update translations.
+
 ## [0.5.2] - 2017-06-22
 ### Fixed
 - Fix autostart switch state.
 
 ## [0.5.1] - 2017-06-17
 ### Fixed
-- Fix opening of the "forums" link. 
+- Fix opening of the "forums" link.
 
 ## [0.5]
 ### Added
