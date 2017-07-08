@@ -477,11 +477,13 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="fr">French</item>
               <item id="de">German</item>
               <item id="el-GR">Greek (Greece)</item>
+              <item id="he">Hebrew</item>
               <item id="hi-IN">Hindi (India)</item>
               <item id="hu">Hungarian</item>
               <item id="is">Icelandic</item>
               <item id="id-ID">Indonesian (Indonesia)</item>
               <item id="it">Italian</item>
+              <item id="ja">Japanese</item>
               <item id="lt">Lithuanian</item>
               <item id="nb">Norwegian Bokmål</item>
               <item id="fa-IR">Persian (Iran)</item>
@@ -500,6 +502,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="tr-TR">Turkish (Turkey)</item>
               <item id="tr">Turkish</item>
               <item id="uk">Ukrainian</item>
+              <item id="vi-VN">Vietnamese (Viet Nam)</item>
             </items>
             <signal name="changed" handler="on_languages_changed" swapped="no"/>
           </object>
