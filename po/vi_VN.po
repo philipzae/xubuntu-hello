@@ -4,25 +4,24 @@
 # Hugo Posnic <huluti@manjaro.org>, 2016-2017.
 # 
 # Translators:
-# philm <philm@manjaro.org>, 2016
-# Piotr Strębski <strebski@gmail.com>, 2016
+# Horazone Detex <thmmt2017d@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-04 10:28+0100\n"
 "PO-Revision-Date: 2017-01-08 21:04+0100\n"
-"Last-Translator: Piotr Strębski <strebski@gmail.com>, 2016\n"
-"Language-Team: Polish (https://www.transifex.com/manjarolinux/teams/70274/pl/)\n"
+"Last-Translator: Horazone Detex <thmmt2017d@gmail.com>, 2017\n"
+"Language-Team: Vietnamese (Viet Nam) (https://www.transifex.com/manjarolinux/teams/70274/vi_VN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language: vi_VN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../ui/manjaro-hello.glade:54
 msgid "Welcome to Manjaro!"
-msgstr "Witaj w Manjaro!"
+msgstr "Chào mừng đến với Manjaro!"
 
 #: ../ui/manjaro-hello.glade:70
 msgid ""
@@ -30,29 +29,29 @@ msgid ""
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
-"Dziękujemy za dołączenie do naszej społeczności!\n"
+"Cảm ơn bạn đã tham gia cộng đồng chúng tôi!\n"
 "\n"
-"My, programiści Manjaro, mamy nadzieję, że używanie Manjaro przyniesie Ci tyle radości ile nam jego tworzenie. Poniższe odnośniki pomogą Ci w rozpoczęciu używania nowego systemu operacyjnego. Życzymy miłych wrażeń, nie wahaj się podzielić się z nami swoją opinią."
+"Chúng tôi, những lập trình viên của Manjaro, hi vọng rằng bạn sẽ tận hưởng việc sử dụng Manjaro cũng như chúng tôi tận hưởng việc xây dựng nó. Những đường liên kết bên dưới sẽ giúp bạn khởi đầu sử dụng hệ điều hành của bạn, và đừng do dự khi gửi phản hồi của bạn về chúng tôi."
 
 #: ../ui/manjaro-hello.glade:88
 msgid "DOCUMENTATION"
-msgstr "DOKUMENTACJA"
+msgstr "TÀI LIỆU"
 
 #: ../ui/manjaro-hello.glade:102
 msgid "SUPPORT"
-msgstr "WSPARCIE"
+msgstr "HỖ TRỢ"
 
 #: ../ui/manjaro-hello.glade:116
 msgid "PROJECT"
-msgstr "PROJEKT"
+msgstr "DỰ ÁN"
 
 #: ../ui/manjaro-hello.glade:128
 msgid "Read me"
-msgstr "Czytaj to"
+msgstr "Đọc tôi"
 
 #: ../ui/manjaro-hello.glade:142
 msgid "Release info"
-msgstr "Informacje o wydaniu"
+msgstr "Thông tin bản phát hành"
 
 #: ../ui/manjaro-hello.glade:158
 msgid "Wiki"
@@ -60,52 +59,52 @@ msgstr "Wiki"
 
 #: ../ui/manjaro-hello.glade:174
 msgid "Get involved"
-msgstr "Zaangażuj się"
+msgstr "Tham gia vào"
 
 #: ../ui/manjaro-hello.glade:188
 msgid "Forums"
-msgstr "Forum"
+msgstr "Diễn đàn"
 
 #: ../ui/manjaro-hello.glade:204
 msgid "Chat room"
-msgstr "Pokój rozmów"
+msgstr "Phòng chat"
 
 #: ../ui/manjaro-hello.glade:220
 msgid "Mailling lists"
-msgstr "Listy mailingowe"
+msgstr "Danh sách thư"
 
 #: ../ui/manjaro-hello.glade:236
 msgid "Development"
-msgstr "Rozwój oprogramowania"
+msgstr "Phát triển"
 
 #: ../ui/manjaro-hello.glade:252
 msgid "Donate"
-msgstr "Wesprzyj"
+msgstr "Đóng góp"
 
 #: ../ui/manjaro-hello.glade:370
 msgid "Launch at start"
-msgstr "Uruchamiaj przy starcie"
+msgstr "Chạy khi khởi động"
 
 #: ../ui/manjaro-hello.glade:401
 msgid "INSTALLATION"
-msgstr "INSTALACJA"
+msgstr "CÀI ĐẶT"
 
 #: ../ui/manjaro-hello.glade:413
 msgid "Launch installer"
-msgstr "Uruchom instalator"
+msgstr "Chạy trình cài đặt"
 
 #: ../ui/manjaro-hello.glade:456
 msgid "Home"
-msgstr "Start"
+msgstr "Trang chủ"
 
 #: ../ui/manjaro-hello.glade:505 ../ui/manjaro-hello.glade:519
 msgid "About"
-msgstr "O programie"
+msgstr "Về..."
 
 #: ../ui/manjaro-hello.glade:524
 msgid "Welcome screen for Manjaro"
-msgstr "Ekran powitalny Manjaro"
+msgstr "Màn hình chào mừng Manjaro"
 
 #: ../src/manjaro_hello.py:239
 msgid "Can't load page."
-msgstr "Nie można wczytać strony."
+msgstr "Không thể tải trang."
