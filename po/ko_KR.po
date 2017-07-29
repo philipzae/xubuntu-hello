@@ -4,24 +4,24 @@
 # Hugo Posnic <huluti@manjaro.org>, 2016-2017.
 # 
 # Translators:
-# Eli Shleifer <eligator@gmail.com>, 2017
+# Cybertramp Cybertramp <cybertramp@nate.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-04 10:28+0100\n"
 "PO-Revision-Date: 2017-01-08 21:04+0100\n"
-"Last-Translator: Eli Shleifer <eligator@gmail.com>, 2017\n"
-"Language-Team: Hebrew (https://www.transifex.com/manjarolinux/teams/70274/he/)\n"
+"Last-Translator: Cybertramp Cybertramp <cybertramp@nate.com>, 2017\n"
+"Language-Team: Korean (Korea) (https://www.transifex.com/manjarolinux/teams/70274/ko_KR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: he\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ko_KR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../ui/manjaro-hello.glade:54
 msgid "Welcome to Manjaro!"
-msgstr "ברוכים הבאים ל - Manjaro!"
+msgstr "만자로 리눅스에 오신것을 환영합니다!"
 
 #: ../ui/manjaro-hello.glade:70
 msgid ""
@@ -29,82 +29,82 @@ msgid ""
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
-"תודה שהצטרפתם לקהילה שלנו!\n"
+"우리 커뮤니티에 가입해주셔서 감사합니다!\n"
 "\n"
-"אנו, צוות הפיתוח של מערכת ההפעלה Manjaro, מקווים שתהנו להשתמש ב - Manjaro לפחות באותה המידה שאנו נהנים לפתח אותה. קיצורי הדרך המפורטים מטה יעזרו להתחיל להשתמש במערכת ההפעלה החדשה שלכם. תהנו מהחוויה, ואל תהססו לשלוח לנו משוב."
+"우리 만자로 개발자들은 여러분이 만자로를 개발하는 것만큼 즐겁게 사용하기를 희망 합니다. 아래의 링크는 당신의 새로운 운영체제를 시작하는 것을 도울 것입니다. 따라서 경험즐기면서 우리에게 주저말고 피드백을 보내주시면 감사하겠습니다."
 
 #: ../ui/manjaro-hello.glade:88
 msgid "DOCUMENTATION"
-msgstr "תיעוד"
+msgstr "문서"
 
 #: ../ui/manjaro-hello.glade:102
 msgid "SUPPORT"
-msgstr "תמיכה"
+msgstr "지원"
 
 #: ../ui/manjaro-hello.glade:116
 msgid "PROJECT"
-msgstr "פרויקט"
+msgstr "프로젝트"
 
 #: ../ui/manjaro-hello.glade:128
 msgid "Read me"
-msgstr "קרא אותי"
+msgstr "읽어주세요"
 
 #: ../ui/manjaro-hello.glade:142
 msgid "Release info"
-msgstr "הערות מוצר"
+msgstr "업데이트 정보"
 
 #: ../ui/manjaro-hello.glade:158
 msgid "Wiki"
-msgstr " ויקי"
+msgstr "위키"
 
 #: ../ui/manjaro-hello.glade:174
 msgid "Get involved"
-msgstr "הֱיֵה מעורב"
+msgstr "참여하기"
 
 #: ../ui/manjaro-hello.glade:188
 msgid "Forums"
-msgstr "פורומים"
+msgstr "포럼"
 
 #: ../ui/manjaro-hello.glade:204
 msgid "Chat room"
-msgstr "חדר צ'אט"
+msgstr "채팅방"
 
 #: ../ui/manjaro-hello.glade:220
 msgid "Mailling lists"
-msgstr "רשימות דיוור"
+msgstr "메일링 목록"
 
 #: ../ui/manjaro-hello.glade:236
 msgid "Development"
-msgstr "פיתוח"
+msgstr "개발"
 
 #: ../ui/manjaro-hello.glade:252
 msgid "Donate"
-msgstr "תרומה"
+msgstr "기부"
 
 #: ../ui/manjaro-hello.glade:370
 msgid "Launch at start"
-msgstr "הרץ בעת הפעלה"
+msgstr "시스템 시작 시 실행"
 
 #: ../ui/manjaro-hello.glade:401
 msgid "INSTALLATION"
-msgstr "התקנה"
+msgstr "설치"
 
 #: ../ui/manjaro-hello.glade:413
 msgid "Launch installer"
-msgstr "הרצת אשף ההתקנה"
+msgstr "설치 시작"
 
 #: ../ui/manjaro-hello.glade:456
 msgid "Home"
-msgstr "עמוד הבית"
+msgstr "홈"
 
 #: ../ui/manjaro-hello.glade:505 ../ui/manjaro-hello.glade:519
 msgid "About"
-msgstr "אודות"
+msgstr "About"
 
 #: ../ui/manjaro-hello.glade:524
 msgid "Welcome screen for Manjaro"
-msgstr "מסך פתיחה עבור Manjaro"
+msgstr "만자로를 위한 화면에 오신 것을 환영합니다."
 
 #: ../src/manjaro_hello.py:239
 msgid "Can't load page."
-msgstr "לא ניתן לטעון את העמוד."
+msgstr "페이지를 불러올수 없습니다."
