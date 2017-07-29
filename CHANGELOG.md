@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.4] - 2017-07-29
+### Added
+- Locales: ko_KR.
+
+### Changed
+- Update translations.
+
 ## [0.5.3] - 2017-07-08
 ### Added
 - Pages: hu.

@@ -484,6 +484,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="id-ID">Indonesian (Indonesia)</item>
               <item id="it">Italian</item>
               <item id="ja">Japanese</item>
+              <item id="ko-KR">Korean (Korea)</item>
               <item id="lt">Lithuanian</item>
               <item id="nb">Norwegian Bokmål</item>
               <item id="fa-IR">Persian (Iran)</item>
@@ -534,7 +535,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
     <property name="type_hint">dialog</property>
     <property name="transient_for">window</property>
     <property name="program_name">Manjaro Hello</property>
-    <property name="version">0.5.3</property>
+    <property name="version">0.5.4</property>
     <property name="comments" translatable="yes">Welcome screen for Manjaro</property>
     <property name="website">https://github.com/Huluti/manjaro-hello</property>
     <property name="website_label">GitHub</property>
