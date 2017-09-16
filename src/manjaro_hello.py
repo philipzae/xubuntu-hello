@@ -129,13 +129,10 @@ class Hello():
 
         self.save["locale"] = locale
 
-        # Dirty code to fix an issue with gettext that can't translate strings from glade files
-        # Redfining all translatables strings
-        # TODO: Find a better solution
+        # Real-time locale changing
+
         elts = {
-            "comments": {
-                "aboutdialog"
-            },
+            "comments": { "aboutdialog"},
             "label": {
                 "autostartlabel",
                 "development",
@@ -155,10 +152,7 @@ class Hello():
                 "welcometitle",
                 "wiki"
             },
-            "tooltip_text": {
-                "about",
-                "home"
-            }
+            "tooltip_text": { "about", "home" }
         }
         for method in elts:
             for elt in elts[method]:
