@@ -477,6 +477,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="en">English</item>
               <item id="fr">French</item>
               <item id="de">German</item>
+              <item id="ka">Georgian</item>
               <item id="el-GR">Greek (Greece)</item>
               <item id="he">Hebrew</item>
               <item id="hi-IN">Hindi (India)</item>
@@ -492,6 +493,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               <item id="pl">Polish</item>
               <item id="pt-BR">Portuguese (Brazil)</item>
               <item id="pt-PT">Portuguese (Portugal)</item>
+              <item id="ro-RO">Romanian (Romania)</item>
               <item id="ru">Russian</item>
               <item id="sk">Slovak</item>
               <item id="sl-SI">Slovenian (Slovenia)</item>
