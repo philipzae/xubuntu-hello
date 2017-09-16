@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.6] - 2017-09-16
+### Added
+- Locales: ka, ro_RO.
+
+### Changed
+- Update translations.
+
 ## [0.5.5] - 2017-07-31
 ### Added
 - Locales: hr.
