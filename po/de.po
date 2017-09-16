@@ -5,6 +5,7 @@
 # 
 # Translators:
 # philm <philm@manjaro.org>, 2016
+# Jan Jansen <jjansen91@gmx.net>, 2016
 # Bernhard Landauer <bernhard@oberon.at>, 2017
 msgid ""
 msgstr ""
@@ -32,7 +33,7 @@ msgid ""
 msgstr ""
 "Danke, dass Sie sich unserer Community anschließen!\n"
 "\n"
-"Wir, die Manjaro-Entwickler, hoffen, dass Sie es genauso sehr genießen werden Manjaro zu benutzen, wie wir es genießen, es zu entwickeln. Die Links unten werden Ihnen helfen sich in Ihrem neuen Betriebssystem zurechtzufinden. Genießen Sie also das Benutzererlebnis und zögern Sie nicht Ihr Feedback an uns zu senden."
+"Wir, die Manjaro-Entwickler, hoffen, dass Sie es genauso sehr genießen werden Manjaro zu benutzen, wie wir es genießen, es zu entwickeln. Die Links unten werden Ihnen helfen sich in Ihrem neuen Betriebssystem zurechtzufinden. Genießen Sie diese Erfahrung und zögern Sie nicht Ihr Feedback an uns zu senden."
 
 #: ../ui/manjaro-hello.glade:88
 msgid "DOCUMENTATION"

@@ -4,25 +4,24 @@
 # Hugo Posnic <huluti@manjaro.org>, 2016-2017.
 # 
 # Translators:
-# Μιχάλης <mikem132@protonmail.com>, 2016
-# Πέτρος Σαμαράς <psamaras1@gmail.com>, 2016
+# Dorin Chirițoiu <contact@dorinchiritoiu.eu>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-04 10:28+0100\n"
 "PO-Revision-Date: 2017-01-08 21:04+0100\n"
-"Last-Translator: Πέτρος Σαμαράς <psamaras1@gmail.com>, 2016\n"
-"Language-Team: Greek (Greece) (https://www.transifex.com/manjarolinux/teams/70274/el_GR/)\n"
+"Last-Translator: Dorin Chirițoiu <contact@dorinchiritoiu.eu>, 2017\n"
+"Language-Team: Romanian (Romania) (https://www.transifex.com/manjarolinux/teams/70274/ro_RO/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: el_GR\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: ../ui/manjaro-hello.glade:54
 msgid "Welcome to Manjaro!"
-msgstr "Καλωσήρθατε στο Manjaro"
+msgstr "Bine ai venit în Manjaro!"
 
 #: ../ui/manjaro-hello.glade:70
 msgid ""
@@ -30,82 +29,82 @@ msgid ""
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
-"Σας ευχαριστούμε που μπήκατε στην κοινότητά μας!\n"
+"Îți mulțumim că te-ai alăturat comunității noastre!\n"
 "\n"
-"Όλοι μας στην Ομάδα Ανάπτυξης του Manjaro, ευχόμαστε να χαρείτε την χρήση του Manjaro, όσο χαιρόμαστε κι εμείς την ανάπτυξή του. Οι παρακάτω σύνδεσμοι θα σας βοηθήσουν να ξεκινήσετε με το νέο σας λειτουργικό σύστημα. Οπότε, ευχαριστηθείτε με την εμπειρία, και μη διστάσετε να μας στείλετε τις απόψεις σας. "
+"Noi, dezvoltatorii Manjaro, sperăm că vă veți bucura utilizând Manjaro la fel de mult cum și noi ne bucurăm să-l dezvoltăm. Link-urile de mai jos vă vor ajuta să înțelegeți noul sistem de operare al dumeavoastră. Bucurați-vă de experiență și nu ezitați să ne trimiteți sugestii și opinii."
 
 #: ../ui/manjaro-hello.glade:88
 msgid "DOCUMENTATION"
-msgstr "ΤΕΚΜΗΡΙΩΣΗ"
+msgstr "Documentație"
 
 #: ../ui/manjaro-hello.glade:102
 msgid "SUPPORT"
-msgstr "ΥΠΟΣΤΗΡΙΞΗ"
+msgstr "Suport"
 
 #: ../ui/manjaro-hello.glade:116
 msgid "PROJECT"
-msgstr "ΕΡΓΟ"
+msgstr "Proiect"
 
 #: ../ui/manjaro-hello.glade:128
 msgid "Read me"
-msgstr "Αρχικές οδηγίες"
+msgstr "Citește-mă"
 
 #: ../ui/manjaro-hello.glade:142
 msgid "Release info"
-msgstr "Στοιχεία διανομής"
+msgstr "Informații despre această versiune"
 
 #: ../ui/manjaro-hello.glade:158
 msgid "Wiki"
-msgstr "Βικιπαίδεια"
+msgstr "Wikționar"
 
 #: ../ui/manjaro-hello.glade:174
 msgid "Get involved"
-msgstr "Συμμετοχή"
+msgstr "Implică-te"
 
 #: ../ui/manjaro-hello.glade:188
 msgid "Forums"
-msgstr "Φόρουμ"
+msgstr "Forumuri"
 
 #: ../ui/manjaro-hello.glade:204
 msgid "Chat room"
-msgstr "Δικτυακό δωμάτιο"
+msgstr "Camere de chat"
 
 #: ../ui/manjaro-hello.glade:220
 msgid "Mailling lists"
-msgstr "Λίστες αλληλογραφίας"
+msgstr "Liste de adrese"
 
 #: ../ui/manjaro-hello.glade:236
 msgid "Development"
-msgstr "Ανάπτυξη"
+msgstr "Dezvoltare"
 
 #: ../ui/manjaro-hello.glade:252
 msgid "Donate"
-msgstr "Δωρεά"
+msgstr "Donează"
 
 #: ../ui/manjaro-hello.glade:370
 msgid "Launch at start"
-msgstr "Εκκίνηση με την είσοδο"
+msgstr "Afișează la start"
 
 #: ../ui/manjaro-hello.glade:401
 msgid "INSTALLATION"
-msgstr "ΕΓΚΑΤΑΣΤΑΣΗ"
+msgstr "INSTALARE"
 
 #: ../ui/manjaro-hello.glade:413
 msgid "Launch installer"
-msgstr "Έναρξη εγκατάστασης"
+msgstr "Începe instalarea"
 
 #: ../ui/manjaro-hello.glade:456
 msgid "Home"
-msgstr "Αρχή"
+msgstr "Acasă"
 
 #: ../ui/manjaro-hello.glade:505 ../ui/manjaro-hello.glade:519
 msgid "About"
-msgstr "Περί"
+msgstr "Despre"
 
 #: ../ui/manjaro-hello.glade:524
 msgid "Welcome screen for Manjaro"
-msgstr "Οθόνη καλωσορίσματος για το Manjaro"
+msgstr "Ecran de întâmpinare pentru Manjaro"
 
 #: ../src/manjaro_hello.py:239
 msgid "Can't load page."
-msgstr "Η σελίδα δεν μπορεί να φορτωθεί"
+msgstr "Nu se poate încărca pagina."

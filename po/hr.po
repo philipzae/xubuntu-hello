@@ -63,7 +63,7 @@ msgstr "Uključite se"
 
 #: ../ui/manjaro-hello.glade:188
 msgid "Forums"
-msgstr "Forumi"
+msgstr "Forum"
 
 #: ../ui/manjaro-hello.glade:204
 msgid "Chat room"
