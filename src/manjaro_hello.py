@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
 import gettext
-import gi
 import json
 import locale
 import os
 import subprocess
 import sys
 import webbrowser
+import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf
 
@@ -54,7 +54,8 @@ class Hello():
             self.builder.get_object(btn.get_name()).set_from_file(icon_path)
 
         for widget in self.builder.get_object("homepage").get_children():
-            if isinstance(widget, Gtk.Button) and widget.get_image_position() is Gtk.PositionType.RIGHT:
+            if isinstance(widget, Gtk.Button) and \
+               widget.get_image_position() is Gtk.PositionType.RIGHT:
                 img = Gtk.Image.new_from_file(
                     self.preferences["data_path"] + "img/external-link.png")
                 img.set_margin_left(2)
@@ -83,7 +84,8 @@ class Hello():
         self.builder.get_object("autostart").set_active(self.autostart)
 
         # Live systems
-        if os.path.exists(self.preferences["live_path"]) and os.path.isfile(self.preferences["installer_path"]):
+        if os.path.exists(self.preferences["live_path"]) and \
+           os.path.isfile(self.preferences["installer_path"]):
             self.builder.get_object("installlabel").set_visible(True)
             self.builder.get_object("install").set_visible(True)
 
@@ -119,9 +121,9 @@ class Hello():
         :type locale: str
         """
         try:
-            tr = gettext.translation(self.app, self.preferences[
-                                     "locale_path"], [locale], fallback=True)
-            tr.install()
+            translation = gettext.translation(self.app, self.preferences[
+                "locale_path"], [locale], fallback=True)
+            translation.install()
         except OSError:
             return
 
@@ -186,14 +188,14 @@ class Hello():
             i3_config = fix_path("~/.i3/config")
             if os.path.isfile(i3_config):
                 i3_autostart = "exec --no-startup-id " + self.app
-                with open(i3_config, "r+") as f:
-                    content = f.read()
-                    f.seek(0)
+                with open(i3_config, "r+") as fil:
+                    content = fil.read()
+                    fil.seek(0)
                     if autostart:
-                        f.write(content.replace("#" + i3_autostart, i3_autostart))
+                        fil.write(content.replace("#" + i3_autostart, i3_autostart))
                     else:
-                        f.write(content.replace(i3_autostart, "#" + i3_autostart))
-                    f.truncate()
+                        fil.write(content.replace(i3_autostart, "#" + i3_autostart))
+                    fil.truncate()
             self.autostart = autostart
         except OSError as error:
             print(error)
@@ -210,8 +212,8 @@ class Hello():
             filename = self.preferences["data_path"] + \
                 "pages/{}/{}".format(self.preferences["default_locale"], name)
         try:
-            with open(filename, "r") as f:
-                return f.read()
+            with open(filename, "r") as fil:
+                return fil.read()
         except OSError:
             return _("Can't load page.")
 
@@ -269,8 +271,8 @@ def read_json(path):
     """
     path = fix_path(path)
     try:
-        with open(path, "r") as f:
-            return json.load(f)
+        with open(path, "r") as fil:
+            return json.load(fil)
     except OSError:
         return None
 
@@ -284,8 +286,8 @@ def write_json(path, content):
     """
     path = fix_path(path)
     try:
-        with open(path, "w") as f:
-            json.dump(content, f)
+        with open(path, "w") as fil:
+            json.dump(content, fil)
     except OSError as error:
         print(error)
 
@@ -295,8 +297,8 @@ def get_lsb_infos():
     :rtype: dict"""
     lsb = {}
     try:
-        with open("/etc/lsb-release") as f:
-            for line in f:
+        with open("/etc/lsb-release") as fil:
+            for line in fil:
                 if "=" in line:
                     var, arg = line.rstrip().split("=")
                     if var.startswith("DISTRIB_"):
