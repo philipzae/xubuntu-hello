@@ -92,7 +92,7 @@ msgstr "УСТАНОВКА"
 
 #: ../ui/manjaro-hello.glade:413
 msgid "Launch installer"
-msgstr "Запустить установщик"
+msgstr "Запустить"
 
 #: ../ui/manjaro-hello.glade:456
 msgid "Home"
@@ -104,7 +104,7 @@ msgstr "О программе "
 
 #: ../ui/manjaro-hello.glade:524
 msgid "Welcome screen for Manjaro"
-msgstr "Приветвствие Manjaro"
+msgstr "Приветственный экран Manjaro"
 
 #: ../src/manjaro_hello.py:239
 msgid "Can't load page."
