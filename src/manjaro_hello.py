@@ -164,7 +164,8 @@ class Hello():
             }
         }
         for method in elts:
-            self.default_texts[method] = {}
+            if method not in self.default_texts:
+                self.default_texts[method] = {}
             for elt in elts[method]:
                 if elt not in self.default_texts[method]:
                     self.default_texts[method][elt] = getattr(
