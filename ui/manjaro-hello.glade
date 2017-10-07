@@ -160,6 +160,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_text" translatable="yes">Web resource</property>
                 <property name="image_position">right</property>
                 <property name="always_show_image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
@@ -190,6 +191,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_text" translatable="yes">Web resource</property>
                 <property name="image_position">right</property>
                 <property name="always_show_image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
@@ -206,6 +208,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_text" translatable="yes">Web resource</property>
                 <property name="image_position">right</property>
                 <property name="always_show_image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
@@ -222,6 +225,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_text" translatable="yes">Web resource</property>
                 <property name="image_position">right</property>
                 <property name="always_show_image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
@@ -238,6 +242,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_text" translatable="yes">Web resource</property>
                 <property name="image_position">right</property>
                 <property name="always_show_image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
@@ -254,6 +259,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">True</property>
+                <property name="tooltip_text" translatable="yes">Web resource</property>
                 <property name="image_position">right</property>
                 <property name="always_show_image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="no"/>
