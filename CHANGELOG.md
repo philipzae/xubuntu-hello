@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.8] - 2017-10-07
+### Fixed
+- Fix language selection.
+
 ## [0.5.7] - 2017-10-07
 ### Added
 - Default width to 800px.
