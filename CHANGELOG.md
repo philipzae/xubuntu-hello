@@ -1,6 +1,18 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.7] - 2017-10-07
+### Added
+- Default width to 800px.
+- Tooltips to web resources buttons.
+
+### Changed
+- Compress images (454 B saved).
+- Update translations.
+
+### Fixed
+- Fix Github link in about dialog.
+
 ## [0.5.6] - 2017-09-16
 ### Added
 - Locales: ka, ro_RO.
