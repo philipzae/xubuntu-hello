@@ -547,7 +547,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
     <property name="program_name">Manjaro Hello</property>
     <property name="version">0.5.6</property>
     <property name="comments" translatable="yes">Welcome screen for Manjaro</property>
-    <property name="website">https://github.com/Huluti/manjaro-hello</property>
+    <property name="website">https://github.com/manjaro/manjaro-hello</property>
     <property name="website_label">GitHub</property>
     <property name="authors">Hugo Posnic
 Johnathan Jenkins</property>
