@@ -17,7 +17,7 @@ class Hello():
 
     def __init__(self):
         self.app = "manjaro-hello"
-        self.dev = "--dev" in sys.argv
+        self.dev = "--dev" in sys.argv  # Dev mode activated ?
 
         # Load preferences
         if self.dev:
