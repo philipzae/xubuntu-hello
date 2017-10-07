@@ -152,14 +152,24 @@ class Hello():
                 "welcometitle",
                 "wiki"
             },
-            "tooltip_text": { "about", "home" }
+            "tooltip_text": {
+                "about",
+                "home",
+                "development",
+                "chat",
+                "donate",
+                "forum",
+                "mailling",
+                "wiki"
+            }
         }
         for method in elts:
+            self.default_texts[method] = {}
             for elt in elts[method]:
-                if elt not in self.default_texts:
-                    self.default_texts[elt] = getattr(
+                if elt not in self.default_texts[method]:
+                    self.default_texts[method][elt] = getattr(
                         self.builder.get_object(elt), "get_" + method)()
-                getattr(self.builder.get_object(elt), "set_" + method)(_(self.default_texts[elt]))
+                getattr(self.builder.get_object(elt), "set_" + method)(_(self.default_texts[method][elt]))
 
         # Change content of pages
         for page in self.pages:
