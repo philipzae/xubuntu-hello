@@ -61,7 +61,7 @@ msgstr "Wiki"
 #: ui/manjaro-hello.glade:211 ui/manjaro-hello.glade:228
 #: ui/manjaro-hello.glade:245 ui/manjaro-hello.glade:262
 msgid "Web resource"
-msgstr ""
+msgstr "Webový zdroj"
 
 #: ui/manjaro-hello.glade:175
 msgid "Get involved"
