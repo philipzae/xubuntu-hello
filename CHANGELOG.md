@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.10] - 2017-11-05
+### Added
+- Locales: fi.
+### Changed
+- Improve window's size values.
+- Update translations.
+
 ## [0.5.9] - 2017-10-29
 ### Changed
 - Update translations.
