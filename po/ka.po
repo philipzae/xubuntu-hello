@@ -29,9 +29,9 @@ msgid ""
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
-"მადლობას გიხდით ჩვენი საზოგადოებაში გაწევრიანებისათვის!\n"
+"მადლობას გიხდით ჩვენს საზოგადოებაში გაწევრიანებისათვის!\n"
 "\n"
-"We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
+"ჩვენ, მაჯაროს დეველოპერები, ვიმედოვნებთ რომ ისარგებლებთ მაჯრაოს გამოყენებით, როგორც ჩვენ ვქმნით მას. ქვემოთ მოყვანილი ბმულები დაგეხმარებათ თქვენი ახალი ოპერაციული სისტემის დაწყებაში. ასე რომ ისარგებლეთ გამოცდილებით და ნუ მოგერიდებათ გამოგვიგზავნოთ თქვენი გამოხმაურება."
 
 #: ui/manjaro-hello.glade:89
 msgid "DOCUMENTATION"
@@ -61,7 +61,7 @@ msgstr "ვიკი"
 #: ui/manjaro-hello.glade:211 ui/manjaro-hello.glade:228
 #: ui/manjaro-hello.glade:245 ui/manjaro-hello.glade:262
 msgid "Web resource"
-msgstr ""
+msgstr "ვებ რესურსები"
 
 #: ui/manjaro-hello.glade:175
 msgid "Get involved"
