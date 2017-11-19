@@ -1,33 +1,33 @@
 <big>Manjaro 17.0</big>
 
-We are happy to publish another stable release of Manjaro Linux, we call Gellivara.
+Nous sommes heureux de publier une autre version stable de Manjaro Linux, que nous appelons Gellivara.
 
-The Xfce edition remains our flagship offering and has received the attention it deserves. Few can claim to offer such a polished, integrated and leading-edge Xfce experience. We ship Xfce 4.12 with this release of Manjaro. We mainly focused on polishing the user experience on the desktop and window manager, and on updating some components to take advantage of newly available technologies such as switching to a new Vertex-Maia theme, we already using known as Maia for our KDE edition.
+L'édition Xfce reste notre offre phare et a reçu l'attention qu'elle mérite. Peu de gens peuvent prétendre offrir une expérience Xfce aussi polie, intégrée et avant-gardiste. Nous expédions Xfce 4.12 avec cette version de Manjaro. Nous nous sommes concentrés principalement sur l'amélioration de l'expérience utilisateur sur le bureau et le gestionnaire de fenêtres, et sur la mise à jour de certains composants pour profiter des nouvelles technologies disponibles, comme le passage à un nouveau thème Vertex-Maia.
 
-Our KDE edition continues to deliver this powerful, mature and feature-rich desktop environment with a unique look-and-feel, and with the perks of Manjaro's latest tools. We ship now Plasma 5.9 desktop in combination with the latest KDE-Apps 16.12. It was a huge step to get it all playing together smoothly and to give the user experience the same feeling as our KDE4 editions of the past.
+Notre édition de KDE continue d'offrir cet environnement de bureau puissant, mature et riche en fonctionnalités avec un aspect unique et avec les avantages des derniers outils de Manjaro. Nous livrons maintenant Plasma 5.9 desktop en combinaison avec les dernières KDE-Apps 16.12. Ce fut un grand pas en avant pour que tout se passe harmonieusement et que l'expérience de l'utilisateur soit la même que celle de nos éditions KDE4 du passé.
 
-Kernel 4.9 is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
+Le noyau 4.9 est utilisé pour cette version, comme les derniers pilotes disponibles à ce jour. Par rapport à la dernière version des médias d'installation, nos outils ont été améliorés et polis.
 
-The Manjaro Settings Manager (MSM) now provides an easy-to-use graphical interface for installing and removing the many series of kernels we offer. Manjaro's selection of readily available kernels remains the most extensive of all Linux distribution we know of. At the time of this release, nine kernel-series are available directly from our binary repositories, ranging from the mature &amp; rock-solid 3.10 series to the latest 4.10 release. Additionally we offer two realtime kernel series. Such a wide array of available kernel options results in extensive hardware support, getting the most out of your system for you, be it old or new.
+Le Gestionnaire de paramètres Manjaro (MSM) fournit maintenant une interface graphique facile à utiliser pour installer et supprimer les nombreuses séries de noyaux que nous offrons. La sélection par Manjaro de noyaux facilement disponibles reste la plus vaste de toutes les distributions de Linux que nous connaissons. Au moment de cette publication, neuf séries de noyaux sont disponibles directement à partir de nos dépôts binaires, allant de la maturité & amp; série solide 3.10 à la dernière version 4.10. De plus, nous offrons deux séries de noyaux en temps réel. Un tel éventail d'options de noyau disponibles résulte en un support matériel étendu, tirant le meilleur parti de votre système pour vous, qu'il soit ancien ou nouveau.
 
-With Pamac 4.3 we fixed known issues and added new functions. Followed features you can expect:
+Avec Pamac 4.3, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
 
-    - implemented intern functions for building packages from AUR with deps resolution.
-    - packager mail is now clickable
-    - optimize download function
-    - Gnome shortcuts enabled
-    - display explicitly installed packages
-    - added files db support
-    - updated translations and fixed other small issues
+     - implémentation de fonctions internes pour construire des paquets à partir d'AUR avec résolution des dépendances.
+     - Le mail du packager est maintenant cliquable
+     - optimisation du téléchargement
+     - Les raccourcis Gnome activés
+     - afficher les paquets explicitement installés
+     - Ajout de fichiers support db
+     - mises à jour des traductions et d'autres petites corrections
 
-With Manjaro Settings Manager we fixed known issues and added new functions. Followed features you can expect:
+Avec Manjaro Settings Manager, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
 
-    - fixed a crash when using automatic installation
-    - fixed a segfault when opening hardware detection
-    - fixed a crash in kcm module, keyboard preview refresh fixes
-    - correction of search function in keyboardmodel
-    - use KAuth for KernelPage, MhwdPage, 
-    - no need to run the application as super user anymore
-    - updated translations
+     - Correction d'un crash lors de l'installation automatique
+     - Correction d'une erreur de segmentation lors de l'ouverture de la détection de matériel
+     - correction d'un crash dans le module kcm, correction de l'aperçu du clavier
+     - correction de la fonction de recherche dans le modelmodel
+     - utiliser KAuth pour KernelPage, MhwdPage,
+     - pas besoin de lancer l'application en tant que super utilisateur
+     - traductions mises à jour
 
-We hope you enjoy this release and let us know what you think of Gellivara.
+Nous espérons que vous apprécierez cette version et laissez-nous savoir ce que vous pensez de Gellivara.
