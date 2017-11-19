@@ -8,11 +8,11 @@ Notre édition de KDE continue d'offrir cet environnement de bureau puissant, ma
 
 Le noyau 4.9 est utilisé pour cette version, comme les derniers pilotes disponibles à ce jour. Par rapport à la dernière version des médias d'installation, nos outils ont été améliorés et polis.
 
-Le Gestionnaire de paramètres Manjaro (MSM) fournit maintenant une interface graphique facile à utiliser pour installer et supprimer les nombreuses séries de noyaux que nous offrons. La sélection par Manjaro de noyaux facilement disponibles reste la plus vaste de toutes les distributions de Linux que nous connaissons. Au moment de cette publication, neuf séries de noyaux sont disponibles directement à partir de nos dépôts binaires, allant de la maturité & amp; série solide 3.10 à la dernière version 4.10. De plus, nous offrons deux séries de noyaux en temps réel. Un tel éventail d'options de noyau disponibles résulte en un support matériel étendu, tirant le meilleur parti de votre système pour vous, qu'il soit ancien ou nouveau.
+Le Gestionnaire de paramètres Manjaro (MSM) fournit maintenant une interface graphique facile à utiliser pour installer et supprimer les nombreuses séries de noyaux que nous offrons. La sélection par Manjaro de noyaux facilement disponibles reste la plus vaste de toutes les distributions de Linux que nous connaissons. Au moment de cette publication, neuf séries de noyaux sont disponibles directement à partir de nos dépôts binaires, allant de la maturité de la série solide 3.10 à la dernière version 4.10. De plus, nous offrons deux séries de noyaux en temps réel. Un tel éventail d'options de noyau disponibles résulte en un support matériel étendu, tirant le meilleur parti de votre système pour vous, qu'il soit ancien ou nouveau.
 
 Avec Pamac 4.3, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
 
-     - implémentation de fonctions internes pour construire des paquets à partir d'AUR avec résolution des dépendances.
+    - implémentation de fonctions internes pour construire des paquets à partir d'AUR avec résolution des dépendances.
      - Le mail du packager est maintenant cliquable
      - optimisation du téléchargement
      - Les raccourcis Gnome activés
@@ -22,7 +22,7 @@ Avec Pamac 4.3, nous avons corrigé les problèmes connus et ajouté de nouvelle
 
 Avec Manjaro Settings Manager, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
 
-     - Correction d'un crash lors de l'installation automatique
+    - Correction d'un crash lors de l'installation automatique
      - Correction d'une erreur de segmentation lors de l'ouverture de la détection de matériel
      - correction d'un crash dans le module kcm, correction de l'aperçu du clavier
      - correction de la fonction de recherche dans le modelmodel
