@@ -12,7 +12,7 @@ Le Gestionnaire de paramètres Manjaro (MSM) fournit maintenant une interface gr
 
 Avec Pamac 4.3, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
 
-    - implémentation de fonctions internes pour construire des paquets à partir d'AUR avec résolution des dépendances.
+     - implémentation de fonctions internes pour construire des paquets à partir d'AUR avec résolution des dépendances.
      - Le mail du packager est maintenant cliquable
      - optimisation du téléchargement
      - Les raccourcis Gnome activés
@@ -22,7 +22,7 @@ Avec Pamac 4.3, nous avons corrigé les problèmes connus et ajouté de nouvelle
 
 Avec Manjaro Settings Manager, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
 
-    - Correction d'un crash lors de l'installation automatique
+     - Correction d'un crash lors de l'installation automatique
      - Correction d'une erreur de segmentation lors de l'ouverture de la détection de matériel
      - correction d'un crash dans le module kcm, correction de l'aperçu du clavier
      - correction de la fonction de recherche dans le modelmodel
