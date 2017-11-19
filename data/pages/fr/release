@@ -1,0 +1,33 @@
+<big>Manjaro 17.0</big>
+
+We are happy to publish another stable release of Manjaro Linux, we call Gellivara.
+
+The Xfce edition remains our flagship offering and has received the attention it deserves. Few can claim to offer such a polished, integrated and leading-edge Xfce experience. We ship Xfce 4.12 with this release of Manjaro. We mainly focused on polishing the user experience on the desktop and window manager, and on updating some components to take advantage of newly available technologies such as switching to a new Vertex-Maia theme, we already using known as Maia for our KDE edition.
+
+Our KDE edition continues to deliver this powerful, mature and feature-rich desktop environment with a unique look-and-feel, and with the perks of Manjaro's latest tools. We ship now Plasma 5.9 desktop in combination with the latest KDE-Apps 16.12. It was a huge step to get it all playing together smoothly and to give the user experience the same feeling as our KDE4 editions of the past.
+
+Kernel 4.9 is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
+
+The Manjaro Settings Manager (MSM) now provides an easy-to-use graphical interface for installing and removing the many series of kernels we offer. Manjaro's selection of readily available kernels remains the most extensive of all Linux distribution we know of. At the time of this release, nine kernel-series are available directly from our binary repositories, ranging from the mature &amp; rock-solid 3.10 series to the latest 4.10 release. Additionally we offer two realtime kernel series. Such a wide array of available kernel options results in extensive hardware support, getting the most out of your system for you, be it old or new.
+
+With Pamac 4.3 we fixed known issues and added new functions. Followed features you can expect:
+
+    - implemented intern functions for building packages from AUR with deps resolution.
+    - packager mail is now clickable
+    - optimize download function
+    - Gnome shortcuts enabled
+    - display explicitly installed packages
+    - added files db support
+    - updated translations and fixed other small issues
+
+With Manjaro Settings Manager we fixed known issues and added new functions. Followed features you can expect:
+
+    - fixed a crash when using automatic installation
+    - fixed a segfault when opening hardware detection
+    - fixed a crash in kcm module, keyboard preview refresh fixes
+    - correction of search function in keyboardmodel
+    - use KAuth for KernelPage, MhwdPage, 
+    - no need to run the application as super user anymore
+    - updated translations
+
+We hope you enjoy this release and let us know what you think of Gellivara.
