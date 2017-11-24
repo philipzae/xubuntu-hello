@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.11] - 2017-11-24
+### Added
+- Pages: fr.
+### Changed
+- Update translations.
+
 ## [0.5.10] - 2017-11-05
 ### Added
 - Locales: fi.
