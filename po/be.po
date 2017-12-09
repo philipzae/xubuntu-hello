@@ -43,7 +43,7 @@ msgstr "ПАДТРЫМКА"
 
 #: ui/manjaro-hello.glade:117
 msgid "PROJECT"
-msgstr "ПРАЭКТ"
+msgstr "ПРАЕКТ"
 
 #: ui/manjaro-hello.glade:129
 msgid "Read me"
@@ -61,7 +61,7 @@ msgstr "Вікіпедыя"
 #: ui/manjaro-hello.glade:211 ui/manjaro-hello.glade:228
 #: ui/manjaro-hello.glade:245 ui/manjaro-hello.glade:262
 msgid "Web resource"
-msgstr ""
+msgstr "Сеціўныя крыніцы"
 
 #: ui/manjaro-hello.glade:175
 msgid "Get involved"
@@ -73,7 +73,7 @@ msgstr "Форумы"
 
 #: ui/manjaro-hello.glade:206
 msgid "Chat room"
-msgstr "Чат"
+msgstr "Размовы"
 
 #: ui/manjaro-hello.glade:223
 msgid "Mailling lists"
