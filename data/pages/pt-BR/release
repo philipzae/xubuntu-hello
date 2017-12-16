@@ -1,33 +1,27 @@
-<big>Manjaro 17.0</big>
+<big>Manjaro 17.1</big>
 
-Estamos felizes em publicar outro lançamento estável do Manjaro Linux, chamamos Gellivara.
+Estamos felizes em publicar outro lançamento estável do Manjaro Linux, chamamos Hakoila.
 
 A edição Xfce continua a ser a nossa oferta emblemática e recebeu a atenção que merece. Poucos podem alegar oferecer uma experiência tão polida, integrada e de ponta Xfce. Nós enviamos Xfce 4.12 com este lançamento de Manjaro. Nós nos concentramos principalmente em polir a experiência do usuário no desktop e no gerenciador de janelas e em atualizar alguns componentes para aproveitar as novas tecnologias disponíveis, como a mudança para um novo tema Vertex-Maia, que já usamos conhecido como Maia para nossa edição do KDE.
 
-Nossa edição do KDE continua a oferecer este ambiente de desktop poderoso, maduro e rico em recursos, com um visual único e com as vantagens das ferramentas mais recentes do Manjaro. Nós enviamos agora Plasma 5.9 desktop em combinação com o mais recente KDE-Apps 16.12. Foi um passo enorme para que tudo funcionasse bem e para dar ao usuário a mesma sensação que as nossas edições KDE4 do passado.
+Nossa edição do KDE continua a oferecer este ambiente de desktop poderoso, maduro e rico em recursos, com um visual único e com as vantagens das ferramentas mais recentes do Manjaro. Nós enviamos agora Plasma 5.11 desktop em combinação com o mais recente KDE-Apps 17.12. Foi um passo enorme para que tudo funcionasse bem e para dar ao usuário a mesma sensação que as nossas edições KDE4 do passado.
 
-O Kernel 4.9 é usado para esta versão, como os drivers mais recentes disponíveis até o momento. Em relação à última versão da mídia de instalação, nossas ferramentas foram aprimoradas e polidas.
+O Kernel 4.14 é usado para esta versão, como os drivers mais recentes disponíveis até o momento. Em relação à última versão da mídia de instalação, nossas ferramentas foram aprimoradas e polidas.
 
-O Manjaro Settings Manager (MSM) agora oferece uma interface gráfica fácil de usar para instalar e remover as muitas séries de kernels que oferecemos. A seleção de Manjaro's de kernels prontamente disponíveis continua sendo a mais extensa de todas as distribuições Linux que conhecemos. No momento desta versão, nove kernel-séries estão disponíveis diretamente de nossos repositórios binários, que vão desde o maduro e sólido 3.10 série para a última versão 4.10. Além disso, oferecemos duas séries de kernel em tempo real. Essa ampla variedade de opções de kernel disponíveis resulta em um extenso suporte de hardware, tirando o máximo proveito do seu sistema para você, seja ele antigo ou novo.
+O Manjaro Settings Manager (MSM) agora oferece uma interface gráfica fácil de usar para instalar e remover as muitas séries de kernels que oferecemos. A seleção de Manjaro's de kernels prontamente disponíveis continua sendo a mais extensa de todas as distribuições Linux que conhecemos. No momento desta versão, nove kernel-séries estão disponíveis diretamente de nossos repositórios binários, que vão desde o maduro e sólido 3.16 série para a última versão 4.15. Além disso, oferecemos duas séries de kernel em tempo real. Essa ampla variedade de opções de kernel disponíveis resulta em um extenso suporte de hardware, tirando o máximo proveito do seu sistema para você, seja ele antigo ou novo.
 
-Com Pamac 4.3 corrigimos problemas conhecidos e adicionamos novas funções. Recursos seguidos que você pode esperar:
+Com Pamac v6.2 corrigimos problemas conhecidos e adicionamos novas funções. Recursos seguidos que você pode esperar:
 
-    - implementou funções internas para a construção de pacotes do AUR com deps resolução.
-    - o correio do packager agora é clicável
-    - otimizar a função de download
-    - Atalhos do Gnome ativados
-    - exibir pacotes instalados explicitamente
-    - adicionado arquivos db suporte
+    - complete redesign of UI
+    - added categories mode
+    - usage of appstream data
     - traduções atualizadas e outras pequenas questões fixas
 
 Com o Manjaro Settings Manager resolvemos problemas conhecidos e adicionamos novas funções. Recursos seguidos que você pode esperar:
 
-    - corrigiu uma falha ao usar a instalação automática
-    - corrigiu um segfault ao abrir a detecção de hardware
-    - corrigiu uma falha no módulo kcm, corrigir a atualização do preview do teclado
-    - correção da função de pesquisa em keyboardmodel
-    - use KAuth para KernelPage, MhwdPage,
-    - não há necessidade de executar o aplicativo como super usuário mais
+    - updated release notes for all supported kernels
+    - fixed with ntp clock setup
+    - UI enhancements
     - traduções atualizadas
 
-Esperamos que você goste desta versão e deixe-nos saber o que você acha de Gellivara.
+Esperamos que você goste desta versão e deixe-nos saber o que você acha de Hakoila.

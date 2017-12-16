@@ -1,33 +1,27 @@
-<big>Manjaro 17.0</big>
+<big>Manjaro 17.1</big>
 
-Vi er glade for at udgive, Gellivara, endnu en stabil udgave af Manjaro Linux
+Vi er glade for at udgive, Hakoila, endnu en stabil udgave af Manjaro Linux
 
 Xfce udgaven er stadig vores stolthed og den har fået den opmærksomhed den fortjener. Meget få kan tilbyde en så forfinet, integreret Xfce oplevelse. Med denne udgivelse har vi brugt Xfce 4.12. Vores fokus har været på at forfine skrivebords oplevelsen og vindues håndteringen, og på opdatering af komponenter så vi kan drage fordel af de nyeste muligheder som f.x. vores nye Vertex-Maia tema, det tema vores KDE udgave kalder Maia.
 
-Vores KDE udgave fortsætter med at levere et fantastisk miljø med en helt unik brugeroplevelse, med frynsegoderne fra Manjaro's nyeste værktøjer. Med denne udgivelse bruger vi Plasma 5.9 kombineret med de nyeste KDE-Apps 16.12. Det var en stor opgave at få det hele til at fungere gnidningsløst og tilføre brugeroplevelsen den samme følelse som vores KDE4 udgivelser gjorde det førhen.
+Vores KDE udgave fortsætter med at levere et fantastisk miljø med en helt unik brugeroplevelse, med frynsegoderne fra Manjaro's nyeste værktøjer. Med denne udgivelse bruger vi Plasma 5.11 kombineret med de nyeste KDE-Apps 17.12. Det var en stor opgave at få det hele til at fungere gnidningsløst og tilføre brugeroplevelsen den samme følelse som vores KDE4 udgivelser gjorde det førhen.
 
-Linux 4.9 kernen er standard for denne udgivelse, og vi har brugt de senest udgivne drivere. I forhold til sidste udgivelse er vores værktøjer til udgivelse også forbedret og forfinede.
+Linux 4.14 kernen er standard for denne udgivelse, og vi har brugt de senest udgivne drivere. I forhold til sidste udgivelse er vores værktøjer til udgivelse også forbedret og forfinede.
 
-Manjaro Indstillinger (MSM) er et let-at-bruge grafisk program til vedligeholdelse af de mange kerner vi tilbyder. Manjaro's udbud af kerner er stadig det mest alsidige blandt alle de Linux distributioner vi kender til. Da vi frigav denne udgave var der 9 kerner til rådighed til umiddelbar installation, lige fra den voksne bund-solide 3.10 serie til den nyeste 4.10 udgivelse. Ydermere tilbyder vi to realtime kerner. En sådan bredde i kerne udbud betyder understøttelse af rigtig megen forskellig hardware og det giver dig mest udbytte af dit computer, hvad enten den er gammel eller ny.
+Manjaro Indstillinger (MSM) er et let-at-bruge grafisk program til vedligeholdelse af de mange kerner vi tilbyder. Manjaro's udbud af kerner er stadig det mest alsidige blandt alle de Linux distributioner vi kender til. Da vi frigav denne udgave var der 9 kerner til rådighed til umiddelbar installation, lige fra den voksne bund-solide 3.16 serie til den nyeste 4.15 udgivelse. Ydermere tilbyder vi to realtime kerner. En sådan bredde i kerne udbud betyder understøttelse af rigtig megen forskellig hardware og det giver dig mest udbytte af dit computer, hvad enten den er gammel eller ny.
 
-Med Pamac 4.3 er kendte fejl rettet og nye funktioner tilføjet. Noget at det du kan forvente er:
+Med Pamac v6.2 er kendte fejl rettet og nye funktioner tilføjet. Noget at det du kan forvente er:
     
-    - intern håndtering af AUR software og håndtering af afhængigheder
-    - mail direkte til pakkemester
-    - optimeret download
-    - Gnome genveje
-    - visning af specifikt installerede pakker
-    - tilføjet support for fil database
+    - complete redesign of UI
+    - added categories mode
+    - usage of appstream data
     - opdaterede oversættelser og flere smårettelser
 
 Med Manjaro Indstillinger har vi også rettet kendte fejl og tilføjet nye funktioner. Noget af det du kan forvente er:
 
-    - rettet et nedbrud ved brug af automatisk installation
-    - rettet en 'segfault' ved åbning af MHWD
-    - rettet et nedbrud i tastatur modul, visning af tastatur rettet
-    - rettet søgning for tastatur model
-    - brug KAuth til KernelPage, MhwdPage
-    - ikke længere nødvendigt at være superbruger
+    - updated release notes for all supported kernels
+    - fixed with ntp clock setup
+    - UI enhancements
     - opdaterede oversættelser
 
-Vi håber du vil nyde denne udgivelse og lade os vide hvad du synes om Gellivara.
+Vi håber du vil nyde denne udgivelse og lade os vide hvad du synes om Hakoila.
