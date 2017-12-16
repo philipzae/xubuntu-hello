@@ -12,16 +12,16 @@ Le Gestionnaire de paramètres Manjaro (MSM) fournit maintenant une interface gr
 
 Avec Pamac v6.2, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
 
-     - complete redesign of UI
-     - added categories mode
-     - usage of appstream data
+     - redesign complet
+     - ajout de catégories
+     - utilisation des données appstream
      - mises à jour des traductions et d'autres petites corrections
 
 Avec Manjaro Settings Manager, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
 
-     - updated release notes for all supported kernels
-     - fixed with ntp clock setup
-     - UI enhancements
+     - mises à jour des notes de version pour tous les noyaux supportés
+     - amélioration des paramètres d'horloge ntp
+     - améliorations de l'interface
      - traductions mises à jour
 
 Nous espérons que vous apprécierez cette version et laissez-nous savoir ce que vous pensez de Hakoila.
