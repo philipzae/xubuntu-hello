@@ -1,27 +1,27 @@
 <big>Manjaro 17.1</big>
 
-Vi er glade for at udgive, Hakoila, endnu en stabil udgave af Manjaro Linux
+Vi er glade for at udgive endnu en stabil udgivelse af Manjaro Linux, kaldet Hakoila.
 
-Xfce udgaven er stadig vores stolthed og den har fået den opmærksomhed den fortjener. Meget få kan tilbyde en så forfinet, integreret Xfce oplevelse. Med denne udgivelse har vi brugt Xfce 4.12. Vores fokus har været på at forfine skrivebords oplevelsen og vindues håndteringen, og på opdatering af komponenter så vi kan drage fordel af de nyeste muligheder som f.x. vores nye Vertex-Maia tema, det tema vores KDE udgave kalder Maia.
+Xfce-udgaven er fortsat vores flagskib og har fået den fortjente opmærksomhed. Meget få kan tilbyde en så poleret, integreret Xfce-oplevelse. Vi har udsendt denne udgivelse med Xfce 4.12. Vores primære fokus har været på at polerere brugeroplevelsen på skrivebordet og vindueshåndteringen, og på opdatering af komponenter for at få fordel af de nyeste teknologier, såsom skiftet til vores nye Vertex-Maia-tema, temaet som kaldes Maia i vores KDE-udgave.
 
-Vores KDE udgave fortsætter med at levere et fantastisk miljø med en helt unik brugeroplevelse, med frynsegoderne fra Manjaro's nyeste værktøjer. Med denne udgivelse bruger vi Plasma 5.11 kombineret med de nyeste KDE-Apps 17.12. Det var en stor opgave at få det hele til at fungere gnidningsløst og tilføre brugeroplevelsen den samme følelse som vores KDE4 udgivelser gjorde det førhen.
+Vores KDE-udgave leverer fortsat et skrivebordsmiljø som er kraftfuldt, modent og funktionsrigt, med et unikt udseende og opførsel, og med goderne fra Manjaro's seneste værktøjer. Vi udsender nu Plasma 5.11-skrivebordet i kombineret med de nyeste KDE-Apps 17.12. Det var en stor opgave at få det hele til at fungere sammen og at få den samme brugeroplevelse som vores KDE4-udgivelser gjorde det førhen.
 
-Linux 4.14 kernen er standard for denne udgivelse, og vi har brugt de senest udgivne drivere. I forhold til sidste udgivelse er vores værktøjer til udgivelse også forbedret og forfinede.
+Denne udgivelse bruger 4.14-kernen, så de senest drivere er tilgængelige. I forhold til den sidste udgivelse af installationsmedier er vores værktøjer blevet forbedret og poleret.
 
-Manjaro Indstillinger (MSM) er et let-at-bruge grafisk program til vedligeholdelse af de mange kerner vi tilbyder. Manjaro's udbud af kerner er stadig det mest alsidige blandt alle de Linux distributioner vi kender til. Da vi frigav denne udgave var der 9 kerner til rådighed til umiddelbar installation, lige fra den voksne bund-solide 3.16 serie til den nyeste 4.15 udgivelse. Ydermere tilbyder vi to realtime kerner. En sådan bredde i kerne udbud betyder understøttelse af rigtig megen forskellig hardware og det giver dig mest udbytte af dit computer, hvad enten den er gammel eller ny.
+Manjaro-indstillingshåndteringen (MSM) leverer nu en let anvendelig grafisk brugerflade til installation og fjernelse af de mange kerner vi tilbyder. Manjaro's udbud af kerner er fortsat det mest alsidige blandt alle de Linux-distributioner vi kender til. Ved tidspunkts for denne udgivelse var der 9 kerneserier til rådighed direkte fra vores binære softwarekilder, lige fra de modne og bundsolide 3.16-serier til den seneste 4.15-udgivelse. Derudover tilbyder vi to realtidskerneserier. Det brede udbud af kernemuligheder giver bred understøttelse af hardware, hvilket giver dig mest udbytte af dit system, hvad enten det er gammelt eller nyt.
 
-Med Pamac v6.2 er kendte fejl rettet og nye funktioner tilføjet. Noget at det du kan forvente er:
+Med Pamac v6.2 er kendte fejl rettet og nye funktioner tilføjet. Følgende funktionaliteter kan forventes:
     
-    - complete redesign of UI
-    - added categories mode
-    - usage of appstream data
-    - opdaterede oversættelser og flere smårettelser
+    - komplet redesign af brugerflade
+    - tilføjelse af kategorier-tilstand
+    - anvendelse af appstream-data
+    - opdaterede oversættelser og rettelse af andre mindre problemer
 
-Med Manjaro Indstillinger har vi også rettet kendte fejl og tilføjet nye funktioner. Noget af det du kan forvente er:
+Med Manjaro-indstillingshåndteringen har vi rettet kendte problemer og tilføjet nye funktioner. Følgende funktionaliteter kan forventes:
 
-    - updated release notes for all supported kernels
-    - fixed with ntp clock setup
-    - UI enhancements
+    - opdaterede udgivelsesnoter til alle understøttede kerner
+    - rettelse ved opsætning af ntp-ur
+    - forbedringer af brugerfladen
     - opdaterede oversættelser
 
-Vi håber du vil nyde denne udgivelse og lade os vide hvad du synes om Hakoila.
+Vi håber at du vil nyde denne udgivelse og fortælle os hvad du synes om Hakoila.
