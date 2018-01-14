@@ -1,37 +1,37 @@
 <big>Tak for din støtte</big>
 
-Manjaro Linux har stor opbakning fra dets brugerfællesskab og vi vil takke hver eneste medvirkende for deres deltagelse. Opbakningen til Manjaro Linux er jævnt stigende og vores distribution bliver, takket være dig, bedre og bedre for hver dag der går.
+Manjaro Linux modtager stor opbakning fra fællesskabet og brugerne, og vi vil gerne takke hver eneste bidragsyder for deres deltagelse. Opbakningen til Manjaro Linux er jævnt stigende og vores distribution bliver, takket være dig, bedre og bedre for hver dag der går.
 
-Det er let at gøre en forskel. Afhængigt af dine muligheder og omstændigher can du hjælpe Manjaro på et eller flere af følgende områder:
+Det er let at gøre en forskel. Afhængigt af dine evner kan din tilgængelighed hjælpe Manjaro på en eller flere af følgende måder:
 
-<big>Opbakning og Markedsføring</big>
+<big>Support og promovering</big>
 
 <b>Fortæl om Manjaro</b>
 
-Hvis du er glad for Manjaro, så fortæl andre om det. Skriv en anmeldelse og udgiv den på linuxin.dk eller distrowatch.com.
+Hvis du er glad for Manjaro, så fortæl andre om det. Skriv en anmeldelse og udgiv den på distrowatch.com.
 
-<b>Engager dig i fællesskabet</b>
+<b>Deltag i fællesskabet</b>
 
-Manjaro er ikke kun et operativ system, det er også et fælleskab med mennesker som nyder at samles om og være aktiv i et frit og åbent projekt. Om du hjælper andre med at løse udfordringer eller du får dem til at føle sig velkomne, eller du bare mødes og taler med andre Manjaro brugere, vil vi anbefale og tilskynde dig til at engagere dig i fællesskabet og bidrage til at gøre Manjaro endnu bedre.
+Manjaro er ikke blot et styresystem, det er også et dynamisk fællesskab af mennesker som nyder at samles om og være aktive i et frit og åbent projekt. Hvad enten du hjælper andre med at løse problemer, får dem til at føle sig velkomne eller du bare mødes med og taler med andre Manjaro-brugere, så anbefaler vi at du deltager i fællesskabet og bidrage til at gøre Manjaro bedre.
 
 <b>Hjælpe andre</b>
 
-Hvis du har fritid, og du er villig til at hjælpe andre med tekniske udfordringer, skal du alvorligt overveje at deltage i vores forum og/eller vores IRC chat og på den måde hjælpe andre Manjaro brugere med at løse de udfordringer du kender løsningen på.
+Hvis du har tid til overs, og du er villig til at hjælpe andre med tekniske problemer, så overvej seriøst at deltage i vores fora og/eller vores IRC-kanal og på den måde hjælpe andre Manjaro-brugere med at løse de problemer du kender løsningen på.
 
 <big>Bidrag til projektet</big>
 
-<b>Fejl rapporter</b>
+<b>Fejlrapporter</b>
 
-Hvis du ved din daglige brug af Manjaro er stødt på noget der ikke fungerer optimalt, vil vi gerne vide det. Det problem du har opdaget har også indflydelse på andre brugere; jo hurtigere vi får det at vide, jo hurtigere kan vi forbedre det.
+Hvis du er stødt på noget der ikke fungerer korrekt i Manjaro, så fortæl det til os. Det problem du har opdaget påvirker formodentligt også andre, så jo hurtigere vi får det at vide, jo hurtigere kan vi rette det.
 
 <b>Nye ideer</b>
 
-Den største andel, når gælder forbedringer, kommer fra brugerne. Hvis der er noget du synes der mangler eller noget der kunne være bedre, så fortæl os om det. Hvad enten det er en manglende driver, et program i en standard installation eller du har andre ideer til forbedring af Manjaro; vi er altid interesseret i høre om det.
+Langt de fleste forbedringer i hver udgivelse, kommer fra fællesskabet. Hvis der er noget du synes der mangler eller noget der kunne være bedre, så fortæl det til os. Hvad enten det er en manglende driver som skal med, et program som skal være del af en standardinstallation eller du har andre ideer til at gøre Manjaro bedre, så vi er altid interesseret i høre om det.
 
 <b>Grafisk arbejde</b>
 
-Hvis du har grafiske evner og er villig til at bidrage med det, så send dit kunstværk eller grafiske arbejde til os. Hvad enten det er en enkel baggrund, et sæt ikoner, et startbillede eller endda et nyt logo, vi vil altid være positive over for dig og dit arbejde.
+Hvis du har grafiske evner og er villig til at bidrage med det, så send venligst dine kreationer eller grafisk arbejde til os. Hvad enten det er en simpel baggrund, et sæt ikoner, et startbillede eller endda et nyt logo, så er vi altid interesseret i at høre fra dig om nyt grafisk arbejde.
 
-<b>Kode</b>
+<b>Kodning</b>
 
-Det meste af vores udviklingsarbejde bliver lavet med QT, C++, Python, HTML5/CSS og BASH. Vi bruger Git til kildekoden og PKGBUILDs til udgivelse af software. Hvis du er fortrolig med en eller flere af disse værktøjer, så kig på vores kode. Hvis du mener du kan forbedre vores apps eller skrive ny så skynd dig at foreslå forbedringerne eller du kan 'gafle' vores git repos og arbejde videre på dem.
+Det meste af vores udviklingsarbejde laves i QT, C++, Python, HTML5/CSS og BASH. Vi bruger også Git til versionsstyring og PKGBUILD'er til pakning. Hvis du er fortrolig med en eller flere af disse teknologier, så tøv ikke med at kigge på vores kode. Hvis du tror du kan forbedre vores programmer eller skrive nye, så tøv ikke med at foreslå rettelser eller forgrene vores git-repositories.
