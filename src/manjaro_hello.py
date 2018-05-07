@@ -231,7 +231,7 @@ class Hello():
         """Event for differents actions."""
         name = action.get_name()
         if name == "install":
-            subprocess.Popen(["pkexec", "calamares"])
+            subprocess.Popen(["calamares_polkit"])
         elif name == "autostart":
             self.set_autostart(action.get_active())
         elif name == "about":
