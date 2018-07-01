@@ -10,7 +10,7 @@
     "save_path": "~/.config/manjaro-hello.json",
     "ui_path": "/usr/share/manjaro-hello/ui/manjaro-hello.glade",
     "urls": {
-        "development": "https://github.com/manjaro",
+        "development": "https://gitlab.manjaro.org",
         "chat": "https://kiwiirc.com/client/irc.freenode.net/?nick=manjaro-web|?#manjaro",
         "donate": "https://manjaro.org/donate",
         "facebook": "https://www.facebook.com/ManjaroLinux",
