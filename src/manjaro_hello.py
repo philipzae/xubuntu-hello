@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+import collections
+import glob
+import urllib.request
 import gettext
 import json
 import locale
@@ -8,16 +11,347 @@ import subprocess
 import sys
 import webbrowser
 import gi
+
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, GdkPixbuf
+from gi.repository import Gtk, GdkPixbuf, GLib
+
+# Applications class constants
+VERSION = "0.8"
+TITLE = "Manjaro Application Utility {}".format(VERSION)
+GROUP = 0
+ICON = 1
+APPLICATION = 2
+DESCRIPTION = 3
+ACTIVE = 4
+PACKAGE = 5
+INSTALLED = 6
 
 
-class Hello():
+class Applications(Gtk.Window):
+    def __init__(self):
+        Gtk.Window.__init__(self, title=TITLE, border_width=6)
+        self.app = "manjaro-hello"
+        self.dev = "--dev" in sys.argv
+        if self.dev:
+            self.preferences = self.read_json_file("data/preferences.json".format(self.app))
+        else:
+            self.preferences = self.read_json_file("/usr/share/{}/data/preferences.json".format(self.app))
+        self.preferences["data_path"] = "./data"
+        self.set_position(Gtk.WindowPosition.CENTER_ALWAYS)
+        icon="system-software-install"
+        pixbuf24 = Gtk.IconTheme.get_default().load_icon(icon, 24, 0)
+        pixbuf32 = Gtk.IconTheme.get_default().load_icon(icon, 32, 0)
+        pixbuf48 = Gtk.IconTheme.get_default().load_icon(icon, 48, 0)
+        pixbuf64 = Gtk.IconTheme.get_default().load_icon(icon, 64, 0)
+        pixbuf96 = Gtk.IconTheme.get_default().load_icon(icon, 96, 0)
+        self.set_icon_list([pixbuf24, pixbuf32, pixbuf48, pixbuf64, pixbuf96])
+
+        # set data
+        self.app_store = None
+        self.pkg_selected = None
+        self.pkg_installed = None
+        self.pkg_list_install = []
+        self.pkg_list_removal = []
+
+        # setup main box
+        self.set_default_size(800, 650)
+        self.application_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+        self.add(self.application_box)
+
+        # create title box
+        self.title_box = Gtk.Box()
+        self.title_image = Gtk.Image()
+        self.title_image.set_size_request(100, 100)
+        self.title_image.set_from_file("/usr/share/icons/manjaro/maia/96x96.png")
+        self.title_label = Gtk.Label()
+        self.title_label.set_markup("<big>Manjaro Application Maintenance</big>\n"
+                                    "Select/Deselect apps you want to install/remove.\n"
+                                    "Click <b>UPDATE SYSTEM</b> button when ready.")
+        self.title_box.pack_start(self.title_image, expand=False, fill=False, padding=0)
+        self.title_box.pack_start(self.title_label, expand=True, fill=True, padding=0)
+
+        # pack title box to main box
+        self.application_box.pack_start(self.title_box, expand=False, fill=False, padding=0)
+
+        # setup grid
+        self.grid = Gtk.Grid()
+        self.grid.set_column_homogeneous(True)
+        self.grid.set_row_homogeneous(True)
+        self.application_box.add(self.grid)
+
+        # setup list store model
+        self.app_store = self.load_app_data(self.preferences["data_set"])
+
+        # create a tree view with the model store
+        self.tree_view = Gtk.TreeView.new_with_model(self.app_store)
+        self.tree_view.set_activate_on_single_click(True)
+
+        # column model: icon
+        icon = Gtk.CellRendererPixbuf()
+        column = Gtk.TreeViewColumn("", icon, icon_name=ICON)
+        self.tree_view.append_column(column)
+
+        # column model: group name column
+        renderer = Gtk.CellRendererText()
+        column = Gtk.TreeViewColumn("Group", renderer, text=GROUP)
+        self.tree_view.append_column(column)
+
+        # column model: app name column
+        renderer = Gtk.CellRendererText()
+        column = Gtk.TreeViewColumn("Application", renderer, text=APPLICATION)
+        self.tree_view.append_column(column)
+
+        # column model: description column
+        renderer = Gtk.CellRendererText()
+        column = Gtk.TreeViewColumn("Description", renderer, text=DESCRIPTION)
+        self.tree_view.append_column(column)
+
+        # column model: install column
+        toggle = Gtk.CellRendererToggle()
+        toggle.connect("toggled", self.on_app_toggle)
+        column = Gtk.TreeViewColumn("Installed", toggle, active=ACTIVE)
+        self.tree_view.append_column(column)
+
+        # button box
+        self.button_box = Gtk.Box(spacing=10)
+        self.advanced = Gtk.ToggleButton(label="Advanced")
+        self.advanced.connect("clicked", self.on_expert_clicked)
+        self.download = Gtk.Button(label="download")
+        self.download.connect("clicked", self.on_download_clicked)
+        self.reload_button = Gtk.Button(label="reload")
+        self.reload_button.connect("clicked", self.on_reload_clicked)
+        self.update_system_button = Gtk.Button(label="UPDATE SYSTEM")
+        self.update_system_button.connect("clicked", self.on_update_system_clicked)
+        self.close_button = Gtk.Button(label="close")
+        self.close_button.connect("clicked", self.on_close_clicked)
+        self.button_box.pack_start(self.advanced, expand=False, fill=False, padding=10)
+        self.button_box.pack_end(self.update_system_button, expand=False, fill=False, padding=10)
+        self.button_box.pack_end(self.close_button, expand=False, fill=False, padding=10)
+        self.button_box.pack_end(self.reload_button, expand=False, fill=False, padding=10)
+        self.button_box.pack_end(self.download, expand=False, fill=False, padding=10)
+        self.application_box.pack_end(self.button_box, expand=False, fill=False, padding=10)
+
+        # create a scrollable window
+        self.app_window = Gtk.ScrolledWindow()
+        self.app_window.set_vexpand(True)
+        self.app_window.add(self.tree_view)
+        self.grid.attach(self.app_window, 0, 0, 5, len(self.app_store))
+
+        # show start
+        self.show_all()
+
+    def load_app_data(self, data_set):
+        if os.path.isfile("{}/{}.json".format(self.preferences["user_path"], data_set)):
+            app_data = self.read_json_file("{}/{}.json".format(self.preferences["user_path"], data_set))
+        else:
+            app_data = self.read_json_file("{}/{}.json".format(self.preferences["data_path"], data_set))
+
+        store = Gtk.TreeStore(str, str, str, str, bool, str, bool)
+        for group in app_data:
+            index = store.append(None,
+                                 [group["name"],
+                                  group["icon"],
+                                  None, group["description"], None, None, None])
+            for app in group["apps"]:
+                status = self.app_installed(app["pkg"])
+                tree_item = (None,
+                             app["icon"],
+                             app["name"],
+                             app["description"],
+                             status,
+                             app["pkg"],
+                             status)
+                store.append(index, tree_item)
+        return store
+
+    def reload_app_data(self, dataset):
+        self.pkg_selected = None
+        self.pkg_installed = None
+        self.pkg_list_install = []
+        self.pkg_list_removal = []
+        self.app_store.clear()
+        self.app_store = self.load_app_data(dataset)
+        self.tree_view.set_model(self.app_store)
+
+    def on_close_clicked(self, widget):
+        self.hide()
+
+    def on_reload_clicked(self, widget):
+        self.reload_app_data(self.preferences["data_set"])
+
+    def on_expert_clicked(self, widget):
+        if widget.get_active():
+            self.preferences["data_set"] = "advanced"
+        else:
+            self.preferences["data_set"] = "default"
+        self.reload_app_data(self.preferences["data_set"])
+
+    def on_download_clicked(self, widget):
+        if self.net_check():
+            # noinspection PyBroadException
+            try:
+                for download in self.preferences["data_sets"]:
+                    url = "{}/{}.json".format(self.preferences["url"], download)
+                    file = self.fix_path("{}/{}.json".format(self.preferences["user_path"], download))
+                    req = urllib.request.Request(url=url)
+                    with urllib.request.urlopen(req, timeout=2) as response:
+                        data = json.loads(response.read().decode("utf8"))
+                        self.write_json_file(data, file)
+
+            except Exception as e:
+                print(e)
+
+        else:
+            dialog = Gtk.MessageDialog(self, 0,
+                                       Gtk.MessageType.ERROR,
+                                       Gtk.ButtonsType.CANCEL,
+                                       "Download not available")
+            dialog.format_secondary.text("The server 'gitlab.manjaro.org' could not be reached")
+            dialog.run()
+
+    def on_app_toggle(self, cell, path):
+        # a group has no package attached and we don't install groups
+        if self.app_store[path][PACKAGE] is not None:
+            self.app_store[path][ACTIVE] = not self.app_store[path][ACTIVE]
+            self.pkg_selected = self.app_store[path][PACKAGE]
+            self.pkg_installed = self.app_store[path][INSTALLED]
+
+            if self.app_store[path][ACTIVE] is False:
+                if self.pkg_installed is True:
+                    # to uninstall
+                    self.pkg_list_removal.append(self.pkg_selected)
+                    if self.dev:
+                        print("for removal   : {}".format(self.pkg_selected))
+                if self.pkg_selected in self.pkg_list_install:
+                    # cancel install
+                    self.pkg_list_install.remove(self.pkg_selected)
+                    if self.dev:
+                        print("cancel install: {}".format(self.pkg_selected))
+            else:
+                # don't reinstall
+                if self.pkg_installed is False:
+                    # only install
+                    if self.pkg_selected not in self.pkg_list_install:
+                        self.pkg_list_install.append(self.pkg_selected)
+                        if self.dev:
+                            print("to install    : {}".format(self.pkg_selected))
+                if self.pkg_selected in self.pkg_list_removal:
+                    # cancel uninstall
+                    self.pkg_list_removal.remove(self.pkg_selected)
+            if self.dev:
+                print("pkg list install: {}".format(self.pkg_list_install))
+                print("pkg list removal: {}".format(self.pkg_list_removal))
+
+    def on_update_system_clicked(self, widget):
+        file_install = "/tmp/.install-packages.txt"
+        file_uninstall = "/tmp/.remove-packages.txt"
+
+        os.environ["APP_UTILITY"] = "PACKAGES"
+        shell_fallback = False
+
+        if self.pkg_list_install:
+            if os.path.isfile("/usr/bin/pamac-installer"):
+                subprocess.run(["pamac-installer"] + self.pkg_list_install)
+            else:
+                shell_fallback = True
+                with open(file_install, "w") as outfile:
+                    for p in self.pkg_list_install:
+                        outfile.write("{} ".format(p))
+
+        if self.pkg_list_removal:
+            shell_fallback = True
+            with open(file_uninstall, "w") as outfile:
+                for p in self.pkg_list_removal:
+                    outfile.write("{} ".format(p))
+
+        if shell_fallback:
+            if self.dev:
+                os.system('gksu-polkit ./app-install')
+            else:
+                os.system('gksu-polkit app-install')
+
+        self.reload_app_data(self.preferences["data_set"])
+
+    @staticmethod
+    def app_installed(package):
+        if glob.glob("/var/lib/pacman/local/{}-[0-9]*".format(package)):
+            return True
+        return False
+
+    @staticmethod
+    def fix_path(path):
+        """Make good paths.
+        :param path: path to fix
+        :type path: str
+        :return: fixed path
+        :rtype: str
+        """
+        if "~" in path:
+            path = path.replace("~", os.path.expanduser("~"))
+        return path
+
+    @staticmethod
+    def net_check():
+        """Check for internet connection"""
+        resp = None
+        host = "https://gitlab.manjaro.org"
+        # noinspection PyBroadException
+        try:
+            resp = urllib.request.urlopen(host, timeout=2)
+        except Exception:
+            pass
+        return bool(resp)
+
+    @staticmethod
+    def read_json_file(filename, dictionary=True):
+        """Read json data from file"""
+        result = list()
+        try:
+            if dictionary:
+                with open(filename, "rb") as infile:
+                    result = json.loads(
+                        infile.read().decode("utf8"),
+                        object_pairs_hook=collections.OrderedDict)
+            else:
+                with open(filename, "r") as infile:
+                    result = json.load(infile)
+        except OSError:
+            pass
+        return result
+
+    @staticmethod
+    def write_json_file(data, filename, dictionary=False):
+        """Writes data to file as json
+        :param data
+        :param filename:
+        :param dictionary:
+        """
+        try:
+            if dictionary:
+                with open(filename, "wb") as outfile:
+                    json.dump(data, outfile)
+            else:
+                with open(filename, "w") as outfile:
+                    json.dump(data, outfile, indent=2)
+            return True
+        except OSError:
+            return False
+
+
+class Hello(Gtk.Window):
     """Hello"""
 
     def __init__(self):
+        Gtk.Window.__init__(self, title="Manjaro Hello", border_width=6)
         self.app = "manjaro-hello"
         self.dev = "--dev" in sys.argv  # Dev mode activated ?
+
+        # used by application utility
+        self.app_store = None
+        self.pkg_selected = None
+        self.pkg_installed = None
+        self.pkg_list_install = []
+        self.pkg_list_removal = []
 
         # Load preferences
         if self.dev:
@@ -88,6 +422,8 @@ class Hello():
            os.path.isfile(self.preferences["installer_path"]):
             self.builder.get_object("installlabel").set_visible(True)
             self.builder.get_object("install").set_visible(True)
+        else:
+            self.builder.get_object("applications").set_visible(True)
 
         self.window.show()
 
@@ -238,10 +574,14 @@ class Hello():
             dialog = self.builder.get_object("aboutdialog")
             dialog.run()
             dialog.hide()
+        elif name == "applications":
+            win = Applications()
+            win.show_all()
 
     def on_btn_clicked(self, btn):
         """Event for clicked button."""
         name = btn.get_name()
+        print(name)
         self.builder.get_object("home").set_sensitive(not name == "home")
         self.builder.get_object("stack").set_visible_child_name(name + "page")
 
@@ -296,6 +636,7 @@ def write_json(path, content):
     except OSError as error:
         print(error)
 
+
 def get_lsb_infos():
     """Read informations from the lsb-release file.
     :return: args from lsb-release file
@@ -318,5 +659,6 @@ def get_lsb_infos():
 
 
 if __name__ == "__main__":
-    Hello()
+    hello = Hello()
+    hello.connect("destroy", Gtk.main_quit)
     Gtk.main()
