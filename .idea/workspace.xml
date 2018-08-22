@@ -2,41 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1878e107-6f19-4cdd-96ac-cf56d1731299" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/advanced.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/default.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app-install" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app-utility" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/preferences.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/preferences.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manjaro_hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/manjaro_hello.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/manjaro-hello.glade" beforeDir="false" afterPath="$PROJECT_DIR$/ui/manjaro-hello.glade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/app-utility">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="450">
-                    <caret line="63" column="9" lean-forward="true" selection-start-line="62" selection-end-line="64" selection-end-column="40" />
-                    <folding>
-                      <element signature="e#1167#1185#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1179412992">
@@ -49,6 +22,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="app-utility" value="2" />
+          <entry key="gitignore" value="1" />
           <entry key="json" value="1" />
           <entry key="py" value="1" />
         </counts>
@@ -56,6 +30,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="3" />
         </counts>
       </usages-collector>
@@ -63,15 +38,16 @@
         <counts>
           <entry key="app-utility" value="29" />
           <entry key="dummy" value="41" />
+          <entry key="gitignore" value="6" />
           <entry key="json" value="45" />
-          <entry key="py" value="962" />
+          <entry key="py" value="1001" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="45" />
-          <entry key="PLAIN_TEXT" value="41" />
-          <entry key="Python" value="991" />
+          <entry key="PLAIN_TEXT" value="47" />
+          <entry key="Python" value="1030" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -79,16 +55,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/manjaro_hello.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-213">
-              <caret line="194" column="88" selection-start-line="194" selection-start-column="88" selection-end-line="194" selection-end-column="88" />
+            <state relative-caret-position="-315">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
-                <marker date="1534955350678" expanded="true" signature="7207:7233" ph="..." />
-                <marker date="1534955350678" expanded="true" signature="17177:17181" ph="..." />
+                <marker date="1534955423121" expanded="true" signature="7207:7233" ph="..." />
+                <marker date="1534955423121" expanded="true" signature="17177:17181" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -121,6 +106,7 @@
         <option value="$PROJECT_DIR$/data/preferences.json" />
         <option value="$PROJECT_DIR$/src/app-utility" />
         <option value="$PROJECT_DIR$/src/manjaro_hello.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -209,15 +195,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="146" y="68" width="1398" height="965" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32893157" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32893157" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -270,13 +257,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/manjaro_hello.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-213">
-          <caret line="194" column="88" selection-start-line="194" selection-start-column="88" selection-end-line="194" selection-end-column="88" />
+        <state relative-caret-position="-315">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
           <folding>
             <element signature="e#24#42#0" expanded="true" />
-            <marker date="1534955350678" expanded="true" signature="7207:7233" ph="..." />
-            <marker date="1534955350678" expanded="true" signature="17177:17181" ph="..." />
+            <marker date="1534955423121" expanded="true" signature="7207:7233" ph="..." />
+            <marker date="1534955423121" expanded="true" signature="17177:17181" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
