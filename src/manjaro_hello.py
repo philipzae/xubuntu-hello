@@ -1,21 +1,34 @@
 #!/usr/bin/env python3
 
 import gettext
+import gi
 import json
 import locale
+import logging
 import os
 import subprocess
 import sys
 import webbrowser
-import gi
+
+try:
+    from application_utility.browser.application_browser import ApplicationBrowser
+    from application_utility.browser.exceptions import NoAppInIsoError
+    from application_utility.browser.hello_config import HelloConfig
+    APPS_PLUGIN = True
+
+except ModuleNotFoundError as e:
+    APPS_PLUGIN = False
+    print(f"Warning: Application Browser plugin not found : {e}")
+
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf
 
 
-class Hello():
+class Hello(Gtk.Window):
     """Hello"""
 
     def __init__(self):
+        Gtk.Window.__init__(self, title="Manjaro Hello", border_width=6)
         self.app = "manjaro-hello"
         self.dev = "--dev" in sys.argv  # Dev mode activated ?
 
@@ -23,12 +36,11 @@ class Hello():
         if self.dev:
             self.preferences = read_json("data/preferences.json")
             self.preferences["data_path"] = "data/"
-            self.preferences["desktop_path"] = os.getcwd() + "/{}.desktop".format(self.app)
+            self.preferences["desktop_path"] = os.getcwd() + f"/{self.app}.desktop"
             self.preferences["locale_path"] = "locale/"
-            self.preferences["ui_path"] = "ui/{}.glade".format(self.app)
+            self.preferences["ui_path"] = f"ui/{self.app}.glade"
         else:
-            self.preferences = read_json("/usr/share/{}/data/preferences.json".format(self.app))
-
+            self.preferences = read_json(f"/usr/share/{self.app}/data/preferences.json")
         # Get saved infos
         self.save = read_json(self.preferences["save_path"])
         if not self.save:
@@ -55,7 +67,7 @@ class Hello():
 
         for widget in self.builder.get_object("homepage").get_children():
             if isinstance(widget, Gtk.Button) and \
-               widget.get_image_position() is Gtk.PositionType.RIGHT:
+                    widget.get_image_position() is Gtk.PositionType.RIGHT:
                 img = Gtk.Image.new_from_file(
                     self.preferences["data_path"] + "img/external-link.png")
                 img.set_margin_left(2)
@@ -84,10 +96,17 @@ class Hello():
         self.builder.get_object("autostart").set_active(self.autostart)
 
         # Live systems
-        if os.path.exists(self.preferences["live_path"]) and \
-           os.path.isfile(self.preferences["installer_path"]):
+        if os.path.exists(self.preferences["live_path"]) and os.path.isfile(self.preferences["installer_path"]):
             self.builder.get_object("installlabel").set_visible(True)
             self.builder.get_object("install").set_visible(True)
+        # Installed systems
+        else:
+            if APPS_PLUGIN:
+                conf = HelloConfig(application="manjaro-hello")
+                app_browser = ApplicationBrowser(conf, self)
+                # create page install Applications
+                self.builder.get_object("stack").add_named(app_browser, "appBrowserpage")
+                self.builder.get_object("appBrowser").set_visible(True)
 
         self.window.show()
 
@@ -115,24 +134,24 @@ class Hello():
             else:
                 return self.preferences["default_locale"]
 
-    def set_locale(self, locale):
+    def set_locale(self, use_locale):
         """Set locale of ui and pages.
-        :param locale: locale to use
-        :type locale: str
+        :param use_locale: locale to use
+        :type use_locale: str
         """
         try:
             translation = gettext.translation(self.app, self.preferences[
-                "locale_path"], [locale], fallback=True)
+                "locale_path"], [use_locale], fallback=True)
             translation.install()
         except OSError:
             return
 
-        self.save["locale"] = locale
+        self.save["locale"] = use_locale
 
         # Real-time locale changing
 
         elts = {
-            "comments": { "aboutdialog"},
+            "comments": {"aboutdialog"},
             "label": {
                 "autostartlabel",
                 "development",
@@ -193,14 +212,14 @@ class Hello():
             i3_config = fix_path("~/.i3/config")
             if os.path.isfile(i3_config):
                 i3_autostart = "exec --no-startup-id " + self.app
-                with open(i3_config, "r+") as fil:
-                    content = fil.read()
-                    fil.seek(0)
+                with open(i3_config, "r+") as file:
+                    content = file.read()
+                    file.seek(0)
                     if autostart:
-                        fil.write(content.replace("#" + i3_autostart, i3_autostart))
+                        file.write(content.replace("#" + i3_autostart, i3_autostart))
                     else:
-                        fil.write(content.replace(i3_autostart, "#" + i3_autostart))
-                    fil.truncate()
+                        file.write(content.replace(i3_autostart, "#" + i3_autostart))
+                    file.truncate()
             self.autostart = autostart
         except OSError as error:
             print(error)
@@ -215,7 +234,7 @@ class Hello():
         filename = self.preferences["data_path"] + "pages/{}/{}".format(self.save["locale"], name)
         if not os.path.isfile(filename):
             filename = self.preferences["data_path"] + \
-                "pages/{}/{}".format(self.preferences["default_locale"], name)
+                       "pages/{}/{}".format(self.preferences["default_locale"], name)
         try:
             with open(filename, "r") as fil:
                 return fil.read()
@@ -238,9 +257,13 @@ class Hello():
             dialog = self.builder.get_object("aboutdialog")
             dialog.run()
             dialog.hide()
+        elif name == "appBrowser":
+            # or use only "on_btn_clicked" ?
+            self.builder.get_object("home").set_sensitive(not name == "home")
+            self.builder.get_object("stack").set_visible_child_name(name + "page")
 
     def on_btn_clicked(self, btn):
-        """Event for clicked button."""
+        """Event for applications button."""
         name = btn.get_name()
         self.builder.get_object("home").set_sensitive(not name == "home")
         self.builder.get_object("stack").set_visible_child_name(name + "page")
@@ -296,14 +319,15 @@ def write_json(path, content):
     except OSError as error:
         print(error)
 
+
 def get_lsb_infos():
     """Read informations from the lsb-release file.
     :return: args from lsb-release file
     :rtype: dict"""
     lsb = {}
     try:
-        with open("/etc/lsb-release") as fil:
-            for line in fil:
+        with open("/etc/lsb-release") as lsb_release:
+            for line in lsb_release:
                 if "=" in line:
                     var, arg = line.rstrip().split("=")
                     if var.startswith("DISTRIB_"):
@@ -312,11 +336,14 @@ def get_lsb_infos():
                         arg = arg[1:-1]
                     if arg:
                         lsb[var] = arg
-    except OSError as error:
+    except (OSError, KeyError) as error:
         print(error)
+        return 'not Manjaro', '0.0'
     return lsb["CODENAME"], lsb["RELEASE"]
 
 
 if __name__ == "__main__":
-    Hello()
+    logging.basicConfig(level=logging.DEBUG)
+    hello = Hello()
+    hello.connect("destroy", Gtk.main_quit)
     Gtk.main()
