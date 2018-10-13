@@ -1,27 +1,28 @@
-<big>Manjaro 17.1</big>
+<big>Manjaro 18.0</big>
 
-Nous sommes heureux de publier une autre version stable de Manjaro Linux, que nous appelons Hakoila.
+We are happy to publish another stable release of Manjaro Linux, we call Illyira.
 
-L'édition Xfce reste notre offre phare et a reçu l'attention qu'elle mérite. Peu de gens peuvent prétendre offrir une expérience Xfce aussi polie, intégrée et avant-gardiste. Nous expédions Xfce 4.12 avec cette version de Manjaro. Nous nous sommes concentrés principalement sur l'amélioration de l'expérience utilisateur sur le bureau et le gestionnaire de fenêtres, et sur la mise à jour de certains composants pour profiter des nouvelles technologies disponibles, comme le passage à un nouveau thème Vertex-Maia.
+The Xfce edition remains our flagship offering and has received the attention it deserves. Few can claim to offer such a polished, integrated and leading-edge Xfce experience. We ship Xfce 4.13 with this release of Manjaro. 
 
-Notre édition de KDE continue d'offrir cet environnement de bureau puissant, mature et riche en fonctionnalités avec un aspect unique et avec les avantages des derniers outils de Manjaro. Nous livrons maintenant Plasma 5.11 desktop en combinaison avec les dernières KDE-Apps 17.12. Ce fut un grand pas en avant pour que tout se passe harmonieusement et que l'expérience de l'utilisateur soit la même que celle de nos éditions KDE4 du passé.
+We mainly focused on polishing the user experience on the desktop and window manager, and on updating some components to take advantage of newly available technologies such as switching to a new theme we call Matcha. The new feature Display-Profiles allows you to store one or more profiles for a particular display configuration that you may be using. To make the deal a little sweeter we implemented auto-applying of profiles when new displays are connected.
 
-Le noyau 4.14 est utilisé pour cette version, comme les derniers pilotes disponibles à ce jour. Par rapport à la dernière version des médias d'installation, nos outils ont été améliorés et polis.
+Our KDE edition continues to deliver this powerful, mature and feature-rich desktop environment with a unique look-and-feel, and with the perks of Manjaro's latest tools. We ship now Plasma 5.14 desktop in combination with the latest KDE-Apps 18.08. There's a new Display Configuration widget for screen management which is useful for presentations. Switching primary monitor when plugging in or unplugging monitors is now smoother. The Network widget now works for SSH VPN tunnels again. The Audio Volume widget now has a built in speaker test feature moved from Phonon settings and Plasma now warns on logout when other users are logged in.
 
-Le Gestionnaire de paramètres Manjaro (MSM) fournit maintenant une interface graphique facile à utiliser pour installer et supprimer les nombreuses séries de noyaux que nous offrons. La sélection par Manjaro de noyaux facilement disponibles reste la plus vaste de toutes les distributions de Linux que nous connaissons. Au moment de cette publication, neuf séries de noyaux sont disponibles directement à partir de nos dépôts binaires, allant de la maturité de la série solide 3.16 à la dernière version 4.15. De plus, nous offrons deux séries de noyaux en temps réel. Un tel éventail d'options de noyau disponibles résulte en un support matériel étendu, tirant le meilleur parti de votre système pour vous, qu'il soit ancien ou nouveau.
+Kernel 4.19 LTS is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
 
-Avec Pamac v6.2, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
+The Manjaro Settings Manager (MSM) now provides an easy-to-use graphical interface for installing and removing the many series of kernels we offer. Manjaro's selection of readily available kernels remains the most extensive of all Linux distribution we know of. At the time of this release, eight kernel-series are available directly from our binary repositories, ranging from the mature &amp; rock-solid 3.16 series to the latest 4.19 release. Additionally we offer three realtime kernel series. Such a wide array of available kernel options results in extensive hardware support, getting the most out of your system for you, be it old or new.
 
-     - redesign complet
-     - ajout de catégories
-     - utilisation des données appstream
-     - mises à jour des traductions et d'autres petites corrections
+With Pamac v7.1 we fixed known issues and added new functions. Followed features you can expect:
 
-Avec Manjaro Settings Manager, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
+    - we added a CLI mode to pamac, which acts similar to apt-get
+    - AUR packages can be installed from UI and CLI mode
+    - usage of appstream data
+    - updated translations and fixed other small issues
 
-     - mises à jour des notes de version pour tous les noyaux supportés
-     - amélioration des paramètres d'horloge ntp
-     - améliorations de l'interface
-     - traductions mises à jour
+With Manjaro Hello we added new functions. Followed features you can expect:
 
-Nous espérons que vous apprécierez cette version et laissez-nous savoir ce que vous pensez de Hakoila.
+    - you can now maintain suggested packages by the community directly in the welcome screen under the applications option
+    - UI enhancements
+    - updated translations
+
+We hope you enjoy this release and let us know what you think of Illyira.
