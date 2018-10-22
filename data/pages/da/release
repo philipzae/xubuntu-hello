@@ -12,12 +12,14 @@ Kernel 4.19 LTS is used for this release, such as the latest drivers available t
 
 The Manjaro Settings Manager (MSM) now provides an easy-to-use graphical interface for installing and removing the many series of kernels we offer. Manjaro's selection of readily available kernels remains the most extensive of all Linux distribution we know of. At the time of this release, eight kernel-series are available directly from our binary repositories, ranging from the mature &amp; rock-solid 3.16 series to the latest 4.19 release. Additionally we offer three realtime kernel series. Such a wide array of available kernel options results in extensive hardware support, getting the most out of your system for you, be it old or new.
 
-With Pamac v7.1 we fixed known issues and added new functions. Followed features you can expect:
+With Pamac v7.2 we fixed known issues and added new functions. Followed features you can expect:
 
-    - we added a CLI mode to pamac, which acts similar to apt-get
-    - AUR packages can be installed from UI and CLI mode
-    - usage of appstream data
-    - updated translations and fixed other small issues
+    - pamac-gtk: add edit build files support
+    - pamac-cli: add edit build files support
+    - pamac-cli: add clone action
+    - pamac-cli: build action now has an --no-clone option to only use local build files
+    - pamac-cli: build action without argument now tries to build from the PKGBUILD in the current dir
+    - pamac-cli: added a CLI mode to pamac, which acts similar to apt-get
 
 With Manjaro Hello we added new functions. Followed features you can expect:
 
