@@ -1,30 +1,30 @@
 <big>Manjaro 18.0</big>
 
-We are happy to publish another stable release of Manjaro Linux, we call Illyira.
+Estamos felizes em publicar outro lançamento estável do Manjaro Linux, que chamamos de Illyria.
 
-The Xfce edition remains our flagship offering and has received the attention it deserves. Few can claim to offer such a polished, integrated and leading-edge Xfce experience. We ship Xfce 4.13 with this release of Manjaro. 
+A edição Xfce continua sendo nossa oferta principal e recebeu a atenção que merece. Poucos podem alegar oferecer uma experiência Xfce tão polida, integrada e de ponta. Nós enviamos o Xfce 4.13 com este lançamento do Manjaro.
 
-We mainly focused on polishing the user experience on the desktop and window manager, and on updating some components to take advantage of newly available technologies such as switching to a new theme we call Adapta-Maia. The new feature Display-Profiles allows you to store one or more profiles for a particular display configuration that you may be using. To make the deal a little sweeter we implemented auto-applying of profiles when new displays are connected.
+Focamos principalmente no aprimoramento da experiência do usuário no desktop e no gerenciador de janelas e na atualização de alguns componentes para aproveitar as novas tecnologias disponíveis, como a mudança para um novo tema que chamamos de Matcha. O novo recurso Display-Profiles permite que você armazene um ou mais perfis para uma determinada configuração de exibição que você pode estar usando. Para tornar o negócio um pouco mais doce, implementamos a aplicação automática de perfis quando novos monitores são conectados.
 
-Our KDE edition continues to deliver this powerful, mature and feature-rich desktop environment with a unique look-and-feel, and with the perks of Manjaro's latest tools. We ship now Plasma 5.14 desktop in combination with the latest KDE-Apps 18.08. There's a new Display Configuration widget for screen management which is useful for presentations. Switching primary monitor when plugging in or unplugging monitors is now smoother. The Network widget now works for SSH VPN tunnels again. The Audio Volume widget now has a built in speaker test feature moved from Phonon settings and Plasma now warns on logout when other users are logged in.
+Nossa edição do KDE continua a oferecer esse poderoso, maduro e rico ambiente de desktop com uma aparência única e com as vantagens das ferramentas mais recentes do Manjaro. Nós enviamos agora o desktop Plasma 5.14 em combinação com o mais recente KDE-Apps 18.08. Há um novo widget Configuração de exibição para gerenciamento de tela, que é útil para apresentações. Alternar o monitor principal ao conectar ou desconectar os monitores agora é mais suave. O widget de rede agora funciona novamente para túneis de SSH VPN. O widget Volume de áudio agora possui um recurso de teste de alto-falante embutido movido das configurações do Phonon e o Plasma agora avisa quando você faz logout quando outros usuários estão conectados.
 
-Kernel 4.19 LTS is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
+O kernel 4.19 LTS é usado para esta versão, como os drivers mais recentes disponíveis até o momento. Em relação à última versão de mídia de instalação, nossas ferramentas foram aprimoradas e aprimoradas.
 
-The Manjaro Settings Manager (MSM) now provides an easy-to-use graphical interface for installing and removing the many series of kernels we offer. Manjaro's selection of readily available kernels remains the most extensive of all Linux distribution we know of. At the time of this release, eight kernel-series are available directly from our binary repositories, ranging from the mature &amp; rock-solid 3.16 series to the latest 4.19 release. Additionally we offer three realtime kernel series. Such a wide array of available kernel options results in extensive hardware support, getting the most out of your system for you, be it old or new.
+O Manjaro Settings Manager (MSM) agora fornece uma interface gráfica fácil de usar para instalar e remover as muitas séries de kernels que oferecemos. A seleção de kernels prontamente disponíveis do Manjaro continua sendo a mais extensa de toda a distribuição Linux que conhecemos. No momento deste lançamento, oito séries de kernel estão disponíveis diretamente de nossos repositórios binários, desde o diretório maduro e série rock-solid 3.16 para a última versão 4.19. Além disso, oferecemos três séries de kernel em tempo real. Um vasto leque de opções de kernel disponíveis resulta em extenso suporte de hardware, obtendo o máximo do seu sistema para você, seja ele antigo ou novo.
 
-With Pamac v7.2 we fixed known issues and added new functions. Followed features you can expect:
+Com o Pamac v7.2 corrigimos problemas conhecidos e adicionamos novas funções. Recursos seguidos que você pode esperar:
 
-    - pamac-gtk: add edit build files support
-    - pamac-cli: add edit build files support
-    - pamac-cli: add clone action
-    - pamac-cli: build action now has an --no-clone option to only use local build files
-    - pamac-cli: build action without argument now tries to build from the PKGBUILD in the current dir
-    - pamac-cli: added a CLI mode to pamac, which acts similar to apt-get
+    - pamac-gtk: adicionar suporte para editar arquivos de compilação
+    - pamac-cli: adicionar suporte para editar arquivos de compilação
+    - pamac-cli: adicionar ação clone
+    - pamac-cli: build action agora tem uma opção --no-clone para usar somente arquivos de compilação locais
+    - pamac-cli: construção de ação sem argumento agora tenta construir a partir do PKGBUILD no diretório atual
+    - pamac-cli: adicionou um modo CLI ao pamac, que age de forma semelhante ao apt-get
 
-With Manjaro Hello we added new functions. Followed features you can expect:
+Com o Manjaro Hello, adicionamos novas funções. Recursos seguidos que você pode esperar:
 
-    - you can now maintain suggested packages by the community directly in the welcome screen under the applications option
-    - UI enhancements
-    - updated translations
+    - agora você pode manter os pacotes sugeridos pela comunidade diretamente na tela de boas vindas na opção de aplicativos
+    - Melhorias na interface do usuário
+    - traduções atualizadas
 
-We hope you enjoy this release and let us know what you think of Illyira.
+Esperamos que você aproveite este lançamento e nos diga o que você acha da Illyria.
