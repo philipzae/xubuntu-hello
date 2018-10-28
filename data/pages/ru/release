@@ -1,30 +1,30 @@
 <big>Manjaro 18.0</big>
 
-We are happy to publish another stable release of Manjaro Linux, we call Illyria.
+Мы с радостью сообщаем о выходе новой стабильной версии Manjaro Linux, которую мы назвали Illyira (Иллирия).
 
-The Xfce edition remains our flagship offering and has received the attention it deserves. Few can claim to offer such a polished, integrated and leading-edge Xfce experience. We ship Xfce 4.13 with this release of Manjaro. 
+Xfce, которое по-прежнему является основным окружением рабочего стола в Manjaro, было уделено заслуженное внимание. Немногие могут похвастаться наличием настолько отлаженного, хорошо интегрированного и современного окружения на базе Xfce. Настоящий выпуск Manjaro включает в себя Xfce версии 4.13. 
 
-We mainly focused on polishing the user experience on the desktop and window manager, and on updating some components to take advantage of newly available technologies such as switching to a new theme we call Adapta-Maia. The new feature Display-Profiles allows you to store one or more profiles for a particular display configuration that you may be using. To make the deal a little sweeter we implemented auto-applying of profiles when new displays are connected.
+Главным образом мы сосредоточились на улучшении пользовательского опыта в части рабочего стола и оконного менеджера, а также на обновлении некоторых компонентов, позволяющих воспользоваться преимуществами новых технологий, например, был осуществлён переход на новую тему под названием Matcha. Новая функция "Профили экрана" позволяет иметь несколько профилей для определённых конфигураций дисплея, которые могут быть вам необходимы. Более того, мы внедрили автоматическое применение профилей при подключении новых дисплеев.
 
-Our KDE edition continues to deliver this powerful, mature and feature-rich desktop environment with a unique look-and-feel, and with the perks of Manjaro's latest tools. We ship now Plasma 5.14 desktop in combination with the latest KDE-Apps 18.08. There's a new Display Configuration widget for screen management which is useful for presentations. Switching primary monitor when plugging in or unplugging monitors is now smoother. The Network widget now works for SSH VPN tunnels again. The Audio Volume widget now has a built in speaker test feature moved from Phonon settings and Plasma now warns on logout when other users are logged in.
+Наша редакция на базе KDE содержит это мощное, зрелое и многофункциональное рабочее окружение вкупе с уникальным стилем оформления и преимуществами новейших разработок Manjaro. В этой редакции мы представляем рабочий стол Plasma 5.14 в сочетании с новейшими приложениями KDE 18.08. Появился новый виджет конфигурации дисплея, который будет полезен для презентаций. Переключение основного дисплея при подключении или отключении мониторов теперь осуществляется гораздо плавнее. Виджет сетей теперь снова поддерживает SSH VPN туннели. Виджет громкости получил встроенную функцию проверки работы динамиков, перемещённую из настроек Phonon, а Plasma теперь предупреждает при попытке выйти из системы, когда другие пользователи работают с ней.
 
-Kernel 4.19 LTS is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
+В этом релизе по умолчанию используется ядро версии 4.19 с длительным циклом поддержки (LTS), а также последние версии драйверов, доступных на настоящий момент. Наш инструментарий был усовершенствован по сравнению с предыдущей версией установочного образа.
 
-The Manjaro Settings Manager (MSM) now provides an easy-to-use graphical interface for installing and removing the many series of kernels we offer. Manjaro's selection of readily available kernels remains the most extensive of all Linux distribution we know of. At the time of this release, eight kernel-series are available directly from our binary repositories, ranging from the mature &amp; rock-solid 3.16 series to the latest 4.19 release. Additionally we offer three realtime kernel series. Such a wide array of available kernel options results in extensive hardware support, getting the most out of your system for you, be it old or new.
+Менеджер настроек Manjaro (MSM) отныне располагает лёгким в использовании графическим интерфейсом для установки и удаления различных версий ядер, которые мы предоставляем. Диапазон версий ядер, доступных в нашем репозитории, по-прежнему является наиболее широким среди всех дистрибутивов Linux, которые мы знаем. На момент релиза данной версии Manjaro доступно восемь версий – от стабильной и проверенной временем версии 3.16 до новейшей 4.19. Помимо этого, доступны три версии ядер, работающих в режиме реального времени (RT). Настолько разнообразный выбор доступных ядер обеспечивает широкую поддержку оборудования, позволяя вашему компьютеру работать с полной отдачей, неважно, старый он или новый.
 
-With Pamac v7.2 we fixed known issues and added new functions. Followed features you can expect:
+В Pamac версии 7.2 исправлены известные ошибки и добавлены новые функции:
 
-    - pamac-gtk: add edit build files support
-    - pamac-cli: add edit build files support
-    - pamac-cli: add clone action
-    - pamac-cli: build action now has an --no-clone option to only use local build files
-    - pamac-cli: build action without argument now tries to build from the PKGBUILD in the current dir
-    - pamac-cli: added a CLI mode to pamac, which acts similar to apt-get
+    - pamac-gtk: добавлена поддержка редактирования файлов сборки
+    - pamac-cli: добавлена поддержка редактирования файлов сборки
+    - pamac-cli: добавлено действие клонирования
+    - pamac-cli: действие сборки теперь имеет опцию --no-clone, которая позволяет использовать только локальные файлы сборки
+    - pamac-cli: действие сборки без аргументов отныне пытается собрать проект на базе PKGBUILD, находящегося в текущей директории
+    - pamac-cli: в pamac добавлен CLI, который работает похожим на apt-get способом
 
-With Manjaro Hello we added new functions. Followed features you can expect:
+Мы добавили новые функции в Manjaro Hello. Вот часть из них:
 
-    - you can now maintain suggested packages by the community directly in the welcome screen under the applications option
-    - UI enhancements
-    - updated translations
+    - теперь вы можете управлять предлагаемыми сообществом пакетами напрямую с приветственного экрана
+    - улучшения в пользовательском интерфейсе
+    - обновлены переводы
 
-We hope you enjoy this release and let us know what you think of Illyria.
+Мы надеемся, что вам понравится данный выпуск Manjaro и вы расскажете нам, что вы думаете по поводу Illyria.
