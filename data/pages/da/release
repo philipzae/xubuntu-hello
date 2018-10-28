@@ -1,30 +1,31 @@
 <big>Manjaro 18.0</big>
 
-We are happy to publish another stable release of Manjaro Linux, we call Illyria.
+Vi er glade for at præsentere den næste stabile udgave af Manjaro Linux, som vi har givet navnet Illyria.
 
-The Xfce edition remains our flagship offering and has received the attention it deserves. Few can claim to offer such a polished, integrated and leading-edge Xfce experience. We ship Xfce 4.13 with this release of Manjaro. 
+Xfce er stadig vores primære udgave og den får stadig den største opmærksomhed. Meget få distributioner kan tilbyde den samme tilpasning hvor de mindste detaljer er finpudset så vi har en af de bedste Xfce oplevelser. Med denne udgave af Manjaro bruges Xfce 4.13.
 
-We mainly focused on polishing the user experience on the desktop and window manager, and on updating some components to take advantage of newly available technologies such as switching to a new theme we call Adapta-Maia. The new feature Display-Profiles allows you to store one or more profiles for a particular display configuration that you may be using. To make the deal a little sweeter we implemented auto-applying of profiles when new displays are connected.
+Vores arbejde har været fokuseret på forbedring af bruger oplevelsen både med skrivebords miljøet og den tilhørende vindues håndtering. Dette er gjort ved at opdatere forskellige komponenter blandt andet et skrivebordstema vi kalder Adapta-Mia. Den nye mulighed der kaldes Display-Profiles eller Skærm-Profiler lader dig oprette og gemme en eller flere profiler for en specifik skærmopsætning. For at gøre det hele lidt bedre bliver profilerne automatisk anvendt når skærmen tilsluttes.
 
-Our KDE edition continues to deliver this powerful, mature and feature-rich desktop environment with a unique look-and-feel, and with the perks of Manjaro's latest tools. We ship now Plasma 5.14 desktop in combination with the latest KDE-Apps 18.08. There's a new Display Configuration widget for screen management which is useful for presentations. Switching primary monitor when plugging in or unplugging monitors is now smoother. The Network widget now works for SSH VPN tunnels again. The Audio Volume widget now has a built in speaker test feature moved from Phonon settings and Plasma now warns on logout when other users are logged in.
+Vores KDE udgave er forsat et kraftværk der leverer et modent skrivebord med en overdådighed af tilpasningsmuligheder. KDE har et unikt udseende og workflow og fungerer naturligvis med Manjaros seneste værktøjer. Plasma 5.14 i kombination med de nyeste KDE-Apps 18.08. Der er nu en Skærm-Opsætning widget som er specielt anvendelig ved præsentationer. Skift af primær skærm når skærme tilsluttes eller fjernes er nu endnu lettere. Netværk widget virker igen med SSH VPN tunneller. Lydstyrke widget har fået en indbygget højttaler test. Testen er flyttet fra Phonon indstinger og Plasma vil ved logout advare hvis andre brugere er logget på.
 
-Kernel 4.19 LTS is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
+Linux kerne 4.19 LTS er brugt til denne udgave ligesom og i forhold til udgivelses tidspunktet er det de nyeste drivere og programmer der er installeret.
 
-The Manjaro Settings Manager (MSM) now provides an easy-to-use graphical interface for installing and removing the many series of kernels we offer. Manjaro's selection of readily available kernels remains the most extensive of all Linux distribution we know of. At the time of this release, eight kernel-series are available directly from our binary repositories, ranging from the mature &amp; rock-solid 3.16 series to the latest 4.19 release. Additionally we offer three realtime kernel series. Such a wide array of available kernel options results in extensive hardware support, getting the most out of your system for you, be it old or new.
+Manjaro Settings Manager (MSM) har er en brugbar app der gør installation og fjernelse af de forskellige kerner til en smal sag. På udgivelsestidspunktet er det muligt at installeret otte kerner. Dette mulighed gør Manjaro til - så vidt vi ved - den distribution der giver flest muligheder på dette område. Kernerne rangerer for den solide 3.16 til den seneste 4.19 LTS udgivelse. Yderligere har Manjaro tre realtids kerner. En sådan bredde giver alle typer hardware mulighed for at bruge Manjaro og du kan få det meste ud af dit system enten det er gammelt eller nyt.
 
-With Pamac v7.2 we fixed known issues and added new functions. Followed features you can expect:
+Med Pamac v7.2 er kendte problemer rettet og nye funktioner tilføjet. Følgende er ny funktionalitet:
 
-    - pamac-gtk: add edit build files support
-    - pamac-cli: add edit build files support
-    - pamac-cli: add clone action
-    - pamac-cli: build action now has an --no-clone option to only use local build files
-    - pamac-cli: build action without argument now tries to build from the PKGBUILD in the current dir
-    - pamac-cli: added a CLI mode to pamac, which acts similar to apt-get
+    - pamac-gtk: tilføjet redigering af PKGBUILD filer
+    - pamac-cli: tilføjet CLI til pamac, fungerer som apt-get
+    - pamac-cli: tilføjet redigering af PKGBUILD filer
+    - pamac-cli: tilføjet kloning funktion
+    - pamac-cli: build har nu en --no-clone mulighed så der kun bruges lokale filer
+    - pamac-cli: build uden argumenter prøver at bruge PKGBUILD i den aktuelle mappe
+    
 
-With Manjaro Hello we added new functions. Followed features you can expect:
+Med Manjaro Hello er nye funktioner tilføjet. Følgende er ny funktionalitet: 
 
-    - you can now maintain suggested packages by the community directly in the welcome screen under the applications option
-    - UI enhancements
-    - updated translations
+    - du kan vedligeholde programmer foreslået af fællesskabet direkte fra Velkomen billedet ved at bruge muligheden Programmer
+    - UI forbedringer
+    - opdaterede oversættelser
 
-We hope you enjoy this release and let us know what you think of Illyria.
+Vi håber du vil få god gavn af denne udgivelse. Lad os endelig vide hvad du mener om Illyria.

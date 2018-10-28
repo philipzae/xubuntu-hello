@@ -1,14 +1,14 @@
 <big>Hardwarehåndtering</big>
 
-Manjaro understøtter ikke alene anvendelsen af flere kerner (kan vælges under opstart via "Advanced options"), men giver også adgang til de aller nyeste kerner. Det gøres ved brug af kernemoduler i Manjaros grafiske indstillingshåndtering eller via kommandolinjen med MHWD-kernel-kommandoen (Manjaro hardwareregistrering).
+Manjaro leverer altid de aller nyeste kerner og giver desuden mulighed for at have flere kerner installeret og mulighed for frit at vælge en af disse før start af systemet. Vedligeholdelse af kerner findes i Manjaros grafiske indstillingshåndtering eller via kommandolinjen med MHWD-kernel-kommandoen (Manjaro hardwareregistrering).
 
-Disse Manjaro-værktøjer opdaterer automatisk en kerne som er blevet installeret for nyligt, samt moduler som er i brug med din eksisterende kerne. Hvis du f.eks. opdaterede fra kerne 3.18 to 4.1, så vil mhwd-kernel automatisk inkludere kerne 4.1-bygninger og alle alle moduler som bruges af kerne 3.18. Det er da smart!
+Disse Manjaro-værktøjer opdaterer automatisk en kerne som er blevet installeret for nyligt, samt moduler som er i brug med din eksisterende kerne. Hvis du f.eks. opdaterede fra kerne 4.14 to 4.19, så vil mhwd-kernel automatisk inkludere alle moduler som bruges af kerne 4.19. Det er da smart!
 
 Du kan konfigurere din hardware gennem hardwareregistrering-modulet, i indstillingshåndteringen eller med MHWD CLI-programmet. Med disse værktøjer kan du f.eks. installere drivere til grafikkort, frie og proprietære.
 
 <big>Få hjælp</big>
 
-Selvom Manjaro er designet til at virke så meget "ud af kassen" som muligt, så kan vi ikke påstå at Manjaro er perfekt. Nogen gange kan noget gå galt. Du har måske spørgsmål og et ønske om at lære mere eller du vil tilpasse noget til din personlige smag. Denne side giver dig et overblik over nogle af de tilgængelige ressourcer du har for at få hjælp.
+Selvom Manjaro er designet til at virke bedst muligt fra begyndelsen, så kan vi ikke påstå at Manjaro er perfekt. Nogen gange kan noget gå galt. Du har måske spørgsmål og et ønske om at lære mere eller du vil tilpasse noget til din personlige smag. Denne side giver dig et overblik over nogle af de tilgængelige ressourcer du har for at få hjælp.
 
 <b>Søg på webbet</b>
 
@@ -32,11 +32,12 @@ En tredje måde at få hjælp på er ved at sende spørgsmål via e-mail til en 
 
 <big>Andre ressourcer</big>
 
+    - <a href="https://forum.manjaro.org">Manjaro Forum</a> - Officiel Manjaro Forum (engelsk).
     - <a href="http://forum.manjarolinux.de">Manjaro Tyskland</a> - Officiel, support til vores tyske fællesskab.
-    - <a href="https://aur.archlinux.org">AUR-repository</a> - Ekstra software som ikke findes i de almindelige repositories. Bygges fra kildekode.
     - <a href="https://wiki.manjaro.org">Manjaro Wiki</a> - Officiel wiki til Manjaro.
-    - <a href="http://wiki.archlinux.org">Arch Wiki</a> - Officiel wiki til Arch.
     - <a href="http://manjaro.org/irc-channel">IRC Chat</a> - Livesnak og hjælp af brugere, til brugere.
+    - <a href="http://wiki.archlinux.org">Arch Wiki</a> - Officiel wiki til Arch.
+    - <a href="https://aur.archlinux.org">AUR-repository</a> - Ekstra software som ikke findes i de almindelige repositories. Bygges fra kildekode.
 
 <big>Forslag</big>
 
