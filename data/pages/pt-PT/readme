@@ -1,47 +1,47 @@
-<big>Handling hardware</big>
+<big>Manuseio de hardware</big>
 
-Manjaro not only supports the use of multiple kernels (selectable from the advanced options at the boot screen), but also provides access to the very latest bleeding edge kernels as well. This can be done through the use of the Kernel module in Manjaro's graphical Settings Manager, or via the command line using the MHWD-kernel (Manjaro Hardware Detection) command.
+Manjaro não só suporta o uso de vários kernels (selecionável a partir das opções avançadas na tela de inicialização), mas também fornece acesso aos mais recentes kernels de bordos de sangramento também. Isso pode ser feito através do uso do módulo Kernel no Gerenciador de Configurações gráficas do Manjaro ou através da linha de comando usando o comando MHWD-kernel (Manjaro Hardware Detection).
 
-These Manjaro tools will automatically update a newly installed kernel along with any modules currently in use with your existing kernel. For example, if you were to update from kernel 3.18 to 4.1, mhwd-kernel would automatically include the kernel 4.1 builds and all modules used with kernel 3.18. How about that!
+Essas ferramentas Manjaro atualizarão automaticamente um kernel recém-instalado juntamente com todos os módulos atualmente em uso com o kernel existente. Por exemplo, se você atualizar do kernel 3.18 para 4.1, o mhwd-kernel automaticamente incluiria as compilações do kernel 4.1 e todos os módulos usados ​​com o kernel 3.18. Que tal isso!
 
-You can configure your hardware through the Hardware Detection module in the Settings Manager or alternatively with the MHWD cli-application. With these tools you can install for example graphical drivers, free and proprietary.
+Você pode configurar seu hardware através do módulo de Detecção de Hardware no Gerenciador de Configurações ou, alternativamente, com o aplicativo cli do MHWD. Com essas ferramentas você pode instalar, por exemplo, drivers gráficos, gratuitos e proprietários.
 
-<big>Getting help</big>
+<big>Conseguindo ajuda</big>
 
-Although Manjaro is designed to work as much "out of the box" as possible, we don't claim it's perfect. There can be times when things go wrong, you might have questions and a desire to learn more or just want to personalise it to suit your tastes. This page provides details of some available resources to help you!
+Embora Manjaro é projetado para trabalhar tanto quanto possível, nós não afirmamos que é perfeito. Pode haver momentos em que as coisas dão errado, você pode ter perguntas e um desejo de aprender mais ou apenas deseja personalizá-lo para se adequar ao seu gosto. Esta página fornece detalhes de alguns recursos disponíveis para ajudá-lo!
 
-<b>Search the web</b>
+<b>Pesquise na internet</b>
 
-Perhaps the first place to look for generic Linux help is by using your favourite search engine. Just include words like 'Linux', 'Manjaro' or 'Arch' in your search query.
+Talvez o primeiro lugar para procurar ajuda genérica do Linux seja usando seu mecanismo de busca favorito. Basta incluir palavras como 'Linux', 'Manjaro' ou 'Arch' em sua consulta de pesquisa.
 
-As Manjaro is based on Arch Linux, guides and tips designed for Arch usually apply to Manjaro too.
+Como Manjaro é baseado em Arch Linux, guias e dicas projetadas para Arch geralmente se aplicam a Manjaro também.
 
-<b>Look in the forums</b>
+<b>Olhe nos fóruns</b>
 
-For specific help with Manjaro we have a dedicated online forum where you can search for topics, or create one yourself! This is probably the next best place to go for collaboration, discussion and assistance. Ask for help, post your thoughts, or outline some suggestions. Don't be shy!
+Para ajuda específica com Manjaro temos um fórum on-line dedicado onde você pode procurar por tópicos, ou criar um você mesmo! Este é provavelmente o melhor lugar para ir para a colaboração, discussão e assistência. Peça ajuda, coloque seus pensamentos ou esboce algumas sugestões. Não seja tímido!
 
-The Manjaro forum is divided into sub-forums for different topics and environments, please post your query in the appropriate place!
+O Fórum Manjaro está dividido em sub-fóruns para diferentes tópicos e ambientes, por favor, poste a sua consulta no local apropriado!
 
-<b>Join us on IRC (Internet Relay Chat)</b>
+<b>Junte-se a nós no IRC (Internet Relay Chat)</b>
 
-Another option is to join us on IRC by joining our #manjaro channel on the chat.freenode.net servers.
+Outra opção é juntar-se a nós no IRC, juntando-se ao nosso canal #manjaro nos servidores chat.freenode.net.
 
-<b>Sign up to a mailing list</b>
+<b>Inscreva-se em uma lista de discussão</b>
 
-Another way to get help is to email questions to Manjaro mailing list (you can also search the history for past discussions). Simply sign up to the list you prefer and follow the instructions. There is a list dedicated to several topics, just take a look!
+Outra maneira de obter ajuda é enviar e-mail perguntas para Manjaro mailing list (você também pode pesquisar o histórico de discussões anteriores). Simplesmente inscreva-se na lista que preferir e siga as instruções. Há uma lista dedicada a vários tópicos, basta dar uma olhada!
 
-<big>Other resources</big>
+<big>Outros recursos</big>
 
-    - <a href="http://forum.manjarolinux.de">Manjaro Germany</a> - Official, support for our german community.
-    - <a href="https://aur.archlinux.org">AUR Repository</a> - Extra software not in the regular repositories, built from source.
-    - <a href="https://wiki.manjaro.org">Manjaro Wiki</a> - Official wiki for Manjaro.
-    - <a href="http://wiki.archlinux.org">Arch Wiki</a> - Official wiki for Arch.
-    - <a href="http://manjaro.org/irc-channel">IRC Chat</a> - Live talk and help by users for users.
+    - <a href="http://forum.manjarolinux.de">Manjaro Germany</a> - Oficial, apoio para a nossa comunidade alemã.
+    - <a href="https://aur.archlinux.org">AUR Repository</a> - Software extra não disponível nos repositórios normais, construído a partir da fonte.
+    - <a href="https://wiki.manjaro.org">Manjaro Wiki</a> - Oficial wiki para Manjaro.
+    - <a href="http://wiki.archlinux.org">Arch Wiki</a> - Oficial wiki para Arch.
+    - <a href="http://manjaro.org/irc-channel">IRC Chat</a> - Conversa ao vivo e ajuda por usuários para usuários.
 
-<big>Suggestions</big>
+<big>Sugestões</big>
 
-Got a suggestion on how we can make Manjaro better? Found something you want included, or want to help out? Please let us know, by posting your suggestion on the forum or drop by on IRC.
+Tem uma sugestão sobre como podemos fazer Manjaro melhor? Encontrou algo que você deseja incluir, ou quer ajudar? Por favor, deixe-nos saber, por postar sua sugestão no fórum ou cair no IRC.
 
-Thank you!
+Obrigado!
 
-We hope you enjoy using Manjaro!
+Esperamos que você goste de usar Manjaro!
