@@ -2,7 +2,7 @@
 
 Vi er glade for at præsentere den næste stabile udgave af Manjaro Linux, som vi har givet navnet Illyria.
 
-Xfce er stadig vores primære udgave og den har fået den opmærksomhed den fortjener. Meget få distributioner kan tilbyde den samme tilpasning hvor de mindste detaljer er tilpasset så vi har en af de bedste Xfce oplevelser. Med denne udgave af Manjaro er det Xfce 4.13 vi bruger.
+Xfce er stadig vores primære udgave og den får stadig den største opmærksomhed. Meget få distributioner kan tilbyde den samme tilpasning hvor de mindste detaljer er finpudset så vi har en af de bedste Xfce oplevelser. Med denne udgave af Manjaro bruges Xfce 4.13.
 
 Vores arbejde har været fokuseret på forbedring af bruger oplevelsen både med skrivebords miljøet og den tilhørende vindues håndtering. Dette er gjort ved at opdatere forskellige komponenter blandt andet et skrivebordstema vi kalder Adapta-Mia. Den nye mulighed der kaldes Display-Profiles eller Skærm-Profiler lader dig oprette og gemme en eller flere profiler for en specifik skærmopsætning. For at gøre det hele lidt bedre bliver profilerne automatisk anvendt når skærmen tilsluttes.
 
