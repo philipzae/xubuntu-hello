@@ -1,27 +1,30 @@
-<big>Manjaro 17.1</big>
+<big>Manjaro 18.0</big>
 
-Örülünk, hogy eljutottunk a Manjaro következő kiadásáig, amely a Hakoila kódnevet kapta.
+We are happy to publish another stable release of Manjaro Linux, we call Illyria.
 
-Az Xfce kiadás továbbra is marad a zászlóshajóink között, és megkapta a neki járó figyelmet. Kevesen biztosítanak ennyire csiszolt, és naprakész Xfce tapasztalatot. A Manjaro ezen kiadásával az Xfce 4.12-es verzióját szállítjuk. Leginkább az asztal és az ablakkezelő felhasználói tapasztalatának csiszolására fókuszáltunk, és néhány komponens frissítésére, hogy az újonnan elérhető megoldásokból a lehető legtöbbet tudják kihozni, például az új Vertex-Maia témára való váltás.
+The Xfce edition remains our flagship offering and has received the attention it deserves. Few can claim to offer such a polished, integrated and leading-edge Xfce experience. We ship Xfce 4.13 with this release of Manjaro. 
 
-A KDE változat továbbra is biztosítja ezt az érett, nagy tudású környezetet, egyedi megjelenéssel, és a Manjaro legújabb ezközeivel. Ebben a kiadásban a Plasma 5.11 asztalt, és a KDE-Apps 17.12-t szállítjuk. Nagy munka volt, hogy minden simán működjön, és ugyanazt a felhasználói élményt nyújtsa, mint a régebbi KDE4 kiadások.
+We mainly focused on polishing the user experience on the desktop and window manager, and on updating some components to take advantage of newly available technologies such as switching to a new theme we call Adapta-Maia. The new feature Display-Profiles allows you to store one or more profiles for a particular display configuration that you may be using. To make the deal a little sweeter we implemented auto-applying of profiles when new displays are connected.
 
-A 4.14-es verziójú kernelt, valamint a legújabb drivereket szállítjuk ebben a kiadásban. Az eddigi kiadásokhoz képest az ezközeink sokat fejlődtek és csiszolódtak.
+Our KDE edition continues to deliver this powerful, mature and feature-rich desktop environment with a unique look-and-feel, and with the perks of Manjaro's latest tools. We ship now Plasma 5.14 desktop in combination with the latest KDE-Apps 18.08. There's a new Display Configuration widget for screen management which is useful for presentations. Switching primary monitor when plugging in or unplugging monitors is now smoother. The Network widget now works for SSH VPN tunnels again. The Audio Volume widget now has a built in speaker test feature moved from Phonon settings and Plasma now warns on logout when other users are logged in.
 
-A Manjaro Settings Manager (MSM) egy felhasználóbarát felületet biztosít az általunk szállított kernelek telepítésére, vagy eltávolítására. A Manjaro kernel kínálata továbbra is a legszélesebb az általunk ismert Linux disztribúciók közül. A kiadás időpontjában kilenc kernel verzió érhető el, a betonstabil 3.16-es verziótól a 4.15-es kiadásig. Ráadásul valós idejű (real time) kerneleket is biztosítunk. A kernel opciók nagy mennyisége széles hardver támogatást biztosít, a legtöbbet kihozva a gépedből, legyen az új, vagy régi.
+Kernel 4.19 LTS is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
 
-A Pamac v6.2-al fixáltunk több ismert hibát, valamint új funkciókat adtunk hozzá:
+The Manjaro Settings Manager (MSM) now provides an easy-to-use graphical interface for installing and removing the many series of kernels we offer. Manjaro's selection of readily available kernels remains the most extensive of all Linux distribution we know of. At the time of this release, eight kernel-series are available directly from our binary repositories, ranging from the mature &amp; rock-solid 3.16 series to the latest 4.19 release. Additionally we offer three realtime kernel series. Such a wide array of available kernel options results in extensive hardware support, getting the most out of your system for you, be it old or new.
 
-    - complete redesign of UI
-    - added categories mode
-    - usage of appstream data
-    - fordítások frissítése, és több kisebb probléma javítása
+With Pamac v7.2 we fixed known issues and added new functions. Followed features you can expect:
 
-A Manjaro Settings Managerben is fixáltuk az ismert hibákat, és új funkciókat adtunk hozzá:
+    - pamac-gtk: add edit build files support
+    - pamac-cli: add edit build files support
+    - pamac-cli: add clone action
+    - pamac-cli: build action now has an --no-clone option to only use local build files
+    - pamac-cli: build action without argument now tries to build from the PKGBUILD in the current dir
+    - pamac-cli: added a CLI mode to pamac, which acts similar to apt-get
 
-    - updated release notes for all supported kernels
-    - fixed with ntp clock setup
+With Manjaro Hello we added new functions. Followed features you can expect:
+
+    - you can now maintain suggested packages by the community directly in the welcome screen under the applications option
     - UI enhancements
-    - fordítások frissítése
+    - updated translations
 
-Reméljük, élvezni fogod ennek a kiadásnak a használatát, és kérünk, oszd meg velünk, hogy milyennek látod a Manjaro-t.
+We hope you enjoy this release and let us know what you think of Illyria.

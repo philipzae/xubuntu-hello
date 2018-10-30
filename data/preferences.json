@@ -9,13 +9,6 @@
   "logo_path": "/usr/share/icons/hicolor/64x64/apps/manjaro.png",
   "save_path": "~/.config/manjaro-hello.json",
   "ui_path": "/usr/share/manjaro-hello/ui/manjaro-hello.glade",
-  "data_set": "default",
-  "user_path": "~/.config",
-  "data_sets": [
-    "default",
-    "advanced"
-  ],
-  "url": "https://gitlab.manjaro.org/fhdk/application-utility/raw/master",
   "urls": {
     "development": "https://gitlab.manjaro.org",
     "chat": "https://kiwiirc.com/client/irc.freenode.net/?nick=manjaro-web|?#manjaro",

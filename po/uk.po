@@ -4,6 +4,7 @@
 # Hugo Posnic <huluti@manjaro.org>, 2016-2017.
 # 
 # Translators:
+# Taras Holyj, 2017
 # dsafsadf <heneral@gmail.com>, 2017
 msgid ""
 msgstr ""
@@ -17,11 +18,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: ui/manjaro-hello.glade:55
 msgid "Welcome to Manjaro!"
-msgstr "Ласкаво просимо в Manjaro!"
+msgstr "Ласкаво просимо до Manjaro!"
 
 #: ui/manjaro-hello.glade:71
 msgid ""
@@ -29,9 +30,9 @@ msgid ""
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
-"Дякуємо вам за участь у нашій громаді!\n"
+"Дякуємо вам за участь у нашій спільноті!\n"
 "\n"
-"Ми, розробники Manjaro, сподіваємося, що використанням Manjaro, принесе вам такеж задоволення яке відчували ми створюючи її. Наведені нижче посилання допоможуть вам розпочати роботу з новою операційною системою. Отже, насолоджуйтеся досвідом, і не соромтеся, надсилайте нам свої відгуки."
+"Ми, розробники Manjaro, сподіваємося, що використанням Manjaro, принесе вам таке ж задоволення яке відчували ми створюючи її. Наведені нижче посилання допоможуть вам розпочати роботу з новою операційною системою. Отже, насолоджуйтеся досвідом, і не соромтеся, надсилайте нам свої відгуки."
 
 #: ui/manjaro-hello.glade:89
 msgid "DOCUMENTATION"
@@ -61,7 +62,7 @@ msgstr "Вікі"
 #: ui/manjaro-hello.glade:211 ui/manjaro-hello.glade:228
 #: ui/manjaro-hello.glade:245 ui/manjaro-hello.glade:262
 msgid "Web resource"
-msgstr ""
+msgstr "Вебресурс"
 
 #: ui/manjaro-hello.glade:175
 msgid "Get involved"

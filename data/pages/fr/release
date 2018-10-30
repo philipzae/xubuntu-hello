@@ -1,27 +1,31 @@
-<big>Manjaro 17.1</big>
+<big>Manjaro 18.0</big>
 
-Nous sommes heureux de publier une autre version stable de Manjaro Linux, que nous appelons Hakoila.
+Nous sommes heureux de publier une nouvelle version stable de Manjaro Linux, nous l'avons appelé Illyria
 
-L'édition Xfce reste notre offre phare et a reçu l'attention qu'elle mérite. Peu de gens peuvent prétendre offrir une expérience Xfce aussi polie, intégrée et avant-gardiste. Nous expédions Xfce 4.12 avec cette version de Manjaro. Nous nous sommes concentrés principalement sur l'amélioration de l'expérience utilisateur sur le bureau et le gestionnaire de fenêtres, et sur la mise à jour de certains composants pour profiter des nouvelles technologies disponibles, comme le passage à un nouveau thème Vertex-Maia.
+L'édition avec Xfce reste notre version principale et a reçu l'attention qu'elle mérite. Peu de gens peuvent se vanter d'offrir une expérience Xfce aussi raffinée, intégrée et à la pointe de la technologie. Nous offrons Xfce 4.13 avec cette publication de Manjaro.
 
-Notre édition de KDE continue d'offrir cet environnement de bureau puissant, mature et riche en fonctionnalités avec un aspect unique et avec les avantages des derniers outils de Manjaro. Nous livrons maintenant Plasma 5.11 desktop en combinaison avec les dernières KDE-Apps 17.12. Ce fut un grand pas en avant pour que tout se passe harmonieusement et que l'expérience de l'utilisateur soit la même que celle de nos éditions KDE4 du passé.
+Nous nous sommes principalement concentrés sur le perfectionnement de l'expérience utilisateur pour le bureau et le gestionnaire de fenêtres, et sur la mise à jour de certains composants pour tirer parti des nouvelles technologies disponibles, comme le passage à un nouveau thème Adapta-Maia. La nouvelle fonctionnalité Display-Profiles vous permet de stocker un ou plusieurs profils d'affichage que vous pourriez utiliser. Pour adoucir l'expérience, nous avons ajouté l'application automatique des profils quand de nouveaux écrans sont connectés.
 
-Le noyau 4.14 est utilisé pour cette version, comme les derniers pilotes disponibles à ce jour. Par rapport à la dernière version des médias d'installation, nos outils ont été améliorés et polis.
+Notre édition KDE continue d'offrir cet environnement de bureau puissant, mature et riche en fonctionnalités avec un aspect unique, et avec les avantages des derniers outils Manjaro. Nous proposons maintenant le bureau Plasma 5.14 avec la dernière version des KDE-Apps 18.08. Il y a un nouveau widget de configuration d'affichage pour la gestion d'écran qui est utile pour les présentations. La commutation du moniteur principal lors du branchement ou du débranchement des moniteurs est maintenant plus fluide. Le widget réseau fonctionne à nouveau pour les tunnels VPN SSH. Le widget Volume audio dispose désormais d'une fonction de test de haut-parleur intégrée déplacée depuis les paramètres de Phonon et Plasma et avertit désormais de la déconnexion lorsque d'autres utilisateurs sont connectés.
 
-Le Gestionnaire de paramètres Manjaro (MSM) fournit maintenant une interface graphique facile à utiliser pour installer et supprimer les nombreuses séries de noyaux que nous offrons. La sélection par Manjaro de noyaux facilement disponibles reste la plus vaste de toutes les distributions de Linux que nous connaissons. Au moment de cette publication, neuf séries de noyaux sont disponibles directement à partir de nos dépôts binaires, allant de la maturité de la série solide 3.16 à la dernière version 4.15. De plus, nous offrons deux séries de noyaux en temps réel. Un tel éventail d'options de noyau disponibles résulte en un support matériel étendu, tirant le meilleur parti de votre système pour vous, qu'il soit ancien ou nouveau.
+Le noyau 4.19 LTS est utilisé pour cette version, comme les derniers pilotes disponibles à ce jour. Depuis notre dernier média d'installation, nos outils ont été améliorés et polis.
 
-Avec Pamac v6.2, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
+Le gestionnaire de paramètres Manjaro (MSM) fournit maintenant une interface graphique facile à utiliser pour installer et supprimer les nombreuses séries de noyaux que nous proposons. La sélection de noyaux facilement disponibles de Manjaro reste la plus complète de toutes les distributions Linux à notre connaissance. À la publication de cette version, huit séries de noyaux sont disponibles directement depuis nos dépôts binaires, allant du mature et solide 3.16 à la dernière version 4.19. De plus, nous proposons trois séries de noyaux en temps réel. Un tel éventail d'options de noyaux disponibles se traduit par un support matériel étendu, vous permettant de tirer le meilleur parti de votre système, qu'il soit ancien ou nouveau.
 
-     - redesign complet
-     - ajout de catégories
-     - utilisation des données appstream
-     - mises à jour des traductions et d'autres petites corrections
+Avec Pamac v7.2 nous avons corrigé des problèmes connus et ajouté de nouvelles fonctions. Les caractéristiques suivantes auxquelles vous pouvez vous attendre :
 
-Avec Manjaro Settings Manager, nous avons corrigé les problèmes connus et ajouté de nouvelles fonctions tels que :
+    - pamac-gtk: ajout de l'édition des fichiers de construction
+    - pamac-cli: ajout de l'édition des fichiers de construction
+    - pamac-cli: ajout d'une fonction clone
+    - pamac-cli: la fonction build a maintenant une option --no-clone pour n'utiliser que des fichiers locaux
+    - pamac-cli: compiler sans argument essaye maintenant de construire avec le PKGBUILD dans le répertoire courant
+    - pamac-cli: ajout d'un mode ligne de commande à pamac, agissant de manière comparable à apt-get 
 
-     - mises à jour des notes de version pour tous les noyaux supportés
-     - amélioration des paramètres d'horloge ntp
-     - améliorations de l'interface
-     - traductions mises à jour
+Avec Manjaro Hello, nous avons ajouté de nouvelles fonctions. Les caractéristiques suivantes auxquelles vous pouvez vous attendre :
 
-Nous espérons que vous apprécierez cette version et laissez-nous savoir ce que vous pensez de Hakoila.
+    - vous pouvez maintenir des paquets suggérés par la communauté directement dans l'écran d'accueil via l'option applications
+    - améliorations de l'interface utilisateur
+    - traductions améliorées 
+
+Nous espérons que vous appréciez cette version et que vous nous direz ce que vous pensez d'Illyria.
+

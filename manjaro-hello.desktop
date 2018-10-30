@@ -7,6 +7,7 @@ Name=Manjaro Hello
 Exec=/usr/bin/manjaro-hello
 Icon=manjaro
 Comment=A tool providing access to documentation and support for new Manjaro users.
+Comment[de]=En app med adgang til dokumentation og support for nye Manjaro brugere.
 Comment[de]=Ein Tool für schnellen Zugriff auf Support und Dokumentation für neue Manjaro-Nutzer.
 Comment[es]=Una herramienta que provee acceso a la documentación y soporte para nuevos usuarios de Manjaro.
 Comment[fr]=Outil d'accès à la documentation et support aux nouveaux utilisateurs de Manjaro.

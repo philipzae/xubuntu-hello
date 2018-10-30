@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1878e107-6f19-4cdd-96ac-cf56d1731299" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1179412992">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.0" value="5" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="app-utility" value="2" />
+          <entry key="gitignore" value="1" />
+          <entry key="glade" value="3" />
+          <entry key="json" value="11" />
+          <entry key="py" value="75" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="11" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="77" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="31" />
+          <entry key="app-utility" value="29" />
+          <entry key="dummy" value="388" />
+          <entry key="gitignore" value="6" />
+          <entry key="glade" value="21" />
+          <entry key="json" value="143" />
+          <entry key="py" value="4802" />
+          <entry key="txt" value="1398" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="143" />
+          <entry key="PLAIN_TEXT" value="1813" />
+          <entry key="Python" value="4862" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/manjaro_hello.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1590">
+              <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>share_dir</find>
+      <find>application</find>
+      <find>applications</find>
+      <find>appBrowser</find>
+      <find>application_browser</find>
+      <find>on_btn</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>data_path</replace>
+      <replace>appBrowser</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app-utility" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/applications/applications.py" />
+        <option value="$PROJECT_DIR$/src/applications/applications_config.py" />
+        <option value="$PROJECT_DIR$/src/testConfigClass.py" />
+        <option value="$PROJECT_DIR$/src/applications/base_config.py" />
+        <option value="$PROJECT_DIR$/src/install-alone.py" />
+        <option value="$PROJECT_DIR$/src/applications/alpm.py" />
+        <option value="$PROJECT_DIR$/src/applications/app_base_config.py" />
+        <option value="$PROJECT_DIR$/src/applications/exceptions.py" />
+        <option value="$PROJECT_DIR$/src/applications/configs.py" />
+        <option value="$PROJECT_DIR$/applications/browser.py" />
+        <option value="$PROJECT_DIR$/applications/browser_config.py" />
+        <option value="$PROJECT_DIR$/applications/hello_config.py" />
+        <option value="$PROJECT_DIR$/applications/iso_config.py" />
+        <option value="$PROJECT_DIR$/applications/stand_alone_config.py" />
+        <option value="$PROJECT_DIR$/src/applications/stand_alone_config.py" />
+        <option value="$PROJECT_DIR$/src/applications/iso_config.py" />
+        <option value="$PROJECT_DIR$/src/__init__.py" />
+        <option value="$PROJECT_DIR$/data/browser-conf.json" />
+        <option value="$PROJECT_DIR$/src/plugins/applications/browser.py" />
+        <option value="$PROJECT_DIR$/src/applications/hello_config.py" />
+        <option value="$PROJECT_DIR$/src/applications/browser_base_config.py" />
+        <option value="$PROJECT_DIR$/src/applications/app_data.py" />
+        <option value="$PROJECT_DIR$/src/applications/app_browser.py" />
+        <option value="$PROJECT_DIR$/src/applications/browser_config.py" />
+        <option value="$PROJECT_DIR$/src/applications/data.py" />
+        <option value="$PROJECT_DIR$/src/applications/applicationbrowser.py" />
+        <option value="$PROJECT_DIR$/src/applications/browser.py" />
+        <option value="$PROJECT_DIR$/src/applications/application_browser.py" />
+        <option value="$PROJECT_DIR$/src/applications/__init__.py" />
+        <option value="$PROJECT_DIR$/src/application_utility/application_browser.py" />
+        <option value="$PROJECT_DIR$/src/application_utility/__init__.py" />
+        <option value="$PROJECT_DIR$/data/preferences.json" />
+        <option value="$PROJECT_DIR$/ui/manjaro-hello.glade" />
+        <option value="$PROJECT_DIR$/src/manjaro_hello.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1991" />
+    <option name="y" value="21" />
+    <option name="width" value="1398" />
+    <option name="height" value="965" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="manjaro-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manjaro-hello" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manjaro-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manjaro-hello" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manjaro-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manjaro-hello" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="manjaro-hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manjaro-hello" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/plugins" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1878e107-6f19-4cdd-96ac-cf56d1731299" name="Default Changelist" comment="" />
+      <created>1534949710604</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534949710604</updated>
+    </task>
+    <task id="LOCAL-00003" summary="split preferences">
+      <created>1536411499431</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536411499431</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added plugin manager">
+      <created>1536411521103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536411521103</updated>
+    </task>
+    <task id="LOCAL-00005" summary="plugin applications">
+      <created>1536411558753</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536411558753</updated>
+    </task>
+    <task id="LOCAL-00006" summary="back to one pref file">
+      <created>1536414428607</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536414428607</updated>
+    </task>
+    <task id="LOCAL-00007" summary="move&#10;remove plugin manager">
+      <created>1536415933849</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536415933849</updated>
+    </task>
+    <task id="LOCAL-00008" summary="rearrange">
+      <created>1536416490489</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1536416490489</updated>
+    </task>
+    <task id="LOCAL-00009" summary="cosmetic">
+      <created>1536418940294</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1536418940294</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added comments">
+      <created>1536419834210</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1536419834210</updated>
+    </task>
+    <task id="LOCAL-00011" summary="split classes">
+      <created>1536420193376</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1536420193376</updated>
+    </task>
+    <task id="LOCAL-00012" summary="pack experiment">
+      <created>1536421211422</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1536421211422</updated>
+    </task>
+    <task id="LOCAL-00013" summary="commented screen shot url">
+      <created>1536421394042</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1536421394042</updated>
+    </task>
+    <task id="LOCAL-00014" summary="minor formatting">
+      <created>1536422379462</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1536422379462</updated>
+    </task>
+    <task id="LOCAL-00015" summary="redefine reload to reset">
+      <created>1536422647180</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1536422647180</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactor">
+      <created>1536425218221</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1536425218221</updated>
+    </task>
+    <task id="LOCAL-00017" summary="enhance logging">
+      <created>1536425669114</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1536425669114</updated>
+    </task>
+    <task id="LOCAL-00018" summary="experiments">
+      <created>1536426261137</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1536426261137</updated>
+    </task>
+    <task id="LOCAL-00019" summary="split classes">
+      <created>1536426713520</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1536426713520</updated>
+    </task>
+    <task id="LOCAL-00020" summary="commit">
+      <created>1536426798365</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1536426798365</updated>
+    </task>
+    <task id="LOCAL-00021" summary="expand/collapse group on double click">
+      <created>1536428318542</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1536428318542</updated>
+    </task>
+    <task id="LOCAL-00022" summary="the mess">
+      <created>1536429127582</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1536429127582</updated>
+    </task>
+    <task id="LOCAL-00023" summary="charm renames the imports to py - renamed">
+      <created>1536733349233</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1536733349233</updated>
+    </task>
+    <task id="LOCAL-00024" summary="renamed to application_browser">
+      <created>1536734042101</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1536734042101</updated>
+    </task>
+    <task id="LOCAL-00025" summary="renamed to application_browser">
+      <created>1536734080399</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1536734080399</updated>
+    </task>
+    <task id="LOCAL-00026" summary="refactor to import modules from application_browser">
+      <created>1536734107278</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1536734107278</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor naming">
+      <created>1536740355223</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1536740355223</updated>
+    </task>
+    <task id="LOCAL-00028" summary="refactor naming">
+      <created>1536740428541</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1536740428541</updated>
+    </task>
+    <task id="LOCAL-00029" summary="removed application utility&#10;now import from package `application_utility`">
+      <created>1536755165290</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1536755165290</updated>
+    </task>
+    <task id="LOCAL-00030" summary="the mess">
+      <created>1536755180580</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1536755180580</updated>
+    </task>
+    <task id="LOCAL-00031" summary="removed application settings from preferences">
+      <created>1536755298128</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1536755298128</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix manjaro_hello.py">
+      <created>1536759081083</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1536759081083</updated>
+    </task>
+    <task id="LOCAL-00033" summary="conflict?">
+      <created>1536759713291</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1536759713291</updated>
+    </task>
+    <task id="LOCAL-00034" summary="why is this only sometimes">
+      <created>1536762438800</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1536762438800</updated>
+    </task>
+    <task id="LOCAL-00035" summary="refactor on_applications_clicked">
+      <created>1536762559794</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1536762559794</updated>
+    </task>
+    <task id="LOCAL-00036" summary="refactor initialize">
+      <created>1536762794077</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1536762794077</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix signal error">
+      <created>1536764417230</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1536764417230</updated>
+    </task>
+    <task id="LOCAL-00038" summary="debugging on getObject error">
+      <created>1536764914803</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1536764914803</updated>
+    </task>
+    <task id="LOCAL-00039" summary="debugging getObj error">
+      <created>1536765243062</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1536765243062</updated>
+    </task>
+    <task id="LOCAL-00040" summary="debugging getObj error">
+      <created>1536765504956</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1536765504956</updated>
+    </task>
+    <task id="LOCAL-00041" summary="refactor fil to file">
+      <created>1536765540320</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1536765540320</updated>
+    </task>
+    <task id="LOCAL-00042" summary="refactor to eliminate shadow">
+      <created>1536765638966</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1536765638966</updated>
+    </task>
+    <task id="LOCAL-00043" summary="debugging AttributeError on get_object which exist">
+      <created>1536765831882</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1536765831882</updated>
+    </task>
+    <task id="LOCAL-00044" summary="debugging get_object error">
+      <created>1536767498224</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1536767498224</updated>
+    </task>
+    <task id="LOCAL-00045" summary="debugging get_object error">
+      <created>1536767653840</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1536767653840</updated>
+    </task>
+    <task id="LOCAL-00046" summary="debugging get_object returning None on valid object">
+      <created>1536767721691</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1536767721691</updated>
+    </task>
+    <task id="LOCAL-00047" summary="debugging get_object returning None on valid object">
+      <created>1536770497272</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1536770497272</updated>
+    </task>
+    <task id="LOCAL-00048" summary="debugging get_object returning None on valid object">
+      <created>1536770929972</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1536770929972</updated>
+    </task>
+    <task id="LOCAL-00049" summary="doh! default manjaro-hello does not contain the appBrowser button">
+      <created>1536820041782</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1536820041782</updated>
+    </task>
+    <task id="LOCAL-00050" summary="doh! default manjaro-hello does not contain the appBrowser button">
+      <created>1536820124591</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1536820124594</updated>
+    </task>
+    <task id="LOCAL-00051" summary="reorder lines">
+      <created>1536841615043</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1536841615043</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1991" y="21" width="1398" height="965" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2581361" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32893157" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32893157" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32893157" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="split classes" />
+    <MESSAGE value="commit" />
+    <MESSAGE value="expand/collapse group on double click" />
+    <MESSAGE value="charm renames the imports to py - renamed" />
+    <MESSAGE value="renamed to application_browser" />
+    <MESSAGE value="refactor to import modules from application_browser" />
+    <MESSAGE value="refactor naming" />
+    <MESSAGE value="removed application utility&#10;now import from package `application_utility`" />
+    <MESSAGE value="the mess" />
+    <MESSAGE value="removed application settings from preferences" />
+    <MESSAGE value="fix manjaro_hello.py" />
+    <MESSAGE value="conflict?" />
+    <MESSAGE value="why is this only sometimes" />
+    <MESSAGE value="refactor on_applications_clicked" />
+    <MESSAGE value="refactor initialize" />
+    <MESSAGE value="fix signal error" />
+    <MESSAGE value="debugging on getObject error" />
+    <MESSAGE value="debugging getObj error" />
+    <MESSAGE value="refactor fil to file" />
+    <MESSAGE value="refactor to eliminate shadow" />
+    <MESSAGE value="debugging AttributeError on get_object which exist" />
+    <MESSAGE value="debugging get_object error" />
+    <MESSAGE value="debugging get_object returning None on valid object" />
+    <MESSAGE value="doh! default manjaro-hello does not contain the appBrowser button" />
+    <MESSAGE value="reorder lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorder lines" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/app-utility</url>
+          <line>59</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app-utility" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/default.json" />
+    <entry file="file://$PROJECT_DIR$/src/install-alone.py" />
+    <entry file="file://$PROJECT_DIR$/src/testConfigClass.py" />
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/browser/exceptions.py" />
+    <entry file="file://$PROJECT_DIR$/src/plugins/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/data/browser-prefs.json" />
+    <entry file="file://$PROJECT_DIR$/data/advanced.json" />
+    <entry file="file://$PROJECT_DIR$/src/browser/browser_base_config.py" />
+    <entry file="file://$PROJECT_DIR$/src/browser/browser_config.py" />
+    <entry file="file://$PROJECT_DIR$/src/browser/alpm.py" />
+    <entry file="file://$PROJECT_DIR$/src/browser/hello_config.py" />
+    <entry file="file://$PROJECT_DIR$/src/browser/iso_config.py" />
+    <entry file="file://$PROJECT_DIR$/src/browser/stand_alone_config.py" />
+    <entry file="file://$PROJECT_DIR$/src/browser/data.py" />
+    <entry file="file://$PROJECT_DIR$/src/browser/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/src/browser/browser.py" />
+    <entry file="file://$PROJECT_DIR$/data/preferences.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.7/site-packages/application_utility/browser/hello_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.7/site-packages/application_utility/browser/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/manjaro-hello.glade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="545" column="19" lean-forward="true" selection-start-line="545" selection-start-column="19" selection-end-line="545" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manjaro_hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
