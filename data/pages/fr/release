@@ -1,31 +1,18 @@
-<big>Manjaro 18.0</big>
+<big>Manjaro 18.1</big>
 
-Nous sommes heureux de publier une nouvelle version stable de Manjaro Linux, nous l'avons appelé Illyria
+We are happy to publish another stable release of Manjaro Linux, we call Juhraya.
 
-L'édition avec Xfce reste notre version principale et a reçu l'attention qu'elle mérite. Peu de gens peuvent se vanter d'offrir une expérience Xfce aussi raffinée, intégrée et à la pointe de la technologie. Nous offrons Xfce 4.13 avec cette publication de Manjaro.
+The Xfce edition remains our flagship offering and has received the attention it deserves. Few can claim to offer such a polished, integrated and leading-edge Xfce experience. We ship Xfce 4.13 with this release of Manjaro. 
+We mainly focused on polishing the user experience on the desktop and window manager, and on updating some components to take advantage of newly available technologies such as switching to a new theme we call Matcha. The new feature Display-Profiles allows you to store one or more profiles for a particular display configuration that you may be using. To make the deal a little sweeter we implemented auto-applying of profiles when new displays are connected.
 
-Nous nous sommes principalement concentrés sur le perfectionnement de l'expérience utilisateur pour le bureau et le gestionnaire de fenêtres, et sur la mise à jour de certains composants pour tirer parti des nouvelles technologies disponibles, comme le passage à un nouveau thème Adapta-Maia. La nouvelle fonctionnalité Display-Profiles vous permet de stocker un ou plusieurs profils d'affichage que vous pourriez utiliser. Pour adoucir l'expérience, nous avons ajouté l'application automatique des profils quand de nouveaux écrans sont connectés.
+Our KDE edition continues to deliver this powerful, mature and feature-rich desktop environment with a unique look-and-feel, and with the perks of Manjaro's latest tools. We ship now Plasma 5.16 desktop in combination with the latest KDE-Apps 19.04. One of the most obvious changes is the completely rewritten notification system that comes with a 'Do Not Disturb' mode, a more intelligent history which groups notifications together, and critical notifications in fullscreen apps. Besides many other things, it features better notifications for file transfer jobs, and a much more usable System Settings page to configure all notification-related things.
 
-Notre édition KDE continue d'offrir cet environnement de bureau puissant, mature et riche en fonctionnalités avec un aspect unique, et avec les avantages des derniers outils Manjaro. Nous proposons maintenant le bureau Plasma 5.14 avec la dernière version des KDE-Apps 18.08. Il y a un nouveau widget de configuration d'affichage pour la gestion d'écran qui est utile pour les présentations. La commutation du moniteur principal lors du branchement ou du débranchement des moniteurs est maintenant plus fluide. Le widget réseau fonctionne à nouveau pour les tunnels VPN SSH. Le widget Volume audio dispose désormais d'une fonction de test de haut-parleur intégrée déplacée depuis les paramètres de Phonon et Plasma et avertit désormais de la déconnexion lorsque d'autres utilisateurs sont connectés.
+With our Gnome edition we have now 3.32 series added. This release features a refreshed visual style ranging from an entirely new set of app icons to improvements to the user interface style. Many of the base style colors have been saturated, giving them a more vivid, vibrant appearance. Buttons are more rounded and have a softer 'shadow' border. Switches no longer use the explicit ON and OFF text, instead using color to indicate state. Additionally, several improvements to data structures in the GNOME Desktop led to noticeable frame rate improvements. This results in a faster, snappier feel to the animations, icons and top 'shell' panel. Searching in many GNOME apps is faster now too, thanks to major performance enhancements to the GNOME search database.
 
-Le noyau 4.19 LTS est utilisé pour cette version, comme les derniers pilotes disponibles à ce jour. Depuis notre dernier média d'installation, nos outils ont été améliorés et polis.
+Kernel 5.1 is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
 
-Le gestionnaire de paramètres Manjaro (MSM) fournit maintenant une interface graphique facile à utiliser pour installer et supprimer les nombreuses séries de noyaux que nous proposons. La sélection de noyaux facilement disponibles de Manjaro reste la plus complète de toutes les distributions Linux à notre connaissance. À la publication de cette version, huit séries de noyaux sont disponibles directement depuis nos dépôts binaires, allant du mature et solide 3.16 à la dernière version 4.19. De plus, nous proposons trois séries de noyaux en temps réel. Un tel éventail d'options de noyaux disponibles se traduit par un support matériel étendu, vous permettant de tirer le meilleur parti de votre système, qu'il soit ancien ou nouveau.
+Pamac 8.0 series got a new UI design. We also polished our CLI functions of this package manager. Now you can install packages also within a terminal much easier. Since we have a build-in AUR support the EDITOR variable enables to use a custom file editor of your choosing now.
 
-Avec Pamac v7.2 nous avons corrigé des problèmes connus et ajouté de nouvelles fonctions. Les caractéristiques suivantes auxquelles vous pouvez vous attendre :
+We also make package management enhanced by having snap and flatpak support enabled by default. You can use either gnome-software or discover to install snaps or flatpaks with ease. This gives you a much larger pool to access the latest applications for linux out there.
 
-    - pamac-gtk: ajout de l'édition des fichiers de construction
-    - pamac-cli: ajout de l'édition des fichiers de construction
-    - pamac-cli: ajout d'une fonction clone
-    - pamac-cli: la fonction build a maintenant une option --no-clone pour n'utiliser que des fichiers locaux
-    - pamac-cli: compiler sans argument essaye maintenant de construire avec le PKGBUILD dans le répertoire courant
-    - pamac-cli: ajout d'un mode ligne de commande à pamac, agissant de manière comparable à apt-get 
-
-Avec Manjaro Hello, nous avons ajouté de nouvelles fonctions. Les caractéristiques suivantes auxquelles vous pouvez vous attendre :
-
-    - vous pouvez maintenir des paquets suggérés par la communauté directement dans l'écran d'accueil via l'option applications
-    - améliorations de l'interface utilisateur
-    - traductions améliorées 
-
-Nous espérons que vous appréciez cette version et que vous nous direz ce que vous pensez d'Illyria.
-
+We hope you enjoy this release and let us know what you think of Juhraya.

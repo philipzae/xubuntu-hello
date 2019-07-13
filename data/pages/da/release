@@ -1,31 +1,18 @@
-<big>Manjaro 18.0</big>
+<big>Manjaro 18.1</big>
 
-Vi er glade for at præsentere den næste stabile udgave af Manjaro Linux, som vi har givet navnet Illyria.
+We are happy to publish another stable release of Manjaro Linux, we call Juhraya.
 
-Xfce er stadig vores primære udgave og den får stadig den største opmærksomhed. Meget få distributioner kan tilbyde den samme tilpasning hvor de mindste detaljer er finpudset så vi har en af de bedste Xfce oplevelser. Med denne udgave af Manjaro bruges Xfce 4.13.
+The Xfce edition remains our flagship offering and has received the attention it deserves. Few can claim to offer such a polished, integrated and leading-edge Xfce experience. We ship Xfce 4.13 with this release of Manjaro. 
+We mainly focused on polishing the user experience on the desktop and window manager, and on updating some components to take advantage of newly available technologies such as switching to a new theme we call Matcha. The new feature Display-Profiles allows you to store one or more profiles for a particular display configuration that you may be using. To make the deal a little sweeter we implemented auto-applying of profiles when new displays are connected.
 
-Vores arbejde har været fokuseret på forbedring af bruger oplevelsen både med skrivebords miljøet og den tilhørende vindues håndtering. Dette er gjort ved at opdatere forskellige komponenter blandt andet et skrivebordstema vi kalder Adapta-Mia. Den nye mulighed der kaldes Display-Profiles eller Skærm-Profiler lader dig oprette og gemme en eller flere profiler for en specifik skærmopsætning. For at gøre det hele lidt bedre bliver profilerne automatisk anvendt når skærmen tilsluttes.
+Our KDE edition continues to deliver this powerful, mature and feature-rich desktop environment with a unique look-and-feel, and with the perks of Manjaro's latest tools. We ship now Plasma 5.16 desktop in combination with the latest KDE-Apps 19.04. One of the most obvious changes is the completely rewritten notification system that comes with a 'Do Not Disturb' mode, a more intelligent history which groups notifications together, and critical notifications in fullscreen apps. Besides many other things, it features better notifications for file transfer jobs, and a much more usable System Settings page to configure all notification-related things.
 
-Vores KDE udgave er forsat et kraftværk der leverer et modent skrivebord med en overdådighed af tilpasningsmuligheder. KDE har et unikt udseende og workflow og fungerer naturligvis med Manjaros seneste værktøjer. Plasma 5.14 i kombination med de nyeste KDE-Apps 18.08. Der er nu en Skærm-Opsætning widget som er specielt anvendelig ved præsentationer. Skift af primær skærm når skærme tilsluttes eller fjernes er nu endnu lettere. Netværk widget virker igen med SSH VPN tunneller. Lydstyrke widget har fået en indbygget højttaler test. Testen er flyttet fra Phonon indstinger og Plasma vil ved logout advare hvis andre brugere er logget på.
+With our Gnome edition we have now 3.32 series added. This release features a refreshed visual style ranging from an entirely new set of app icons to improvements to the user interface style. Many of the base style colors have been saturated, giving them a more vivid, vibrant appearance. Buttons are more rounded and have a softer 'shadow' border. Switches no longer use the explicit ON and OFF text, instead using color to indicate state. Additionally, several improvements to data structures in the GNOME Desktop led to noticeable frame rate improvements. This results in a faster, snappier feel to the animations, icons and top 'shell' panel. Searching in many GNOME apps is faster now too, thanks to major performance enhancements to the GNOME search database.
 
-Linux kerne 4.19 LTS er brugt til denne udgave ligesom og i forhold til udgivelses tidspunktet er det de nyeste drivere og programmer der er installeret.
+Kernel 5.1 is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
 
-Manjaro Settings Manager (MSM) har er en brugbar app der gør installation og fjernelse af de forskellige kerner til en smal sag. På udgivelsestidspunktet er det muligt at installeret otte kerner. Dette mulighed gør Manjaro til - så vidt vi ved - den distribution der giver flest muligheder på dette område. Kernerne rangerer for den solide 3.16 til den seneste 4.19 LTS udgivelse. Yderligere har Manjaro tre realtids kerner. En sådan bredde giver alle typer hardware mulighed for at bruge Manjaro og du kan få det meste ud af dit system enten det er gammelt eller nyt.
+Pamac 8.0 series got a new UI design. We also polished our CLI functions of this package manager. Now you can install packages also within a terminal much easier. Since we have a build-in AUR support the EDITOR variable enables to use a custom file editor of your choosing now.
 
-Med Pamac v7.2 er kendte problemer rettet og nye funktioner tilføjet. Følgende er ny funktionalitet:
+We also make package management enhanced by having snap and flatpak support enabled by default. You can use either gnome-software or discover to install snaps or flatpaks with ease. This gives you a much larger pool to access the latest applications for linux out there.
 
-    - pamac-gtk: tilføjet redigering af PKGBUILD filer
-    - pamac-cli: tilføjet CLI til pamac, fungerer som apt-get
-    - pamac-cli: tilføjet redigering af PKGBUILD filer
-    - pamac-cli: tilføjet kloning funktion
-    - pamac-cli: build har nu en --no-clone mulighed så der kun bruges lokale filer
-    - pamac-cli: build uden argumenter prøver at bruge PKGBUILD i den aktuelle mappe
-    
-
-Med Manjaro Hello er nye funktioner tilføjet. Følgende er ny funktionalitet: 
-
-    - du kan vedligeholde programmer foreslået af fællesskabet direkte fra Velkomen billedet ved at bruge muligheden Programmer
-    - UI forbedringer
-    - opdaterede oversættelser
-
-Vi håber du vil få god gavn af denne udgivelse. Lad os endelig vide hvad du mener om Illyria.
+We hope you enjoy this release and let us know what you think of Juhraya.
