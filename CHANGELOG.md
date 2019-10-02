@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.12] - 2019-08-31
+### Added
+- Pages: tr.
+### Changed
+- Update translations.
+
 ## [0.5.11] - 2017-11-24
 ### Added
 - Pages: fr.

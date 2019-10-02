@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-04 10:28+0100\n"
-"PO-Revision-Date: 2017-10-07 19:09+0100\n"
-"Last-Translator: mgundogdu <mustafalinguist@yahoo.com>, 2016\n"
+"PO-Revision-Date: 2019-08-31 15:09+0100\n"
+"Last-Translator: oguzkagan <me@oguzkaganeren.com.tr>, 2019\n"
 "Language-Team: Turkish (https://www.transifex.com/manjarolinux/teams/70274/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,7 +60,7 @@ msgstr "Viki"
 #: ui/manjaro-hello.glade:211 ui/manjaro-hello.glade:228
 #: ui/manjaro-hello.glade:245 ui/manjaro-hello.glade:262
 msgid "Web resource"
-msgstr ""
+msgstr "Web kaynağı"
 
 #: ui/manjaro-hello.glade:175
 msgid "Get involved"
@@ -76,7 +76,7 @@ msgstr "Sohbet odası"
 
 #: ui/manjaro-hello.glade:223
 msgid "Mailling lists"
-msgstr "Posta listeleri"
+msgstr "Mail listeleri"
 
 #: ui/manjaro-hello.glade:240
 msgid "Development"
