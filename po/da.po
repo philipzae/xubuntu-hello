@@ -5,14 +5,15 @@
 # 
 # Translators:
 # philm <philm@manjaro.org>, 2017
-# scootergrisen <scootergrisen@gmail.com>, 2017
+# scootergrisen, 2019
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Manjaro-Hello\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-04 10:28+0100\n"
-"PO-Revision-Date: 2017-10-07 19:09+0100\n"
-"Last-Translator: scootergrisen <scootergrisen@gmail.com>, 2017\n"
+"PO-Revision-Date: 2016-12-27 20:47+0000\n"
+"Last-Translator: scootergrisen, 2019\n"
 "Language-Team: Danish (https://www.transifex.com/manjarolinux/teams/70274/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,9 +31,9 @@ msgid ""
 "\n"
 "We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback."
 msgstr ""
-"Tak for din deltagelse i vores fællesskab!\n"
+"Tak fordi du deltager i vores fællesskab!\n"
 "\n"
-"Vi, Manjaro-udviklerne, håber at du vil nyde at bruge Manjaro ligeså meget som vi nød at bygge det. Linkene nedenfor vil hjælpe dig i gang med dit nye styresystem. Så nyd oplevelsen, og tøv ikke med at sende os din feedback."
+"Manjaro-udviklerne håber på at du vil vil få lige så meget glæde af at bruge Manjaro som vi gjorde da det blev bygget. Linkene nedenfor hjælper dig i gang med dit nye styresystem. Så nyd oplevelsen, og tøv ikke med at sende os din feedback."
 
 #: ui/manjaro-hello.glade:89
 msgid "DOCUMENTATION"

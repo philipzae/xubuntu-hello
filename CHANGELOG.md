@@ -1,10 +1,24 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [0.5.12] - 2019-08-31
+## [0.6.2] - 2019-10-02
+### Added
+- Pages: tr, ko-KR.
+### Changed
+- Update translations.
+
+## [0.6.1] - 2018-10-28
+### Added
+- Pages: pt-PT.
+### Changed
+- Update translations.
+
+## [0.6.0] - 2018-10-13
 ### Added
 - Pages: tr.
 ### Changed
+- Added applications utility
+- Fixed calamares password-less start
 - Update translations.
 
 ## [0.5.11] - 2017-11-24
