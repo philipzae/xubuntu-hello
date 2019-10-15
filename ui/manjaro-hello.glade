@@ -374,24 +374,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="can_focus">False</property>
                     <property name="spacing">5</property>
                     <child>
-                      <object class="GtkEventBox">
-                        <property name="name">google+</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
-                        <child>
-                          <object class="GtkImage" id="google+">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="tooltip_text">Google+</property>
-                          </object>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">0</property>
-                      </packing>
+                      <placeholder/>
                     </child>
                     <child>
                       <object class="GtkEventBox">
