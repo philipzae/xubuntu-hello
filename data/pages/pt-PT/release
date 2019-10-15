@@ -1,4 +1,4 @@
-<big>Manjaro 18.1</big>
+<big>Manjaro 18.1.1</big>
 
 We are happy to publish another stable release of Manjaro Linux, we call Juhraya.
 
@@ -7,11 +7,11 @@ We mainly focused on polishing the user experience on the desktop and window man
 
 Our KDE edition continues to deliver this powerful, mature and feature-rich desktop environment with a unique look-and-feel, and with the perks of Manjaro's latest tools. We ship now Plasma 5.16 desktop in combination with the latest KDE-Apps 19.08. One of the most obvious changes is the completely rewritten notification system that comes with a 'Do Not Disturb' mode, a more intelligent history which groups notifications together, and critical notifications in fullscreen apps. Besides many other things, it features better notifications for file transfer jobs, and a much more usable System Settings page to configure all notification-related things.
 
-With our Gnome edition we have now 3.32 series added. This release features a refreshed visual style ranging from an entirely new set of app icons to improvements to the user interface style. Many of the base style colors have been saturated, giving them a more vivid, vibrant appearance. Buttons are more rounded and have a softer 'shadow' border. Switches no longer use the explicit ON and OFF text, instead using color to indicate state. Additionally, several improvements to data structures in the GNOME Desktop led to noticeable frame rate improvements. This results in a faster, snappier feel to the animations, icons and top 'shell' panel. Searching in many GNOME apps is faster now too, thanks to major performance enhancements to the GNOME search database.
+With our Gnome edition we have now 3.34 series added. This release features a refreshed visual style ranging from an entirely new set of app icons to improvements to the user interface style. Many of the base style colors have been saturated, giving them a more vivid, vibrant appearance. Buttons are more rounded and have a softer 'shadow' border. Switches no longer use the explicit ON and OFF text, instead using color to indicate state. Additionally, several improvements to data structures in the GNOME Desktop led to noticeable frame rate improvements. This results in a faster, snappier feel to the animations, icons and top 'shell' panel. Searching in many GNOME apps is faster now too, thanks to major performance enhancements to the GNOME search database.
 
-Kernel 5.2 is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
+Kernel 5.3 is used for this release, such as the latest drivers available to date. Relative to the last installation media release, our tools have been improved and polished.
 
-Pamac 8.0 series got a new UI design. We also polished our CLI functions of this package manager. Now you can install packages also within a terminal much easier. Since we have a build-in AUR support the EDITOR variable enables to use a custom file editor of your choosing now.
+Pamac 9.0 series got a new UI design. We also polished our CLI functions of this package manager. Now you can install packages also within a terminal much easier. Since we have a build-in AUR support the EDITOR variable enables to use a custom file editor of your choosing now. Additionally we support now snaps within Pamac by installing the plugin.
 
 We also make package management enhanced by having snap and flatpak support enabled by default. You can use our new tool bauh to install snaps or flatpaks with ease. This gives you a much larger pool to access the latest applications for linux out there.
 

@@ -1,4 +1,4 @@
-<big>Manjaro 18.1</big>
+<big>Manjaro 18.1.1</big>
 
 Manjaro Linux'un kararlı bir sürümünü daha, Juhraya'yı yayınlamaktan mutluluk duyuyoruz.
 
@@ -7,11 +7,11 @@ Biz esas olarak masaüstü ve pencere yöneticisindeki kullanıcı deneyimini g�
 
 KDE sürümümüz güçlü, olgun ve zengin özelliklere sahip masaüstü ortamını benzersiz bir görünüm ve hisle ve Manjaro'nun en yeni araçlarının avantajlarıyla sunmaya devam ediyor. Plasma 5.16 masaüstünü en yeni KDE-Apps 19.08 ile birlikte sunuyoruz. En belirgin değişikliklerden biri, 'Rahatsız Etmeyin' modu, bildirimleri bir arada gruplayan daha akıllı bir geçmiş ve tam ekran uygulamalardaki kritik bildirimler ile gelen tamamen yeniden yazılmış bildirim sistemidir. Diğer pek çok şeyin yanı sıra, dosya aktarma işleri için daha iyi bildirimler ve bildirimle ilgili tüm şeyleri yapılandırmak için daha kullanışlı bir Sistem Ayarları sayfası sunar.
 
-Gnome sürümümüz için 3.32 serisi eklenmiştir. Bu sürüm, tamamen yeni bir uygulama ikonları kümesinden, kullanıcı arayüzü stilindeki gelişmelere kadar yenilenen bir görsel stile sahiptir. Temel stil renklerin çoğu doygun hale getirildi, böylece daha canlı bir görünüm elde edildi. Butonlar daha yuvarlatılmıştır ve daha yumuşak bir 'gölge' kenarlığa sahiptir. Anahtarlar artık açık ve kapalı metinlerini kullanmıyor, bunun yerine durumu belirtmek için renk kullanıyor. Ek olarak, GNOME Masaüstündeki veri yapılarında yapılan bazı iyileştirmeler göze çarpan kare hızı iyileştirmelerine neden oldu. Bu, animasyonlara, ikonlara ve üstteki “kabuk” paneline daha hızlı ve daha keskin bir his verir. GNOME arama veritabanındaki performans geliştirmeleri sayesinde birçok GNOME uygulamasında arama yapmak artık daha hızlı.
+Gnome sürümümüz için 3.34 serisi eklenmiştir. Bu sürüm, tamamen yeni bir uygulama ikonları kümesinden, kullanıcı arayüzü stilindeki gelişmelere kadar yenilenen bir görsel stile sahiptir. Temel stil renklerin çoğu doygun hale getirildi, böylece daha canlı bir görünüm elde edildi. Butonlar daha yuvarlatılmıştır ve daha yumuşak bir 'gölge' kenarlığa sahiptir. Anahtarlar artık açık ve kapalı metinlerini kullanmıyor, bunun yerine durumu belirtmek için renk kullanıyor. Ek olarak, GNOME Masaüstündeki veri yapılarında yapılan bazı iyileştirmeler göze çarpan kare hızı iyileştirmelerine neden oldu. Bu, animasyonlara, ikonlara ve üstteki “kabuk” paneline daha hızlı ve daha keskin bir his verir. GNOME arama veritabanındaki performans geliştirmeleri sayesinde birçok GNOME uygulamasında arama yapmak artık daha hızlı.
 
-Çekirdek 5.2, şu ana kadar mevcut en son sürücüler gibi bu sürüm için kullanılır. Son kurulum medya sürümüne kıyasla, araçlarımız iyileştirildi ve yenilendi.
+Çekirdek 5.3, şu ana kadar mevcut en son sürücüler gibi bu sürüm için kullanılır. Son kurulum medya sürümüne kıyasla, araçlarımız iyileştirildi ve yenilendi.
 
-Pamac 8.0 serisi yeni bir UI tasarımı aldı. Ayrıca bu paket yöneticisinin CLI işlevlerini de güzelleştirdik. Artık paketleri bir terminal içinde de çok kolay bir şekilde kurabilirsiniz. Yerleşik bir AUR desteğine sahip olduğumuz için EDITOR değişkeni, şimdi seçtiğiniz bir özel dosya düzenleyicisini kullanmanızı sağlar.
+Pamac 9.0 serisi yeni bir UI tasarımı aldı. Ayrıca bu paket yöneticisinin CLI işlevlerini de güzelleştirdik. Artık paketleri bir terminal içinde de çok kolay bir şekilde kurabilirsiniz. Yerleşik bir AUR desteğine sahip olduğumuz için EDITOR değişkeni, şimdi seçtiğiniz bir özel dosya düzenleyicisini kullanmanızı sağlar. Additionally we support now snaps within Pamac by installing the plugin.
 
 Ayrıca paket yönetimini, varsayılan olarak snap ve flatpak desteğini etkinleştirdik. Kolayca yükleme yapmak için kullanabilirsiniz. Bu, Linux için en son uygulamalara erişmek için daha büyük bir havuz sunar.
 
