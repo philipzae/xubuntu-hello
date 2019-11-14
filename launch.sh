@@ -1,6 +1,8 @@
 #!/bin/sh
 # Script to generate mo files in a temp locale folder
 # Use it only for testing purpose
+export PLUGIN_HELLO=True
+export PYTHONPATH="/home/fh/Data/projects/application-utility"
 rm -rf locale
 mkdir locale
 cd po
