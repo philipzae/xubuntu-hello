@@ -16,7 +16,7 @@ import webbrowser
 try:
     from application_utility.browser.application_browser import ApplicationBrowser
     from application_utility.browser.exceptions import NoAppInIsoError
-    from application_utility.browser.hello_config import HelloConfig
+    from application_utility.config.hello_config import HelloConfig
     APPS_PLUGIN = True
 
 except ModuleNotFoundError as e:
