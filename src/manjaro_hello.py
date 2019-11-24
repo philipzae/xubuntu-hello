@@ -23,6 +23,7 @@ except ModuleNotFoundError as e:
     APPS_PLUGIN = False
     print(f"Warning: Application Browser plugin not found : {e}")
 
+
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf
 
@@ -110,6 +111,13 @@ class Hello(Gtk.Window):
                 # create page install Applications
                 self.builder.get_object("stack").add_named(app_browser, "appBrowserpage")
                 self.builder.get_object("appBrowser").set_visible(True)
+            try:
+                from layoutswitcherlib.layoutsbox import LayoutBox
+                app_layout = LayoutBox(self, usehello=True)
+                self.builder.get_object("stack").add_named(app_layout, "appLayoutspage")
+                self.builder.get_object("appLayouts").set_visible(True) # show btn in UI
+            except ModuleNotFoundError as e:
+                print(f"Info: Application Gnome Layout Switcher plugin not found : {e}")
 
         self.window.show()
 

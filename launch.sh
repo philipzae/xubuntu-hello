@@ -2,7 +2,7 @@
 # Script to generate mo files in a temp locale folder
 # Use it only for testing purpose
 export PLUGIN_HELLO=True
-export PYTHONPATH="/home/fh/Data/projects/application-utility"
+export PYTHONPATH="$HOME/test/gnome-layout-switcher/bin:$HOME/Data/projects/application-utility"
 rm -rf locale
 mkdir locale
 cd po
