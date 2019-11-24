@@ -333,12 +333,10 @@ def get_lsb_infos():
             for line in lsb_release:
                 if "=" in line:
                     var, arg = line.rstrip().split("=")
-                    if var.startswith("DISTRIB_"):
-                        var = var[8:]
-                    if arg.startswith("\"") and arg.endswith("\""):
-                        arg = arg[1:-1]
-                    if arg:
-                        lsb[var] = arg
+                    if not arg:
+                        continue
+                    var = var.replace("DISTRIB_","")
+                    lsb[var] = arg.strip('"')
     except (OSError, KeyError) as error:
         print(error)
         return 'not Manjaro', '0.0'
