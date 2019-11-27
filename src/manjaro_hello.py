@@ -74,7 +74,7 @@ class Hello(Gtk.Window):
                     widget.get_image_position() is Gtk.PositionType.RIGHT:
                 img = Gtk.Image.new_from_file(
                     self.preferences["data_path"] + "img/external-link.png")
-                img.set_margin_left(2)
+                img.set_margin_start(2)
                 widget.set_image(img)
 
         # Create pages
@@ -106,18 +106,33 @@ class Hello(Gtk.Window):
         # Installed systems
         else:
             if APPS_PLUGIN:
-                conf = HelloConfig(application="manjaro-hello")
-                app_browser = ApplicationBrowser(conf, self)
-                # create page install Applications
-                self.builder.get_object("stack").add_named(app_browser, "appBrowserpage")
-                self.builder.get_object("appBrowser").set_visible(True)
+                try:
+                    conf = HelloConfig(application="manjaro-hello")
+                    app_browser = ApplicationBrowser(conf, self)
+                    # create page install Applications
+                    self.builder.get_object("stack").add_named(app_browser, "appBrowserpage")
+                    self.builder.get_object("appBrowser").set_visible(True)
+                except Exception as err:
+                    print("Error Application utility:", err)
             try:
+                #self.builder.get_object("appBrowser").set_visible(True) # for test with 2 btns
                 from layoutswitcherlib.layoutsbox import LayoutBox
-                app_layout = LayoutBox(self, usehello=True)
-                self.builder.get_object("stack").add_named(app_layout, "appLayoutspage")
-                self.builder.get_object("appLayouts").set_visible(True) # show btn in UI
+                try:
+                    app_layout = LayoutBox(self, usehello=True)
+                    self.builder.get_object("stack").add_named(app_layout, "appLayoutspage")
+                    if not self.builder.get_object("appBrowser").props.visible: #if APPS_PLUGIN:
+                        btn = self.builder.get_object("appLayouts")
+                        btn.set_margin_start(200)
+                        btn.set_margin_end(200)
+                    self.builder.get_object("appLayouts").set_visible(True) # show btn in UI
+                except Exception as err:
+                    print("Error Gnome Manager:", err)
             except ModuleNotFoundError as e:
                 print(f"Info: Application Gnome Layout Switcher plugin not found : {e}")
+            if self.builder.get_object("appBrowser").props.visible and not self.builder.get_object("appLayouts").props.visible: #if :
+                btn = self.builder.get_object("appBrowser")
+                btn.set_margin_start(200)
+                btn.set_margin_end(200)
 
         self.window.show()
 
