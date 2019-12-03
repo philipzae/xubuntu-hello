@@ -13,19 +13,82 @@ import subprocess
 import sys
 import webbrowser
 
-try:
-    from application_utility.browser.application_browser import ApplicationBrowser
-    from application_utility.browser.exceptions import NoAppInIsoError
-    from application_utility.config.hello_config import HelloConfig
-    APPS_PLUGIN = True
-
-except ModuleNotFoundError as e:
-    APPS_PLUGIN = False
-    print(f"Warning: Application Browser plugin not found : {e}")
-
-
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf
+
+
+class EmbedManager:
+    """manage included applications"""
+    def __init__(self, *args):
+        self.apps = []
+        self.count = 0
+        for app in args:
+            self.apps.append(app)
+
+    def get_modules(self, window: Gtk.Window):
+        for app in self.apps:
+            app.load(window)
+        self.count = sum((1 for x in self.apps if x.loaded))
+
+    def display(self, window: Gtk.Window):
+        for app in self.apps:
+            app.display(window)
+            if app.loaded:
+                btn = window.builder.get_object(app.name)
+                if self.count < 2:
+                    btn.set_margin_start(200)
+                    btn.set_margin_end(200)
+                #TODO if self.count>2 !!! ???
+
+
+class Embed:
+    """abstact class for include app"""
+    def __init__(self):
+        """ abstact class initialisation """
+        self.name = "app" + self.__class__.__name__[5:]
+        self.loaded = False
+        self.box = None
+
+    def load(self, window: Gtk.Window) -> bool:
+        """ load modules if installed"""
+        raise Exception('abstract method')
+
+    def display(self, window: Gtk.Window):
+        """ show btn and add page"""
+        window.builder.get_object(self.name).set_visible(self.loaded)
+        if self.loaded:
+            window.builder.get_object("stack").add_named(self.box, self.name + "page")
+
+class EmbedLayouts(Embed):
+    """Gnome layout switcher"""
+    def load(self, window: Gtk.Window) -> bool:
+        try:
+            from layoutswitcherlib.layoutsbox import LayoutBox
+            try:
+                self.box = LayoutBox(window, usehello=True)
+            except Exception as err:
+                print("Error in Embled application:", err)
+        except ModuleNotFoundError as err:
+            print(f"Info: Gnome-layout-switcher not installed")
+        self.loaded = self.box is not None
+        return self.loaded
+
+class EmbedBrowser(Embed):
+    """Application-utility"""
+    def load(self, window: Gtk.Window) -> bool:
+        try:
+            from application_utility.browser.application_browser import ApplicationBrowser
+            from application_utility.browser.exceptions import NoAppInIsoError
+            from application_utility.config.hello_config import HelloConfig
+            try:
+                conf = HelloConfig(application="manjaro-hello")
+                self.box = ApplicationBrowser(conf, window)
+            except Exception as err:
+                print("Error in Embled application:", err)
+        except ModuleNotFoundError as err:
+            print(f"Info: Application-utility not installed")
+        self.loaded = self.box is not None
+        return self.loaded
 
 
 class Hello(Gtk.Window):
@@ -105,34 +168,9 @@ class Hello(Gtk.Window):
             self.builder.get_object("install").set_visible(True)
         # Installed systems
         else:
-            if APPS_PLUGIN:
-                try:
-                    conf = HelloConfig(application="manjaro-hello")
-                    app_browser = ApplicationBrowser(conf, self)
-                    # create page install Applications
-                    self.builder.get_object("stack").add_named(app_browser, "appBrowserpage")
-                    self.builder.get_object("appBrowser").set_visible(True)
-                except Exception as err:
-                    print("Error Application utility:", err)
-            try:
-                #self.builder.get_object("appBrowser").set_visible(True) # for test with 2 btns
-                from layoutswitcherlib.layoutsbox import LayoutBox
-                try:
-                    app_layout = LayoutBox(self, usehello=True)
-                    self.builder.get_object("stack").add_named(app_layout, "appLayoutspage")
-                    if not self.builder.get_object("appBrowser").props.visible: #if APPS_PLUGIN:
-                        btn = self.builder.get_object("appLayouts")
-                        btn.set_margin_start(200)
-                        btn.set_margin_end(200)
-                    self.builder.get_object("appLayouts").set_visible(True) # show btn in UI
-                except Exception as err:
-                    print("Error Gnome Manager:", err)
-            except ModuleNotFoundError as e:
-                print(f"Info: Application Gnome Layout Switcher plugin not found : {e}")
-            if self.builder.get_object("appBrowser").props.visible and not self.builder.get_object("appLayouts").props.visible: #if :
-                btn = self.builder.get_object("appBrowser")
-                btn.set_margin_start(200)
-                btn.set_margin_end(200)
+            manager = EmbedManager(EmbedBrowser(), EmbedLayouts())
+            manager.get_modules(self)
+            manager.display(self)
 
         self.window.show()
 
