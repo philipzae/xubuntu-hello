@@ -1,2 +1,2 @@
-../ui/manjaro-hello.glade
-../src/manjaro_hello.py
+../ui/xubuntu-hello.glade
+../src/xubuntu_hello.py
