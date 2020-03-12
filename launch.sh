@@ -12,4 +12,4 @@ for lang in $(ls *.po); do
     msgfmt -c -o ../locale/${lang//_/-}/LC_MESSAGES/manjaro-hello.mo $lang.po
 done
 cd ..
-python3 src/manjaro_hello.py --dev
+python3 src/xubuntu_hello.py --dev
