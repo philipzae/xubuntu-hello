@@ -1,24 +1,25 @@
 {
   "default_locale": "en",
-  "autostart_path": "~/.config/autostart/manjaro-hello.desktop",
-  "data_path": "/usr/share/manjaro-hello/data/",
-  "desktop_path": "/usr/share/applications/manjaro-hello.desktop",
-  "installer_path": "/usr/bin/calamares",
+  "autostart_path": "~/.config/autostart/xubuntu-hello.desktop",
+  "data_path": "/usr/share/xubuntu-hello/data/",
+  "desktop_path": "/usr/share/applications/xubuntu-hello.desktop",
+  "installer_path": "/usr/bin/ubiquity",
+  # YP-FIXME: not sure what the path is for live_path, so havent changed it yet
   "live_path": "/run/miso/bootmnt/manjaro",
   "locale_path": "/usr/share/locale/",
-  "logo_path": "/usr/share/icons/hicolor/64x64/apps/manjaro.png",
-  "save_path": "~/.config/manjaro-hello.json",
-  "ui_path": "/usr/share/manjaro-hello/ui/manjaro-hello.glade",
+  "logo_path": "/usr/share/icons/elementary-xfce/places/64/distributor-logo-xubuntu.png",
+  "save_path": "~/.config/xubuntu-hello.json",
+  "ui_path": "/usr/share/xubuntu-hello/ui/xubuntu-hello.glade",
   "urls": {
-    "development": "https://gitlab.manjaro.org",
-    "chat": "https://kiwiirc.com/client/irc.freenode.net/?nick=manjaro-web|?#manjaro",
-    "donate": "https://manjaro.org/donate",
-    "facebook": "https://www.facebook.com/ManjaroLinux",
-    "forum": "https://forum.manjaro.org",
-    "google+": "https://plus.google.com/118244873957924966264",
-    "mailling": "https://lists.manjaro.org/cgi-bin/mailman/listinfo",
-    "reddit": "https://www.reddit.com/r/ManjaroLinux",
-    "twitter": "https://twitter.com/ManjaroLinux",
-    "wiki": "https://wiki.manjaro.org"
+    "development": "https://webchat.freenode.net/#xubuntu-devel?nick=xubuntu?",
+    "chat": "https://kiwiirc.com/client/irc.freenode.net/?nick=xubuntu-web|?#xubuntu",
+    "donate": "https://xubuntu.org/donations/",
+    "facebook": "https://www.facebook.com/xubuntuusers",
+    "forum": "https://ubuntuforums.org/forumdisplay.php?f=329",
+    "google+": "https://plus.google.com/112064450121097287690",
+    "mailling": "https://lists.ubuntu.com/mailman/listinfo/xubuntu-users",
+    "reddit": "https://www.reddit.com/r/Xubuntu",
+    "twitter": "https://twitter.com/Xubuntu",
+    "wiki": "https://wiki.xubuntu.org/"
   }
 }
