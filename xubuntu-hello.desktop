@@ -1,0 +1,9 @@
+[Desktop Entry]
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;System;
+StartupNotify=false
+Name=Xubuntu Hello
+Exec=/usr/bin/xubuntu-hello
+Icon=dialog-information
+Comment=A tool providing access to documentation and support for new Xubuntu users.
