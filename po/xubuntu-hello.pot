@@ -3,12 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-30 16:47+0100\n"
+"POT-Creation-Date: 2020-03-12 22:57+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,106 +17,114 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../ui/manjaro-hello.glade:35
+#: ../ui/xubuntu-hello.glade:35
 msgid "Home"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:104 ../ui/manjaro-hello.glade:559
+#: ../ui/xubuntu-hello.glade:102 ../ui/xubuntu-hello.glade:567
 msgid "About"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:148
-msgid "Welcome to Manjaro!"
+#: ../ui/xubuntu-hello.glade:146
+msgid "Welcome to Xubuntu!"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:164
+#: ../ui/xubuntu-hello.glade:162
 msgid ""
 "Thank you for joining our community!\n"
 "\n"
-"We, the Manjaro Developers, hope that you will enjoy using Manjaro as much "
+"We, the Xubuntu Developers, hope that you will enjoy using Xubuntu as much "
 "as we enjoy building it. The links below will help you get started with your "
 "new operating system. So enjoy the experience, and don't hesitate to send us "
 "your feedback."
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:182
+#: ../ui/xubuntu-hello.glade:180
 msgid "DOCUMENTATION"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:196
+#: ../ui/xubuntu-hello.glade:194
 msgid "SUPPORT"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:210
+#: ../ui/xubuntu-hello.glade:208
 msgid "PROJECT"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:222
+#: ../ui/xubuntu-hello.glade:220
 msgid "Read me"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:236
+#: ../ui/xubuntu-hello.glade:234
 msgid "Release info"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:251
+#: ../ui/xubuntu-hello.glade:249
 msgid "Wiki"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:256 ../ui/manjaro-hello.glade:287
-#: ../ui/manjaro-hello.glade:304 ../ui/manjaro-hello.glade:321
-#: ../ui/manjaro-hello.glade:338 ../ui/manjaro-hello.glade:355
+#: ../ui/xubuntu-hello.glade:254 ../ui/xubuntu-hello.glade:285
+#: ../ui/xubuntu-hello.glade:302 ../ui/xubuntu-hello.glade:319
+#: ../ui/xubuntu-hello.glade:336 ../ui/xubuntu-hello.glade:353
 msgid "Web resource"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:268
+#: ../ui/xubuntu-hello.glade:266
 msgid "Get involved"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:282
+#: ../ui/xubuntu-hello.glade:280
 msgid "Forums"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:299
+#: ../ui/xubuntu-hello.glade:297
 msgid "Chat room"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:316
+#: ../ui/xubuntu-hello.glade:314
 msgid "Mailling lists"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:333
+#: ../ui/xubuntu-hello.glade:331
 msgid "Development"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:350
+#: ../ui/xubuntu-hello.glade:348
 msgid "Donate"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:469
+#: ../ui/xubuntu-hello.glade:450
 msgid "Launch at start"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:500
+#: ../ui/xubuntu-hello.glade:481
 msgid "INSTALLATION"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:512
+#: ../ui/xubuntu-hello.glade:493
 msgid "Launch installer"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:525
+#: ../ui/xubuntu-hello.glade:512
 msgid "Applications"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:529
+#: ../ui/xubuntu-hello.glade:516
 msgid "Common application selection"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:564
-msgid "Welcome screen for Manjaro"
+#: ../ui/xubuntu-hello.glade:529
+msgid "Gnome Layouts Manager"
 msgstr ""
 
-#: ../src/manjaro_hello.py:245
+#: ../ui/xubuntu-hello.glade:533
+msgid "Manjaro Gnone config tool"
+msgstr ""
+
+#: ../ui/xubuntu-hello.glade:572
+msgid "Welcome screen for Xubuntu"
+msgstr ""
+
+#: ../src/xubuntu_hello.py:306
 msgid "Can't load page."
 msgstr ""
