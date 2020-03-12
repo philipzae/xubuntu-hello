@@ -4,8 +4,7 @@
   "data_path": "/usr/share/xubuntu-hello/data/",
   "desktop_path": "/usr/share/applications/xubuntu-hello.desktop",
   "installer_path": "/usr/bin/ubiquity",
-  // YP-FIXME: not sure what the path is for live_path, so havent changed it yet
-  "live_path": "/run/miso/bootmnt/manjaro",
+  "live_path": "",
   "locale_path": "/usr/share/locale/",
   "logo_path": "/usr/share/icons/elementary-xfce/places/64/distributor-logo-xubuntu.png",
   "save_path": "~/.config/xubuntu-hello.json",
