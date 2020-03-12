@@ -23,7 +23,7 @@
       <object class="GtkHeaderBar" id="headerbar">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="title">Manjaro Hello</property>
+        <property name="title">Xubuntu Hello</property>
         <property name="show_close_button">True</property>
         <child>
           <object class="GtkButton" id="home">
@@ -39,7 +39,6 @@
         </child>
         <child>
           <object class="GtkComboBoxText" id="languages">
-            <property name="visible">True</property>
             <property name="can_focus">False</property>
             <items>
               <item id="sq">Albanian</item>
@@ -144,7 +143,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="has_focus">True</property>
-                <property name="label" translatable="yes">Welcome to Manjaro!</property>
+                <property name="label" translatable="yes">Welcome to Xubuntu!</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                   <attribute name="scale" value="2"/>
@@ -162,7 +161,7 @@
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Thank you for joining our community!
 
-We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback.</property>
+We, the Xubuntu Developers, hope that you will enjoy using Xubuntu as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback.</property>
                 <property name="justify">fill</property>
                 <property name="wrap">True</property>
                 <property name="width_chars">1</property>
@@ -504,16 +503,14 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkBox">
-                <property name="can_focus">False</property>
-                <property name="visible">True</property>
                 <property name="name">boxPlugins</property>
-                <property name="spacing">0</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
                 <property name="homogeneous">True</property>
                 <child>
                   <object class="GtkButton" id="appBrowser">
                     <property name="label" translatable="yes">Applications</property>
                     <property name="name">appBrowser</property>
-                    <property name="visible">False</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
                     <property name="tooltip_text" translatable="yes">Common application selection</property>
@@ -531,7 +528,6 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   <object class="GtkButton" id="appLayouts">
                     <property name="label" translatable="yes">Gnome Layouts Manager</property>
                     <property name="name">appLayouts</property>
-                    <property name="visible">False</property>
                     <property name="can_focus">False</property>
                     <property name="receives_default">True</property>
                     <property name="tooltip_text" translatable="yes">Manjaro Gnone config tool</property>
@@ -571,49 +567,18 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
     <property name="title" translatable="yes">About</property>
     <property name="type_hint">dialog</property>
     <property name="transient_for">window</property>
-    <property name="program_name">Manjaro Hello</property>
-    <property name="version">0.6.5</property>
-    <property name="comments" translatable="yes">Welcome screen for Manjaro</property>
-    <property name="website">https://gitlab.manjaro.org/applications/manjaro-hello</property>
-    <property name="website_label">GitLab</property>
+    <property name="program_name">Xubuntu Hello</property>
+    <property name="version">0.1.0</property>
+    <property name="comments" translatable="yes">Welcome screen for Xubuntu</property>
+    <property name="website">https://github.com/philipzae/xubuntu-hello</property>
+    <property name="website_label">GitHub</property>
     <property name="authors">Hugo Posnic
 Johnathan Jenkins
 Frede Hundewadt
 Bernhard Landauer
 Philip Müller
-Papa Joker</property>
-    <property name="translator_credits">abdelhak gasmi
-Al Manja
-Albert Cutrona
-Aleksandar Velimirović
-Alex Beliy
-Bernhard Landauer
-cges30901
-Daniel Napora
-DeMus
-Ersi Ni
-Fabio Forni
-Gabriel Blanca
-Hugo Carvalho
-Hugo Posnic
-Ilya Ostapenko aka Jacobtey
-Jeff Huang
-kouros kouros
-Lajos Pasztor
-László Szalai
-Leandro Cunha
-Lovro Kudelić
-Makaveli B
-mgundogdu
-Michael Kogan
-Midir Hakou
-Moo
-pavelrz
-secgin
-Stefano Capitani
-Stéphane
-Πέτρος Σαμαράς
-Андрей Раугас</property>
+Papa Joker
+Yousuf Philips</property>
     <property name="logo_icon_name"/>
     <property name="license_type">gpl-3-0</property>
     <child>
