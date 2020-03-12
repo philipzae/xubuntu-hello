@@ -1,2 +1,2 @@
-__all__ = ["manjaro_hello"]
-__version__ = "0.6.3"
+__all__ = ["xubuntu_hello"]
+__version__ = "0.1.0"
